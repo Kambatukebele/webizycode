@@ -30,7 +30,7 @@
     <title>Document</title>
   </head>
 
-  <body>
+  <body >
     <!--Hidden Navigation and logo for Small devices -->
     <nav class="bg-white w-full lg:hidden">
       <div class="flex justify-between items-center py-2 w-[90%] mx-auto sm:max-w-[600px] md:max-w-[700px] ">
@@ -81,7 +81,7 @@
           </ul>
           <!-- CTA -->
           <div class="block">
-            <a class="block text-center text-base font-normal bg-white w-52 mx-auto py-3 my-5 rounded-full uppercase bg-transparent border-2 border-white text-white hover:bg-black hover:font-semibold transition-all" href="$">Free Consultancy</a>
+            <a class="block text-center text-base font-normal w-52 mx-auto py-3 my-5 rounded-full uppercase bg-transparent border-2 border-white text-white hover:bg-black hover:font-semibold transition-all" href="$">Free Consultancy</a>
           </div>
         </nav>
         <!-- end Navigation and logo -->
@@ -119,7 +119,44 @@
     {{-- <header>
 
     </header> --}}
+
+    <!--Services section Title -->
+    <section class="w-[300px] mx-auto flex justify-end items-center flex-col mt-12 lg:w-[400px] xl:pt-28">
+      <small class="font-semibold font-Nunito text-xs text-black lg:text-sm">Our Workflow</small>
+      <h2 class="font-extrabold font-ReadexPro text-black text-3xl lg:text-5xl">Our Services</h2>
+    </section>
+    <!--End Services section Title -->
+    <!--Services box description -->
+    <section>
+      <div>
+        <div>
+          <!--Box -->
+          <div>
+            <!--Icon -->
+            <div>
+              <i class="fa-brands fa-wordpress"></i>
+            </div>
+            <!-- Title -->
+            <div>
+              <h3>WordPress Development</h3>
+            </div>
+            <!-- Description -->
+            <div>
+              <p>
+                "Unlock the Power of Digital with our WordPress Wizards! 🚀 Elevate your online presence with custom WordPress solutions
+                that blend innovation, creativity, and performance. We turn pixels into profits, one pixel at a time! 💻✨
+                #WordPressMagic #WebDevMasters"
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End Services box description -->
   </body>
-  <script src="/assets/js/index.js"></script>
+  <script src="/assets/js/index.js  <div>
+    <small>Our Workflow</small>
+  <h2>Build it Better with WebizyCode</h2></div>"></script>
 
 </html>
