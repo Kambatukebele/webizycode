@@ -91,12 +91,12 @@
           <div class="block animate-SlideInLeft py-1  sm:flex sm:flex-col sm:justify-start sm:items-start sm:h-full sm:w-[260px] md:w-[450px] xl:w-[600px]">
             <small class="text-white font-Nunito font-normal text-xs block my-3 lg:font-medium lg:text-base">The only value proposition that really matters:</small>
             <div class="mb-4 animate-SlideInLeft max-w-[300px] mx-auto sm:mx-0 sm:w-full md:max-w-none  md:w-[350px] lg:w-[450px] xl:w-[600px]">
-              <h1 class="text-white font-bold text-xl font-ReadexPro sm:text-left sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl xl:leading-16 ">It's Time for a Switch-Up 
+              <h1 class="text-white font-bold text-xl font-ReadexPro sm:text-left sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl xl:leading-16 ">Bespoke software development for Small size Business 
               </h1>
             </div>
             <div class="mb-4  max-w-[300px] mx-auto sm:mx-0 sm:max-w-[250px] md:max-w-[350px] lg:max-w-[450px]">
               <p class="text-white text-center font-normal text-xs font-NunitoSans sm:text-sm sm:text-left">
-               Handle your business; we'll handle its growth.
+               We design exceptional digital products to streamline your business processes and save resources.
               </p>
             </div>
             <div class="block">
