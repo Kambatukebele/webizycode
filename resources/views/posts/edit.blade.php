@@ -1,103 +1,154 @@
 <x-app-layout>
+  <script src="https://cdn.tiny.cloud/1/vs2uzmszoglxmru2wiphv9o8lwo8r5xplo8mqk0q9a2uh6w3/tinymce/6/tinymce.min.js"
+    referrerpolicy="origin"></script>
   <x-slot name="header">
     <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-      {{ __('All Posts') }}
+      {{ __('Create a Post') }}
     </h2>
   </x-slot>
 
   <div class="py-12">
     <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
       <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-        <div class="p-6 flex justify-between items-center text-gray-900">
-          <div class="w-full relative overflow-x-auto shadow-md sm:rounded-lg">
-            <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-              <thead class="text-xs text-gray-700 uppercase bg-red-50 dark:bg-gray-700 dark:text-gray-400 ">
-                <tr class="border">
-                  <th scope="col" class="px-6 py-3 border text-center">
-                    Title
-                  </th>
-                  <th scope="col" class="px-6 py-3 border text-center">
-                    Category
-                  </th>
-                  <th scope="col" class="px-6 py-3 border text-center">
-                    Status
-                  </th>
-                  <th scope="col" class="px-6 py-3 border text-center">
-                    Action
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                @foreach ($posts as $post)
-                <tr
-                  class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+        <!--Form -->
+        <section class="p-6 text-gray-900">
+          <header>
+            <h2 class="text-lg font-medium text-gray-900">
+              {{ __('Create something amazing') }}
+            </h2>
 
-                  <th scope="row"
-                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white text-center">
-                    {{ $post->title }}
-                  </th>
-                  <th scope="row"
-                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white text-center">
-                    {{ $post->category }}
-                  </th>
-                  <td class="px-6 py-4 border text-center w-[150px]">
-                    @if ($post->status === 'active')
-                    <p class="bg-green-600 py-2 w-[90px] rounded-md text-white">{{ $post->status }}</p>
-                    @else
-                    <p class="bg-yellow-600 py-2 w-[90px] rounded-md text-white ">{{ $post->status }}</p>
-                    @endif
-                  </td>
-                  <td class="px-6 py-4 border text-center">
-                    <a href="#">
-                      <button class="py-2 w-[90px] bg-blue-800 text-white rounded-md">Edit</button>
-                    </a>
-                    <a href="#">
-                      <button class="py-2 w-[90px] bg-green-800 text-white rounded-md">Activate</button>
-                    </a>
-                  </td>
-                </tr>
-                @endforeach
-              </tbody>
-            </table>
-            <nav class="flex items-center justify-between pt-4 px-3" aria-label="Table navigation">
-              <span class="text-sm font-normal text-gray-500 dark:text-gray-400">Showing <span
-                  class="font-semibold text-gray-900 dark:text-white">1-10</span> of <span
-                  class="font-semibold text-gray-900 dark:text-white">1000</span></span>
-              <ul class="inline-flex -space-x-px text-sm h-8">
-                <li>
-                  <a href="#"
-                    class="flex items-center justify-center px-3 h-8 ml-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-l-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Previous</a>
-                </li>
-                <li>
-                  <a href="#"
-                    class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">1</a>
-                </li>
-                <li>
-                  <a href="#"
-                    class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">2</a>
-                </li>
-                <li>
-                  <a href="#" aria-current="page"
-                    class="flex items-center justify-center px-3 h-8 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white">3</a>
-                </li>
-                <li>
-                  <a href="#"
-                    class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">4</a>
-                </li>
-                <li>
-                  <a href="#"
-                    class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">5</a>
-                </li>
-                <li>
-                  <a href="#"
-                    class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 rounded-r-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Next</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
+            <p class="mt-1 text-sm text-gray-600">
+              {{ __("What do you have in mind today?.") }}
+            </p>
+          </header>
+          <form method="post" action="{{ route('post.update', ['id' => $posts[0]->id]) }}" enctype="multipart/form-data" class="mt-6 space-y-6">
+            @csrf
+            @method('PUT')
+            <div id="card-image">
+              <x-input-label for="featured_image" :value="__('Featured image')" />
+              <button type="button" class="cursor-pointer border my-3 py-1 w-32 rounded-md text-sm text-gray-600 hover:bg-black hover:text-white" id="btn-show-hidden-input">
+                {{ __("Change image") }}
+              </button>              
+              <button type="button" class="hidden cursor-pointer border my-3 py-1 w-32 rounded-md text-sm text-gray-600 hover:bg-black hover:text-white" id="btn-hide-hidden-input">
+                {{ __("Revert") }}
+              </button>
+              <div class="block w-[300px] sm:w-[350px] md:w-[450px]" id="divImage">
+                <img class="w-full h-full object-cover object-center" src="{{ url('/uploads/' . $posts[0]->featured_image) }}" alt="">
+              </div>
+              {{-- <x-text-input id="featured_image" name="featured_image" type="hidden" class="block mt-1 w-full" required
+                autofocus autocomplete="featured_image" /> --}}
+              <x-input-error class="mt-2" :messages="$errors->get('featured_image')" />
+            </div>
+            <div>
+              <x-input-label for="title" :value="__('Title')" />
+              <x-text-input id="title" name="title" type="text" :value="old('title', $posts[0]->title)" class="mt-1 block w-full" required autofocus
+                autocomplete="title" />
+              <x-input-error class="mt-2" :messages="$errors->get('title')" />
+            </div>
+            <div>
+              <x-input-label for="category" :value="__('Category')" />
+              <select name="category" id="category"
+                class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm mt-1 block w-full">
+                @isset($posts[0]->category)
+                    <option value="{{ $posts[0]->category }}" selected>{{ Str::ucfirst($posts[0]->category) }}</option>
+                @endisset
+                <option value="laravel" >Laravel</option>
+                <option value="php">PHP</option>
+                <option value="reactjs">Reactjs</option>
+                <option value="javascript">JavaScript</option>
+                <option value="nextjs">Nextjs</option>
+                <option value="api">API</option>
+              </select>
+              <x-input-error class="mt-2" :messages="$errors->get('category')" />
+            </div>
+            <div>
+              <x-input-label for="tags" :value="__('Tags')" />
+              <x-text-input id="tags" name="tags" type="text" :value="old('tags', $posts[0]->tags)" class="mt-1 block w-full" required autofocus
+                autocomplete="tags" />
+              <p class="mt-1 text-sm text-gray-600">
+                {{ __("Add tags and separare them with a commas") }}
+              </p>
+              <x-input-error class="mt-2" :messages="$errors->get('tags')" />
+            </div>
+            <div>
+              <x-input-label for="status" :value="__('Status')" />
+              <select name="status" id="status"
+                class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm mt-1 block w-full">
+                @isset($posts[0]->status)
+                <option value="{{ $posts[0]->status }}" selected>{{ Str::ucfirst($posts[0]->status) }}</option>
+                @endisset
+                <option value="draft">Draft</option>
+                <option value="active">Active</option>
+              </select>
+              <x-input-error class="mt-2" :messages="$errors->get('status')" />
+              </div>
+              <x-input-error class="mt-2" :messages="$errors->get('status')" />
+            </div>
+            {{-- :value="old('email', $user->email)" --}}
+            <div>
+              <x-input-label for="email" :value="__('Content')" />
+              <textarea class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm"
+                name="content">{{ old('content', $posts[0]->content) }}</textarea>
+              {{-- cols="132" rows="10" --}}
+              {{-- <x-text-input id="email" name="email" type="email" class="mt-1 block w-full" required autocomplete="username" /> --}}
+              <x-input-error class="mt-2" :messages="$errors->get('content')" />
+
+              {{-- @if ($user instanceof \Illuminate\Contracts\Auth\MustVerifyEmail && ! $user->hasVerifiedEmail())
+                        <div>
+                          <p class="text-sm mt-2 text-gray-800">
+                            {{ __('Your email address is unverified.') }}
+
+              <button form="send-verification"
+                class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                {{ __('Click here to re-send the verification email.') }}
+              </button>
+              </p>
+
+              @if (session('status') === 'verification-link-sent')
+              <p class="mt-2 font-medium text-sm text-green-600">
+                {{ __('A new verification link has been sent to your email address.') }}
+              </p>
+              @endif
+            </div>
+            @endif --}}
       </div>
+
+        <div class="flex items-center gap-4 my-5">
+          <x-primary-button>{{ __('Update') }}</x-primary-button>
+          {{-- @if (session('status') === 'profile-updated')
+                          <p x-data="{ show: true }" x-show="show" x-transition x-init="setTimeout(() => show = false, 2000)"
+                            class="text-sm text-gray-600">{{ __('Saved.') }}</p>
+          @endif --}}
+        </div>
+      </form>
+      </section>
+      <!--End Form -->
+      <!--Delete part-->
+      <section class="space-y-6">
+       <form method="post" action="{{ route('post.destroy', ['id' => $posts[0]->id]) }}" class="mt-5">
+        @csrf
+        @method('delete')
+        <x-danger-button>
+          {{ __('Delete This Post') }}
+        </x-danger-button>
+      </form>
+      </section>
     </div>
+  </div>
   </div>
 
 </x-app-layout>
+<script>
+  tinymce.init({
+      selector: 'textarea',
+      plugins: 'ai tinycomments mentions anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed permanentpen footnotes advtemplate advtable advcode editimage tableofcontents mergetags powerpaste tinymcespellchecker autocorrect a11ychecker typography inlinecss',
+      toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | align lineheight | tinycomments | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
+      tinycomments_mode: 'embedded',
+      tinycomments_author: 'Author name',
+      mergetags_list: [
+        { value: 'First.Name', title: 'First Name' },
+        { value: 'Email', title: 'Email' },
+      ],
+      ai_request: (request, respondWith) => respondWith.string(() => Promise.reject("See docs to implement AI Assistant"))
+    });
+</script>

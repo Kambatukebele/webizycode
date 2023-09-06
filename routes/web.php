@@ -33,7 +33,11 @@ Route::get('/dashboard', function () {
 Route::get('/post', [PostController::class, 'index'])->middleware(['auth', 'verified'])->name('post.index');
 Route::get('/post/create', [PostController::class, 'create'])->middleware(['auth', 'verified'])->name('post.create');
 Route::post('/post', [PostController::class, 'store'])->middleware(['auth', 'verified'])->name('post.store');
-Route::post('/post/edit', [PostController::class, 'store'])->middleware(['auth', 'verified'])->name('post.edit');
+Route::get('/post/edit/{id}', [PostController::class, 'edit'])->middleware(['auth', 'verified'])->name('post.edit');
+Route::put('/post/{id}', [PostController::class, 'update'])->middleware(['auth', 'verified'])->name('post.update');
+Route::delete('/post/{id}', [PostController::class, 'destroy'])->middleware(['auth', 'verified'])->name('post.destroy');
+
+//End Post
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

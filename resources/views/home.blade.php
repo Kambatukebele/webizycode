@@ -30,7 +30,7 @@
     <title>Document</title>
   </head>
 
-  <body >
+  <body class="bg-gray-50">
     <!--Hidden Navigation and logo for Small devices -->
     <nav class="bg-white w-full lg:hidden">
       <div class="flex justify-between items-center py-2 w-[90%] mx-auto sm:max-w-[600px] md:max-w-[700px] ">
@@ -81,7 +81,7 @@
           </ul>
           <!-- CTA -->
           <div class="block">
-            <a class="block text-center text-base font-normal w-52 mx-auto py-3 my-5 rounded-full uppercase bg-transparent border-2 border-white text-white hover:bg-black hover:font-semibold transition-all" href="$">Free Consultancy</a>
+            <a class="block text-center text-base font-normal w-[200px] mx-auto py-3 my-9 rounded-full uppercase bg-transparent border-2 border-white text-white hover:bg-black hover:font-semibold transition-all" href="$">Free Consultancy</a>
           </div>
         </nav>
         <!-- end Navigation and logo -->
@@ -100,7 +100,7 @@
               </p>
             </div>
             <div class="block">
-              <a class="block text-center text-base font-normal text-purple-900 bg-white w-52 mx-auto py-4 my-5 rounded-full hover:bg-black hover:text-white hover:font-semibold uppercase animate-bounce transition-all"
+              <a class="block text-center text-base font-semibold text-purple-700 bg-white w-52 mx-auto py-3 my-5 rounded-full hover:bg-black hover:text-white hover:font-medium uppercase animate-bounce transition-all"
                 href="#">
                 Work with Us 
               </a>
@@ -121,36 +121,47 @@
     </header> --}}
 
     <!--Services section Title -->
-    <section class="w-[300px] mx-auto flex justify-end items-center flex-col mt-12 lg:w-[400px] xl:pt-28">
-      <small class="font-semibold font-Nunito text-xs text-black lg:text-sm">Our Workflow</small>
-      <h2 class="font-extrabold font-ReadexPro text-black text-3xl lg:text-5xl">Our Services</h2>
+    <section class="block w-full my-5 xl:mt-24">
+      <div class="block w-[90%]  mx-auto sm:w-[600px] md:w-[700px] lg:w-[900px] xl:w-[1220px] lg:flex lg:justify-between lg:items-center">
+        <!--Text-->
+        <div class="flex justify-center items-center flex-col lg:items-start lg:justify-end">
+          <small class="text-black font-Nunito text-sm font-medium">Our Workflow <span class="font-bold text-purple-800">__ ___</span></small>
+          <h2 class="text-black font-ReadexPro text-4xl text-center font-bold my-3">Our Services</h2>
+        </div>
+        <!--BTN-->
+        <div>
+          <a class="block text-center text-base font-semibold text-white bg-purple-700 w-[150px] mx-auto py-3 my-5 rounded-full hover:bg-black hover:text-white hover:font-medium uppercase"
+            href="#">
+            Learn More
+          </a>
+        </div>
+      </div>
     </section>
     <!--End Services section Title -->
     <!--Services box description -->
-    <section>
-      <div>
-        <div>
-          <!--Box -->
-          <div>
-            <!--Icon -->
-            <div>
-              <i class="fa-brands fa-wordpress"></i>
+    <section class="w-full">
+      <div class="block w-[90%]  mx-auto sm:w-[600px] md:w-[700px] lg:w-[900px] xl:w-[1220px] lg:flex lg:justify-between lg:items-center">
+        <!--Box -->
+        @for ($i = 0; $i < 3; $i++)
+          <div class="w-full mx-auto rounded-md p-3 my-3 bg-white shadow-lg block border sm:max-w-[550px] lg:max-w-[280px] lg:flex lg:justify-center lg:items-center lg:flex-col xl:max-w-[390px]">
+          <!--Icon -->
+            <div class="border border-purple-700 w-[50px] h-[50px] rounded-full flex justify-center items-center my-5">
+              <i class="fa-brands fa-wordpress text-4xl"></i>
             </div>
             <!-- Title -->
-            <div>
-              <h3>WordPress Development</h3>
+            <div class="my-5 lg:mt-0">
+              <h3 class="text-black font-ReadexPro text-2xl font-semibold lg:text-center">WordPress Development</h3>
             </div>
             <!-- Description -->
-            <div>
-              <p>
-                "Unlock the Power of Digital with our WordPress Wizards! 🚀 Elevate your online presence with custom WordPress solutions
-                that blend innovation, creativity, and performance. We turn pixels into profits, one pixel at a time! 💻✨
-                #WordPressMagic #WebDevMasters"
+            <div class="my-5 lg:mt-0">
+              <p class="font-Nunito text-gray-500 font-normal text-base lg:text-center">
+                "Unlock the Power of Digital with our WordPress Wizards! 🚀 Elevate your online presence with custom WordPress
+                solutions
+                that blend innovation, creativity, and performance. We turn pixels into profits, one pixel at a time! 
               </p>
-            </div>
-
-          </div>
+            </div>        
         </div>
+        @endfor
       </div>
     </section>
     <!--End Services box description -->

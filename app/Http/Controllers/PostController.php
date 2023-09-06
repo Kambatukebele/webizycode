@@ -73,7 +73,8 @@ class PostController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $posts = Post::all()->where('id', $id); 
+        return view('posts.edit', ['posts' => $posts]); 
     }
 
     /**
@@ -81,7 +82,37 @@ class PostController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $posts = Post::find($id);
+       
+        //Validation
+        $validated = $request->validate([
+            'featured_image' => 'image|mimes:jpg,jpeg,png,webP',
+            'title' => 'required|string',
+            'content' => 'required',
+           // 'author_id' => 'integer|numeric',
+            'category' => 'required|string',
+            'tags' => 'required|string',
+        ]);
+
+        if(!$request->featured_image == null){
+              //Check ghe image
+            $featured_image = time().'.'.$request->featured_image->extension();//Get the extension
+            $request->featured_image->move(public_path('uploads'), $featured_image); //Move the image
+            $posts->featured_image = $featured_image;
+        }      
+
+       
+        $posts->title = $request->title;
+        $posts->content = $request->content;
+        //$posts->author = 1;
+        $posts->category = $request->category;
+        $posts->tags = $request->tags;
+        $posts->status = $request->status;
+
+        $posts->save(); 
+
+        return redirect(route('post.index')); 
+       
     }
 
     /**
@@ -89,6 +120,10 @@ class PostController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $post = Post::find($id);
+
+        $post->delete();
+
+         return redirect(route('post.index')); 
     }
 }

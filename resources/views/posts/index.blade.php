@@ -45,12 +45,9 @@
                         @endif
                       </td>
                       <td class="px-6 py-4 border text-center">
-                        <a href="#">
+                        <a href="{{ route("post.edit", ['id' => $post->id]) }}">
                           <button class="py-2 w-[90px] bg-blue-800 text-white rounded-md">Edit</button>
-                        </a>
-                        <a href="#">
-                          <button class="py-2 w-[90px] bg-green-800 text-white rounded-md">Activate</button>
-                        </a>
+                        </a>                        
                       </td>
                     </tr>
                 @endforeach

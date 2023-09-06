@@ -33,5 +33,7 @@
             </main>
         </div>
         
+        <!-- Script -->
+        <script src="{{ asset('assets/js/post-edit-blade.js') }}"></script>
     </body>
 </html>
