@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use Spatie\FlareClient\View;
@@ -27,6 +28,12 @@ Route::get('/home', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
+// Post
+Route::get('/post', [PostController::class, 'index'])->middleware(['auth', 'verified'])->name('post.index');
+Route::get('/post/create', [PostController::class, 'create'])->middleware(['auth', 'verified'])->name('post.create');
+Route::post('/post', [PostController::class, 'store'])->middleware(['auth', 'verified'])->name('post.store');
+Route::post('/post/edit', [PostController::class, 'store'])->middleware(['auth', 'verified'])->name('post.edit');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

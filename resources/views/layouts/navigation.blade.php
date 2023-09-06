@@ -16,6 +16,22 @@
                         {{ __('Dashboard') }}
                     </x-nav-link>
                 </div>
+                <div class="hidden sm:flex sm:items-center sm:ml-6 cursor-pointer">
+                    <x-dropdown>
+                        <x-slot name="trigger">
+                            {{ __('Post') }}
+                        </x-slot>
+                    
+                        <x-slot name="content">
+                            <x-dropdown-link :href="route('post.index')">
+                                {{ __('View All Posts') }}
+                            </x-dropdown-link>
+                            <x-dropdown-link :href="route('post.create')">
+                                {{ __('Create a Post') }}
+                            </x-dropdown-link>
+                        </x-slot>
+                    </x-dropdown>                   
+                </div>
             </div>
 
             <!-- Settings Dropdown -->
