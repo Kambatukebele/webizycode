@@ -60,7 +60,7 @@
     </nav>
     <!--ENd Hidden Navigation and logo for Small devices -->
     <!-- Header -->
-    <header class="w-full h-fit  bg-[url('/public/assets/images/bg-image.png')] bg-cover bg-center bg-no-repeat sm:relative sm:h-[580px] lg:h-[780px]">
+    <header class="w-full h-fit bg-hero-upper bg-cover bg-center bg-no-repeat sm:relative sm:h-[580px] lg:h-[780px]">
       <div class="w-[90%] mx-auto sm:max-w-[600px] md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px]">
         <!-- Navigation and logo -->
         <nav class="hidden lg:flex lg:justify-between lg:items-center lg:w-full">
@@ -100,9 +100,9 @@
               </p>
             </div>
             <div class="block">
-              <a class="block text-center text-base font-semibold text-purple-700 bg-white w-52 mx-auto py-3 my-5 rounded-full hover:bg-black hover:text-white hover:font-medium uppercase animate-bounce transition-all"
+              <a class="block text-center text-base font-semibold text-purple-700 bg-white  mx-auto p-3 my-5 rounded-full hover:bg-black hover:text-white hover:font-medium uppercase animate-bounce transition-all"
                 href="#">
-                Work with Us 
+                Share your concept with us 
               </a>
             </div>
           </div>
@@ -143,28 +143,130 @@
       <div class="block w-[90%]  mx-auto sm:w-[600px] md:w-[700px] lg:w-[900px] xl:w-[1220px] lg:flex lg:justify-between lg:items-center">
         <!--Box -->
         @for ($i = 0; $i < 3; $i++)
-          <div class="w-full mx-auto rounded-md p-3 my-3 bg-white shadow-lg block border sm:max-w-[550px] lg:max-w-[280px] lg:flex lg:justify-center lg:items-center lg:flex-col xl:max-w-[390px]">
+          <div class="w-full mx-auto flex flex-col justify-center items-start rounded-md p-5 my-3 bg-white shadow-lg hover:bg-gray-100 hover:shadow-2xl sm:max-w-[550px] lg:max-w-[280px]  lg:items-center xl:max-w-[390px]">
           <!--Icon -->
-            <div class="border border-purple-700 w-[50px] h-[50px] rounded-full flex justify-center items-center my-5">
+            <div class="block lg:flex lg:justify-center lg:items-center my-5">
               <i class="fa-brands fa-wordpress text-4xl"></i>
             </div>
             <!-- Title -->
-            <div class="my-5 lg:mt-0">
+            <div class="my-3 lg:mt-0">
               <h3 class="text-black font-ReadexPro text-2xl font-semibold lg:text-center">WordPress Development</h3>
             </div>
             <!-- Description -->
-            <div class="my-5 lg:mt-0">
+            <div class="mb-1">
               <p class="font-Nunito text-gray-500 font-normal text-base lg:text-center">
                 "Unlock the Power of Digital with our WordPress Wizards! 🚀 Elevate your online presence with custom WordPress
                 solutions
                 that blend innovation, creativity, and performance. We turn pixels into profits, one pixel at a time! 
               </p>
+            </div>
+            <div class="block">
+              <a class="block text-center text-base font-semibold text-white bg-purple-700 w-[150px] mx-auto py-3 my-5 rounded-full hover:bg-black hover:text-white hover:font-medium uppercase"
+                href="#">
+                Learn More
+              </a>
             </div>        
         </div>
         @endfor
       </div>
     </section>
     <!--End Services box description -->
+    <!--How Can We Help -->
+    {{-- <section class="w-full my-12 h-fit bg-green-500">
+      <div class="w-[90%] mx-auto rounded-lg bg-purple-700 bg-hero-middle bg-cover bg-no-repeat bg-center">
+        <div class="px-2 py-3">
+          <h3 class="text-white font-ReadexPro text-4xl font-semibold text-center mb-2">How can we help you?</h3>
+          <p class="text-white font-Nunito font-normal text-base text-center">Feel free to reach out to us with no commitment; we can tailor our services to fit your requirements.</p>
+          <div class="block">
+            <a class="block text-center text-base font-semibold text-purple-700 bg-white  mx-auto p-3 my-5 rounded-full hover:bg-black hover:text-white hover:font-medium uppercase animate-bounce transition-all"
+              href="#">
+              Would you like to discuss your project?
+            </a>
+          </div>
+        </div>
+        <div class="hidden">
+          <img src="/assets/images/mobile-sml1.png" alt="">
+        </div>
+      </div>
+    </section> --}}
+    <!--End How Can We Help -->
+    <!-- How we Work -->
+    <section class="w-full h-fit bg-gray-100 my-12 py-10">
+      <div class="w-[90%] mx-auto md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px]">
+        <!--Upper -->
+        <div class="mb-10">
+          <h3 class="text-black font-semibold text-3xl text-center mb-5">How We Work</h3>
+          <p class="text-sm text-gray-400 font-normal text-center">
+            We utilize Scrum as our operational framework, an agile methodology focused on delivering product value in short
+            timeframes. It is grounded in three core principles: transparency, inspection, and adaptation.
+          </p>
+          <p class="text-sm text-gray-400 font-normal text-center">
+            Our creative process is rooted in the Design Thinking methodology. We aim to gain a deep understanding of your needs and
+            offer solutions that address your users' genuine concerns. This approach is iterative and non-linear, allowing us to
+            generate a multitude of innovative ideas to tackle complex challenges and optimize your procedures and resources
+            effectively.
+          </p>
+        </div>
+        <!-- body section -->
+        <div class="mb-10 lg:grid lg:gap-4 lg:grid-cols-2 lg:grid-rows-2 xl:grid-cols-3">
+          @for ($i = 0; $i < 6; $i++) 
+          {{-- Card --}}
+           <div class="bg-white my-4 rounded-lg p-5 min-w-[290px] mx-auto shadow-xl">
+              <div class="flex justify-end items-center text-xl font-NunitoSans text-gray-200">
+                01
+              </div>
+              <div class="flex justify-center items-center flex-col">
+                <div class="flex justify-center items-center  mt-1 mb-3">
+                  <i class="fa-solid fa-list-check block text-5xl text-purple-700"></i>
+                </div>
+                <div class="md:max-w-[550px]">
+                  <h4 class="text-black text-center font-ReadexPro font-semibold text-2xl mb-2">Fast Performance</h4>
+                  <p class="text-base text-gray-400 font-normal text-center">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quasi doloribus cumque voluptate blanditiis!
+                    Corporis nihil quia vel quos nostrum alias perspiciatis, sint odio eligendi ab doloribus nesciunt perferendis
+                    ipsam.
+                  </p>
+                </div>
+              </div>
+            </div>
+          @endfor
+        </div>
+      </div>
+    </section>
+    <!-- End How we Work -->
+    <!-- Technology stack -->
+   <section class="w-full h-fit bg-white my-12 py-10">
+      <div class="w-[90%] mx-auto md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px]">
+        <!--Upper -->
+        <div class="mb-10">
+          <h3 class="text-black font-semibold text-3xl text-center mb-5">Stack of Technologies</h3>
+          <p class="text-sm text-gray-400 font-normal text-center">
+           Our development team is proficient in utilizing cutting-edge, secure, robust, and high-performance technologies for
+          projects of any scale and purpose.
+          </p>
+          <p class="text-sm text-gray-400 font-normal text-center">
+            Our creative process is rooted in the Design Thinking methodology. We aim to gain a deep understanding of your
+            needs and
+            offer solutions that address your users' genuine concerns. This approach is iterative and non-linear, allowing
+            us to
+            generate a multitude of innovative ideas to tackle complex challenges and optimize your procedures and resources
+            effectively.
+          </p>
+        </div>
+        <!-- body section -->
+        <div class="mb-10 grid gap-2 grid-cols-3 grid-rows-2 sm:grid-cols-5 lg:grid-cols-6">
+          @for ($i = 0; $i < 6; $i++)
+            <div class="flex justify-center items-center flex-col  my-3 w-[100px]">
+              <div class="w-[70px] mb-2 h-[70px] rounded-full border border-purple-700 flex justify-center items-center">
+                <i class="fa-brands fa-laravel block text-4xl"></i>
+              </div>
+              <p class="font-Nunito text-gray-500 text-sm font-normal">Laravel</p>
+            </div>
+          @endfor
+        </div>
+      </div>
+    </section>
+    <!-- End Technology stack -->
   </body>
   <script src="/assets/js/index.js  <div>
     <small>Our Workflow</small>

@@ -16,6 +16,11 @@ export default {
                 NunitoSans: ["Nunito Sans", "sans - serif"],
                 Nunito: ["Nunito", "sans - serif"],
             },
+            backgroundImage : {
+                'hero-upper':"url('/public/assets/images/bg-image.png')",
+                'hero-middle': "url('/public/assets/images/ft-bg-2.png')",
+                'hero-how-we-work' : "url('/public/assets/images/slider-shape-img.png')",
+            },
             keyframes: {
                 SlideInLeft: {
                     "0%": { transform: "translateX(-300px)" },
