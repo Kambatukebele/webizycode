@@ -20,9 +20,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Home Route
+// Home Route 
 Route::get('/home', function () {
     return View('/home'); 
+});
+
+//Services Routes => To show all services
+Route::get('/services', function (){
+    return view('/service');
 });
 
 Route::get('/dashboard', function () {

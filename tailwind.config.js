@@ -20,6 +20,7 @@ export default {
                 'hero-upper':"url('/public/assets/images/bg-image.png')",
                 'hero-middle': "url('/public/assets/images/ft-bg-2.png')",
                 'hero-how-we-work' : "url('/public/assets/images/slider-shape-img.png')",
+                'hero-footer' : "url('/public/assets/images/footer-bg-images.png')",
             },
             keyframes: {
                 SlideInLeft: {

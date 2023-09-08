@@ -60,7 +60,7 @@
     </nav>
     <!--ENd Hidden Navigation and logo for Small devices -->
     <!-- Header -->
-    <header class="w-full h-fit bg-hero-upper bg-cover bg-center bg-no-repeat sm:relative sm:h-[580px] lg:h-[780px]">
+    <header class="w-full h-fit bg-hero-upper bg-cover bg-bottom bg-no-repeat sm:relative sm:h-[580px] lg:h-[780px]">
       <div class="w-[90%] mx-auto sm:max-w-[600px] md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px]">
         <!-- Navigation and logo -->
         <nav class="hidden lg:flex lg:justify-between lg:items-center lg:w-full">
@@ -102,7 +102,7 @@
             <div class="block">
               <a class="block text-center text-base font-semibold text-purple-700 bg-white  mx-auto p-3 my-5 rounded-full hover:bg-black hover:text-white hover:font-medium uppercase animate-bounce transition-all"
                 href="#">
-                Share your concept with us 
+                Work with with us 
               </a>
             </div>
           </div>
@@ -190,6 +190,51 @@
       </div>
     </section> --}}
     <!--End How Can We Help -->
+    <!--Why choose us -->
+    <section class="w-full h-fit py-7 my-10">
+      <div class="block w-[90%]  mx-auto sm:w-[600px] md:w-[700px] lg:w-[900px] lg:flex lg:justify-between lg:items-center xl:w-[1220px] xl:items-start">
+        <!--Image -->
+        <div class="w-[350px] mx-auto lg:w-[500px] xl:w-[600px]">
+          <img class="w-full h-full object-cover object-center" src="/assets/images/64351ff45a3851681203188.png" alt="">
+        </div>
+        <!--Text -->
+        <div class="block  mt-5 lg:w-[400px] xl:w-[600px]">
+          <h2 class="mb-5 font-semibold font-ReadexPro text-black text-4xl text-center">Why Us? </h2>
+          <p class="font-normal font-Nunito text-gray-500 text-base">
+            With years of experience in the web development industry, our team has honed its skills to deliver top-notch
+            solutions. Your satisfaction is our priority. We maintain open communication channels throughout the project, keeping you involved
+            at every stage and addressing your concerns promptly.
+          </p>
+           <br>
+          <p class="font-normal font-Nunito text-gray-500 text-base">
+            We don't believe in one-size-fits-all solutions. Each project is unique, and we tailor our services to meet your
+            specific needs. Whether it's a small business website or a complex e-commerce platform, we've got you covered.
+          </p>
+          <br>
+          <p class="font-normal font-Nunito text-gray-500 text-base">
+            We offer cost-effective solutions without compromising on quality. Our pricing is transparent, and we work within your
+            budget. Our commitment doesn't end at launch. We provide ongoing maintenance and support to keep your website or application
+            running smoothly and up to date.
+          </p>
+          
+          {{-- <p>We stay at the forefront of technology trends, using the latest tools and frameworks to build websites and applications
+          that are not only functional but also future-proof.
+          </p>
+            <br>
+          <p>
+            A visually appealing and user-friendly design is crucial for online success. Our designers create stunning and intuitive
+            interfaces that leave a lasting impression on your audience.
+          </p>
+            <br>
+          <p>
+            We take the security of your data and your users seriously. Our development process includes robust security measures to
+            protect your online presence from threats.
+          </p> --}}
+          
+        </div>
+      </div>
+    </section>
+    <!--End Why choose us -->
     <!-- How we Work -->
     <section class="w-full h-fit bg-gray-100 my-12 py-10">
       <div class="w-[90%] mx-auto md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px]">
@@ -235,7 +280,7 @@
     </section>
     <!-- End How we Work -->
     <!-- Technology stack -->
-   <section class="w-full h-fit bg-white my-12 py-10">
+   <section class="w-full h-fit  my-12 py-10 bg-white">
       <div class="w-[90%] mx-auto md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px]">
         <!--Upper -->
         <div class="mb-10">
@@ -254,19 +299,109 @@
           </p>
         </div>
         <!-- body section -->
-        <div class="mb-10 grid gap-2 grid-cols-3 grid-rows-2 sm:grid-cols-5 lg:grid-cols-6">
+        <div class="mb-10 grid gap-4 grid-cols-3 grid-rows-2 sm:grid-cols-5 lg:grid-cols-6 lg:grid-rows-1">
           @for ($i = 0; $i < 6; $i++)
             <div class="flex justify-center items-center flex-col  my-3 w-[100px]">
-              <div class="w-[70px] mb-2 h-[70px] rounded-full border border-purple-700 flex justify-center items-center">
-                <i class="fa-brands fa-laravel block text-4xl"></i>
+              <div class="w-[80px] mb-2 h-[80px] rounded-full bg-purple-700 flex justify-center items-center">
+                <i class="fa-brands fa-laravel block text-4xl text-white"></i>
               </div>
               <p class="font-Nunito text-gray-500 text-sm font-normal">Laravel</p>
             </div>
           @endfor
         </div>
       </div>
-    </section>
+  </section>
     <!-- End Technology stack -->
+    <!-- Footer -->
+  <footer class="w-full h-fit bg-hero-footer bg- bg-cover bg-center bg-gray-900 py-10">
+      <div class="w-[90%] mx-auto flex justify-between items-center flex-col md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px]">
+        <!--Upper -->
+        <div class="lg:grid lg:gap-4 lg:grid-cols-4 lg:grid-rows-1 lg:h-[300px]">
+          <!--Logo-->
+          <div class="min-w-[290px] my-5 flex justify-center items-center flex-col lg:my-0 lg:w-[200px] lg:justify-start">
+            <div class="">
+              <a href="#" class="">
+                <img class="w-[50px]" src="/assets/images/originale-logo-webizy-1.png" alt="webizy-code-logo">
+              </a>
+            </div>
+            <div class="my-2">
+              <p class="text-base font-Nunito text-gray-500 px-2 text-center">
+                We design exceptional digital products to streamline your business processes and save resources.
+              </p>
+            </div>
+            <!--Icons -->
+            <div class="my-3 inline-block">
+              <a href="#"><i class="fa-brands fa-github text-purple-700 text-2xl mr-2"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin text-purple-700 text-2xl mr-2"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram text-purple-700 text-2xl mr-2"></i></a>
+            </div>
+          </div>
+          <!-- Info & Notices -->
+          <div class="min-w-[290px] my-5 lg:w-[200px] lg:my-0">
+            <div>
+              <h4 class="text-white font-ReadexPro text-2xl font-semibold text-center">Info & Notices</h4>
+            </div>
+            <div class="">
+              <p class="text-base font-normal font-Nunito text-gray-500 text-center my-2">Legal Notice</p>
+              <p class="text-base font-normal font-Nunito text-gray-500 text-center my-2">Privacy Policy</p>
+              <p class="text-base font-normal font-Nunito text-gray-500 text-center my-2">Cookies Policy</p>
+            </div>
+          </div>
+          <!--Contact -->
+          <div class="min-w-[290px] lg:w-[200px]">
+            <div>
+              <h4 class="text-white font-ReadexPro text-2xl font-semibold text-center">Contact</h4>
+            </div>
+            <!--Address -->
+            <div class="flex justify-start items-center flex-col my-2 lg:flex-row">
+              <!--icon -->
+              <div class="">
+                <i class="fa-solid fa-address-book text-2xl text-purple-700"></i>
+              </div>
+              <div class="">
+                <p class="text-base font-normal font-Nunito text-gray-500 text-center my-2 px-2">V. P. Čkalova 449/10, Bubeneč (Praha 6), 160 00 Praha</p>
+              </div>
+            </div>
+            <!--pHONE -->
+            <div class="flex justify-start items-center flex-col my-2 lg:flex-row">
+              <!--icon -->
+              <div class="flex justify-start items-center">
+                <i class="fa-solid fa-phone text-2xl text-purple-700"></i>
+              </div>
+              <div>
+                <p class="text-base font-normal font-Nunito text-gray-500 text-center my-2 px-2">+420 999 999 999</p>
+              </div>
+            </div>
+            <!--Email -->
+            <div class="flex justify-start items-center flex-col my-2 lg:flex-row">
+              <!--icon -->
+              <div class="flex justify-start items-center">
+               <i class="fa-solid fa-envelope text-2xl text-purple-700"></i>
+              </div>
+              <div>
+                <p class="text-base font-normal font-Nunito text-gray-500 text-center my-2 px-2">info@webizycode.com</p>
+              </div>
+            </div>
+          </div>
+          <!-- News Letters -->
+          <div class="min-w-[290px] my-5 lg:w-[200px] lg:my-0">
+            <div class="mb-5">
+              <h4 class="text-white font-ReadexPro text-2xl font-semibold text-center">Get the lastest Info</h4>
+            </div>
+            <form class="sm:flex sm:justify-center sm:items-center sm:flex-col">
+              <input type="text" placeholder="Your Email" class="border border-purple-700 text-gray-400 text-base font-normal bg-transparent rounded-md w-full sm:w-[300px] lg:w-[150px] xl:w-[200px]">
+              <button type="submit" class="block text-center text-base font-semibold text-white bg-purple-700 w-[150px] mx-auto py-3 my-5 rounded-full hover:bg-black hover:text-white hover:font-medium uppercase">Subscribe</button>
+              
+            </form>
+          </div>
+        </div>
+        <!--Bottom -->
+        <div class="mt-10 border-t w-full border-t-purple-700 h-20 flex justify-center items-center">
+          <p class="text-base font-normal font-Nunito text-gray-500 text-center px-2">Copyright 2023. All rights reserved. Code with <span class="text-red-800">Laravel</span> by <span class="text-purple-700">WebizyCode</span></p>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
   </body>
   <script src="/assets/js/index.js  <div>
     <small>Our Workflow</small>
