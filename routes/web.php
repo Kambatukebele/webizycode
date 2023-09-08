@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -23,16 +24,48 @@ Route::get('/', function () {
 // Home Route 
 Route::get('/home', function () {
     return View('/home'); 
-});
+})->name('home');
 
 //Services Routes => To show all services
 Route::get('/services', function (){
-    return view('/service');
-});
+    return view('services.index');
+})->name('services');
+Route::get('/services/wordpress_development', function (){
+    return view('services/wordpress_development');
+})->name('services.wordpress');
+Route::get('/services/shopify_development', function (){
+    return view('services/shopify_development');
+})->name('services.shopify');
+Route::get('/services/laravel_development', function (){
+    return view('services/Laravel_development');
+})->name('services.laravel');
+Route::get('services/fullstack_development', function (){
+    return view('/services/fullstack_development');
+})->name('services.fullstack');
+Route::get('/services/facebook-adverstisement', function (){
+    return view('services/facebook-adverstisement');
+})->name('services.facebook');
+Route::get('/services/google-advertisement', function (){
+    return view('services/google-advertisement');
+})->name('services.google');
+
+//Blog
+Route::get('/blog', [BlogController::class, 'index'])->name('blog');
+Route::get('/blog/{id}/{title}', [BlogController::class, 'single-blog'])->name('single-blog');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
+//PortFolio
+Route::get('/portfolio', function (){
+    return view('portfolio');
+})->name('portfolio');
+
+//contact-us
+Route::get('/contact-us', function (){
+    return view('contact-us');
+})->name('contact-us');
 
 // Post
 Route::get('/post', [PostController::class, 'index'])->middleware(['auth', 'verified'])->name('post.index');
