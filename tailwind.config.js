@@ -1,5 +1,5 @@
-import defaultTheme from 'tailwindcss/defaultTheme';
-import forms from '@tailwindcss/forms';
+import defaultTheme from "tailwindcss/defaultTheme";
+import forms from "@tailwindcss/forms";
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -16,11 +16,13 @@ export default {
                 NunitoSans: ["Nunito Sans", "sans - serif"],
                 Nunito: ["Nunito", "sans - serif"],
             },
-            backgroundImage : {
-                'hero-upper':"url('/public/assets/images/bg-image.png')",
-                'hero-middle': "url('/public/assets/images/ft-bg-2.png')",
-                'hero-how-we-work' : "url('/public/assets/images/slider-shape-img.png')",
-                'hero-footer' : "url('/public/assets/images/footer-bg-images.png')",
+            backgroundImage: {
+                "hero-upper": "url('/public/assets/images/bg-image.png')",
+                "hero-middle": "url('/public/assets/images/ft-bg-2.png')",
+                "hero-how-we-work":
+                    "url('/public/assets/images/slider-shape-img.png')",
+                "hero-footer":
+                    "url('/public/assets/images/footer-bg-images.png')",
             },
             keyframes: {
                 SlideInLeft: {
@@ -35,7 +37,6 @@ export default {
                     "0%": { transform: "translateX(-300px)" },
                     "100%": { transform: "translateX(0)" },
                 },
-                
             },
             animation: {
                 SlideInLeft: "SlideInLeft 0.3s ease-in",

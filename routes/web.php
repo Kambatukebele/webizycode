@@ -26,6 +26,11 @@ Route::get('/home', function () {
     return View('/home'); 
 })->name('home');
 
+// Home Route 
+Route::get('/test', function () {
+    return View('test'); 
+});
+
 //Services Routes => To show all services
 Route::get('/services', function (){
     return view('services.index');
@@ -39,9 +44,9 @@ Route::get('/services/shopify_development', function (){
 Route::get('/services/laravel_development', function (){
     return view('services/Laravel_development');
 })->name('services.laravel');
-Route::get('services/fullstack_development', function (){
-    return view('/services/fullstack_development');
-})->name('services.fullstack');
+Route::get('services/tiktok', function (){
+    return view('/services/tiktok');
+})->name('services.tiktok');
 Route::get('/services/facebook-adverstisement', function (){
     return view('services/facebook-adverstisement');
 })->name('services.facebook');

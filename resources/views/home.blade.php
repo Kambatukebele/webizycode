@@ -1,219 +1,124 @@
-<!DOCTYPE html>
-<html lang="en">
-
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google Fonts -->
-    <!-- Readex Pro -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap"
-      rel="stylesheet">
-    <!-- Nunito sans -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap"
-      rel="stylesheet">
-    <!-- Nunito -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
-      rel="stylesheet">
-    <!-- End Google Fonts -->
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <!-- Vite -->
-    @vite('resources/css/app.css')
-    <title>Document</title>
-  </head>
-
-  <body class="bg-gray-50">
-    <!--Hidden Navigation and logo for Small devices -->
-    {{-- <nav class="bg-white relative w-full lg:hidden">
-      <div class="flex justify-between items-center py-2 w-[90%] mx-auto sm:max-w-[600px] md:max-w-[700px] ">
-        <!--Logo -->
-        <div class="block">
-          <a href="{{ route('home') }}" class="">
-            <img class="w-[30px]" src="/assets/images/originale-logo-webizy-1.png" alt="webizy-code-logo">
-          </a>
-        </div>
-        <!--Hamburger Menu-->
-        <div class="block cursor-pointer" id="hamburger-menu">
-          <i class="fa-solid fa-bars block text-xl"></i>
-        </div>
-        <!-- Close Menu -->
-        <div class="hidden cursor-pointer" id="close-menu">
-          <i class="fa-solid fa-xmark text-xl"></i>
-        </div>
+<x-web-site-layout>
+  <!--Services section Title -->
+  <section class="block w-full my-5 xl:mt-24">
+    <div
+      class="block w-[90%]  mx-auto sm:w-[600px] md:w-[700px] lg:w-[900px] xl:w-[1220px] lg:flex lg:justify-between lg:items-center">
+      <!--Text-->
+      <div class="flex justify-center items-center flex-col lg:items-start lg:justify-end">
+        <small class="text-black font-Nunito text-sm font-medium">Our Workflow <span
+            class="font-bold text-purple-800">__ ___</span></small>
+        <h2 class="text-black font-ReadexPro text-4xl text-center font-bold my-3">Our Services</h2>
       </div>
-      
-      <!-- Menu -->
-      <ul class="hidden absolute w-full bg-white border z-50 py-6" id="small-device-card-menu">
-        <li class="text-center"><a class="text-black font-Nunito text-base my-5 " href="{{ route('home') }}">Home</a></li>
-        <li class="text-center"><a class="text-black font-Nunito text-base my-5 " href="{{ route('services') }}">Services</a></li>
-        <li class="text-center"><a class="text-black font-Nunito text-base my-5 " href="{{ route('blog') }}">Blog</a></li>
-        <li class="text-center"><a class="text-black font-Nunito text-base my-5 " href="{{ route('portfolio') }}">Portfolio</a></li>
-        <li class="text-center">
-          <a class="text-black font-Nunito text-base my-5 " href="{{ route('contact-us') }}">Contact Us</a></li>
-      </ul>
-    </nav> --}}
-    <!--ENd Hidden Navigation and logo for Small devices -->
-    <!-- Header -->
-    <x-header-layout />
-    <!-- Hidden Header for Small devices -->
-    <!--Nav menu on scroll -->
-    <!-- Navigation and logo -->
-   {{-- <header class="lg:w-full lg:bg-red-500">
-    <div class="md:max-w-[700px] mx-auto lg:max-w-[900px] xl:max-w-[1220px]">
-      <nav
-        class="hidden lg:bg-green-500 lg:w-full  lg:z-10 lg:flex lg:justify-between lg:items-center ">
-        <!-- Logo -->
-        <div class="hidden lg:block">
-          <a href="{{ url('/') }}" class="">
-            <img class="w-[50px]" src="/assets/images/originale-logo-webizy-1.png" alt="webizy-code-logo">
-          </a>
-        </div>
-        <!-- Navigation Menu-->
-        <ul class="lg:flex lg:justify-between lg:items-center lg:w-[400px]">
-          <li class="lg:text-white lg:text-base lg:font-normal hover:border-b-2 hover:border-white transition-all"><a class=""
-              href="{{ route('home') }}">Home</a></li>
-          <li class="lg:relative lg:text-white lg:text-base lg:font-normal hover:border-b-2 hover:border-white transition-all">
-            <a class=""
-              href="{{ route('services') }}">Services</a>
-              <div class="hidden lg:absolute lg:block lg:bg-white lg:w-[200px] lg:mt-2 lg:z-10 lg:rounded-md">
-                <a class="hidden lg:block lg:text-black lg:my-3 lg:font-Nunito lg:px-3 lg:text-sm hover:underline hover:text-purple-700"
-                  href="{{ route('services.wordpress') }}">WordPress Development</a>
-                <a class="hidden lg:block lg:text-black lg:my-3 lg:font-Nunito lg:px-3 lg:text-sm hover:underline hover:text-purple-700"
-                  href="{{ route('services.shopify') }}">Shopify Development</a>
-                <a class="hidden lg:block lg:text-black lg:my-3 lg:font-Nunito lg:px-3 lg:text-sm hover:underline hover:text-purple-700"
-                  href="{{ route('services.laravel') }}">Laravel Development</a>
-                <a class="hidden lg:block lg:text-black lg:my-3 lg:font-Nunito lg:px-3 lg:text-sm hover:underline hover:text-purple-700"
-                  href="{{ route('services.fullstack') }}">FullStack Development</a>
-                <a class="hidden lg:block lg:text-black lg:my-3 lg:font-Nunito lg:px-3 lg:text-sm hover:underline hover:text-purple-700"
-                  href="{{ route('services.google') }}">Google ADS</a>
-                <a class="hidden lg:block lg:text-black lg:my-3 lg:font-Nunito lg:px-3 lg:text-sm hover:underline hover:text-purple-700"
-                  href="{{ route("services.facebook") }}">Facebook ADS</a>
-              </div>
-            </li>
-          <li class="lg:text-white lg:text-base lg:font-normal hover:border-b-2 hover:border-white transition-all"><a class=""
-              href="{{ route('blog') }}">Blog</a></li>
-          <li class="lg:text-white lg:text-base lg:font-normal hover:border-b-2 hover:border-white transition-all"><a class=""
-              href="{{ route('portfolio') }}">Portfolio</a></li>
-          <li class="lg:text-white lg:text-base lg:font-normal hover:border-b-2 hover:border-white transition-all"><a class=""
-              href="{{ route('contact-us') }}">Contact Us</a></li>
-          
-        </ul>
-        <!-- CTA -->
-        <div class="block">
-          <a class="block text-center text-base font-normal w-[200px] mx-auto py-3 my-9 rounded-full uppercase bg-transparent border-2 border-white text-white hover:bg-black hover:font-semibold transition-all"
-            href="$">Free Consultancy</a>
-        </div>
-      </nav>
+      <!--BTN-->
+      <div>
+        <a class="block text-center text-base font-semibold text-white bg-purple-700 w-[150px] mx-auto py-3 my-5 rounded-full hover:bg-black hover:text-white hover:font-medium uppercase"
+          href="{{ route('services') }}">
+          Learn More
+        </a>
+      </div>
     </div>
-   </header> --}}
-    <!-- end Navigation and logo -->
-    <!--Nav menu on scroll -->
-    <!--Services section Title -->
-    <section class="block w-full my-5 xl:mt-24">
-      <div class="block w-[90%]  mx-auto sm:w-[600px] md:w-[700px] lg:w-[900px] xl:w-[1220px] lg:flex lg:justify-between lg:items-center">
-        <!--Text-->
-        <div class="flex justify-center items-center flex-col lg:items-start lg:justify-end">
-          <small class="text-black font-Nunito text-sm font-medium">Our Workflow <span class="font-bold text-purple-800">__ ___</span></small>
-          <h2 class="text-black font-ReadexPro text-4xl text-center font-bold my-3">Our Services</h2>
-        </div>
-        <!--BTN-->
-        <div>
-          <a class="block text-center text-base font-semibold text-white bg-purple-700 w-[150px] mx-auto py-3 my-5 rounded-full hover:bg-black hover:text-white hover:font-medium uppercase"
-            href="#">
-            Learn More
-          </a>
-        </div>
+  </section>
+  <!--End Services section Title -->
+  <!--Services box description -->
+
+  <section class="w-full">
+    <div
+      class="block w-[90%]  mx-auto sm:w-[600px] md:w-[700px] lg:w-[900px] xl:w-[1220px] lg:flex lg:justify-between lg:items-center">
+      <!--Box -->
+      <x-card-one>
+        <x-slot:cardOneIcon>
+          <i class="fa-brands fa-wordpress text-4xl"></i>
+        </x-slot:cardOneIcon>
+        <x-slot:cardOneTitle>
+          WordPress Development
+        </x-slot:cardOneTitle>
+        <x-slot:cardOneDescription>
+          "Unlock the Power of Digital with our WordPress Wizards! 🚀 Elevate your online presence with custom WordPress
+          solutions
+          that blend innovation, creativity, and performance. We turn pixels into profits, one pixel at a time! 💻✨
+          #WordPressMagic #WebDevMasters"
+        </x-slot:cardOneDescription>
+        <x-slot:cardOneLink>
+          {{ route('services.wordpress') }}
+        </x-slot:cardOneLink>
+      </x-card-one>
+      <x-card-one>
+        <x-slot:cardOneIcon>
+          <i class="fa-brands fa-laravel text-4xl"></i>
+        </x-slot:cardOneIcon>
+        <x-slot:cardOneTitle>
+          Laravel Development
+        </x-slot:cardOneTitle>
+        <x-slot:cardOneDescription>
+          "Crafting digital masterpieces with Laravel! 🛠️ Elevate your web presence with our expert Laravel development
+          team. We
+          turn your ideas into elegant, high-performance web solutions. Your success, our code! 💡💼 #LaravelMasters
+          #WebDevExcellence"
+        </x-slot:cardOneDescription>
+        <x-slot:cardOneLink>
+          {{ route('services.laravel') }}
+        </x-slot:cardOneLink>
+      </x-card-one>
+      <x-card-one>
+        <x-slot:cardOneIcon>
+          <i class="fa-brands fa-shopify text-4xl"></i>
+        </x-slot:cardOneIcon>
+        <x-slot:cardOneTitle>
+          Shopify Development
+        </x-slot:cardOneTitle>
+        <x-slot:cardOneDescription>
+          "Shopify Superheroes at Your Service! 🛍️ Transform your e-commerce dreams into reality with our Shopify
+          development
+          expertise. From store setup to sales growth, we're your one-stop-shop for online success. Let's build your
+          e-commerce
+          empire together! 💼🚀 #ShopifySolutions #EcommercePros"
+        </x-slot:cardOneDescription>
+        <x-slot:cardOneLink>
+          {{ route('services.shopify') }}
+        </x-slot:cardOneLink>
+      </x-card-one>
+    </div>
+  </section>
+  <!--End Services box description -->
+
+  <!--Why choose us -->
+  <section class="w-full h-fit py-7 my-10">
+    <div
+      class="block w-[90%]  mx-auto sm:w-[600px] md:w-[700px] lg:w-[900px] lg:flex lg:justify-between lg:items-center xl:w-[1220px] xl:items-start">
+      <!--Image -->
+      <div class="w-[250px] mx-auto lg:w-[500px] xl:w-[600px]">
+        <img class="w-full h-full object-cover object-center" src="/assets/images/64351ff45a3851681203188.png" alt="">
       </div>
-    </section>
-    <!--End Services section Title -->
-    <!--Services box description -->
-    <section class="w-full">
-      <div class="block w-[90%]  mx-auto sm:w-[600px] md:w-[700px] lg:w-[900px] xl:w-[1220px] lg:flex lg:justify-between lg:items-center">
-        <!--Box -->
-        @for ($i = 0; $i < 3; $i++)
-          <div class="w-full mx-auto flex flex-col justify-center items-start rounded-md p-5 my-3 bg-white shadow-lg hover:bg-gray-100 hover:shadow-2xl sm:max-w-[550px] lg:max-w-[280px]  lg:items-center xl:max-w-[390px]">
-          <!--Icon -->
-            <div class="block lg:flex lg:justify-center lg:items-center my-5">
-              <i class="fa-brands fa-wordpress text-4xl"></i>
-            </div>
-            <!-- Title -->
-            <div class="my-3 lg:mt-0">
-              <h3 class="text-black font-ReadexPro text-2xl font-semibold lg:text-center">WordPress Development</h3>
-            </div>
-            <!-- Description -->
-            <div class="mb-1">
-              <p class="font-Nunito text-gray-500 font-normal text-base lg:text-center">
-                "Unlock the Power of Digital with our WordPress Wizards! 🚀 Elevate your online presence with custom WordPress
-                solutions
-                that blend innovation, creativity, and performance. We turn pixels into profits, one pixel at a time! 
-              </p>
-            </div>
-            <div class="block">
-              <a class="block text-center text-base font-semibold text-white bg-purple-700 w-[150px] mx-auto py-3 my-5 rounded-full hover:bg-black hover:text-white hover:font-medium uppercase"
-                href="#">
-                Learn More
-              </a>
-            </div>        
-        </div>
-        @endfor
-      </div>
-    </section>
-    <!--End Services box description -->
-    <!--How Can We Help -->
-    {{-- <section class="w-full my-12 h-fit bg-green-500">
-      <div class="w-[90%] mx-auto rounded-lg bg-purple-700 bg-hero-middle bg-cover bg-no-repeat bg-center">
-        <div class="px-2 py-3">
-          <h3 class="text-white font-ReadexPro text-4xl font-semibold text-center mb-2">How can we help you?</h3>
-          <p class="text-white font-Nunito font-normal text-base text-center">Feel free to reach out to us with no commitment; we can tailor our services to fit your requirements.</p>
-          <div class="block">
-            <a class="block text-center text-base font-semibold text-purple-700 bg-white  mx-auto p-3 my-5 rounded-full hover:bg-black hover:text-white hover:font-medium uppercase animate-bounce transition-all"
-              href="#">
-              Would you like to discuss your project?
-            </a>
-          </div>
-        </div>
-        <div class="hidden">
-          <img src="/assets/images/mobile-sml1.png" alt="">
-        </div>
-      </div>
-    </section> --}}
-    <!--End How Can We Help -->
-    <!--Why choose us -->
-    <section class="w-full h-fit py-7 my-10">
-      <div class="block w-[90%]  mx-auto sm:w-[600px] md:w-[700px] lg:w-[900px] lg:flex lg:justify-between lg:items-center xl:w-[1220px] xl:items-start">
-        <!--Image -->
-        <div class="w-[250px] mx-auto lg:w-[500px] xl:w-[600px]">
-          <img class="w-full h-full object-cover object-center" src="/assets/images/64351ff45a3851681203188.png" alt="">
-        </div>
-        <!--Text -->
-        <div class="block  mt-5 lg:w-[400px] xl:w-[600px]">
-          <h2 class="mb-5 font-semibold font-ReadexPro text-black text-4xl text-center">Why Us? </h2>
-          <p class="font-normal font-Nunito text-gray-500 text-base">
-            With years of experience in the web development industry, our team has honed its skills to deliver top-notch
-            solutions. Your satisfaction is our priority. We maintain open communication channels throughout the project, keeping you involved
-            at every stage and addressing your concerns promptly.
-          </p>
-           <br>
-          <p class="font-normal font-Nunito text-gray-500 text-base">
-            We don't believe in one-size-fits-all solutions. Each project is unique, and we tailor our services to meet your
-            specific needs. Whether it's a small business website or a complex e-commerce platform, we've got you covered.
-          </p>
-          <br>
-          <p class="font-normal font-Nunito text-gray-500 text-base">
-            We offer cost-effective solutions without compromising on quality. Our pricing is transparent, and we work within your
-            budget. Our commitment doesn't end at launch. We provide ongoing maintenance and support to keep your website or application
-            running smoothly and up to date.
-          </p>
-          
-          {{-- <p>We stay at the forefront of technology trends, using the latest tools and frameworks to build websites and applications
+      <!--Text -->
+      <div class="block  mt-5 lg:w-[400px] xl:w-[600px]">
+        <h2 class="mb-5 font-semibold font-ReadexPro text-black text-4xl text-center">Why Us? </h2>
+        <p class="font-normal font-Nunito text-gray-500 text-base">
+          With years of experience in the web development industry, our team has honed its skills to deliver
+          top-notch
+          solutions. Your satisfaction is our priority. We maintain open communication channels throughout the
+          project,
+          keeping you involved
+          at every stage and addressing your concerns promptly.
+        </p>
+        <br>
+        <p class="font-normal font-Nunito text-gray-500 text-base">
+          We don't believe in one-size-fits-all solutions. Each project is unique, and we tailor our services to
+          meet
+          your
+          specific needs. Whether it's a small business website or a complex e-commerce platform, we've got you
+          covered.
+        </p>
+        <br>
+        <p class="font-normal font-Nunito text-gray-500 text-base">
+          We offer cost-effective solutions without compromising on quality. Our pricing is transparent, and we work
+          within your
+          budget. Our commitment doesn't end at launch. We provide ongoing maintenance and support to keep your
+          website
+          or application
+          running smoothly and up to date.
+        </p>
+
+        {{-- <p>We stay at the forefront of technology trends, using the latest tools and frameworks to build websites and applications
           that are not only functional but also future-proof.
           </p>
             <br>
@@ -226,180 +131,216 @@
             We take the security of your data and your users seriously. Our development process includes robust security measures to
             protect your online presence from threats.
           </p> --}}
-          
-        </div>
+
       </div>
-    </section>
-    <!--End Why choose us -->
-    <!-- How we Work -->
-    <section class="w-full h-fit bg-gray-100 my-12 py-10">
-      <div class="w-[90%] mx-auto md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px]">
-        <!--Upper -->
-        <div class="mb-10">
-          <h3 class="text-black font-semibold text-3xl text-center mb-5">How We Work</h3>
-          <p class="text-sm text-gray-400 font-normal text-center">
-            We utilize Scrum as our operational framework, an agile methodology focused on delivering product value in short
-            timeframes. It is grounded in three core principles: transparency, inspection, and adaptation.
-          </p>
-          <p class="text-sm text-gray-400 font-normal text-center">
-            Our creative process is rooted in the Design Thinking methodology. We aim to gain a deep understanding of your needs and
-            offer solutions that address your users' genuine concerns. This approach is iterative and non-linear, allowing us to
-            generate a multitude of innovative ideas to tackle complex challenges and optimize your procedures and resources
-            effectively.
-          </p>
-        </div>
-        <!-- body section -->
-        <div class="mb-10 lg:grid lg:gap-4 lg:grid-cols-2 lg:grid-rows-2 xl:grid-cols-3">
-          @for ($i = 0; $i < 6; $i++) 
-          {{-- Card --}}
-           <div class="bg-white my-4 rounded-lg p-5 min-w-[290px] mx-auto shadow-xl">
-              <div class="flex justify-end items-center text-xl font-NunitoSans text-gray-200">
-                01
-              </div>
-              <div class="flex justify-center items-center flex-col">
-                <div class="flex justify-center items-center  mt-1 mb-3">
-                  <i class="fa-solid fa-list-check block text-5xl text-purple-700"></i>
-                </div>
-                <div class="md:max-w-[550px]">
-                  <h4 class="text-black text-center font-ReadexPro font-semibold text-2xl mb-2">Fast Performance</h4>
-                  <p class="text-base text-gray-400 font-normal text-center">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quasi doloribus cumque voluptate blanditiis!
-                    Corporis nihil quia vel quos nostrum alias perspiciatis, sint odio eligendi ab doloribus nesciunt perferendis
-                    ipsam.
-                  </p>
-                </div>
-              </div>
-            </div>
-          @endfor
-        </div>
+    </div>
+  </section>
+  <!--End Why choose us -->
+  <!-- How we Work -->
+  <section class="w-full h-fit bg-gray-100 my-12 py-10">
+    <div class="w-[90%] mx-auto md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px]">
+      <!--Upper -->
+      <div class="mb-10">
+        <h3 class="text-black font-semibold text-3xl text-center mb-5">How We Work</h3>
+        <p class="text-sm text-gray-400 font-normal text-center">
+          We utilize Scrum as our operational framework, an agile methodology focused on delivering product value in
+          short
+          timeframes. It is grounded in three core principles: transparency, inspection, and adaptation.
+        </p>
+        <p class="text-sm text-gray-400 font-normal text-center">
+          Our creative process is rooted in the Design Thinking methodology. We aim to gain a deep understanding of
+          your
+          needs and
+          offer solutions that address your users' genuine concerns. This approach is iterative and non-linear,
+          allowing
+          us to
+          generate a multitude of innovative ideas to tackle complex challenges and optimize your procedures and
+          resources
+          effectively.
+        </p>
       </div>
-    </section>
-    <!-- End How we Work -->
-    <!-- Technology stack -->
-   <section class="w-full h-fit  my-12 py-10 bg-white">
-      <div class="w-[90%] mx-auto md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px]">
-        <!--Upper -->
-        <div class="mb-10">
-          <h3 class="text-black font-semibold text-3xl text-center mb-5">Stack of Technologies</h3>
-          <p class="text-sm text-gray-400 font-normal text-center">
-           Our development team is proficient in utilizing cutting-edge, secure, robust, and high-performance technologies for
-          projects of any scale and purpose.
-          </p>
-          <p class="text-sm text-gray-400 font-normal text-center">
-            Our creative process is rooted in the Design Thinking methodology. We aim to gain a deep understanding of your
-            needs and
-            offer solutions that address your users' genuine concerns. This approach is iterative and non-linear, allowing
-            us to
-            generate a multitude of innovative ideas to tackle complex challenges and optimize your procedures and resources
-            effectively.
-          </p>
-        </div>
-        <!-- body section -->
-        <div class="mb-10 grid gap-4 grid-cols-3 grid-rows-2 sm:grid-cols-5 lg:grid-cols-6 lg:grid-rows-1">
-          @for ($i = 0; $i < 6; $i++)
-            <div class="flex justify-center items-center flex-col  my-3 w-[100px]">
-              <div class="w-[80px] mb-2 h-[80px] rounded-full bg-purple-700 flex justify-center items-center">
-                <i class="fa-brands fa-laravel block text-4xl text-white"></i>
-              </div>
-              <p class="font-Nunito text-gray-500 text-sm font-normal">Laravel</p>
-            </div>
-          @endfor
-        </div>
+      <!-- body section -->
+      <div class="mb-10 lg:grid lg:gap-4 lg:grid-cols-2 lg:grid-rows-2 xl:grid-cols-3">
+        <x-card-two>
+          <x-slot:cardTwoNumber>
+            1
+          </x-slot:cardTwoNumber>
+          <x-slot:cardTwoIcon>
+            <i class="fa-solid fa-list-check block text-5xl text-purple-700"></i>
+          </x-slot:cardTwoIcon>
+          <x-slot:cardTwoTitle>
+            Discovery and Requirement Analysis
+          </x-slot:cardTwoTitle>
+          <x-slot:cardTwoDescription>
+            At the outset, we engage in detailed discussions with you to understand your business goals and
+            requirements. We
+            identify your target audience, project objectives, and technological needs.
+          </x-slot:cardTwoDescription>
+        </x-card-two>
+        {{-- 2 --}}
+        <x-card-two>
+          <x-slot:cardTwoNumber>
+            2
+          </x-slot:cardTwoNumber>
+          <x-slot:cardTwoIcon>
+            <i class="fa-solid fa-magnifying-glass block text-5xl text-purple-700"></i>
+          </x-slot:cardTwoIcon>
+          <x-slot:cardTwoTitle>
+            Planning and Strategy
+          </x-slot:cardTwoTitle>
+          <x-slot:cardTwoDescription>
+            After gathering insights, we create a comprehensive project plan and strategy. This includes defining
+            project
+            milestones, timelines, and a development roadmap. We also outline the technology stack and design concepts
+            to be used.
+          </x-slot:cardTwoDescription>
+        </x-card-two>
+        {{-- 3 --}}
+        <x-card-two>
+          <x-slot:cardTwoNumber>
+            3
+          </x-slot:cardTwoNumber>
+          <x-slot:cardTwoIcon>
+            <i class="fa-solid fa-pen-nib block text-5xl text-purple-700"></i>
+          </x-slot:cardTwoIcon>
+          <x-slot:cardTwoTitle>
+            Design and Prototyping
+          </x-slot:cardTwoTitle>
+          <x-slot:cardTwoDescription>
+            Our skilled designers work on creating visually appealing and user-friendly designs. We provide prototypes
+            and
+            wireframes for your review, ensuring alignment with your brand and user experience goals.
+          </x-slot:cardTwoDescription>
+        </x-card-two>
+        {{-- 4 --}}
+        <x-card-two>
+          <x-slot:cardTwoNumber>
+            4
+          </x-slot:cardTwoNumber>
+          <x-slot:cardTwoIcon>
+            <i class="fa-solid fa-code block text-5xl text-purple-700"></i>
+          </x-slot:cardTwoIcon>
+          <x-slot:cardTwoTitle>
+            Development and Testing
+          </x-slot:cardTwoTitle>
+          <x-slot:cardTwoDescription>
+            Our development team starts coding the website or web application based on the approved design and
+            requirements. We
+            follow best practices and conduct rigorous testing at each development stage to ensure a bug-free and robust
+            product.
+          </x-slot:cardTwoDescription>
+        </x-card-two>
+        {{-- 5 --}}
+        <x-card-two>
+          <x-slot:cardTwoNumber>
+            5
+          </x-slot:cardTwoNumber>
+          <x-slot:cardTwoIcon>
+            <i class="fa-solid fa-paper-plane block text-5xl text-purple-700"></i>
+          </x-slot:cardTwoIcon>
+          <x-slot:cardTwoTitle>
+            Deployment and Launch
+          </x-slot:cardTwoTitle>
+          <x-slot:cardTwoDescription>
+            Once the development and testing phases are complete, we deploy your website or application to a production
+            environment.
+            We manage all aspects of the deployment process to ensure a smooth and secure launch.
+          </x-slot:cardTwoDescription>
+        </x-card-two>
+        {{-- 6 --}}
+        <x-card-two>
+          <x-slot:cardTwoNumber>
+            6
+          </x-slot:cardTwoNumber>
+          <x-slot:cardTwoIcon>
+            <i class="fa-solid fa-screwdriver-wrench block text-5xl text-purple-700"></i>
+          </x-slot:cardTwoIcon>
+          <x-slot:cardTwoTitle>
+            Maintenance and Support
+          </x-slot:cardTwoTitle>
+          <x-slot:cardTwoDescription>
+            Our commitment doesn't end at launch. We offer ongoing maintenance and support services to address any
+            issues, perform
+            updates, and keep your website or application running smoothly. We also provide analytics and optimization
+            recommendations to enhance your online presence.
+          </x-slot:cardTwoDescription>
+        </x-card-two>
       </div>
   </section>
-    <!-- End Technology stack -->
-    <!-- Footer -->
-  <footer class="w-full h-fit bg-hero-footer bg- bg-cover bg-center bg-gray-900 py-10">
-      <div class="w-[90%] mx-auto flex justify-between items-center flex-col md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px]">
-        <!--Upper -->
-        <div class="lg:grid lg:gap-4 lg:grid-cols-4 lg:grid-rows-1 lg:h-[300px]">
-          <!--Logo-->
-          <div class="min-w-[290px] my-5 flex justify-center items-center flex-col lg:my-0 lg:w-[200px] lg:justify-start">
-            <div class="">
-              <a href="#" class="">
-                <img class="w-[50px]" src="/assets/images/originale-logo-webizy-1.png" alt="webizy-code-logo">
-              </a>
-            </div>
-            <div class="my-2">
-              <p class="text-base font-Nunito text-gray-500 px-2 text-center">
-                We design exceptional digital products to streamline your business processes and save resources.
-              </p>
-            </div>
-            <!--Icons -->
-            <div class="my-3 inline-block">
-              <a href="#"><i class="fa-brands fa-github text-purple-700 text-2xl mr-2"></i></a>
-              <a href="#"><i class="fa-brands fa-linkedin text-purple-700 text-2xl mr-2"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram text-purple-700 text-2xl mr-2"></i></a>
-            </div>
-          </div>
-          <!-- Info & Notices -->
-          <div class="min-w-[290px] my-5 lg:w-[200px] lg:my-0">
-            <div>
-              <h4 class="text-white font-ReadexPro text-2xl font-semibold text-center">Info & Notices</h4>
-            </div>
-            <div class="">
-              <p class="text-base font-normal font-Nunito text-gray-500 text-center my-2">Legal Notice</p>
-              <p class="text-base font-normal font-Nunito text-gray-500 text-center my-2">Privacy Policy</p>
-              <p class="text-base font-normal font-Nunito text-gray-500 text-center my-2">Cookies Policy</p>
-            </div>
-          </div>
-          <!--Contact -->
-          <div class="min-w-[290px] lg:w-[200px]">
-            <div>
-              <h4 class="text-white font-ReadexPro text-2xl font-semibold text-center">Contact</h4>
-            </div>
-            <!--Address -->
-            <div class="flex justify-start items-center flex-col my-2 lg:flex-row">
-              <!--icon -->
-              <div class="">
-                <i class="fa-solid fa-address-book text-2xl text-purple-700"></i>
-              </div>
-              <div class="">
-                <p class="text-base font-normal font-Nunito text-gray-500 text-center my-2 px-2">V. P. Čkalova 449/10, Bubeneč (Praha 6), 160 00 Praha</p>
-              </div>
-            </div>
-            <!--pHONE -->
-            <div class="flex justify-start items-center flex-col my-2 lg:flex-row">
-              <!--icon -->
-              <div class="flex justify-start items-center">
-                <i class="fa-solid fa-phone text-2xl text-purple-700"></i>
-              </div>
-              <div>
-                <p class="text-base font-normal font-Nunito text-gray-500 text-center my-2 px-2">+420 999 999 999</p>
-              </div>
-            </div>
-            <!--Email -->
-            <div class="flex justify-start items-center flex-col my-2 lg:flex-row">
-              <!--icon -->
-              <div class="flex justify-start items-center">
-               <i class="fa-solid fa-envelope text-2xl text-purple-700"></i>
-              </div>
-              <div>
-                <p class="text-base font-normal font-Nunito text-gray-500 text-center my-2 px-2">info@webizycode.com</p>
-              </div>
-            </div>
-          </div>
-          <!-- News Letters -->
-          <div class="min-w-[290px] my-5 lg:w-[200px] lg:my-0">
-            <div class="mb-5">
-              <h4 class="text-white font-ReadexPro text-2xl font-semibold text-center">Get the lastest Info</h4>
-            </div>
-            <form class="sm:flex sm:justify-center sm:items-center sm:flex-col">
-              <input type="text" placeholder="Your Email" class="border border-purple-700 text-gray-400 text-base font-normal bg-transparent rounded-md w-full sm:w-[300px] lg:w-[150px] xl:w-[200px]">
-              <button type="submit" class="block text-center text-base font-semibold text-white bg-purple-700 w-[150px] mx-auto py-3 my-5 rounded-full hover:bg-black hover:text-white hover:font-medium uppercase">Subscribe</button>
-              
-            </form>
-          </div>
-        </div>
-        <!--Bottom -->
-        <div class="mt-10 border-t w-full border-t-purple-700 h-20 flex justify-center items-center">
-          <p class="text-base font-normal font-Nunito text-gray-500 text-center px-2">Copyright 2023. All rights reserved. Code with <span class="text-red-800">Laravel</span> by <span class="text-purple-700">WebizyCode</span></p>
-        </div>
+  <!-- End How we Work -->
+  <!-- Technology stack -->
+  <section class="w-full h-fit  my-12 py-10 bg-white">
+    <div class="w-[90%] mx-auto md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px]">
+      <!--Upper -->
+      <div class="mb-10">
+        <h3 class="text-black font-semibold text-3xl text-center mb-5">Stack of Technologies</h3>
+        <p class="text-sm text-gray-400 font-normal text-center">
+          Our development team is proficient in utilizing cutting-edge, secure, robust, and high-performance
+          technologies for
+          projects of any scale and purpose.
+        </p>
+        <p class="text-sm text-gray-400 font-normal text-center">
+          Our creative process is rooted in the Design Thinking methodology. We aim to gain a deep understanding of your
+          needs and
+          offer solutions that address your users' genuine concerns. This approach is iterative and non-linear, allowing
+          us to
+          generate a multitude of innovative ideas to tackle complex challenges and optimize your procedures and
+          resources
+          effectively.
+        </p>
       </div>
-    </footer>
-    
-    <!-- End Footer -->
-  </body>
-  <script src="/assets/js/index.js"></script>
-
-</html>
+      <!-- body section -->
+      <div class="mb-10 grid gap-4 grid-cols-3 grid-rows-2 sm:grid-cols-5 lg:grid-cols-6 lg:grid-rows-1">
+        <x-stack-tech>
+          <x-slot:stackIcon>
+            <i class="fa-brands fa-laravel block text-4xl text-white"></i>
+          </x-slot:stackIcon>
+          <x-slot:stackTitle>
+            Laravel
+          </x-slot:stackTitle>
+        </x-stack-tech>
+        <x-stack-tech>
+          <x-slot:stackIcon>
+            <i class="fa-brands fa-react block text-4xl text-white"></i>
+          </x-slot:stackIcon>
+          <x-slot:stackTitle>
+            Reactjs
+          </x-slot:stackTitle>
+        </x-stack-tech>
+        <x-stack-tech>
+          <x-slot:stackIcon>
+            <i class="fa-brands fa-wordpress block text-4xl text-white"></i>
+          </x-slot:stackIcon>
+          <x-slot:stackTitle>
+            WordPress
+          </x-slot:stackTitle>
+        </x-stack-tech>
+        <x-stack-tech>
+          <x-slot:stackIcon>
+            <i class="fa-brands fa-shopify block text-4xl text-white"></i>
+          </x-slot:stackIcon>
+          <x-slot:stackTitle>
+            Shopify
+          </x-slot:stackTitle>
+        </x-stack-tech>
+        <x-stack-tech>
+          <x-slot:stackIcon>
+            <i class="fa-brands fa-aws block text-4xl text-white"></i>
+          </x-slot:stackIcon>
+          <x-slot:stackTitle>
+            AWS
+          </x-slot:stackTitle>
+        </x-stack-tech>
+        <x-stack-tech>
+          <x-slot:stackIcon>
+            <i class="fa-brands fa-docker block text-4xl text-white"></i>
+          </x-slot:stackIcon>
+          <x-slot:stackTitle>
+            Docker
+          </x-slot:stackTitle>
+        </x-stack-tech>
+      </div>
+    </div>
+  </section>
+  <!-- End Technology stack -->
+</x-web-site-layout>
