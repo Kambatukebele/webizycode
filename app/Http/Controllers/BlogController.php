@@ -13,9 +13,14 @@ class BlogController extends Controller
         return view('blog.index');
     }
 
-    public function singlepost()
+    public function singleblog($id, $title)
     {
-        return view('blog.single-blog'); 
+        return view('blog.single-blog', ['id' => $id, 'title' => $title]); 
+    }
+
+    public function category()
+    {
+        return view('blog.category'); 
     }
 
 
