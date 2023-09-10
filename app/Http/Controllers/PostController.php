@@ -73,7 +73,9 @@ class PostController extends Controller
      */
     public function edit(string $id)
     {
-        $posts = Post::all()->where('id', $id); 
+       
+        $posts = Post::find($id); 
+
         return view('posts.edit', ['posts' => $posts]); 
     }
 
@@ -83,7 +85,7 @@ class PostController extends Controller
     public function update(Request $request, string $id)
     {
         $posts = Post::find($id);
-       
+
         //Validation
         $validated = $request->validate([
             'featured_image' => 'image|mimes:jpg,jpeg,png,webP',

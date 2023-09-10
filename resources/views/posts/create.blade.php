@@ -16,7 +16,7 @@
             <h2 class="text-lg font-medium text-gray-900">
               {{ __('Create something amazing') }}
             </h2>
-        
+
             <p class="mt-1 text-sm text-gray-600">
               {{ __("What do you have in mind today?.") }}
             </p>
@@ -25,7 +25,8 @@
             @csrf
             <div>
               <x-input-label for="featured_image" :value="__('Featured_image')" />
-              <x-text-input id="featured_image" name="featured_image" type="file" class="mt-1 block w-full" required autofocus autocomplete="featured_image" />
+              <x-text-input id="featured_image" name="featured_image" type="file" class="mt-1 block w-full" required
+                autofocus autocomplete="featured_image" />
               <x-input-error class="mt-2" :messages="$errors->get('featured_image')" />
             </div>
             <div>
@@ -36,19 +37,22 @@
             </div>
             <div>
               <x-input-label for="category" :value="__('Category')" />
-              <select name="category" id="category" class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm mt-1 block w-full">
+              <select name="category" id="category"
+                class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm mt-1 block w-full">
                 <option value="laravel">Laravel</option>
                 <option value="php">PHP</option>
                 <option value="reactjs">Reactjs</option>
                 <option value="javascript">JavaScript</option>
-                <option value="nextjs">Nextjs</option>
-                <option value="api">API</option>
+                <option value="wordpress">WordPress</option>
+                <option value="shopify">Shopify</option>
+                <option value="socialmedia">Social Media</option>
               </select>
               <x-input-error class="mt-2" :messages="$errors->get('category')" />
             </div>
             <div>
               <x-input-label for="tags" :value="__('Tags')" />
-              <x-text-input id="tags" name="tags" type="text" class="mt-1 block w-full" required autofocus autocomplete="tags" />
+              <x-text-input id="tags" name="tags" type="text" class="mt-1 block w-full" required autofocus
+                autocomplete="tags" />
               <p class="mt-1 text-sm text-gray-600">
                 {{ __("Add tags and separare them with a commas") }}
               </p>
@@ -56,23 +60,24 @@
             </div>
             {{-- :value="old('email', $user->email)" --}}
             <div>
-              <x-input-label for="email" :value="__('Content')" />              
-              <textarea class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm" name="content"></textarea>
+              <x-input-label for="email" :value="__('Content')" />
+              <textarea class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm"
+                name="content"></textarea>
               {{-- cols="132" rows="10" --}}
               {{-- <x-text-input id="email" name="email" type="email" class="mt-1 block w-full" required autocomplete="username" /> --}}
               <x-input-error class="mt-2" :messages="$errors->get('content')" />
-        
+
               {{-- @if ($user instanceof \Illuminate\Contracts\Auth\MustVerifyEmail && ! $user->hasVerifiedEmail())
                         <div>
                           <p class="text-sm mt-2 text-gray-800">
                             {{ __('Your email address is unverified.') }}
-        
+
               <button form="send-verification"
                 class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                 {{ __('Click here to re-send the verification email.') }}
               </button>
               </p>
-        
+
               @if (session('status') === 'verification-link-sent')
               <p class="mt-2 font-medium text-sm text-green-600">
                 {{ __('A new verification link has been sent to your email address.') }}
@@ -80,21 +85,21 @@
               @endif
             </div>
             @endif --}}
-            </div>
-        
-            <div class="flex items-center gap-4">
-              <x-primary-button>{{ __('Post') }}</x-primary-button>
-        
-              {{-- @if (session('status') === 'profile-updated')
+      </div>
+
+      <div class="flex items-center gap-4">
+        <x-primary-button>{{ __('Post') }}</x-primary-button>
+
+        {{-- @if (session('status') === 'profile-updated')
                         <p x-data="{ show: true }" x-show="show" x-transition x-init="setTimeout(() => show = false, 2000)"
                           class="text-sm text-gray-600">{{ __('Saved.') }}</p>
-              @endif --}}
-            </div>
-          </form>
-        </section>
-        <!--End Form -->
+        @endif --}}
       </div>
+      </form>
+      </section>
+      <!--End Form -->
     </div>
+  </div>
   </div>
 
 </x-app-layout>

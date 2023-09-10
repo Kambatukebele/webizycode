@@ -3,7 +3,7 @@
         <img class="w-full h-full rounded-t-lg object-cover object-center" src="{{ $cardThreeImage }}" alt="">
     </div>
     <div class="md:max-w-[550px]">
-        <h4 class="text-black text-center font-ReadexPro font-semibold text-2xl my-5">
+        <h4 class="text-black text-center font-ReadexPro px-3 font-semibold text-2xl my-5">
             {{-- Fast Performance --}}
             {{ $cardThreeTitle }}
         </h4>
