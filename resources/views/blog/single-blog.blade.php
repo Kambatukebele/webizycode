@@ -15,7 +15,7 @@
             src="{{ url('uploads/'. $blog->featured_image) }}" alt="">
         </div>
         <div class="">
-          <h4 class="text-black text-left font-ReadexPro font-semibold text-4xl px-5 my-5">
+          <h4 class="text-black text-left font-ReadexPro font-semibold text-3xl px-5 my-5">
             {{-- Fast Performance --}}
             {{ $blog->title }}
           </h4>

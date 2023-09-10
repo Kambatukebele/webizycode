@@ -9,7 +9,7 @@
     <!-- Navigation Menu-->
     <ul class="lg:flex lg:justify-between lg:items-center lg:w-[400px]">
         <li class="lg:text-white lg:text-base lg:font-normal hover:border-b-2 hover:border-white transition-all"><a
-                class="" href="/">Home</a></li>
+                class="" href="{{ route('home') }}">Home</a></li>
         <li id="services"
             class="lg:relative  lg:text-white lg:text-base lg:font-normal hover:border-b-2 hover:border-white transition-all">
             <a class="" href="{{ route('services') }}">Services</a>

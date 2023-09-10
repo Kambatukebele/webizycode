@@ -61,8 +61,9 @@
                 <option value="php">PHP</option>
                 <option value="reactjs">Reactjs</option>
                 <option value="javascript">JavaScript</option>
-                <option value="nextjs">Nextjs</option>
-                <option value="api">API</option>
+                <option value="wordpress">WordPress</option>
+                <option value="shopify">Shopify</option>
+                <option value="socialmedia">Social Media</option>
               </select>
               <x-input-error class="mt-2" :messages="$errors->get('category')" />
             </div>

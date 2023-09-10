@@ -23,11 +23,50 @@ class BlogController extends Controller
         ->latest()
         ->take(3)
         ->get();
+
+        //Retrieve Only JavasScript Posts
+        $javascript = Post::where('category', 'javascript')
+        ->where('status', 'active')
+        ->latest()
+        ->take(3)
+        ->get();
+
+        //Retrieve Only PHP Posts
+        $php = Post::where('category', 'php')
+        ->where('status', 'active')
+        ->latest()
+        ->take(3)
+        ->get();
+
+        //Retrieve Only WordPress Posts
+        $wordpress = Post::where('category', 'wordpress')
+        ->where('status', 'active')
+        ->latest()
+        ->take(3)
+        ->get();
+
+        //Retrieve Only shopify Posts
+        $shopify = Post::where('category', 'shopify')
+        ->where('status', 'active')
+        ->latest()
+        ->take(3)
+        ->get();
+
+         //Retrieve Only socialmedia Posts
+        $socialmedia = Post::where('category', 'socialmedia')
+        ->where('status', 'active')
+        ->latest()
+        ->take(3)
+        ->get();
         
         return view('blog.index', [
-           
-            'laravel' => $laravel, 
-            'reactjs'=>$reactjs,
+            'laravel'       => $laravel, 
+            'reactjs'       => $reactjs,
+            'javascript'    => $javascript,
+            'php'           => $php,
+            'wordpress'     => $wordpress,
+            'shopify'       => $shopify,
+            'socialmedia'   => $socialmedia
         ]);
     }
 
@@ -41,9 +80,12 @@ class BlogController extends Controller
         ]); 
     }
 
-    public function category()
+    public function category($category)
     {
-        return view('blog.category'); 
+        $postCategory = Post::where('category', $category)
+        ->where('status', 'active')
+        ->latest()->get();
+        return view('blog.category', ['postCategory' => $postCategory]); 
     }
 
 

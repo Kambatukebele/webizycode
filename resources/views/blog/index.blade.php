@@ -82,12 +82,14 @@
         @endif
       </div>
       <div class="flex justify-center items-center">
-        <a class="block text-center bg-purple-700 w-48 text-white p-2 rounded-lg px-3" href="#">View More of Reactjs</a>
+        <a class="block text-center bg-purple-700 w-48 text-white p-2 rounded-lg px-3"
+          href="{{ route('blog.category',  $reactjsBlog->category) }}">View More of Reactjs</a>
       </div>
     </div>
   </section>
 
   {{-- Javascript --}}
+  @if($javascript)
   <section class="w-full h-fit bg-gray-100 mb-12 py-10">
     <div class="w-[90%] mx-auto md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px]">
       <!--Upper -->
@@ -98,36 +100,38 @@
       <!-- body section -->
       <div class="mb-10 lg:grid lg:gap-4 lg:grid-cols-2 lg:grid-rows-1 xl:grid-cols-3">
         {{-- Card --}}
-        @if ($reactjs)
-        @foreach ($reactjs as $reactjsBlog)
+        @foreach ($javascript as $javascriptBlog)
         <x-card-three>
           <x-slot:cardThreeImage>
-            {{ url('/uploads/'. $reactjsBlog->featured_image) }}
+            {{ url('/uploads/'. $javascriptBlog->featured_image) }}
           </x-slot:cardThreeImage>
           <x-slot:cardThreeTitle>
-            {{ $reactjsBlog->title }}
+            {{ $javascriptBlog->title }}
           </x-slot:cardThreeTitle>
           <x-slot:cardThreeDescription>
-            {{ strip_tags(\Illuminate\Support\Str::words($reactjsBlog->content, 15, '...'))  }}
+            {{ strip_tags(\Illuminate\Support\Str::words($javascriptBlog->content, 15, '...'))  }}
           </x-slot:cardThreeDescription>
           <x-slot:cardThreeLink>
-            {{ route('blog.single-blog', [$reactjsBlog->id, $reactjsBlog->title] ) }}
+            {{ route('blog.single-blog', [$javascriptBlog->id, $javascriptBlog->title] ) }}
           </x-slot:cardThreeLink>
           <x-slot:cardThreeDate>
-            {{ $reactjsBlog->created_at->format('Y-m-d') }}
+            {{ $javascriptBlog->created_at->format('Y-m-d') }}
           </x-slot:cardThreeDate>
         </x-card-three>
         @endforeach
-        @endif
       </div>
       <div class="flex justify-center items-center">
-        <a class="block text-center bg-purple-700 w-56 text-white p-2 rounded-lg px-3" href="#">View More of
+        <a class="block text-center bg-purple-700 w-56 text-white p-2 rounded-lg px-3"
+          href="{{ route('blog.category',  $javascriptBlog->category) }}">View More of
           JavaScript</a>
       </div>
     </div>
   </section>
+  @endif
+
 
   {{-- php--}}
+  @if ($php)
   <section class="w-full h-fit bg-gray-100 mb-12 py-10">
     <div class="w-[90%] mx-auto md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px]">
       <!--Upper -->
@@ -138,35 +142,40 @@
       <!-- body section -->
       <div class="mb-10 lg:grid lg:gap-4 lg:grid-cols-2 lg:grid-rows-1 xl:grid-cols-3">
         {{-- Card --}}
-        @if ($reactjs)
-        @foreach ($reactjs as $reactjsBlog)
+
+        @foreach ($php as $phpBlog)
         <x-card-three>
           <x-slot:cardThreeImage>
-            {{ url('/uploads/'. $reactjsBlog->featured_image) }}
+            {{ url('/uploads/'. $phpBlog->featured_image) }}
           </x-slot:cardThreeImage>
           <x-slot:cardThreeTitle>
-            {{ $reactjsBlog->title }}
+            {{ $phpBlog->title }}
           </x-slot:cardThreeTitle>
           <x-slot:cardThreeDescription>
-            {{ strip_tags(\Illuminate\Support\Str::words($reactjsBlog->content, 15, '...'))  }}
+            {{ strip_tags(\Illuminate\Support\Str::words($phpBlog->content, 15, '...'))  }}
           </x-slot:cardThreeDescription>
           <x-slot:cardThreeLink>
-            {{ route('blog.single-blog', [$reactjsBlog->id, $reactjsBlog->title] ) }}
+            {{ route('blog.single-blog', [$phpBlog->id, $phpBlog->title] ) }}
           </x-slot:cardThreeLink>
           <x-slot:cardThreeDate>
-            {{ $reactjsBlog->created_at->format('Y-m-d') }}
+            {{ $phpBlog->created_at->format('Y-m-d') }}
           </x-slot:cardThreeDate>
         </x-card-three>
         @endforeach
-        @endif
       </div>
+      @isset ($phpBlog->category)
       <div class="flex justify-center items-center">
-        <a class="block text-center bg-purple-700 w-48 text-white p-2 rounded-lg px-3" href="#">View More of PHP</a>
+        <a class="block text-center bg-purple-700 w-48 text-white p-2 rounded-lg px-3"
+          href="{{ route('blog.category',  $phpBlog->category) }}">View More of PHP</a>
       </div>
+      @endisset
+
     </div>
   </section>
+  @endif
 
   {{-- WordPress --}}
+  @if ($wordpress)
   <section class="w-full h-fit bg-gray-100 mb-12 py-10">
     <div class="w-[90%] mx-auto md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px]">
       <!--Upper -->
@@ -177,35 +186,38 @@
       <!-- body section -->
       <div class="mb-10 lg:grid lg:gap-4 lg:grid-cols-2 lg:grid-rows-1 xl:grid-cols-3">
         {{-- Card --}}
-        @if ($reactjs)
-        @foreach ($reactjs as $reactjsBlog)
+        @foreach ($wordpress as $wordpressBlog)
         <x-card-three>
           <x-slot:cardThreeImage>
-            {{ url('/uploads/'. $reactjsBlog->featured_image) }}
+            {{ url('/uploads/'. $wordpressBlog->featured_image) }}
           </x-slot:cardThreeImage>
           <x-slot:cardThreeTitle>
-            {{ $reactjsBlog->title }}
+            {{ $wordpressBlog->title }}
           </x-slot:cardThreeTitle>
           <x-slot:cardThreeDescription>
-            {{ strip_tags(\Illuminate\Support\Str::words($reactjsBlog->content, 15, '...'))  }}
+            {{ strip_tags(\Illuminate\Support\Str::words($wordpressBlog->content, 15, '...'))  }}
           </x-slot:cardThreeDescription>
           <x-slot:cardThreeLink>
-            {{ route('blog.single-blog', [$reactjsBlog->id, $reactjsBlog->title] ) }}
+            {{ route('blog.single-blog', [$wordpressBlog->id, $wordpressBlog->title] ) }}
           </x-slot:cardThreeLink>
           <x-slot:cardThreeDate>
-            {{ $reactjsBlog->created_at->format('Y-m-d') }}
+            {{ $wordpressBlog->created_at->format('Y-m-d') }}
           </x-slot:cardThreeDate>
         </x-card-three>
         @endforeach
-        @endif
       </div>
+      @isset ($wordpressBlog->category)
       <div class="flex justify-center items-center">
-        <a class="block text-center bg-purple-700 w-48 text-white p-2 rounded-lg px-3" href="#">All WordPress</a>
+        <a class="block text-center bg-purple-700 w-48 text-white p-2 rounded-lg px-3"
+          href="{{ route('blog.category',  $wordpressBlog->category) }}">All WordPress</a>
       </div>
+      @endisset
     </div>
   </section>
+  @endif
 
   {{-- Shopify --}}
+  @if ($shopify)
   <section class="w-full h-fit bg-gray-100 mb-12 py-10">
     <div class="w-[90%] mx-auto md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px]">
       <!--Upper -->
@@ -216,35 +228,39 @@
       <!-- body section -->
       <div class="mb-10 lg:grid lg:gap-4 lg:grid-cols-2 lg:grid-rows-1 xl:grid-cols-3">
         {{-- Card --}}
-        @if ($reactjs)
-        @foreach ($reactjs as $reactjsBlog)
+
+        @foreach ($shopify as $shopifyBlog)
         <x-card-three>
           <x-slot:cardThreeImage>
-            {{ url('/uploads/'. $reactjsBlog->featured_image) }}
+            {{ url('/uploads/'. $shopifyBlog->featured_image) }}
           </x-slot:cardThreeImage>
           <x-slot:cardThreeTitle>
-            {{ $reactjsBlog->title }}
+            {{ $shopifyBlog->title }}
           </x-slot:cardThreeTitle>
           <x-slot:cardThreeDescription>
-            {{ strip_tags(\Illuminate\Support\Str::words($reactjsBlog->content, 15, '...'))  }}
+            {{ strip_tags(\Illuminate\Support\Str::words($shopifyBlog->content, 15, '...'))  }}
           </x-slot:cardThreeDescription>
           <x-slot:cardThreeLink>
-            {{ route('blog.single-blog', [$reactjsBlog->id, $reactjsBlog->title] ) }}
+            {{ route('blog.single-blog', [$shopifyBlog->id, $shopifyBlog->title] ) }}
           </x-slot:cardThreeLink>
           <x-slot:cardThreeDate>
-            {{ $reactjsBlog->created_at->format('Y-m-d') }}
+            {{ $shopifyBlog->created_at->format('Y-m-d') }}
           </x-slot:cardThreeDate>
         </x-card-three>
         @endforeach
-        @endif
       </div>
+      @isset($shopifyBlog->category)
       <div class="flex justify-center items-center">
-        <a class="block text-center bg-purple-700 w-48 text-white p-2 rounded-lg px-3" href="#">All Shopify</a>
+        <a class="block text-center bg-purple-700 w-48 text-white p-2 rounded-lg px-3"
+          href="{{ route('blog.category',  $shopifyBlog->category) }}">All Shopify</a>
       </div>
+      @endisset
     </div>
   </section>
+  @endif
 
   {{-- Social media --}}
+  @if ($socialmedia)
   <section class="w-full h-fit bg-gray-100 mb-12 py-10">
     <div class="w-[90%] mx-auto md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px]">
       <!--Upper -->
@@ -255,33 +271,35 @@
       <!-- body section -->
       <div class="mb-10 lg:grid lg:gap-4 lg:grid-cols-2 lg:grid-rows-1 xl:grid-cols-3">
         {{-- Card --}}
-        @if ($reactjs)
-        @foreach ($reactjs as $reactjsBlog)
+        @foreach ($socialmedia as $socialmediaBlog)
         <x-card-three>
           <x-slot:cardThreeImage>
-            {{ url('/uploads/'. $reactjsBlog->featured_image) }}
+            {{ url('/uploads/'. $socialmediaBlog->featured_image) }}
           </x-slot:cardThreeImage>
           <x-slot:cardThreeTitle>
-            {{ $reactjsBlog->title }}
+            {{ $socialmediaBlog->title }}
           </x-slot:cardThreeTitle>
           <x-slot:cardThreeDescription>
-            {{ strip_tags(\Illuminate\Support\Str::words($reactjsBlog->content, 15, '...'))  }}
+            {{ strip_tags(\Illuminate\Support\Str::words($socialmediaBlog->content, 15, '...'))  }}
           </x-slot:cardThreeDescription>
           <x-slot:cardThreeLink>
-            {{ route('blog.single-blog', [$reactjsBlog->id, $reactjsBlog->title] ) }}
+            {{ route('blog.single-blog', [$socialmediaBlog->id, $socialmediaBlog->title] ) }}
           </x-slot:cardThreeLink>
           <x-slot:cardThreeDate>
-            {{ $reactjsBlog->created_at->format('Y-m-d') }}
+            {{ $socialmediaBlog->created_at->format('Y-m-d') }}
           </x-slot:cardThreeDate>
         </x-card-three>
         @endforeach
-        @endif
       </div>
+      @isset($socialmediaBlog->category)
       <div class="flex justify-center items-center">
-        <a class="block text-center bg-purple-700 w-48 text-white p-2 rounded-lg px-3" href="#">All Social posts</a>
+        <a class="block text-center bg-purple-700 w-48 text-white p-2 rounded-lg px-3"
+          href="{{ route('blog.category',  $socialmediaBlog->category) }}">All Social posts</a>
       </div>
+      @endisset
     </div>
   </section>
+  @endif
 
 
   <br><br>
