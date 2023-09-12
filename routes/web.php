@@ -35,24 +35,30 @@ Route::get('/test', function () {
 Route::get('/services', function (){
     return view('services.index');
 })->name('services');
-Route::get('/services/wordpress_development', function (){
-    return view('services/wordpress_development');
+//WordPress
+Route::get('/services/wordpress-development', function (){
+    return view('services/wordpress-development');
 })->name('services.wordpress');
-Route::get('/services/shopify_development', function (){
-    return view('services/shopify_development');
+//Shopify
+Route::get('/services/shopify-development', function (){
+    return view('services/shopify-development');
 })->name('services.shopify');
-Route::get('/services/laravel_development', function (){
-    return view('services/Laravel_development');
+//Laravel
+Route::get('/services/laravel-development', function (){
+    return view('services/Laravel-development');
 })->name('services.laravel');
-Route::get('services/tiktok', function (){
-    return view('/services/tiktok');
-})->name('services.tiktok');
-Route::get('/services/facebook-adverstisement', function (){
-    return view('services/facebook-adverstisement');
-})->name('services.facebook');
-Route::get('/services/google-advertisement', function (){
-    return view('services/google-advertisement');
-})->name('services.google');
+//Social Media
+Route::get('services/social-advertisment', function (){
+    return view('/services/social-advertisement');
+})->name('services.social-advertisement');
+//Reactjs
+Route::get('/services/reactjs-development', function (){
+    return view('services/reactjs-development');
+})->name('services.reactjs');
+//Social Media
+Route::get('/services/e-commerce', function (){
+    return view('services/e-commerce');
+})->name('services.e-commerce');
 
 //Blog
 Route::get('/blog', [BlogController::class, 'index'])->name('blog');

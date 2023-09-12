@@ -72,61 +72,65 @@
       <!--Box -->
       <x-card-one>
         <x-slot:cardOneIcon>
-          <i class="fa-brands fa-facebook text-4xl"></i>
+          {{-- <i class="fa-brands fa-facebook text-4xl"></i> --}}
+          <i class="fa-solid fa-cart-shopping text-4xl"></i>
         </x-slot:cardOneIcon>
         <x-slot:cardOneTitle>
-          Facebook Management
+          E-Commerce Development
+          {{-- Facebook Management --}}
         </x-slot:cardOneTitle>
         <x-slot:cardOneDescription>
-          "Unlock the Power of Facebook Ads! 🚀 Connect with your audience where they spend their time online. Our
-          Facebook Ads
-          expertise helps you reach, engage, and convert customers like never before. From precise targeting to
-          compelling ad
-          creatives, we maximize your ROI in the world's largest social playground. Ready to boost your brand? Let's get
-          social!
-          📈💥 #FacebookAdsMastery #DigitalMarketing"
+          "Elevate Your E-commerce Game with Laravel, WordPress, and Shopify! 🛒 Dive into the world of online shopping
+          excellence. Our experts specialize in crafting top-notch e-commerce solutions using these powerful platforms.
+          From
+          customizable options in Laravel to the content-driven prowess of WordPress and the ease of use in Shopify, we
+          tailor the
+          perfect e-commerce strategy for your business. Ready to thrive in the world of online retail? Let's get
+          started! 💼🚀
+          #EcommerceExcellence #Laravel #WordPress #Shopify"
         </x-slot:cardOneDescription>
         <x-slot:cardOneLink>
-          {{ route('services.facebook') }}
+          {{ route('services.e-commerce') }}
         </x-slot:cardOneLink>
       </x-card-one>
       <x-card-one>
         <x-slot:cardOneIcon>
-          <i class="fa-brands fa-google text-4xl"></i>
+          <i class="fa-brands fa-react text-4xl"></i>
         </x-slot:cardOneIcon>
         <x-slot:cardOneTitle>
-          Google Adsense
+          Reactjs/Nextjs
         </x-slot:cardOneTitle>
         <x-slot:cardOneDescription>
-          "Drive Success with Google Ads! 🌟 Harness the unparalleled reach and precision of Google Ads to elevate your
-          digital
-          presence. Our expert team crafts data-driven campaigns that capture attention, clicks, and conversions.
-          Whether you're
-          aiming for brand awareness or direct sales, we've got the winning strategy. Let's put your business at the top
-          of
-          Google's search results! 📊💼 #GoogleAdsPro #DigitalMarketing"
+          "Elevate Your Web Experience with ReactJS! 🚀 Dive into the world of dynamic interactivity and responsive
+          design. Our
+          experts harness the power of ReactJS to create stunning web solutions that engage and inspire. Ready to take
+          your web
+          presence to the next level? Let's get started! 💼🚀 #ReactJSRevolution #WebDevelopment"
         </x-slot:cardOneDescription>
         <x-slot:cardOneLink>
-          {{ route('services.google') }}
+          {{ route('services.reactjs') }}
         </x-slot:cardOneLink>
       </x-card-one>
       <x-card-one>
         <x-slot:cardOneIcon>
-          <i class="fa-brands fa-tiktok text-4xl"></i>
+          <i class="fa-solid fa-rectangle-ad text-4xl"></i>
         </x-slot:cardOneIcon>
         <x-slot:cardOneTitle>
-          TikTok Ads
+          Advertisement
         </x-slot:cardOneTitle>
         <x-slot:cardOneDescription>
-          "Unleash Creativity with TikTok Ads! 🎉 Dive into the world of viral sensations and trendsetting content. Our
-          TikTok Ads
-          experts know how to capture the attention of the ever-scrolling audience. From catchy challenges to engaging
-          storytelling, we'll make your brand the star of the next big hit. Ready to go viral? Let's dance into TikTok
-          success!
-          💃📱 #TikTokAdsRevolution #DigitalMarketing"
+          "Elevate Your Brand's Reach with Google Ads, Facebook, Instagram, and TikTok! 🌐🚀 Dive into the world of
+          targeted
+          advertising and social media excellence. Our experts specialize in crafting compelling ad campaigns that
+          captivate
+          audiences on Google, Facebook, Instagram, and TikTok. From precise targeting to eye-catching visuals, we make
+          your brand
+          the star of the next big hit. Ready to go viral and reach new heights? Let's lead your advertising revolution!
+          💫📱
+          #DigitalMarketingMasters #AdvertisingExcellence"
         </x-slot:cardOneDescription>
         <x-slot:cardOneLink>
-          {{ route('services.tiktok') }}
+          {{ route('services.social-advertisement') }}
         </x-slot:cardOneLink>
       </x-card-one>
 

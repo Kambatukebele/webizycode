@@ -22,11 +22,11 @@
                 <a class="hidden lg:block lg:text-black lg:my-3 lg:font-Nunito lg:px-3 lg:text-sm hover:underline hover:text-purple-700"
                     href="{{ route('services.laravel') }}">Laravel Development</a>
                 <a class="hidden lg:block lg:text-black lg:my-3 lg:font-Nunito lg:px-3 lg:text-sm hover:underline hover:text-purple-700"
-                    href="{{ route('services.tiktok') }}">TikTok ADS</a>
+                    href="{{ route('services.e-commerce') }}">E-commerce Development</a>
                 <a class="hidden lg:block lg:text-black lg:my-3 lg:font-Nunito lg:px-3 lg:text-sm hover:underline hover:text-purple-700"
-                    href="{{ route('services.google') }}">Google ADS</a>
+                    href="{{ route('services.reactjs') }}">Reactjs Development</a>
                 <a class="hidden lg:block lg:text-black lg:my-3 lg:font-Nunito lg:px-3 lg:text-sm hover:underline hover:text-purple-700"
-                    href="{{ route('services.facebook') }}">Facebook ADS</a>
+                    href="{{ route('services.social-advertisement') }}">Social & Advertisement</a>
             </div>
         </li>
         <li class="lg:text-white lg:text-base lg:font-normal hover:border-b-2 hover:border-white transition-all">
