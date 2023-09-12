@@ -8,28 +8,28 @@
   </div>
   <!-- Navigation Menu-->
   <ul class="lg:flex lg:justify-between lg:items-center lg:w-[400px]">
-    <li class="lg:text-white lg:text-base lg:font-normal hover:border-b-2 hover:border-white transition-all"><a class=""
-        href="{{ route('home') }}">Home</a></li>
+    <li class="lg:text-white  lg:text-xs uppercase lg:font-semibold leading-4 hover:text-black transition-all"><a
+        class="" href="{{ route('home') }}">Home</a></li>
     <li id="services"
-      class="lg:relative  lg:text-white lg:text-base lg:font-normal hover:border-b-2 hover:border-white transition-all">
+      class="lg:relative  lg:text-white  lg:text-xs uppercase lg:font-semibold leading-4 hover:text-black transition-all">
       <a class="" href="{{ route('services') }}">Services</a>
       <div id="services-card"
         class="hidden lg:absolute lg:hidden lg:bg-white lg:w-[200px] lg:mt-2 lg:z-10 lg:rounded-md lg:border">
-        <a class="hidden lg:block lg:text-black lg:my-3 lg:font-Nunito lg:px-3 lg:text-sm hover:underline hover:text-purple-700"
+        <a class="hidden lg:block lg:text-black lg:my-3  lg:px-3 lg:text-xs leading-4 hover:underline hover:text-purple-700"
           href="{{ route('services.wordpress') }}">WordPress Development</a>
-        <a class="hidden lg:block lg:text-black lg:my-3 lg:font-Nunito lg:px-3 lg:text-sm hover:underline hover:text-purple-700"
+        <a class="hidden lg:block lg:text-black lg:my-3  lg:px-3 lg:text-xs leading-4 hover:underline hover:text-purple-700"
           href="{{ route('services.shopify') }}">Shopify Development</a>
-        <a class="hidden lg:block lg:text-black lg:my-3 lg:font-Nunito lg:px-3 lg:text-sm hover:underline hover:text-purple-700"
+        <a class="hidden lg:block lg:text-black lg:my-3  lg:px-3 lg:text-xs leading-4 hover:underline hover:text-purple-700"
           href="{{ route('services.laravel') }}">Laravel Development</a>
-        <a class="hidden lg:block lg:text-black lg:my-3 lg:font-Nunito lg:px-3 lg:text-sm hover:underline hover:text-purple-700"
+        <a class="hidden lg:block lg:text-black lg:my-3  lg:px-3 lg:text-xs leading-4 hover:underline hover:text-purple-700"
           href="{{ route('services.e-commerce') }}">E-commerce Development</a>
-        <a class="hidden lg:block lg:text-black lg:my-3 lg:font-Nunito lg:px-3 lg:text-sm hover:underline hover:text-purple-700"
+        <a class="hidden lg:block lg:text-black lg:my-3  lg:px-3 lg:text-xs leading-4 hover:underline hover:text-purple-700"
           href="{{ route('services.reactjs') }}">Reactjs Development</a>
-        <a class="hidden lg:block lg:text-black lg:my-3 lg:font-Nunito lg:px-3 lg:text-sm hover:underline hover:text-purple-700"
+        <a class="hidden lg:block lg:text-black lg:my-3  lg:px-3 lg:text-xs leading-4 hover:underline hover:text-purple-700"
           href="{{ route('services.social-advertisement') }}">Social & Advertisement</a>
       </div>
     </li>
-    <li class="lg:text-white lg:text-base lg:font-normal hover:border-b-2 hover:border-white transition-all">
+    <li class="lg:text-white  lg:text-xs uppercase lg:font-semibold leading-4 hover:text-black transition-all">
       <a class="" href="{{ route('blog') }}">Blog</a>
       {{-- <div class="hidden lg:absolute lg:block lg:bg-white lg:w-[200px] lg:mt-2 lg:z-10 lg:rounded-md">
                   <a class="hidden lg:block lg:text-white lg:my-3 lg:font-Nunito lg:px-3 lg:text-sm hover:underline hover:text-purple-700"
@@ -46,15 +46,15 @@
         href="{{ route(" services.facebook") }}">Facebook ADS</a>
       </div> --}}
     </li>
-    <li class="lg:text-white lg:text-base lg:font-normal hover:border-b-2 hover:border-white transition-all"><a class=""
-        href="{{ route('portfolio') }}">Portfolio</a></li>
-    <li class="lg:text-white lg:text-base lg:font-normal hover:border-b-2 hover:border-white transition-all"><a class=""
-        href="{{ route('contact-us') }}">Contact Us</a></li>
-    {{-- <li class="lg:text-white lg:text-base lg:font-normal hover:border-b-2 hover:border-white transition-all"><a class="" href="/">Home</a></li> --}}
+    <li class="lg:text-white  lg:text-xs uppercase lg:font-semibold leading-4 hover:text-black transition-all"><a
+        class="" href="{{ route('portfolio') }}">Portfolio</a></li>
+    <li class="lg:text-white  lg:text-xs uppercase lg:font-semibold leading-4 hover:text-black transition-all"><a
+        class="" href="{{ route('contact-us') }}">Contact Us</a></li>
+    {{-- <li class="lg:text-white  lg:text-xs uppercase lg:font-semibold leading-4 hover:text-black transition-all"><a class="" href="/">Home</a></li> --}}
   </ul>
   <!-- CTA -->
   <div class="block">
-    <a class="block text-center text-base font-normal w-[200px] mx-auto py-3 my-9 rounded-full uppercase bg-transparant border-2 border-white text-white hover:bg-black hover:font-semibold transition-all"
+    <a class="block text-center lg:text-xs lg:font-semibold leading-4 w-[200px] mx-auto py-3 my-9 rounded-full uppercase bg-transparant border-2 border-white text-white hover:bg-black hover:font-semibold transition-all"
       href="{{ route('contact-us') }}">Free Consultancy</a>
   </div>
 </nav>

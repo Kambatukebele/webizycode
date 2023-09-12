@@ -17,15 +17,20 @@
   </div>
 
   <!-- Menu -->
-  <ul class="hidden absolute w-full bg-white border z-50 py-6" id="small-device-card-menu">
-    <li class="text-center"><a class="text-black font-Nunito text-base my-5 " href="{{ route('home') }}">Home</a></li>
-    <li class="text-center"><a class="text-black font-Nunito text-base my-5 "
+  <ul class="hidden absolute w-full bg-white border z-50 py-6 " id="small-device-card-menu">
+    <li class="text-center mb-2 font-semibold">
+      <a class="text-black text-xs uppercase  leading-4 my-5 " href="{{ route('home') }}">
+        Home
+      </a>
+    </li>
+    <li class="text-center mb-2 font-semibold"><a class="text-black text-xs uppercase  leading-4 my-5 "
         href="{{ route('services') }}">Services</a></li>
-    <li class="text-center"><a class="text-black font-Nunito text-base my-5 " href="{{ route('blog') }}">Blog</a></li>
-    <li class="text-center"><a class="text-black font-Nunito text-base my-5 "
+    <li class="text-center mb-2 font-semibold"><a class="text-black text-xs uppercase  leading-4 my-5 "
+        href="{{ route('blog') }}">Blog</a></li>
+    <li class="text-center mb-2 font-semibold"><a class="text-black text-xs uppercase  leading-4 my-5 "
         href="{{ route('portfolio') }}">Portfolio</a></li>
-    <li class="text-center">
-      <a class="text-black font-Nunito text-base my-5 " href="{{ route('contact-us') }}">Contact Us</a>
+    <li class="text-center mb-2 font-semibold">
+      <a class="text-black text-xs uppercase  leading-4 my-5 " href="{{ route('contact-us') }}">Contact Us</a>
     </li>
   </ul>
 </nav>

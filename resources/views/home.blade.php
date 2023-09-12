@@ -91,8 +91,8 @@
       </div>
       <!--Text -->
       <div class="block  mt-5 lg:w-[400px] xl:w-[600px]">
-        <h2 class="mb-5 font-semibold font-ReadexPro text-black text-4xl text-center">Why Us? </h2>
-        <p class="font-normal font-Nunito text-gray-500 text-base">
+        <h2 class="mb-5 font-semibold font-poppins text-black text-4xl text-center">Why Us? </h2>
+        <p class="font-normall font-poppins text-gray-500 text-base">
           With years of experience in the web development industry, our team has honed its skills to deliver
           top-notch
           solutions. Your satisfaction is our priority. We maintain open communication channels throughout the
@@ -101,7 +101,7 @@
           at every stage and addressing your concerns promptly.
         </p>
         <br>
-        <p class="font-normal font-Nunito text-gray-500 text-base">
+        <p class="font-normal font-poppins text-gray-500 text-base">
           We don't believe in one-size-fits-all solutions. Each project is unique, and we tailor our services to
           meet
           your
@@ -109,7 +109,7 @@
           covered.
         </p>
         <br>
-        <p class="font-normal font-Nunito text-gray-500 text-base">
+        <p class="font-normal font-poppins text-gray-500 text-base">
           We offer cost-effective solutions without compromising on quality. Our pricing is transparent, and we work
           within your
           budget. Our commitment doesn't end at launch. We provide ongoing maintenance and support to keep your
@@ -135,6 +135,7 @@
       </div>
     </div>
   </section>
+
   <!--End Why choose us -->
   <!-- How we Work -->
   <section class="w-full h-fit bg-gray-100 my-12 py-10">

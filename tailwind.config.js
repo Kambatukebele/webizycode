@@ -12,9 +12,7 @@ export default {
         extend: {
             fontFamily: {
                 sans: ["Figtree", ...defaultTheme.fontFamily.sans],
-                ReadexPro: ["Readex Pro", "sans - serif"],
-                NunitoSans: ["Nunito Sans", "sans - serif"],
-                Nunito: ["Nunito", "sans - serif"],
+                montserrat: ["Montserrat", "sans-serif"],
             },
             backgroundImage: {
                 "hero-upper": "url('/public/assets/images/bg-image.png')",

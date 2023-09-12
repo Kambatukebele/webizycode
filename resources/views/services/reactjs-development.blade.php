@@ -39,7 +39,7 @@
       </div>
     </div>
   </section>
-  <section class="w-full h-fit py-7 my-10">
+  {{-- <section class="w-full h-fit py-7 my-10">
     <div
       class="block w-[90%]  mx-auto sm:w-[600px] md:w-[700px] lg:w-[900px] lg:flex lg:justify-between flex-row-reverse lg:items-center xl:w-[1220px] xl:items-start">
       <!--Image -->
@@ -50,11 +50,11 @@
       <div class="block  mt-5 lg:w-[400px] xl:w-[600px]">
         <h2 class="mb-5 font-semibold font-ReadexPro text-black text-4xl text-center">website Development</h2>
         <p class="font-normal font-Nunito text-gray-500 text-base">
-          We are dedicated to crafting exceptional websites that are tailored to your unique business needs and
-          objectives using
-          the power of Laravel technology. Our website development services are driven by a commitment to fostering your
-          business
-          growth and online presence.
+          Website development with ReactJS is efficient and dynamic. ReactJS, an open-source JavaScript library, utilizes a
+          component-based structure for creating interactive and responsive website or web applications. Key benefits include component
+          reusability, a Virtual DOM for performance optimization, declarative syntax for code clarity, and one-way data binding
+          for efficient data management. It's an ideal choice for modern web development, offering a great user experience and
+          ease of maintenance.
         </p>
         <br>
         <p class="font-normal font-Nunito text-gray-500 text-base">
@@ -88,7 +88,7 @@
         </p>
       </div>
     </div>
-  </section>
+  </section> --}}
   <section class="w-full h-fit py-7 my-10">
     <div
       class="block w-[90%]  mx-auto sm:w-[600px] md:w-[700px] lg:w-[900px] lg:flex lg:justify-between lg:items-center xl:w-[1220px] xl:items-start">
@@ -98,41 +98,39 @@
       </div>
       <!--Text -->
       <div class="block  mt-5 lg:w-[400px] xl:w-[600px]">
-        <h2 class="mb-5 font-semibold font-ReadexPro text-black text-4xl text-center">API Development</h2>
+        <h2 class="mb-5 font-semibold font-ReadexPro text-black text-4xl text-center">React API</h2>
         <p class="font-normal font-Nunito text-gray-500 text-base">
-          We are committed to crafting exceptional API solutions that cater to your specific business needs, leveraging
-          the power
-          of Laravel technology. Our API development services are driven by a dedication to promoting your business
-          growth and
-          facilitating seamless data exchange and integrations.
+          We harness the power of APIs (Application Programming Interfaces) to elevate your React-based web
+          applications. APIs
+          serve as the connective tissue that enables your web application to interact with external data sources,
+          services, and
+          resources. Here's how we leverage APIs to create dynamic and feature-rich web solutions for your business
         </p>
         <br>
         <p class="font-normal font-Nunito text-gray-500 text-base">
-          Our team adopts a strategic approach to API development, collaborating closely with you to understand your
-          business
-          objectives, data requirements, and integration goals. We then create a customized API strategy aligned with
-          your
-          business vision.
+          We seamlessly integrate APIs, whether they are RESTful, GraphQL, or other types, to fetch data from diverse
+          sources.
+          This data can include product information, user profiles, real-time updates, and more.
         </p>
         <br>
         <p class="font-normal font-Nunito text-gray-500 text-base">
-          We believe in the importance of designing APIs that are efficient, secure, and scalable. Our APIs are
-          custom-designed to
-          meet your unique data sharing and integration requirements, ensuring they align seamlessly with your existing
-          systems
-          and applications.
+          When necessary, we develop custom APIs tailored to your business needs, enabling your React application to
+          access
+          specific functionalities and data unique to your industry or niche.
         </p>
         <br>
         <p class="font-normal font-Nunito text-gray-500 text-base">
-          Leveraging the robust Laravel PHP framework, we develop APIs that are not only reliable but also highly
-          maintainable.
-          Laravel's features enable us to create secure, performant, and feature-rich APIs.
+          We implement state management solutions like Redux or the React Context API to efficiently manage and
+          distribute data
+          retrieved from APIs across your application. This ensures that your components always display the most
+          up-to-date
+          information.
         </p>
         <br>
         <p class="font-normal font-Nunito text-gray-500 text-base">
-          Depending on your project's needs, we can develop RESTful APIs or GraphQL APIs, providing you with flexibility
-          and
-          compatibility to meet various integration and data exchange requirements.
+          For applications requiring real-time updates, such as live chat, notifications, or collaborative tools, we
+          integrate
+          WebSocket APIs to enable seamless, bidirectional communication between clients and servers.
         </p>
       </div>
     </div>
