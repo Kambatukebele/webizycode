@@ -1,4 +1,5 @@
-<div class="my-4 pb-5 rounded-lg w-[290px] relative sm:w-[350px] md:w-[400px] xl:w-[380px] mx-auto shadow-xl">
+<div
+    class="my-4 pb-5 rounded-lg w-[290px] relative sm:w-[350px] md:w-[400px] xl:w-[380px] mx-auto border hover:shadow-xl">
     <div class="w-[290px] h-[190px] sm:w-[350px] md:w-[400px] xl:w-[380px]">
         <img class="w-full h-full rounded-t-lg object-cover object-center" src="{{ $cardThreeImage }}" alt="">
     </div>

@@ -30,7 +30,7 @@
         <title>Document</title>
     </head>
 
-    <body class="bg-gray-50">
+    <body class="">
         <!--Hidden Navigation and logo for Small devices -->
         <x-navigation-small-devices />
         <!--ENd Hidden Navigation and logo for Small devices -->

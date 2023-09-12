@@ -1,13 +1,14 @@
 <div
-    class="w-full mx-auto flex flex-col justify-center items-start rounded-md p-5 my-3 bg-white shadow-lg hover:bg-gray-100 hover:shadow-2xl sm:max-w-[550px] lg:max-w-[280px]  lg:items-center xl:max-w-[390px]">
+    class="w-full mx-auto flex flex-col justify-center items-start rounded-md p-5 my-3 border bg-white  hover:shadow-2xl sm:max-w-[550px] lg:max-w-[280px]  lg:items-center xl:max-w-[390px]">
     <!--Icon -->
-    <div class="block lg:flex lg:justify-center lg:items-center my-5">
+    <div class="block lg:flex lg:justify-center lg:items-center my-5 text-purple-700">
         {{-- <i class="fa-brands fa-wordpress text-4xl"></i> --}}
         {{ $cardOneIcon }}
     </div>
     <!-- Title -->
     <div class="my-3 lg:mt-0">
-        <h3 class="text-black font-ReadexPro text-2xl font-semibold lg:text-center">{{ $cardOneTitle }}</h3>
+        <h3 class="text-black font-ReadexPro text-2xl font-semibold lg:text-center">{{ $cardOneTitle }}
+        </h3>
         {{-- WordPress Development --}}
     </div>
     <!-- Description -->

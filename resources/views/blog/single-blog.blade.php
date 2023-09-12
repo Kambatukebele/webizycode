@@ -7,8 +7,8 @@
   <!--Services box description -->
   <br><br>
   <!--Blog-->
-  <section class="w-full h-fit bg-gray-100 py-5">
-    <div class="w-[90%] mx-auto md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px] rounded-xl bg-white">
+  <section class="w-full h-fit  py-5">
+    <div class="w-[90%] mx-auto md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px] rounded-xl bg-gray-50">
       <div class="my-4 pb-5 rounded-lg min-w-[290px] relative  mx-auto">
         <div class="min-w-[290px] h-[250px] sm:h-[330px] md:h-[390px]">
           <img class="w-full h-full rounded-lg object-cover object-center"
@@ -54,7 +54,7 @@
       </div>
     </div>
   </section>
-  <section class="w-full h-fit bg-gray-100 mb-12 py-10">
+  <section class="w-full h-fit  mb-12 py-10">
     <div class="w-[90%] mx-auto md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px]">
       <!--Upper -->
       <div class="mb-10">

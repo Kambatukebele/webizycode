@@ -9,7 +9,7 @@
   <!--Blog-->
   <!--Blog-->
   {{-- Laravel --}}
-  <section class="w-full h-fit bg-gray-100 mb-12 py-10">
+  <section class="w-full h-fit  mb-12 py-10">
     <div class="w-[90%] mx-auto md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px]">
       <!--Upper -->
       <div class="mb-10">
@@ -49,7 +49,7 @@
   </section>
 
   {{-- Reactjs --}}
-  <section class="w-full h-fit bg-gray-100 mb-12 py-10">
+  <section class="w-full h-fit  mb-12 py-10">
     <div class="w-[90%] mx-auto md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px]">
       <!--Upper -->
       <div class="mb-10">
@@ -90,7 +90,7 @@
 
   {{-- Javascript --}}
   @if($javascript)
-  <section class="w-full h-fit bg-gray-100 mb-12 py-10">
+  <section class="w-full h-fit  mb-12 py-10">
     <div class="w-[90%] mx-auto md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px]">
       <!--Upper -->
       <div class="mb-10">
@@ -132,7 +132,7 @@
 
   {{-- php--}}
   @if ($php)
-  <section class="w-full h-fit bg-gray-100 mb-12 py-10">
+  <section class="w-full h-fit  mb-12 py-10">
     <div class="w-[90%] mx-auto md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px]">
       <!--Upper -->
       <div class="mb-10">
@@ -176,7 +176,7 @@
 
   {{-- WordPress --}}
   @if ($wordpress)
-  <section class="w-full h-fit bg-gray-100 mb-12 py-10">
+  <section class="w-full h-fit  mb-12 py-10">
     <div class="w-[90%] mx-auto md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px]">
       <!--Upper -->
       <div class="mb-10">
@@ -218,7 +218,7 @@
 
   {{-- Shopify --}}
   @if ($shopify)
-  <section class="w-full h-fit bg-gray-100 mb-12 py-10">
+  <section class="w-full h-fit  mb-12 py-10">
     <div class="w-[90%] mx-auto md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px]">
       <!--Upper -->
       <div class="mb-10">
@@ -261,7 +261,7 @@
 
   {{-- Social media --}}
   @if ($socialmedia)
-  <section class="w-full h-fit bg-gray-100 mb-12 py-10">
+  <section class="w-full h-fit  mb-12 py-10">
     <div class="w-[90%] mx-auto md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px]">
       <!--Upper -->
       <div class="mb-10">
