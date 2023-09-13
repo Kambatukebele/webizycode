@@ -1,7 +1,7 @@
 <x-web-site-layout2>
   <x-header-section>
     <x-slot:titlePage>
-      Shopify Development
+      Shopify
     </x-slot:titlePage>
   </x-header-section>
   <!--Services box description -->
@@ -15,8 +15,8 @@
       </div>
       <!--Text -->
       <div class="block  mt-5 lg:w-[400px] xl:w-[600px]">
-        <h2 class="mb-5 font-semibold font-ReadexPro text-black text-4xl text-center">Theme Development</h2>
-        <p class="font-normal font-Nunito text-gray-500 text-base">
+        <h2 class="mb-5 font-semibold  text-black text-4xl text-center lg:text-left">Theme Development</h2>
+        <p class="font-normal  text-gray-700 text-base">
           When it comes to Shopify theme development, our approach is grounded in a steadfast commitment to enhancing
           your online
           store's appearance and functionality. We specialize in crafting bespoke Shopify themes that are meticulously
@@ -24,7 +24,7 @@
           meet your unique business requirements, harnessing the latest technologies to support your e-commerce growth.
         </p>
         <br>
-        <p class="font-normal font-Nunito text-gray-500 text-base">
+        <p class="font-normal  text-gray-700 text-base">
           Our team of experienced Shopify theme developers is well-versed in the intricacies of the Shopify platform. We
           work
           closely with you to understand your brand identity, target audience, and e-commerce goals. Whether you need a
@@ -33,7 +33,7 @@
           that elevate your online store and contribute to your e-commerce success.
         </p>
         <br>
-        <p class="font-normal font-Nunito text-gray-500 text-base">
+        <p class="font-normal  text-gray-700 text-base">
           We stay ahead of the curve by staying updated with the latest trends and innovations in e-commerce and Shopify
           development. This ensures that your custom Shopify theme is not only visually stunning but also functionally
           robust. Our
@@ -53,8 +53,8 @@
       </div>
       <!--Text -->
       <div class="block  mt-5 lg:w-[400px] xl:w-[600px]">
-        <h2 class="mb-5 font-semibold font-ReadexPro text-black text-4xl text-center">Plugin Development</h2>
-        <p class="font-normal font-Nunito text-gray-500 text-base">
+        <h2 class="mb-5 font-semibold  text-black text-4xl text-center lg:text-left">Plugin Development</h2>
+        <p class="font-normal text-gray-700 text-base">
           When it comes to Shopify plugin development, our approach is firmly rooted in a dedicated commitment to
           enhancing the
           functionality and capabilities of your Shopify store. We specialize in creating custom Shopify plugins that
@@ -64,7 +64,7 @@
           e-commerce growth.
         </p>
         <br>
-        <p class="font-normal font-Nunito text-gray-500 text-base">
+        <p class="font-normal  text-gray-700 text-base">
           Our team of skilled Shopify plugin developers is well-versed in the Shopify ecosystem and its intricacies. We
           collaborate closely with you to understand your brand, target audience, and e-commerce objectives. Whether you
           need a
@@ -73,7 +73,7 @@
           devoted to delivering solutions that elevate your online store and contribute to your e-commerce success.
         </p>
         <br>
-        <p class="font-normal font-Nunito text-gray-500 text-base">
+        <p class="font-normal  text-gray-700 text-base">
           We remain at the forefront of Shopify development trends, continuously monitoring the platform's updates and
           innovations. This ensures that your custom Shopify plugin is not just a temporary solution but a vital asset
           that can

@@ -16,35 +16,21 @@
       <div id="services-card"
         class="hidden lg:absolute lg:hidden lg:bg-white lg:w-[200px] lg:mt-2 lg:z-10 lg:rounded-md lg:border">
         <a class="hidden lg:block lg:text-black lg:my-3  lg:px-3 lg:text-xs leading-4 hover:underline hover:text-purple-700"
-          href="{{ route('services.wordpress') }}">WordPress Development</a>
+          href="{{ route('services.wordpress') }}">WordPress </a>
         <a class="hidden lg:block lg:text-black lg:my-3  lg:px-3 lg:text-xs leading-4 hover:underline hover:text-purple-700"
-          href="{{ route('services.shopify') }}">Shopify Development</a>
+          href="{{ route('services.shopify') }}">Shopify </a>
         <a class="hidden lg:block lg:text-black lg:my-3  lg:px-3 lg:text-xs leading-4 hover:underline hover:text-purple-700"
-          href="{{ route('services.laravel') }}">Laravel Development</a>
+          href="{{ route('services.laravel') }}">Laravel </a>
         <a class="hidden lg:block lg:text-black lg:my-3  lg:px-3 lg:text-xs leading-4 hover:underline hover:text-purple-700"
-          href="{{ route('services.e-commerce') }}">E-commerce Development</a>
+          href="{{ route('services.e-commerce') }}">E-commerce </a>
         <a class="hidden lg:block lg:text-black lg:my-3  lg:px-3 lg:text-xs leading-4 hover:underline hover:text-purple-700"
-          href="{{ route('services.reactjs') }}">Reactjs Development</a>
+          href="{{ route('services.reactjs') }}">Reactjs </a>
         <a class="hidden lg:block lg:text-black lg:my-3  lg:px-3 lg:text-xs leading-4 hover:underline hover:text-purple-700"
           href="{{ route('services.social-advertisement') }}">Social & Advertisement</a>
       </div>
     </li>
     <li class="lg:text-white  lg:text-xs uppercase lg:font-semibold leading-4 hover:text-black transition-all">
       <a class="" href="{{ route('blog') }}">Blog</a>
-      {{-- <div class="hidden lg:absolute lg:block lg:bg-white lg:w-[200px] lg:mt-2 lg:z-10 lg:rounded-md">
-                  <a class="hidden lg:block lg:text-white lg:my-3 lg:font-Nunito lg:px-3 lg:text-sm hover:underline hover:text-purple-700"
-                    href="{{ route('services.wordpress') }}">WordPress Development</a>
-      <a class="hidden lg:block lg:text-white lg:my-3 lg:font-Nunito lg:px-3 lg:text-sm hover:underline hover:text-purple-700"
-        href="{{ route('services.shopify') }}">Shopify Development</a>
-      <a class="hidden lg:block lg:text-white lg:my-3 lg:font-Nunito lg:px-3 lg:text-sm hover:underline hover:text-purple-700"
-        href="{{ route('services.laravel') }}">Laravel Development</a>
-      <a class="hidden lg:block lg:text-white lg:my-3 lg:font-Nunito lg:px-3 lg:text-sm hover:underline hover:text-purple-700"
-        href="{{ route('services.fullstack') }}">FullStack Development</a>
-      <a class="hidden lg:block lg:text-white lg:my-3 lg:font-Nunito lg:px-3 lg:text-sm hover:underline hover:text-purple-700"
-        href="{{ route('services.google') }}">Google ADS</a>
-      <a class="hidden lg:block lg:text-white lg:my-3 lg:font-Nunito lg:px-3 lg:text-sm hover:underline hover:text-purple-700"
-        href="{{ route(" services.facebook") }}">Facebook ADS</a>
-      </div> --}}
     </li>
     <li class="lg:text-white  lg:text-xs uppercase lg:font-semibold leading-4 hover:text-black transition-all"><a
         class="" href="{{ route('portfolio') }}">Portfolio</a></li>

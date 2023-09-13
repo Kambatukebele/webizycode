@@ -10,23 +10,23 @@
             <!-- Hero text -->
             <div
                 class="block animate-SlideInLeft py-1  sm:flex sm:flex-col sm:justify-start sm:items-start sm:h-full sm:w-[260px] md:w-[450px] xl:w-[600px]">
-                <small class="text-white font-normal text-xs leading-4 block my-3 sm:pl-0 lg:font-medium lg:text-sm">
+                <small class="text-white font-normal text-sm leading-4 block my-3 sm:pl-0 lg:font-medium lg:text-sm">
                     {{ $upper }}
                 </small>
                 <div
                     class="mb-4 animate-SlideInLeft max-w-[300px] mx-auto sm:mx-0 sm:w-full md:max-w-none  md:w-[350px] lg:w-[450px] xl:w-[600px]">
                     <h1
-                        class="text-white font-bold text-5xl leading-[50px] sm:text-left lg:text-5xl xl:text-6xl xl:leading-16 ">
+                        class="text-white font-bold text-4xl sm:text-3xl sm:text-left lg:text-5xl  xl:text-6xl xl:leading-16 ">
                         {{ $title }}
                     </h1>
                 </div>
                 <div class="mb-4  max-w-[300px] mx-auto sm:mx-0 sm:max-w-[250px] md:max-w-[350px] lg:max-w-[450px]">
-                    <p class="text-white text-center font-normal text-xs  sm:text-sm sm:text-left">
+                    <p class="text-white text-center font-normal text-xl sm:text-left">
                         {{ $description }}
                     </p>
                 </div>
                 <div class="block">
-                    <a class="block text-center text-base font-semibold text-purple-700 bg-white  mx-auto p-3 my-5 rounded-full hover:bg-black hover:text-white hover:font-medium uppercase animate-bounce transition-all"
+                    <a class="block text-center text-sm font-semibold text-purple-700 bg-white  mx-auto p-3 my-5 rounded hover:bg-black hover:text-white  uppercase animate-bounce transition-all"
                         href="{{ $CTA_Link }}">
                         {{ $CTA }}
                     </a>

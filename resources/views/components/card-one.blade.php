@@ -7,13 +7,13 @@
     </div>
     <!-- Title -->
     <div class="my-3 lg:mt-0">
-        <h3 class="text-black font-ReadexPro text-2xl font-semibold lg:text-center">{{ $cardOneTitle }}
+        <h3 class="text-black text-2xl font-semibold lg:text-center">{{ $cardOneTitle }}
         </h3>
         {{-- WordPress Development --}}
     </div>
     <!-- Description -->
     <div class="mb-1">
-        <p class="font-Nunito text-gray-500 font-normal text-base lg:text-center">
+        <p class="text-gray-700 font-normal text-base lg:text-left">
             {{ $cardOneDescription }}
         </p>
         {{-- "Unlock the Power of Digital with our WordPress Wizards! 🚀 Elevate your online presence with custom
@@ -22,7 +22,7 @@
         that blend innovation, creativity, and performance. We turn pixels into profits, one pixel at a time! --}}
     </div>
     <div class="block">
-        <a class="block text-center text-base font-semibold text-white bg-purple-700 w-[150px] mx-auto py-3 my-5 rounded-full hover:bg-black hover:text-white hover:font-medium uppercase"
+        <a class="block text-center text-sm font-semibold text-white bg-purple-700 w-[150px] mx-auto py-3 my-5 rounded hover:bg-black hover:text-white hover:font-medium uppercase"
             href="{{ $cardOneLink }}">
             Learn More
         </a>

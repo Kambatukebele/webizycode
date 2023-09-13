@@ -34,9 +34,7 @@
                 {{-- Bespoke software development for Small size Business --}}
                 {{-- Tailored software solutions for small businesses. --}}
                 {{-- Custom <br> Web <br> development --}}
-                E-Commerce <br>
-                web <br>
-                developement
+                E-Commerce web developement
             </x-slot:title>
             <x-slot:description>
                 We design exceptional digital products to streamline your business processes and save resources.

@@ -15,9 +15,9 @@
       </div>
       <!--Text -->
       <div class="block  mt-5 lg:w-[400px] xl:w-[600px]">
-        <h2 class="mb-5 font-semibold font-ReadexPro text-black text-4xl text-center">With Laravel
+        <h2 class="mb-5 font-semibold text-black text-4xl text-center lg:text-left">With Laravel
         </h2>
-        <p class="font-normal font-Nunito text-gray-500 text-base">
+        <p class="font-normal  text-gray-700 text-base">
           Our team of experienced Laravel developers excels in building robust, custom e-commerce applications. We work
           closely
           with you to understand your brand, target audience, and e-commerce objectives. Whether you require a bespoke
@@ -27,7 +27,7 @@
           that empower your online business and drive digital success.
         </p>
         <br>
-        <p class="font-normal font-Nunito text-gray-500 text-base">
+        <p class="font-normal  text-gray-700 text-base">
           Leveraging the power of Laravel, we ensure that your e-commerce application is not just a short-term solution
           but a
           strategic asset that can evolve and adapt alongside your business. Our Laravel solutions are designed to be
@@ -37,18 +37,18 @@
           competitive digital marketplace.
         </p>
         <br>
-        <p class="font-normal font-Nunito text-gray-500 text-base">
+        <p class="font-normal  text-gray-700 text-base">
           We believe in the power of customization. Every aspect of your web application, from features and design to
           functionality, is meticulously customized to meet your specific requirements.
         </p>
         <br>
-        <p class="font-normal font-Nunito text-gray-500 text-base">
+        <p class="font-normal  text-gray-700 text-base">
           Our Laravel-based solutions are built with scalability in mind. As your business expands, our web applications
           are
           equipped to grow with you, ensuring seamless scalability without compromising performance.
         </p>
         <br>
-        <p class="font-normal font-Nunito text-gray-500 text-base">
+        <p class="font-normal  text-gray-700 text-base">
           We prioritize the security of your web application. Our development process includes robust security measures
           to
           safeguard your data and protect against potential threats.
@@ -65,9 +65,9 @@
       </div>
       <!--Text -->
       <div class="block  mt-5 lg:w-[400px] xl:w-[600px]">
-        <h2 class="mb-5 font-semibold font-ReadexPro text-black text-4xl text-center">With Shopify
+        <h2 class="mb-5 font-semibold font-ReadexPro text-black text-4xl text-center lg:text-left">With Shopify
         </h2>
-        <p class="font-normal font-Nunito text-gray-500 text-base">
+        <p class="font-normal  text-gray-700 text-base">
           For businesses seeking a robust, hosted e-commerce solution, our Shopify experts are ready to help. We
           specialize in
           creating customized Shopify stores that align perfectly with your brand and product offerings. From theme
@@ -77,7 +77,7 @@
           efficient.
         </p>
         <br>
-        <p class="font-normal font-Nunito text-gray-500 text-base">
+        <p class="font-normal  text-gray-700 text-base">
           With Shopify, we empower your e-commerce store to thrive in the highly competitive online retail landscape.
           Our
           solutions are designed to be user-friendly, scalable, and secure, providing you with the tools and support you
@@ -85,25 +85,25 @@
           grow your online business effectively.
         </p>
         <br>
-        {{-- <p class="font-normal font-Nunito text-gray-500 text-base">
+        {{-- <p class="font-normal  text-gray-700 text-base">
           We believe in the importance of a visually appealing and user-friendly design. Our websites are
           custom-designed to
           reflect your brand identity and provide an engaging user experience.
         </p>
         <br>
-        <p class="font-normal font-Nunito text-gray-500 text-base">
+        <p class="font-normal  text-gray-700 text-base">
           Leveraging the power of Laravel, a renowned PHP framework, we develop websites that are not only robust but
           also highly
           maintainable. Laravel's features enable us to create feature-rich, scalable, and efficient websites.
         </p>
         <br>
-        <p class="font-normal font-Nunito text-gray-500 text-base">
+        <p class="font-normal  text-gray-700 text-base">
           If you require e-commerce functionality, we can integrate Laravel-based e-commerce platforms into your
           website, enabling
           you to sell products and services online efficiently.
         </p>
         <br>
-        <p class="font-normal font-Nunito text-gray-500 text-base">
+        <p class="font-normal  text-gray-700 text-base">
           Our websites often include content management systems (CMS) powered by Laravel, allowing you to easily update
           and manage
           your website's content without requiring extensive technical knowledge.
@@ -120,8 +120,8 @@
       </div>
       <!--Text -->
       <div class="block  mt-5 lg:w-[400px] xl:w-[600px]">
-        <h2 class="mb-5 font-semibold font-ReadexPro text-black text-4xl text-center">With WordPress</h2>
-        <p class="font-normal font-Nunito text-gray-500 text-base">
+        <h2 class="mb-5 font-semibold font-ReadexPro text-black text-4xl text-center lg:text-left">With WordPress</h2>
+        <p class="font-normal  text-gray-700 text-base">
           For businesses looking to combine the power of WordPress and e-commerce, we specialize in seamless integration
           solutions. We integrate popular e-commerce plugins like WooCommerce into your WordPress website to create a
           cohesive and
@@ -130,14 +130,14 @@
           while leveraging the extensive e-commerce capabilities.
         </p>
         <br>
-        <p class="font-normal font-Nunito text-gray-500 text-base">
+        <p class="font-normal  text-gray-700 text-base">
           Our WordPress e-commerce integration services are designed to be user-friendly, scalable, and secure, ensuring
           that your
           online store remains aligned with your business goals and provides a seamless shopping experience for your
           customers.
         </p>
         {{-- <br>
-        <p class="font-normal font-Nunito text-gray-500 text-base">
+        <p class="font-normal  text-gray-700 text-base">
           We believe in the importance of designing APIs that are efficient, secure, and scalable. Our APIs are
           custom-designed to
           meet your unique data sharing and integration requirements, ensuring they align seamlessly with your existing
@@ -145,13 +145,13 @@
           and applications.
         </p>
         <br>
-        <p class="font-normal font-Nunito text-gray-500 text-base">
+        <p class="font-normal  text-gray-700 text-base">
           Leveraging the robust Laravel PHP framework, we develop APIs that are not only reliable but also highly
           maintainable.
           Laravel's features enable us to create secure, performant, and feature-rich APIs.
         </p>
         <br>
-        <p class="font-normal font-Nunito text-gray-500 text-base">
+        <p class="font-normal  text-gray-700 text-base">
           Depending on your project's needs, we can develop RESTful APIs or GraphQL APIs, providing you with flexibility
           and
           compatibility to meet various integration and data exchange requirements.
@@ -159,13 +159,13 @@
       </div>
     </div>
   </section>
-  <section class="w-full h-fit bg-gray-100 my-12 py-10">
+  <section class="w-full h-fit bg-purple-800 my-12 py-10">
     <div class="w-[90%] mx-auto md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px]">
       <!--Upper -->
       <div class="mb-10">
-        <h3 class="text-black font-semibold text-3xl text-center mb-5">Our eCommerce software development services cater
+        <h3 class="text-white font-semibold text-3xl text-center mb-5">Our eCommerce software development services cater
           to businesses of all types and sizes.</h3>
-        <p class="text-sm text-gray-400 font-normal text-center">
+        <p class="text-sm text-white font-normal text-center">
           Your vision is one-of-a-kind, and we have the expertise to turn it into a stunning reality. Our custom
           eCommerce
           development services are here to bring your dreams to life.

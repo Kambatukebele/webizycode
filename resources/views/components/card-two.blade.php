@@ -8,11 +8,11 @@
             {{ $cardTwoIcon }}
         </div>
         <div class="md:max-w-[550px]">
-            <h4 class="text-black text-center font-ReadexPro font-semibold text-2xl mb-2">
+            <h4 class="text-black text-center font-semibold text-2xl mb-2">
                 {{-- Fast Performance --}}
                 {{ $cardTwoTitle }}
             </h4>
-            <p class="text-base text-gray-400 font-normal text-center">
+            <p class="text-base text-gray-700 font-normal text-center">
                 {{ $cardTwoDescription }}
             </p>
         </div>

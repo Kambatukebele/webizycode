@@ -1,7 +1,7 @@
 <x-web-site-layout2>
   <x-header-section>
     <x-slot:titlePage>
-      {{ $blog->title }}
+      Blog
     </x-slot:titlePage>
   </x-header-section>
   <!--Services box description -->

@@ -4,11 +4,11 @@
         <img class="w-full h-full rounded-t-lg object-cover object-center" src="{{ $cardThreeImage }}" alt="">
     </div>
     <div class="md:max-w-[550px]">
-        <h4 class="text-black text-center font-ReadexPro px-3 font-semibold text-2xl my-5">
+        <h4 class="text-black text-center px-3 font-semibold text-2xl my-5">
             {{-- Fast Performance --}}
             {{ $cardThreeTitle }}
         </h4>
-        <p class="font-base font-normal font-NunitoSans text-gray-500 px-5 mb-5 text-center">
+        <p class="font-base font-normal text-gray-700 px-5 mb-5 text-center">
             {{ $cardThreeDescription }}
         </p>
         <p
@@ -16,7 +16,7 @@
             <a class="block" href="{{ $cardThreeLink }}">Read More</a>
         </p>
         {{-- Date --}}
-        <p class="bg-purple-700 text-white w-24 absolute top-2 left-2  text-center font-Nunito text-xs py-2 rounded-md">
+        <p class="bg-purple-700 text-white w-24 absolute top-2 left-2  text-center text-xs py-2 rounded-md">
             {{ $cardThreeDate }}
         </p>
     </div>

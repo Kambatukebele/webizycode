@@ -5,13 +5,13 @@
       class="block w-[90%]  mx-auto sm:w-[600px] md:w-[700px] lg:w-[900px] xl:w-[1220px] lg:flex lg:justify-between lg:items-center">
       <!--Text-->
       <div class="flex justify-center items-center flex-col lg:items-start lg:justify-end">
-        <small class="text-black font-Nunito text-sm font-medium">Our Workflow <span
-            class="font-bold text-purple-800">__ ___</span></small>
-        <h2 class="text-black font-ReadexPro text-4xl text-center font-bold my-3">Our Services</h2>
+        <small class="text-black  text-sm font-normal">Our Workflow <span class="font-bold text-purple-800">__
+            ___</span></small>
+        <h2 class="text-black  text-4xl text-center font-semibold my-3">Our Services</h2>
       </div>
       <!--BTN-->
       <div>
-        <a class="block text-center text-base font-semibold text-white bg-purple-700 w-[150px] mx-auto py-3 my-5 rounded-full hover:bg-black hover:text-white hover:font-medium uppercase"
+        <a class="block text-center text-sm font-semibold text-white bg-purple-700 w-[150px] mx-auto py-3 my-5 rounded hover:bg-black hover:text-white hover:font-medium uppercase"
           href="{{ route('services') }}">
           Learn More
         </a>
@@ -91,8 +91,8 @@
       </div>
       <!--Text -->
       <div class="block  mt-5 lg:w-[400px] xl:w-[600px]">
-        <h2 class="mb-5 font-semibold font-poppins text-black text-4xl text-center">Why Us? </h2>
-        <p class="font-normall font-poppins text-gray-500 text-base">
+        <h2 class="mb-5 font-semibold font-poppins text-black text-4xl text-center lg:text-left">Why Us? </h2>
+        <p class="font-normall font-poppins text-gray-700 text-base">
           With years of experience in the web development industry, our team has honed its skills to deliver
           top-notch
           solutions. Your satisfaction is our priority. We maintain open communication channels throughout the
@@ -101,7 +101,7 @@
           at every stage and addressing your concerns promptly.
         </p>
         <br>
-        <p class="font-normal font-poppins text-gray-500 text-base">
+        <p class="font-normal font-poppins text-gray-700 text-base">
           We don't believe in one-size-fits-all solutions. Each project is unique, and we tailor our services to
           meet
           your
@@ -109,7 +109,7 @@
           covered.
         </p>
         <br>
-        <p class="font-normal font-poppins text-gray-500 text-base">
+        <p class="font-normal font-poppins text-gray-700 text-base">
           We offer cost-effective solutions without compromising on quality. Our pricing is transparent, and we work
           within your
           budget. Our commitment doesn't end at launch. We provide ongoing maintenance and support to keep your
@@ -117,38 +117,26 @@
           or application
           running smoothly and up to date.
         </p>
-
-        {{-- <p>We stay at the forefront of technology trends, using the latest tools and frameworks to build websites and applications
-          that are not only functional but also future-proof.
-          </p>
-            <br>
-          <p>
-            A visually appealing and user-friendly design is crucial for online success. Our designers create stunning and intuitive
-            interfaces that leave a lasting impression on your audience.
-          </p>
-            <br>
-          <p>
-            We take the security of your data and your users seriously. Our development process includes robust security measures to
-            protect your online presence from threats.
-          </p> --}}
-
       </div>
+    </div>
+    <div class="border h-10 w-10">
+      <img src="public/assets/images/top-left-shadow-2.png" alt="">
     </div>
   </section>
 
   <!--End Why choose us -->
   <!-- How we Work -->
-  <section class="w-full h-fit bg-gray-100 my-12 py-10">
+  <section class="w-full h-fit bg-purple-800 my-12 py-10">
     <div class="w-[90%] mx-auto md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px]">
       <!--Upper -->
       <div class="mb-10">
-        <h3 class="text-black font-semibold text-3xl text-center mb-5">How We Work</h3>
-        <p class="text-sm text-gray-400 font-normal text-center">
+        <h3 class="font-semibold text-white text-4xl text-center mb-5">How We Work</h3>
+        <p class="text-sm font-normal text-center text-white">
           We utilize Scrum as our operational framework, an agile methodology focused on delivering product value in
           short
           timeframes. It is grounded in three core principles: transparency, inspection, and adaptation.
         </p>
-        <p class="text-sm text-gray-400 font-normal text-center">
+        <p class="text-sm font-normal text-center text-white">
           Our creative process is rooted in the Design Thinking methodology. We aim to gain a deep understanding of
           your
           needs and
@@ -274,13 +262,13 @@
     <div class="w-[90%] mx-auto md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px]">
       <!--Upper -->
       <div class="mb-10">
-        <h3 class="text-black font-semibold text-3xl text-center mb-5">Stack of Technologies</h3>
-        <p class="text-sm text-gray-400 font-normal text-center">
+        <h3 class="text-black font-semibold text-3xl  text-center mb-5 lg:text-4xl">Stack of Technologies</h3>
+        <p class="text-sm text-gray-700 font-normal text-center">
           Our development team is proficient in utilizing cutting-edge, secure, robust, and high-performance
           technologies for
           projects of any scale and purpose.
         </p>
-        <p class="text-sm text-gray-400 font-normal text-center">
+        <p class="text-sm text-gray-700 font-normal text-center">
           Our creative process is rooted in the Design Thinking methodology. We aim to gain a deep understanding of your
           needs and
           offer solutions that address your users' genuine concerns. This approach is iterative and non-linear, allowing

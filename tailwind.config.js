@@ -21,6 +21,7 @@ export default {
                     "url('/public/assets/images/slider-shape-img.png')",
                 "hero-footer":
                     "url('/public/assets/images/footer-bg-images.png')",
+                "hero-shadow": "url('/assets/images/top-left-shadow-2.png')",
             },
             keyframes: {
                 SlideInLeft: {

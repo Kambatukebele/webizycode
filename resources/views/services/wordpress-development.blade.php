@@ -1,7 +1,7 @@
 <x-web-site-layout2>
   <x-header-section>
     <x-slot:titlePage>
-      WordPress Development
+      WordPress
     </x-slot:titlePage>
   </x-header-section>
   <!--Services box description -->
@@ -15,8 +15,8 @@
       </div>
       <!--Text -->
       <div class="block  mt-5 lg:w-[400px] xl:w-[600px]">
-        <h2 class="mb-5 font-semibold font-ReadexPro text-black text-4xl text-center">Theme Development</h2>
-        <p class="font-normal font-Nunito text-gray-500 text-base">
+        <h2 class="mb-5 font-semibold  text-black text-4xl text-center lg:text-left">Theme Development</h2>
+        <p class="font-normal  text-gray-700 text-base">
           We specialize in crafting tailor-made themes for your business, starting from the ground up. Our approach is
           driven by
           your unique specifications, coupled with cutting-edge technology, all geared towards fostering your business's
@@ -25,7 +25,7 @@
           paves the way for your business to thrive in the ever-evolving digital landscape.
         </p>
         <br>
-        <p class="font-normal font-Nunito text-gray-500 text-base">
+        <p class="font-normal font-Nunito text-gray-700 text-base">
           At our core, we are dedicated to the art of creating bespoke themes that not only align with your immediate
           goals but
           also lay a strong foundation for the future of your business. Our experienced team of designers and developers
@@ -35,7 +35,7 @@
           your custom theme reflects your vision and sets you apart from the competition.
         </p>
         <br>
-        <p class="font-normal font-Nunito text-gray-500 text-base">
+        <p class="font-normal font-Nunito text-gray-700 text-base">
           We leverage the latest advancements in technology, keeping a vigilant eye on emerging trends and innovations.
           By doing
           so, we guarantee that your theme is not only visually stunning but also functionally robust. We are committed
@@ -56,8 +56,9 @@
       </div>
       <!--Text -->
       <div class="block  mt-5 lg:w-[400px] xl:w-[600px]">
-        <h2 class="mb-5 font-semibold font-ReadexPro text-black text-4xl text-center">Plugin Development</h2>
-        <p class="font-normal font-Nunito text-gray-500 text-base">
+        <h2 class="mb-5 font-semibold font-ReadexPro text-black text-4xl text-center lg:text-left">Plugin Development
+        </h2>
+        <p class="font-normal font-Nunito text-gray-700 text-base">
           When it comes to plugin development, our approach is similarly driven by a deep commitment to enhancing your
           business's
           digital capabilities. We specialize in crafting custom plugins that seamlessly integrate with your website or
@@ -65,7 +66,7 @@
           tailored to your specific requirements and built with the latest technology to support your business's growth.
         </p>
         <br>
-        <p class="font-normal font-Nunito text-gray-500 text-base">
+        <p class="font-normal font-Nunito text-gray-700 text-base">
           Our experienced team of plugin developers is well-versed in the intricacies of various platforms and
           technologies. We
           work closely with you to understand your unique workflow, operational needs, and long-term goals. Whether you
@@ -75,7 +76,7 @@
           software, we are dedicated to delivering solutions that empower your business to excel.
         </p>
         <br>
-        <p class="font-normal font-Nunito text-gray-500 text-base">
+        <p class="font-normal font-Nunito text-gray-700 text-base">
           We keep a keen eye on emerging trends and innovations in the world of plugin development, ensuring that your
           custom
           plugin is not just a short-term solution but an asset that can evolve and adapt alongside your business. Our
@@ -96,8 +97,9 @@
       </div>
       <!--Text -->
       <div class="block  mt-5 lg:w-[400px] xl:w-[600px]">
-        <h2 class="mb-5 font-semibold font-ReadexPro text-black text-4xl text-center">E-commerce Integration</h2>
-        <p class="font-normal font-Nunito text-gray-500 text-base">
+        <h2 class="mb-5 font-semibold  text-black text-4xl text-center lg:text-left">E-commerce
+          Integration</h2>
+        <p class="font-normal font-Nunito text-gray-700 text-base">
           When it comes to WordPress e-commerce integration, our approach is rooted in a strong commitment to enhancing
           your
           online store's functionality and success. We specialize in seamlessly integrating e-commerce solutions into
@@ -107,7 +109,7 @@
           support your e-commerce growth.
         </p>
         <br>
-        <p class="font-normal font-Nunito text-gray-500 text-base">
+        <p class="font-normal font-Nunito text-gray-700 text-base">
           Our team of experts in e-commerce integration is highly skilled in working with WordPress and various
           e-commerce
           platforms. We collaborate closely with you to gain a deep understanding of your brand, target audience, and
@@ -119,7 +121,7 @@
           forward.
         </p>
         <br>
-        <p class="font-normal font-Nunito text-gray-500 text-base">
+        <p class="font-normal font-Nunito text-gray-700 text-base">
           We keep a vigilant eye on emerging trends and innovations in the field of e-commerce integration to ensure
           that your
           custom integration is not just a short-term solution but a vital asset that can evolve and adapt alongside
