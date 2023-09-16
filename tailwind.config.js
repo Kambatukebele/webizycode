@@ -22,6 +22,7 @@ export default {
                 "hero-footer":
                     "url('/public/assets/images/footer-bg-images.png')",
                 "hero-shadow": "url('/assets/images/top-left-shadow-2.png')",
+                "hero-contact": "url('/public/assets/images/bg.jpg')",
             },
             keyframes: {
                 SlideInLeft: {

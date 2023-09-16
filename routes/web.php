@@ -31,6 +31,11 @@ Route::get('/test', function () {
     return View('test'); 
 });
 
+//Contact Route
+Route::get('/contact-us', function (){
+    return View('contact-us');
+});
+
 //Services Routes => To show all services
 Route::get('/services', function (){
     return view('services.index');

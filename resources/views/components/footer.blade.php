@@ -85,8 +85,9 @@
         <form class="sm:flex sm:justify-center sm:items-center sm:flex-col">
           <input type="text" placeholder="Your Email"
             class="border border-purple-700 text-gray-400 text-base font-normal bg-transparent rounded-md w-full sm:w-[300px] lg:w-[150px] xl:w-[200px]">
+
           <button type="submit"
-            class="block text-center text-base font-semibold text-white bg-purple-700 w-[150px] mx-auto py-3 my-5 rounded-full hover:bg-black hover:text-white hover:font-medium uppercase">Subscribe</button>
+            class="inline-flex items-center px-4 py-2 bg-purple-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-black  transition ease-in-out duration-150 my-5">Subscribe</button>
 
         </form>
       </div>

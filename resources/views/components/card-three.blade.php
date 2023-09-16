@@ -12,7 +12,7 @@
             {{ $cardThreeDescription }}
         </p>
         <p
-            class="block bg-purple-700 text-white w-36 rounded-full hover:bg-black  py-2 mx-auto text-base font-normal text-center">
+            class="block bg-purple-700 text-white w-36 rounded hover:bg-black  py-2 mx-auto text-base font-normal text-center">
             <a class="block" href="{{ $cardThreeLink }}">Read More</a>
         </p>
         {{-- Date --}}
