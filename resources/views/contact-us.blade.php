@@ -6,8 +6,8 @@
   </x-header-section>
   <!--Services box description -->
 
-  <section class="w-full">
-    <div class="block w-[90%] mx-auto sm:w-[600px]">
+  <section class="w-full relative">
+    <div class="block w-[90%] mx-auto sm:w-[600px] lg:w-[700px]">
       <div class="flex justify-center items-center flex-col my-5">
         <h3 class="font-semibold text-2xl">Excited! Let's Talk</h3>
         <p class="text-base text-gray-700 my-3 text-center">Your journey to this point demonstrates your interest in our
@@ -15,7 +15,8 @@
         <p class="text-base text-gray-700 mb-3 text-center">We're eager to delve deeper into your project, discover its
           unique qualities, and nurture it as if it were our very own.</p>
       </div>
-      <form method="post" action="" class="mt-6 space-y-6">
+      <form method="post" action=""
+        class="mt-6 space-y-6 sm:bg-white sm:w-[500px] sm:p-10 sm:rounded-lg sm:shadow-lg  sm:mx-auto lg:w-[600px]">
         @csrf
         <div>
           <x-input-label for="fullname" :value="__('Fullname')" />
@@ -56,9 +57,15 @@
       </form>
     </div>
     {{-- Design --}}
-    <div class="flex justify-center items-center w-[300px] h-[300px] border  rounded-full">
-      <img src="{{ url('/assets/images/bg.jpg') }}" class="w-full h-full object-cover object-center rounded-full"
-        alt="">
+    <div
+      class="flex justify-center items-center w-[50px] absolute top-0 right-5 opacity-30 -rotate-45 lg:w-[100px] lg:right-20">
+      <img src="{{ url('/assets/images/icon-contact-us.webp') }}"
+        class="w-full h-full object-cover object-center rounded-full" alt="">
+    </div>
+
+    <div class="w-[150px] hidden lg:block lg:absolute lg:left-10 lg:bottom-5 lg:animate-bounce">
+      <img src="{{ url('/assets/images/navbar-vertical.png') }}" alt=""
+        class="w-full h-full object-cover object-center rounded-full">
     </div>
   </section>
   <br>

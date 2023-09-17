@@ -35,13 +35,13 @@
     <li class="lg:text-white  lg:text-xs uppercase lg:font-semibold leading-4 hover:text-black transition-all"><a
         class="" href="{{ route('portfolio') }}">Portfolio</a></li>
     <li class="lg:text-white  lg:text-xs uppercase lg:font-semibold leading-4 hover:text-black transition-all"><a
-        class="" href="{{ route('contact-us') }}">Contact Us</a></li>
+        class="" href="{{ route('contact.index') }}">Contact Us</a></li>
     {{-- <li class="lg:text-white  lg:text-xs uppercase lg:font-semibold leading-4 hover:text-black transition-all"><a class="" href="/">Home</a></li> --}}
   </ul>
   <!-- CTA -->
   <div class="block">
     <a class="block text-center lg:text-xs lg:font-semibold leading-4 w-[200px] mx-auto py-3 my-9 rounded-full uppercase bg-transparant border-2 border-white text-white hover:bg-black hover:font-semibold transition-all"
-      href="{{ route('contact-us') }}">Free Consultancy</a>
+      href="{{ route('contact.index') }}">Free Consultancy</a>
   </div>
 </nav>
 <!-- end Navigation and logo -->

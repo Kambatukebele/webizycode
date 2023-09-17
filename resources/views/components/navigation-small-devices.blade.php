@@ -30,7 +30,7 @@
     <li class="text-center mb-2 font-semibold"><a class="text-black text-xs uppercase  leading-4 my-5 "
         href="{{ route('portfolio') }}">Portfolio</a></li>
     <li class="text-center mb-2 font-semibold">
-      <a class="text-black text-xs uppercase  leading-4 my-5 " href="{{ route('contact-us') }}">Contact Us</a>
+      <a class="text-black text-xs uppercase  leading-4 my-5 " href="{{ route('contact.index') }}">Contact Us</a>
     </li>
   </ul>
 </nav>

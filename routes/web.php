@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\ContactFormController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -32,9 +33,7 @@ Route::get('/test', function () {
 });
 
 //Contact Route
-Route::get('/contact-us', function (){
-    return View('contact-us');
-});
+Route::get('/contact-us', [ContactFormController::class, 'index'])->name('contact.index');
 
 //Services Routes => To show all services
 Route::get('/services', function (){
@@ -78,11 +77,6 @@ Route::get('/dashboard', function () {
 Route::get('/portfolio', function (){
     return view('portfolio');
 })->name('portfolio');
-
-//contact-us
-Route::get('/contact-us', function (){
-    return view('contact-us');
-})->name('contact-us');
 
 // Post
 Route::get('/post', [PostController::class, 'index'])->middleware(['auth', 'verified'])->name('post.index');

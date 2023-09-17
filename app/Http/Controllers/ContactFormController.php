@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\ContactForm;
 use Illuminate\Http\Request;
 
 class ContactFormController extends Controller
@@ -11,7 +12,7 @@ class ContactFormController extends Controller
      */
     public function index()
     {
-        //
+        return View('contact-us');
     }
 
     /**
@@ -27,7 +28,23 @@ class ContactFormController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validate = $request->validate([
+            'fullname' => 'required|string',
+            'email' => 'required|email',
+            'company' => 'required|string', 
+            'content' => 'required|max:255'
+        ]);
+
+        $contactForm = new ContactForm; 
+
+        $contactForm->fullname = $request->fullname;
+        $contactForm->email = $request->email; 
+        $contactForm->company = $request->company;
+        $contactForm->content = $request->content; 
+
+        $contactForm->save();
+
+        return redirect(to_route('contact.index')); 
     }
 
     /**
