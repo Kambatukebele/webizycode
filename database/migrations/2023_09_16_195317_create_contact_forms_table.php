@@ -13,10 +13,11 @@ return new class extends Migration
     {
         Schema::create('contact_forms', function (Blueprint $table) {
             $table->id();
-            $table->string('fullname');
-            $table->string('email')->unique();
+            $table->string('name');
+            $table->string('email');
             $table->string('company');
             $table->string('content'); 
+            $table->boolean('privacy');
             $table->timestamps();
         });
     }

@@ -30,7 +30,8 @@
         </div>
         <div class="">
           <p class="text-base font-normal font-Nunito text-gray-500 text-center my-2">Legal Notice</p>
-          <p class="text-base font-normal font-Nunito text-gray-500 text-center my-2">Privacy Policy
+          <p class=" block text-base font-normal font-Nunito text-gray-500 text-center my-2">
+            <a href="{{ route('privacy-policy') }}" class="block">Privacy Policy</a>
           </p>
           <p class="text-base font-normal font-Nunito text-gray-500 text-center my-2">Cookies Policy
           </p>

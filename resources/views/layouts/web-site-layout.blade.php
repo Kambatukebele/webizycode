@@ -20,6 +20,8 @@
     </head>
 
     <body class="bg-gray-50 font-montserrat">
+        {{-- //in your blade template --}}
+        @include('cookie-consent::index')
         <!--Hidden Navigation and logo for Small devices -->
         <x-navigation-small-devices />
         <!--ENd Hidden Navigation and logo for Small devices -->

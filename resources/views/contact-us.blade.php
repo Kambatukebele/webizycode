@@ -15,40 +15,42 @@
         <p class="text-base text-gray-700 mb-3 text-center">We're eager to delve deeper into your project, discover its
           unique qualities, and nurture it as if it were our very own.</p>
       </div>
-      <form method="post" action=""
+      <form method="post" action="{{ route('contact.store') }}"
         class="mt-6 space-y-6 sm:bg-white sm:w-[500px] sm:p-10 sm:rounded-lg sm:shadow-lg  sm:mx-auto lg:w-[600px]">
         @csrf
         <div>
-          <x-input-label for="fullname" :value="__('Fullname')" />
-          <x-text-input id="fullname" name="fullname" type="text" class="mt-1 block w-full" required autofocus
-            autocomplete="fullname" />
-          {{-- <x-input-error class="mt-2" :messages="$errors->get('fullname')" /> --}}
+          <x-input-label for="name" :value="__('Name')" />
+          <x-text-input id="name" name="name" type="text" :value="old('name')" class="mt-1 block w-full" required
+            autofocus autocomplete="name" />
+          <x-input-error class="mt-2" :messages="$errors->get('name')" />
         </div>
         <div>
           <x-input-label for="email" :value="__('Email')" />
-          <x-text-input id="email" name="email" type="email" class="mt-1 block w-full" required
+          <x-text-input id="email" name="email" type="email" :value="old('email')" class="mt-1 block w-full" required
             autocomplete="username" />
-          {{-- <x-input-error class="mt-2" :messages="$errors->get('email')" /> --}}
+          <x-input-error class="mt-2" :messages="$errors->get('email')" />
         </div>
         <div>
           <x-input-label for="company" :value="__('Company')" />
-          <x-text-input id="company" company="company" type="text" class="mt-1 block w-full" required autofocus
-            autocomplete="company" />
-          {{-- <x-input-error class="mt-2" :messages="$errors->get('company')" /> --}}
+          <x-text-input id="company" company="company" name="company" :value="old('company')" type="text"
+            class="mt-1 block w-full" required autofocus autocomplete="company" />
+          <x-input-error class="mt-2" :messages="$errors->get('company')" />
         </div>
         <div>
           <x-input-label for="name" :value="__('Message')" />
           <textarea
             class="border-gray-300 mt-1 block focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm w-full"
-            name="content" id="content" rows="10"></textarea>
+            name="content" id="content" rows="10">{{ old('fullname') }}</textarea>
+          <x-input-error class="mt-2" :messages="$errors->get('content')" />
         </div>
         <div class="flex">
           <input class="border-gray-300 mr-3 focus:border-indigo-500 focus:ring-indigo-500 rounded shadow-sm"
             type="checkbox" name="privacy" id="privacy">
-          <a href="#" class="block underline cursor-pointer">
-            <x-input-label for="company" :value="__('I have read and accept the Privacy Policy')" />
+          <a href="{{ route('privacy-policy') }}" class="block font-medium text-sm text-gray-700 underline">
+            I have read and accept the Privacy Policy
           </a>
         </div>
+        <x-input-error class="mt-2" :messages="$errors->get('privacy')" />
         <div class="flex items-center gap-4">
           <button
             class="inline-flex items-center px-4 py-2 bg-purple-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-black  transition ease-in-out duration-150">Send

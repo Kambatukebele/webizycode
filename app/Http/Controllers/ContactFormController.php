@@ -29,22 +29,32 @@ class ContactFormController extends Controller
     public function store(Request $request)
     {
         $validate = $request->validate([
-            'fullname' => 'required|string',
+            'name' =>  [
+                'required',
+                'regex:/(^([a-zA-Z]+)(\d+)?$)/u'
+            ],
             'email' => 'required|email',
-            'company' => 'required|string', 
-            'content' => 'required|max:255'
+            'company' => [
+                'required',
+                'regex:/(^([a-zA-Z]+)(\d+)?$)/u'
+            ],
+            'content' => 'required|string|max:255',
+            'privacy' => 'accepted',
         ]);
+
+        $privacy = $request->has('privacy') ? true : false; 
 
         $contactForm = new ContactForm; 
 
-        $contactForm->fullname = $request->fullname;
+        $contactForm->name = $request->name;
         $contactForm->email = $request->email; 
         $contactForm->company = $request->company;
         $contactForm->content = $request->content; 
+        $contactForm->privacy = $privacy; 
 
         $contactForm->save();
 
-        return redirect(to_route('contact.index')); 
+        return redirect()->route('contact.index')->with('status', 'Your message has been sent!'); 
     }
 
     /**

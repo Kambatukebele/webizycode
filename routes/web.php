@@ -34,6 +34,12 @@ Route::get('/test', function () {
 
 //Contact Route
 Route::get('/contact-us', [ContactFormController::class, 'index'])->name('contact.index');
+Route::post('/contact-us', [ContactFormController::class, 'store'])->name('contact.store'); 
+
+//Privacy Policy
+Route::get('/privacy-policy', function (){
+    return view('privacy-policy');
+})->name('privacy-policy');
 
 //Services Routes => To show all services
 Route::get('/services', function (){
