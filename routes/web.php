@@ -18,19 +18,15 @@ use Spatie\FlareClient\View;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 // Home Route 
-Route::get('/home', function () {
+Route::get('/', function () {
     return View('/home'); 
 })->name('home');
 
-// Home Route 
-Route::get('/test', function () {
-    return View('test'); 
-});
 
 //Contact Route
 Route::get('/contact-us', [ContactFormController::class, 'index'])->name('contact.index');
