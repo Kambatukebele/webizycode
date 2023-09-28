@@ -1,7 +1,7 @@
 <x-app-layout>
   <x-slot name="header">
     <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-      {{ __('All Posts') }}
+      {{ __('All Portfolios') }}
     </h2>
   </x-slot>
   <div class="py-12">
@@ -16,7 +16,7 @@
                     Title
                   </th>
                   <th scope="col" class="px-6 py-3 border text-center">
-                    Category
+                    Company Name
                   </th>
                   <th scope="col" class="px-6 py-3 border text-center">
                     Status
@@ -27,27 +27,27 @@
                 </tr>
               </thead>
               <tbody>
-                @foreach ($posts as $post)
+                @foreach ($portfolios as $portfolio)
                 <tr
                   class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
 
                   <th scope="row"
                     class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white text-center">
-                    {{ $post->title }}
+                    {{ $portfolio->company_project_title }}
                   </th>
                   <th scope="row"
                     class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white text-center">
-                    {{ $post->category }}
+                    {{ $portfolio->company_name }}
                   </th>
                   <td class="px-6 py-4 border text-center w-[150px]">
-                    @if ($post->status === 'active')
-                    <p class="bg-green-600 py-2 w-[90px] rounded-md text-white">{{ $post->status }}</p>
+                    @if ($portfolio->status === 'active')
+                    <p class="bg-green-600 py-2 w-[90px] rounded-md text-white">{{ $portfolio->status }}</p>
                     @else
-                    <p class="bg-yellow-600 py-2 w-[90px] rounded-md text-white ">{{ $post->status }}</p>
+                    <p class="bg-yellow-600 py-2 w-[90px] rounded-md text-white ">{{ $portfolio->status }}</p>
                     @endif
                   </td>
                   <td class="px-6 py-4 border text-center">
-                    <a href="{{ route('post.edit', ['id'=> $post->id]) }}">
+                    <a href="{{ route('portfolio.edit', ['id'=> $portfolio->id]) }}">
                       <button class="py-2 w-[90px] bg-blue-800 text-white rounded-md">Edit</button>
                     </a>
                   </td>
@@ -55,9 +55,9 @@
                 @endforeach
               </tbody>
             </table>
-            <nav class="flex items-center justify-between pt-4 px-3" aria-label="Table navigation">
+            {{-- <nav class="flex items-center justify-between pt-4 px-3" aria-label="Table navigation">
               <span class="text-sm font-normal text-gray-500 dark:text-gray-400">{{ $posts->links() }}</span>
-            </nav>
+            </nav> --}}
           </div>
         </div>
       </div>

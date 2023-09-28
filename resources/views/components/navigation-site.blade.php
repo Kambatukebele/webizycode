@@ -34,7 +34,7 @@
             <a class="" href="{{ route('blog') }}">Blog</a>
         </li>
         <li class="lg:text-white lg:text-xs uppercase lg:font-semibold leading-4  hover:text-black transition-all">
-            <a class="" href="{{ route('portfolio') }}">Portfolio</a>
+            <a class="" href="{{ route('portfolio.show') }}">Portfolio</a>
         </li>
         <li class="lg:text-white lg:text-xs uppercase lg:font-semibold leading-4  hover:text-black transition-all">
             <a class="" href="{{ route('contact.index') }}">Contact Us</a>

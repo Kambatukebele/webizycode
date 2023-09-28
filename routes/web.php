@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ContactFormController;
+use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -26,7 +27,6 @@ use Spatie\FlareClient\View;
 Route::get('/', function () {
     return View('/home'); 
 })->name('home');
-
 
 //Contact Route
 Route::get('/contact-us', [ContactFormController::class, 'index'])->name('contact.index');
@@ -75,10 +75,16 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-//PortFolio
-Route::get('/portfolio', function (){
-    return view('portfolio');
-})->name('portfolio');
+//Portfolio Route
+Route::get('/portfolio', [PortfolioController::class, 'index'])->middleware(['auth', 'verified'])->name('portfolio');
+Route::get('/portfolio/show', [PortfolioController::class, 'show'])->name('portfolio.show'); 
+Route::get('/portfolio/create', [PortfolioController::class, 'create'])->middleware(['auth', 'verified'])->name('portfolio.create'); 
+Route::post('/portfolio', [PortfolioController::class, 'store'])->middleware(['auth', 'verified'])->name('portfolio.store');
+Route::get('/portfolio/single/{id}/{title}', [PortfolioController::class, 'single'])->name('portfolio.single'); 
+Route::get('/portfolio/edit/{id}', [PortfolioController::class, 'edit'])->middleware(['auth', 'verified'])->name('portfolio.edit'); 
+Route::put('/portfolio/{id}', [PortfolioController::class, 'update'])->middleware(['auth', 'verified'])->name('portfolio.update'); 
+Route::delete('/portfolio/{id}', [PortfolioController::class, 'destroy'])->middleware(['auth', 'verified'])->name('portfolio.destroy'); 
+ 
 
 // Post
 Route::get('/post', [PostController::class, 'index'])->middleware(['auth', 'verified'])->name('post.index');
