@@ -5,6 +5,7 @@ use App\Http\Controllers\ContactFormController;
 use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ReviewController;
 use Illuminate\Support\Facades\Route;
 use Spatie\FlareClient\View;
 
@@ -95,6 +96,14 @@ Route::put('/post/{id}', [PostController::class, 'update'])->middleware(['auth',
 Route::delete('/post/{id}', [PostController::class, 'destroy'])->middleware(['auth', 'verified'])->name('post.destroy');
 
 //End Post
+
+//Client Review
+Route::get('/review', [ReviewController::class, 'index'])->name('review');
+Route::post('/review/store', [ReviewController::class, 'store'])->name('review.store');
+Route::get('/review/show', [ReviewController::class, 'show'])->name('review.show')->middleware(['auth', 'verified']); 
+Route::get('/review/edit/{id}', [ReviewController::class, 'edit'])->name('review.edit')->middleware(['auth', 'verified']); 
+Route::put('/review/{id}', [ReviewController::class, 'update'])->name('review.update')->middleware(['auth', 'verified']);
+Route::delete('/review/{id}', [ReviewController::class, 'destroy'])->name('review.destroy')->middleware(['auth', 'verified']);
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

@@ -12,7 +12,6 @@ class PostController extends Controller
      */
     public function index()
     {
-
         $posts = Post::latest()->paginate(10);
         
         return view('posts.index', ['posts' => $posts]);
@@ -56,7 +55,7 @@ class PostController extends Controller
 
         $post->save(); 
 
-        return redirect(route('post.index'));
+        return redirect(route('post.index'))->with('status', 'Post saved successfully!');
  
     }
 
@@ -97,6 +96,10 @@ class PostController extends Controller
         ]);
 
         if(!$request->featured_image == null){
+            
+            if(file_exists(public_path() . '/uploads/' . $posts->featured_image)){
+                unlink(public_path() . '/uploads/' . $posts->featured_image);
+            }
               //Check ghe image
             $featured_image = time().'.'.$request->featured_image->extension();//Get the extension
             $request->featured_image->move(public_path('uploads'), $featured_image); //Move the image
@@ -113,19 +116,21 @@ class PostController extends Controller
 
         $posts->save(); 
 
-        return redirect(route('post.index')); 
+        return redirect(route('post.index'))->with('status', 'Post updated successfully!'); 
        
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(int $id)
     {
         $post = Post::find($id);
-
+        if(file_exists(public_path() . '/uploads/' . $post->featured_image)){
+            unlink(public_path() . '/uploads/' . $post->featured_image);
+        }
         $post->delete();
 
-         return redirect(route('post.index')); 
+         return redirect(route('post.index'))->with('status', 'Post deleted successfully!'); 
     }
 }

@@ -5,7 +5,12 @@
     </x-slot:titlePage>
   </x-header-section>
   <!--Services box description -->
-
+  <!--Session Message -->
+  @if (session('status'))
+  <script>
+    alert("{{ session('status') }}")
+  </script>
+  @endif
   <section class="w-full relative">
     <div class="block w-[90%] mx-auto sm:w-[600px] lg:w-[700px]">
       <div class="flex justify-center items-center flex-col my-5">
@@ -40,7 +45,7 @@
           <x-input-label for="name" :value="__('Message')" />
           <textarea
             class="border-gray-300 mt-1 block focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm w-full"
-            name="content" id="content" rows="10">{{ old('fullname') }}</textarea>
+            name="content" id="content" rows="10">{{ old('content') }}</textarea>
           <x-input-error class="mt-2" :messages="$errors->get('content')" />
         </div>
         <div class="flex">

@@ -48,6 +48,22 @@
                         </x-slot>
                     </x-dropdown>
                 </div>
+                <div class="hidden sm:flex sm:items-center sm:ml-6 cursor-pointer">
+                    <x-dropdown>
+                        <x-slot name="trigger">
+                            {{ __('Review') }}
+                        </x-slot>
+
+                        <x-slot name="content">
+                            <x-dropdown-link :href="route('review.show')">
+                                {{ __('View All Review') }}
+                            </x-dropdown-link>
+                            {{-- <x-dropdown-link :href="route('review.create')">
+                                {{ __('Edit a Portfolio') }}
+                            </x-dropdown-link> --}}
+                        </x-slot>
+                    </x-dropdown>
+                </div>
             </div>
 
             <!-- Settings Dropdown -->

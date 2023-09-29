@@ -84,7 +84,7 @@ class BlogController extends Controller
     {
         $postCategory = Post::where('category', $category)
         ->where('status', 'active')
-        ->latest()->get();
+        ->latest()->paginate(10);
         return view('blog.category', ['postCategory' => $postCategory]); 
     }
 

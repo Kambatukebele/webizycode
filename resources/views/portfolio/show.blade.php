@@ -11,14 +11,12 @@
   {{-- Laravel --}}
   <section class="w-full h-fit  mb-12 py-10">
     <div class="w-[90%] mx-auto md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px]">
-      <!--Upper -->
-      {{-- <div class="mb-10">
-        <h3 class="text-black font-semibold text-3xl text-center mb-5">Laravel </h3>
-      </div> --}}
       <!-- body section -->
       <div class="mb-10 lg:grid lg:gap-4 lg:grid-cols-2 lg:grid-rows-1 xl:grid-cols-3">
         {{-- Card --}}
+        @if ($portfolios)
         @foreach ($portfolios as $portfolio)
+        @if ($portfolio->status === 'active')
         <x-card-three>
           <x-slot:cardThreeImage>
             {{ url('/uploads/'. $portfolio->company_image) }}
@@ -36,11 +34,9 @@
             {{ $portfolio->company_date_launched }}
           </x-slot:cardThreeDate>
         </x-card-three>
+        @endif
         @endforeach
-      </div>
-      <div class="flex justify-center items-center">
-        {{-- <a class="block text-center bg-purple-700 w-48 text-white p-2 rounded-lg px-3"
-          href="{{ route('blog.category',  $portfolio->category) }}">View More of Laravel</a> --}}
+        @endif
       </div>
     </div>
   </section>

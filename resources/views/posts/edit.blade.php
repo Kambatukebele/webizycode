@@ -54,8 +54,8 @@
               <x-input-label for="category" :value="__('Category')" />
               <select name="category" id="category"
                 class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm mt-1 block w-full">
-                @isset($posts[0]->category)
-                <option value="{{$posts->category }}" selected>{{ Str::ucfirst($posts[0]->category) }}</option>
+                @isset($posts->category)
+                <option value="{{$posts->category }}" selected>{{ Str::ucfirst($posts->category) }}</option>
                 @endisset
                 <option value="laravel">Laravel</option>
                 <option value="php">PHP</option>
@@ -80,15 +80,14 @@
               <x-input-label for="status" :value="__('Status')" />
               <select name="status" id="status"
                 class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm mt-1 block w-full">
-                @isset($posts[0]->status)
-                <option value="{{$posts->status }}" selected>{{ Str::ucfirst($posts[0]->status) }}</option>
+                @isset($posts->status)
+                <option value="{{$posts->status }}" selected>{{ Str::ucfirst($posts->status) }}</option>
                 @endisset
                 <option value="draft">Draft</option>
                 <option value="active">Active</option>
               </select>
               <x-input-error class="mt-2" :messages="$errors->get('status')" />
             </div>
-            <x-input-error class="mt-2" :messages="$errors->get('status')" />
       </div>
       {{-- :value="old('email', $user->email)" --}}
       <div>
