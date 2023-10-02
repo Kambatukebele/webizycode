@@ -38,6 +38,7 @@ class BlogController extends Controller
         ->take(3)
         ->get();
 
+
         //Retrieve Only WordPress Posts
         $wordpress = Post::where('category', 'wordpress')
         ->where('status', 'active')
@@ -72,7 +73,9 @@ class BlogController extends Controller
 
     public function singleblog($id, $title)
     {
-        $allPosts = Post::latest()->take(6)->get();
+        $allPosts = Post::where('status', 'active')
+        ->where('id', '!=', $id)
+        ->inRandomOrder()->take(6)->get();
         $blog = Post::find($id);
         return view('blog.single-blog', [
             'blog' => $blog,

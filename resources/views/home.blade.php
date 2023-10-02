@@ -90,7 +90,7 @@
         <img class="w-full h-full object-cover object-center" src="/assets/images/64351ff45a3851681203188.png" alt="">
       </div>
       <!--Text -->
-      <div class="block  mt-5 lg:w-[400px] xl:w-[600px]">
+      <div class="block   mt-5 lg:w-[400px] xl:w-[600px]">
         <h2 class="mb-5 font-semibold font-poppins text-black text-4xl text-center lg:text-left">Why Us? </h2>
         <p class="font-normall font-poppins text-gray-700 text-base">
           With years of experience in the web development industry, our team has honed its skills to deliver

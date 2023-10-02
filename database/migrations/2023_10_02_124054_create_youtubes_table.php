@@ -11,13 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('contact_forms', function (Blueprint $table) {
+        Schema::create('youtubes', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('email');
-            $table->string('company');
-            $table->text('content'); 
-            $table->boolean('privacy');
+            $table->string('title');
+            $table->string('youtube_link');
+            $table->string('status')->default('draft');
             $table->timestamps();
         });
     }
@@ -27,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('contact_forms');
+        Schema::dropIfExists('youtubes');
     }
 };

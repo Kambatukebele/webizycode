@@ -12,7 +12,7 @@ class ContactFormController extends Controller
      */
     public function index()
     {
-        return View('contact-us');
+        return View('contact-us.contact-us');
     }
 
     /**
@@ -38,7 +38,7 @@ class ContactFormController extends Controller
                 'required',
                 'regex:/(^([a-zA-Z]+)(\d+)?$)/u'
             ],
-            'content' => 'required|string|max:255',
+            'content' => 'required|string',
             'privacy' => 'accepted',
         ]);
 
@@ -60,32 +60,30 @@ class ContactFormController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show()
     {
-        //
+        $conctacts = ContactForm::latest()->paginate(10);
+        return view("contact-us.show", [
+            'contacts' => $conctacts
+        ]);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
+    public function view_contact(int $id)
     {
-        //
+        $contact = ContactForm::find($id);
+        return view("contact-us.view_contact", [
+            "contact" => $contact
+        ]);
     }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
-    {
-        //
-    }
-
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(int $id)
     {
-        //
+        $contact = ContactForm::find($id);
+
+        $contact->delete();
+
+        return redirect(route('contact.show'))->with("status", "Message deleted successfully"); 
     }
 }

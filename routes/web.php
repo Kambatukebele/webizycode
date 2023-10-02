@@ -1,13 +1,14 @@
 <?php
 
-use App\Http\Controllers\BlogController;
-use App\Http\Controllers\ContactFormController;
-use App\Http\Controllers\PortfolioController;
-use App\Http\Controllers\PostController;
-use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\ReviewController;
-use Illuminate\Support\Facades\Route;
 use Spatie\FlareClient\View;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BlogController;
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\ReviewController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\YoutubeController;
+use App\Http\Controllers\PortfolioController;
+use App\Http\Controllers\ContactFormController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,12 +32,29 @@ Route::get('/', function () {
 
 //Contact Route
 Route::get('/contact-us', [ContactFormController::class, 'index'])->name('contact.index');
+Route::get('/contact-us/show', [ContactFormController::class, 'show'])->middleware(['auth', 'verified'])->name('contact.show');
+Route::get('/contact-us/view_contact/{id}', [ContactFormController::class, 'view_contact'])->middleware(['auth', 'verified'])->name('contact.view_contact');
 Route::post('/contact-us', [ContactFormController::class, 'store'])->name('contact.store'); 
+Route::delete('/contact-us/destroy/{id}', [ContactFormController::class, 'destroy'])->middleware(['auth', 'verified'])->name('contact.destroy');
+
+//Youtube video post
+Route::get('/youtube', [YoutubeController::class, 'index'])->middleware(['auth', 'verified'])->name('youtube.index');
+Route::get('/youtube/create', [YoutubeController::class, 'create'])->middleware(['auth', 'verified'])->name('youtube.create');
+Route::post('/youtube', [YoutubeController::class, 'store'])->middleware(['auth', 'verified'])->name('youtube.store');
+Route::get('/youtube/edit/{id}', [YoutubeController::class, 'edit'])->middleware(['auth', 'verified'])->name('youtube.edit');
+Route::put('/youtube/update/{id}', [YoutubeController::class, 'update'])->middleware(['auth', 'verified'])->name('youtube.update');
+Route::get('/youtube/show', [YoutubeController::class, 'show'])->name('youtube.show');
+Route::delete('/youtube/destroy/{id}', [YoutubeController::class, 'destroy'])->middleware(['auth', 'verified'])->name('youtube.destroy');
+
 
 //Privacy Policy
 Route::get('/privacy-policy', function (){
     return view('privacy-policy');
 })->name('privacy-policy');
+//Cookies Policy
+Route::get('/cookies-policies', function (){
+    return view('cookies_policies');
+})->name('cookies-policies');
 
 //Services Routes => To show all services
 Route::get('/services', function (){

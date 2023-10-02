@@ -13,7 +13,9 @@
         </p>
         <p
             class="block bg-purple-700 text-white w-36 rounded hover:bg-black  py-2 mx-auto text-base font-normal text-center">
-            <a class="block" href="{{ $cardThreeLink }}">Read More</a>
+            <a class="block" href="{{ $cardThreeLink }}">
+                Read More
+            </a>
         </p>
         {{-- Date --}}
         <p class="bg-purple-700 text-white w-24 absolute top-2 left-2  text-center text-xs py-2 rounded-md">

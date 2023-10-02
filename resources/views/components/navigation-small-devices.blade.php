@@ -28,6 +28,8 @@
     <li class="text-center mb-2 font-semibold"><a class="text-black text-xs uppercase  leading-4 my-5 "
         href="{{ route('blog') }}">Blog</a></li>
     <li class="text-center mb-2 font-semibold"><a class="text-black text-xs uppercase  leading-4 my-5 "
+        href="{{ route('youtube.show') }}">Youtube</a></li>
+    <li class="text-center mb-2 font-semibold"><a class="text-black text-xs uppercase  leading-4 my-5 "
         href="{{ route('portfolio.show') }}">Portfolio</a></li>
     <li class="text-center mb-2 font-semibold">
       <a class="text-black text-xs uppercase  leading-4 my-5 " href="{{ route('contact.index') }}">Contact Us</a>

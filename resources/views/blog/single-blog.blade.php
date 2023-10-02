@@ -54,6 +54,7 @@
       </div>
     </div>
   </section>
+  @isset($allPosts[0]->status)
   <section class="w-full h-fit  mb-12 py-10">
     <div class="w-[90%] mx-auto md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px]">
       <!--Upper -->
@@ -85,6 +86,7 @@
       </div>
     </div>
   </section>
+  @endisset
 
 
   <br><br>

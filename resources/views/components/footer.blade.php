@@ -18,9 +18,11 @@
         </div>
         <!--Icons -->
         <div class="my-3 inline-block">
-          <a href="#"><i class="fa-brands fa-github text-purple-700 text-2xl mr-2"></i></a>
-          <a href="#"><i class="fa-brands fa-linkedin text-purple-700 text-2xl mr-2"></i></a>
-          <a href="#"><i class="fa-brands fa-instagram text-purple-700 text-2xl mr-2"></i></a>
+          <a href="https://github.com/webizycode"><i class="fa-brands fa-github text-purple-700 text-2xl mr-2"></i></a>
+          <a href="https://www.linkedin.com/company/webizycode/?viewAsMember=true"><i
+              class="fa-brands fa-linkedin text-purple-700 text-2xl mr-2"></i></a>
+          <a href="https://www.instagram.com/webizy.cz/?hl=en"><i
+              class="fa-brands fa-instagram text-purple-700 text-2xl mr-2"></i></a>
         </div>
       </div>
       <!-- Info & Notices -->
@@ -29,11 +31,21 @@
           <h4 class="text-white font-ReadexPro text-2xl font-semibold text-center">Info & Notices</h4>
         </div>
         <div class="">
-          <p class="text-base font-normal font-Nunito text-gray-500 text-center my-2">Legal Notice</p>
+          {{-- <p class="text-base font-normal font-Nunito text-gray-500 text-center my-2">Legal Notice</p> --}}
           <p class=" block text-base font-normal font-Nunito text-gray-500 text-center my-2">
             <a href="{{ route('privacy-policy') }}" class="block">Privacy Policy</a>
           </p>
-          <p class="text-base font-normal font-Nunito text-gray-500 text-center my-2">Cookies Policy
+          <p class="text-base font-normal font-Nunito text-gray-500 text-center my-2">
+            <a href="{{ route('cookies-policies') }}" class="block">Cookies Policies</a>
+          </p>
+          <p class="text-base font-normal font-Nunito text-gray-500 text-center my-2">
+            <a href="{{ route('services') }}" class="block">Services</a>
+          </p>
+          <p class="text-base font-normal font-Nunito text-gray-500 text-center my-2">
+            <a href="{{ route('blog') }}" class="block">Blog</a>
+          </p>
+          <p class="text-base font-normal font-Nunito text-gray-500 text-center my-2">
+            <a href="{{ route('youtube.index') }}" class="block">Youtube</a>
           </p>
         </div>
       </div>
@@ -62,7 +74,7 @@
           </div>
           <div>
             <p class="text-base font-normal font-Nunito text-gray-500 text-center my-2 px-2">+420
-              999 999 999</p>
+              607 284 825</p>
           </div>
         </div>
         <!--Email -->
@@ -88,16 +100,17 @@
             class="border border-purple-700 text-gray-400 text-base font-normal bg-transparent rounded-md w-full sm:w-[300px] lg:w-[150px] xl:w-[200px]">
 
           <button type="submit"
-            class="inline-flex items-center px-4 py-2 bg-purple-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-black  transition ease-in-out duration-150 my-5">Subscribe</button>
+            class="block items-center px-4 py-2 bg-purple-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase w-full sm:w-[300px] lg:w-[150px] xl:w-[200px] tracking-widest hover:bg-black  transition ease-in-out duration-150 my-5 text-center">Subscribe</button>
 
         </form>
       </div>
     </div>
     <!--Bottom -->
     <div class="mt-10 border-t w-full border-t-purple-700 h-20 flex justify-center items-center">
-      <p class="text-base font-normal font-Nunito text-gray-500 text-center px-2">Copyright 2023. All
+      <p class="text-base font-normal font-Nunito text-gray-500 text-center px-2">Copyright {{ now()->year }}. All
         rights
-        reserved. Code with <span class="text-red-800">Laravel</span> by <span class="text-purple-700">WebizyCode</span>
+        reserved. Code with <span class="text-white">Laravel</span> by <span
+          class="text-purple-700 cursor-pointer">WebizyCode</span>
       </p>
     </div>
   </div>

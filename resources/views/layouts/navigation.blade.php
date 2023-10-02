@@ -64,6 +64,38 @@
                         </x-slot>
                     </x-dropdown>
                 </div>
+                <div class="hidden sm:flex sm:items-center sm:ml-6 cursor-pointer">
+                    <x-dropdown>
+                        <x-slot name="trigger">
+                            {{ __('Contact message') }}
+                        </x-slot>
+
+                        <x-slot name="content">
+                            <x-dropdown-link :href="route('contact.show')">
+                                {{ __('View All Contact') }}
+                            </x-dropdown-link>
+                            {{-- <x-dropdown-link :href="route('review.create')">
+                                                {{ __('Edit a Portfolio') }}
+                            </x-dropdown-link> --}}
+                        </x-slot>
+                    </x-dropdown>
+                </div>
+                <div class="hidden sm:flex sm:items-center sm:ml-6 cursor-pointer">
+                    <x-dropdown>
+                        <x-slot name="trigger">
+                            {{ __('Youtube') }}
+                        </x-slot>
+
+                        <x-slot name="content">
+                            <x-dropdown-link :href="route('youtube.index')">
+                                {{ __('All Youtube Video') }}
+                            </x-dropdown-link>
+                            <x-dropdown-link :href="route('youtube.create')">
+                                {{ __('Create Youtube Post') }}
+                            </x-dropdown-link>
+                        </x-slot>
+                    </x-dropdown>
+                </div>
             </div>
 
             <!-- Settings Dropdown -->

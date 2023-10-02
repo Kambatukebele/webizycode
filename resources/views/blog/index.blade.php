@@ -9,6 +9,7 @@
   <!--Blog-->
   <!--Blog-->
   {{-- Laravel --}}
+  @isset($laravel[0]->status)
   <section class="w-full h-fit  mb-12 py-10">
     <div class="w-[90%] mx-auto md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px]">
       <!--Upper -->
@@ -47,8 +48,9 @@
       </div>
     </div>
   </section>
-
+  @endisset
   {{-- Reactjs --}}
+  @isset($reactjs[0]->status)
   <section class="w-full h-fit  mb-12 py-10">
     <div class="w-[90%] mx-auto md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px]">
       <!--Upper -->
@@ -87,9 +89,10 @@
       </div>
     </div>
   </section>
+  @endisset
 
   {{-- Javascript --}}
-  @if($javascript)
+  @isset($javascript[0]->status)
   <section class="w-full h-fit  mb-12 py-10">
     <div class="w-[90%] mx-auto md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px]">
       <!--Upper -->
@@ -127,17 +130,17 @@
       </div>
     </div>
   </section>
-  @endif
+  @endisset
+
 
 
   {{-- php--}}
-  @if ($php)
+  @isset($php[0]->status)
   <section class="w-full h-fit  mb-12 py-10">
     <div class="w-[90%] mx-auto md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px]">
       <!--Upper -->
       <div class="mb-10">
         <h3 class="text-black font-semibold text-3xl text-center mb-5">PHP </h3>
-
       </div>
       <!-- body section -->
       <div class="mb-10 lg:grid lg:gap-4 lg:grid-cols-2 lg:grid-rows-1 xl:grid-cols-3">
@@ -172,10 +175,14 @@
 
     </div>
   </section>
-  @endif
+  @endisset
+
+
+
+
 
   {{-- WordPress --}}
-  @if ($wordpress)
+  @isset($wordpress[0]->status)
   <section class="w-full h-fit  mb-12 py-10">
     <div class="w-[90%] mx-auto md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px]">
       <!--Upper -->
@@ -214,10 +221,10 @@
       @endisset
     </div>
   </section>
-  @endif
+  @endisset
 
   {{-- Shopify --}}
-  @if ($shopify)
+  @isset ($shopify[0]->status)
   <section class="w-full h-fit  mb-12 py-10">
     <div class="w-[90%] mx-auto md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px]">
       <!--Upper -->
@@ -257,10 +264,10 @@
       @endisset
     </div>
   </section>
-  @endif
+  @endisset
 
   {{-- Social media --}}
-  @if ($socialmedia)
+  @isset ($socialmedia[0]->status)
   <section class="w-full h-fit  mb-12 py-10">
     <div class="w-[90%] mx-auto md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px]">
       <!--Upper -->
@@ -299,7 +306,7 @@
       @endisset
     </div>
   </section>
-  @endif
+  @endisset
 
 
   <br><br>

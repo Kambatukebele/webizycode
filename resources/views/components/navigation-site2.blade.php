@@ -7,7 +7,7 @@
     </a>
   </div>
   <!-- Navigation Menu-->
-  <ul class="lg:flex lg:justify-between lg:items-center lg:w-[400px]">
+  <ul class="lg:flex lg:justify-between lg:items-center lg:w-[550px]">
     <li class="lg:text-white  lg:text-xs uppercase lg:font-semibold leading-4 hover:text-black transition-all"><a
         class="" href="{{ route('home') }}">Home</a></li>
     <li id="services"
@@ -33,6 +33,8 @@
       <a class="" href="{{ route('blog') }}">Blog</a>
     </li>
     <li class="lg:text-white  lg:text-xs uppercase lg:font-semibold leading-4 hover:text-black transition-all"><a
+        class="" href="{{ route('youtube.show') }}">Youtube</a></li>
+    <li class="lg:text-white  lg:text-xs uppercase lg:font-semibold leading-4 hover:text-black transition-all"><a
         class="" href="{{ route('portfolio.show') }}">Portfolio</a></li>
     <li class="lg:text-white  lg:text-xs uppercase lg:font-semibold leading-4 hover:text-black transition-all"><a
         class="" href="{{ route('contact.index') }}">Contact Us</a></li>
@@ -41,7 +43,7 @@
   <!-- CTA -->
   <div class="block">
     <a class="block text-center lg:text-xs lg:font-semibold leading-4 w-[200px] mx-auto py-3 my-9 rounded-full uppercase bg-transparant border-2 border-white text-white hover:bg-black hover:font-semibold transition-all"
-      href="{{ route('contact.index') }}">Free Consultancy</a>
+      href="https://calendly.com/kambacharles11/30min">Free Consultancy</a>
   </div>
 </nav>
 <!-- end Navigation and logo -->
