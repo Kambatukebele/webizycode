@@ -61,9 +61,9 @@
                 @endforeach
               </tbody>
             </table>
-            {{-- <nav class="flex items-center justify-between pt-4 px-3" aria-label="Table navigation">
-              <span class="text-sm font-normal text-gray-500 dark:text-gray-400">{{ $posts->links() }}</span>
-            </nav> --}}
+            <nav class="flex items-center justify-between pt-4 px-3" aria-label="Table navigation">
+              <span class="text-sm font-normal text-gray-500 dark:text-gray-400">{{ $youtubes->links() }}</span>
+            </nav>
           </div>
         </div>
       </div>

@@ -6,3 +6,6 @@
   </div>
   {{-- Header section --}}
 </header>
+@if(session('success'))
+<p class="text-green-500">{{ session('success') }}</p>
+@endif

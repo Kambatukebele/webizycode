@@ -16,7 +16,7 @@
                         {{ __('Dashboard') }}
                     </x-nav-link>
                 </div>
-                <div class="hidden sm:flex sm:items-center sm:ml-6 cursor-pointer">
+                <div class="hidden sm:flex sm:items-center sm:ml-6 cursor-pointer text-sm">
                     <x-dropdown>
                         <x-slot name="trigger">
                             {{ __('Post') }}
@@ -32,55 +32,7 @@
                         </x-slot>
                     </x-dropdown>
                 </div>
-                <div class="hidden sm:flex sm:items-center sm:ml-6 cursor-pointer">
-                    <x-dropdown>
-                        <x-slot name="trigger">
-                            {{ __('Portfolio') }}
-                        </x-slot>
-
-                        <x-slot name="content">
-                            <x-dropdown-link :href="route('portfolio')">
-                                {{ __('View All Portfolio') }}
-                            </x-dropdown-link>
-                            <x-dropdown-link :href="route('portfolio.create')">
-                                {{ __('Create a Portfolio') }}
-                            </x-dropdown-link>
-                        </x-slot>
-                    </x-dropdown>
-                </div>
-                <div class="hidden sm:flex sm:items-center sm:ml-6 cursor-pointer">
-                    <x-dropdown>
-                        <x-slot name="trigger">
-                            {{ __('Review') }}
-                        </x-slot>
-
-                        <x-slot name="content">
-                            <x-dropdown-link :href="route('review.show')">
-                                {{ __('View All Review') }}
-                            </x-dropdown-link>
-                            {{-- <x-dropdown-link :href="route('review.create')">
-                                {{ __('Edit a Portfolio') }}
-                            </x-dropdown-link> --}}
-                        </x-slot>
-                    </x-dropdown>
-                </div>
-                <div class="hidden sm:flex sm:items-center sm:ml-6 cursor-pointer">
-                    <x-dropdown>
-                        <x-slot name="trigger">
-                            {{ __('Contact message') }}
-                        </x-slot>
-
-                        <x-slot name="content">
-                            <x-dropdown-link :href="route('contact.show')">
-                                {{ __('View All Contact') }}
-                            </x-dropdown-link>
-                            {{-- <x-dropdown-link :href="route('review.create')">
-                                                {{ __('Edit a Portfolio') }}
-                            </x-dropdown-link> --}}
-                        </x-slot>
-                    </x-dropdown>
-                </div>
-                <div class="hidden sm:flex sm:items-center sm:ml-6 cursor-pointer">
+                <div class="hidden sm:flex sm:items-center sm:ml-6 cursor-pointer text-sm">
                     <x-dropdown>
                         <x-slot name="trigger">
                             {{ __('Youtube') }}
@@ -96,6 +48,71 @@
                         </x-slot>
                     </x-dropdown>
                 </div>
+                <div class="hidden sm:flex sm:items-center sm:ml-6 cursor-pointer text-sm">
+                    <x-dropdown>
+                        <x-slot name="trigger">
+                            {{ __('Portfolio') }}
+                        </x-slot>
+
+                        <x-slot name="content">
+                            <x-dropdown-link :href="route('portfolio')">
+                                {{ __('View All Portfolio') }}
+                            </x-dropdown-link>
+                            <x-dropdown-link :href="route('portfolio.create')">
+                                {{ __('Create a Portfolio') }}
+                            </x-dropdown-link>
+                        </x-slot>
+                    </x-dropdown>
+                </div>
+                <div class="hidden sm:flex sm:items-center sm:ml-6 cursor-pointer text-sm">
+                    <x-dropdown>
+                        <x-slot name="trigger">
+                            {{ __('Review') }}
+                        </x-slot>
+
+                        <x-slot name="content">
+                            <x-dropdown-link :href="route('review.show')">
+                                {{ __('View All Review') }}
+                            </x-dropdown-link>
+                            {{-- <x-dropdown-link :href="route('review.create')">
+                                {{ __('Edit a Portfolio') }}
+                            </x-dropdown-link> --}}
+                        </x-slot>
+                    </x-dropdown>
+                </div>
+                <div class="hidden sm:flex sm:items-center sm:ml-6 cursor-pointer text-sm">
+                    <x-dropdown>
+                        <x-slot name="trigger">
+                            {{ __('Contact message') }}
+                        </x-slot>
+
+                        <x-slot name="content">
+                            <x-dropdown-link :href="route('contact.show')">
+                                {{ __('View All Contact') }}
+                            </x-dropdown-link>
+                            {{-- <x-dropdown-link :href="route('review.create')">
+                                                {{ __('Edit a Portfolio') }}
+                            </x-dropdown-link> --}}
+                        </x-slot>
+                    </x-dropdown>
+                </div>
+                <div class="hidden sm:flex sm:items-center sm:ml-6 cursor-pointer text-sm">
+                    <x-dropdown>
+                        <x-slot name="trigger">
+                            {{ __('Subscribers') }}
+                        </x-slot>
+
+                        <x-slot name="content">
+                            <x-dropdown-link :href="route('subscribe.index')">
+                                {{ __('All Subscribers') }}
+                            </x-dropdown-link>
+                            {{-- <x-dropdown-link :href="route('youtube.create')">
+                                {{ __('Create Youtube Post') }}
+                            </x-dropdown-link> --}}
+                        </x-slot>
+                    </x-dropdown>
+                </div>
+
             </div>
 
             <!-- Settings Dropdown -->

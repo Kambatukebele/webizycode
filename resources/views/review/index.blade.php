@@ -28,22 +28,29 @@
       <form method="post" action="{{ route('review.store') }}"
         class="mt-6 space-y-6 sm:bg-white sm:w-[500px] sm:p-10 sm:rounded-lg sm:shadow-lg  sm:mx-auto lg:w-[600px]">
         @csrf
+
+        <div>
+          <x-input-label for="name" :value="__('Your Position')" />
+          <input type="text" name="client_title" placeholder="example: CEO, CTO" value="{{ old('client_title') }}"
+            class="mt-1 block w-full" required autofocus autocomplete="name">
+          <x-input-error class="mt-2" :messages="$errors->get('client_title')" />
+        </div>
         <div>
           <x-input-label for="name" :value="__('Full Name')" />
-          <x-text-input id="fullname" name="client_fullname" type="text" :value="old('client_fullname')"
-            class="mt-1 block w-full" required autofocus autocomplete="name" />
+          <input type="text" name="client_fullname" placeholder="example: John Doe" value="{{ old('client_fullname') }}"
+            class="mt-1 block w-full" required autofocus autocomplete="name">
           <x-input-error class="mt-2" :messages="$errors->get('client_fullname')" />
         </div>
         <div>
           <x-input-label for="name" :value="__('Your Company Name')" />
-          <x-text-input id="fullname" name="client_company_name" type="text" :value="old('client_company_name')"
-            class="mt-1 block w-full" required autofocus autocomplete="name" />
+          <input type="text" name="client_company_name" placeholder="example: GOOGLE LLC"
+            value="{{ old('client_company_name') }}" class="mt-1 block w-full" required autofocus autocomplete="name">
           <x-input-error class="mt-2" :messages="$errors->get('client_company_name')" />
         </div>
         <div>
           <x-input-label for="name" :value="__('Company Link')" />
-          <x-text-input id="fullname" name="client_company_link" type="text" :value="old('client_company_link')"
-            class="mt-1 block w-full" required autofocus autocomplete="name" />
+          <input type="text" name="client_company_link" placeholder="example: https:://google.com"
+            value="{{ old('client_company_link') }}" class="mt-1 block w-full" required autofocus autocomplete="name">
           <x-input-error class="mt-2" :messages="$errors->get('client_company_link')" />
         </div>
         <div>

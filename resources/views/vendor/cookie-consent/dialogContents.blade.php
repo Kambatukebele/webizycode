@@ -8,6 +8,11 @@
                     </p>
                 </div>
                 <div class="mt-2 flex-shrink-0 w-full sm:mt-0 sm:w-auto">
+                    <a href="{{ route('privacy-policy') }}" class="mr-5 cursor-pointer">
+                        Privacy Policy
+                    </a>
+                </div>
+                <div class="mt-2 flex-shrink-0 w-full sm:mt-0 sm:w-auto">
                     <button
                         class="js-cookie-consent-agree cookie-consent__agree cursor-pointer flex items-center justify-center px-4 py-2 rounded-md text-sm font-medium text-white bg-purple-800 hover:bg-purple-950">
                         {{ trans('cookie-consent::texts.agree') }}

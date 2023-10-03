@@ -2,7 +2,7 @@
   <div
     class="w-[90%] mx-auto flex justify-between items-center flex-col md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px]">
     <!--Upper -->
-    <div class="lg:grid lg:gap-4 lg:grid-cols-4 lg:grid-rows-1 lg:h-[300px]">
+    <div class="lg:grid lg:gap-36 lg:grid-cols-3 lg:grid-rows-1 lg:h-[300px]">
       <!--Logo-->
       <div class="min-w-[290px] my-5 flex justify-center items-center flex-col lg:my-0 lg:w-[200px] lg:justify-start">
         <div class="">
@@ -90,20 +90,21 @@
         </div>
       </div>
       <!-- News Letters -->
-      <div class="min-w-[290px] my-5 lg:w-[200px] lg:my-0">
+      {{-- <div class="min-w-[290px] my-5 lg:w-[200px] lg:my-0">
         <div class="mb-5">
           <h4 class="text-white font-ReadexPro text-2xl font-semibold text-center">Get the lastest
             Info</h4>
         </div>
         <form class="sm:flex sm:justify-center sm:items-center sm:flex-col">
-          <input type="text" placeholder="Your Email"
+          @csrf
+          <input type="email" placeholder="Your Email"
             class="border border-purple-700 text-gray-400 text-base font-normal bg-transparent rounded-md w-full sm:w-[300px] lg:w-[150px] xl:w-[200px]">
 
           <button type="submit"
             class="block items-center px-4 py-2 bg-purple-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase w-full sm:w-[300px] lg:w-[150px] xl:w-[200px] tracking-widest hover:bg-black  transition ease-in-out duration-150 my-5 text-center">Subscribe</button>
 
         </form>
-      </div>
+      </div> --}}
     </div>
     <!--Bottom -->
     <div class="mt-10 border-t w-full border-t-purple-700 h-20 flex justify-center items-center">

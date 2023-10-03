@@ -25,20 +25,20 @@
         @csrf
         <div>
           <x-input-label for="name" :value="__('Name')" />
-          <x-text-input id="name" name="name" type="text" :value="old('name')" class="mt-1 block w-full" required
-            autofocus autocomplete="name" />
+          <input type="text" name="name" placeholder="example: John Doe" value="{{ old('name') }}"
+            class="mt-1 block w-full" required autofocus autocomplete="name">
           <x-input-error class="mt-2" :messages="$errors->get('name')" />
         </div>
         <div>
           <x-input-label for="email" :value="__('Email')" />
-          <x-text-input id="email" name="email" type="email" :value="old('email')" class="mt-1 block w-full" required
-            autocomplete="username" />
+          <input type="email" name="email" placeholder="example: johndoe@youremail.com" value="{{ old('email') }}"
+            class="mt-1 block w-full" required autofocus autocomplete="email">
           <x-input-error class="mt-2" :messages="$errors->get('email')" />
         </div>
         <div>
           <x-input-label for="company" :value="__('Company')" />
-          <x-text-input id="company" company="company" name="company" :value="old('company')" type="text"
-            class="mt-1 block w-full" required autofocus autocomplete="company" />
+          <input type="text" name="company" placeholder="example: Company LLC" value="{{ old('company') }}"
+            class="mt-1 block w-full" required autofocus autocomplete="email">
           <x-input-error class="mt-2" :messages="$errors->get('company')" />
         </div>
         <div>

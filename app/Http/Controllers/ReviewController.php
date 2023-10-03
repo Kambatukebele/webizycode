@@ -16,19 +16,18 @@ class ReviewController extends Controller
     {
        
         $validate = $request->validate([
-            'client_fullname' =>  [
-                'required',
-                'regex:/(^([a-zA-Z]+)(\d+)?$)/u'
-            ],
+            'client_title' =>  'required|string',
+            'client_fullname' => 'required|string',
             'client_company_name' => 'required|string',
             'client_company_link' => 'required|url:http,https',
-            'client_review' => 'required|string|max:255',
+            'client_review' => 'required|string',
             'privacy' => 'accepted',
         ]);
         $privacy = $request->has('privacy') ? true : false;
 
         $review = new Review;
 
+        $review->client_title = $request->client_title;
         $review->client_fullname = $request->client_fullname;
         $review->client_company_name = $request->client_company_name;
         $review->client_company_link = $request->client_company_link;

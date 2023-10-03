@@ -9,6 +9,9 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\YoutubeController;
 use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\ContactFormController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\SubscriptionsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,14 +24,8 @@ use App\Http\Controllers\ContactFormController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
 // Home Route 
-Route::get('/', function () {
-    return View('/home'); 
-})->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 //Contact Route
 Route::get('/contact-us', [ContactFormController::class, 'index'])->name('contact.index');
@@ -45,6 +42,11 @@ Route::get('/youtube/edit/{id}', [YoutubeController::class, 'edit'])->middleware
 Route::put('/youtube/update/{id}', [YoutubeController::class, 'update'])->middleware(['auth', 'verified'])->name('youtube.update');
 Route::get('/youtube/show', [YoutubeController::class, 'show'])->name('youtube.show');
 Route::delete('/youtube/destroy/{id}', [YoutubeController::class, 'destroy'])->middleware(['auth', 'verified'])->name('youtube.destroy');
+
+//Subscribers Route
+Route::get('/subscribe', [SubscriptionsController::class, 'index'])->middleware(['auth', 'verified'])->name('subscribe.index');
+Route::post('/subscribe', [SubscriptionsController::class, 'store'])->name('subscribe.store');  
+Route::delete('/subscribe/{id}', [SubscriptionsController::class, 'destroy'])->name('subscribe.destroy');  
 
 
 //Privacy Policy
@@ -90,9 +92,11 @@ Route::get('/blog', [BlogController::class, 'index'])->name('blog');
 Route::get('/blog/{category}', [BlogController::class, 'category'])->name('blog.category');
 Route::get('/blog/single-blog/{id}/{title}', [BlogController::class, 'singleblog'])->name('blog.single-blog');
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+// Route::get('/dashboard', function () {
+//     return view('dashboard');
+// })->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::get('/dashboard', [DashboardController::class, 'index'])->middleware(['auth', 'verified'])->name('dashboard');
 
 //Portfolio Route
 Route::get('/portfolio', [PortfolioController::class, 'index'])->middleware(['auth', 'verified'])->name('portfolio');
