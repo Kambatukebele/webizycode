@@ -50,7 +50,7 @@
         <!--End Testimonial code : https://www.hyperui.dev/components/marketing/testimonials -->
         <!-- Vite -->
         @vite('resources/css/app.css')
-        <title>Document</title>
+        <title>WebizyCode | Web Development & Digital Marketing Agency</title>
     </head>
 
     <body class="bg-gray-50 font-montserrat">

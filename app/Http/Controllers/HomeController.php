@@ -9,6 +9,7 @@ class HomeController extends Controller
 {
     public function index ()
     {
+        $siteTitle = "Home|webizycode|Web Development & Digital Marketing Agency";
         $reviews = Review::where("status", "active")
         ->latest()
         ->take(10)
