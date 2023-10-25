@@ -3,7 +3,7 @@
     <!-- Logo -->
     <div class="hidden lg:block">
         <a href="{{ route('home') }}" class="">
-            <img class="w-[50px]" src="/assets/images/originale-logo-webizy-1.png" alt="webizy-code-logo">
+            <img class="w-[50px]" src="{{ url('assets/images/originale-logo-webizy-1.png') }}" alt="webizy-code-logo">
         </a>
     </div>
     <!-- Navigation Menu-->

@@ -3,7 +3,7 @@
     <!--Logo -->
     <div class="block">
       <a href="{{ route('home') }}" class="">
-        <img class="w-[30px]" src="/assets/images/originale-logo-webizy-1.png" alt="webizy-code-logo">
+        <img class="w-[30px]" src="{{ url('assets/images/originale-logo-webizy-1.png') }}" alt="webizy-code-logo">
       </a>
     </div>
     <!--Hamburger Menu-->

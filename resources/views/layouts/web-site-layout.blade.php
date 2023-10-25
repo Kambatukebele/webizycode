@@ -76,7 +76,7 @@
                 We design exceptional digital products to streamline your business processes and save resources.
             </x-slot:description>
             <x-slot:CTA_Link>
-                https://laravel.com/docs/10.x/blade#slots
+               {{ route('contact.index') }}
             </x-slot:CTA_Link>
             <x-slot:CTA>
                 Work with with us

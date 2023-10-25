@@ -7,7 +7,7 @@
       <div class="min-w-[290px] my-5 flex justify-center items-center flex-col lg:my-0 lg:w-[200px] lg:justify-start">
         <div class="">
           <a href="#" class="">
-            <img class="w-[50px]" src="/assets/images/originale-logo-webizy-1.png" alt="webizy-code-logo">
+            <img class="w-[50px]" src="{{ url('/assets/images/originale-logo-webizy-1.png') }}" alt="webizy-code-logo">
           </a>
         </div>
         <div class="my-2">
@@ -116,4 +116,4 @@
     </div>
   </div>
 </footer>
-<script src="/assets/js/index.js"></script>
+<script src="{{ url('/assets/js/index.js') }}"></script>
