@@ -46,7 +46,6 @@
             <div
                 class="block animate-SlideInRight w-full sm:w-[400px] sm:h-[390px] sm:absolute top-10 right-0 sm:flex sm:justify-center sm:items-center md:w-[425px] md:h-[415px] lg:w-[530px] lg:h-[518px] xl:w-[675px] xl:h-[660px]">
                 <img class="w-full h-full object-cover object-center" src="{{ $image }}" alt="slider-girl-image">
-                {{-- /assets/images/slider-girl-img-1.png --}}
             </div>
 
         </div>

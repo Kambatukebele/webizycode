@@ -89,7 +89,7 @@
       class="block w-[90%]  mx-auto sm:w-[600px] md:w-[700px] lg:w-[900px] lg:flex lg:justify-between lg:items-center xl:w-[1220px] xl:items-start">
       <!--Image -->
       <div class="w-[250px] mx-auto lg:w-[500px] xl:w-[600px]">
-        <img class="w-full h-full object-cover object-center" src="{{ url('/assets/images/64351ff45a3851681203188.png') }}" alt="">
+        <img class="w-full h-full object-cover object-center" src="{{ url('/assets/images/64351ff45a3851681203188.png') }}" alt="why choosing our company">
       </div>
       <!--Text -->
       <div class="block   mt-5 lg:w-[400px] xl:w-[600px]">
@@ -120,9 +120,6 @@
           running smoothly and up to date.
         </p>
       </div>
-    </div>
-    <div class="border h-10 w-10">
-      <img src="public/assets/images/top-left-shadow-2.png" alt="">
     </div>
   </section>
 

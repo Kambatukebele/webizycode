@@ -8,7 +8,7 @@
   </x-header-section>
   <!--Services box description -->
   <br><br>
-  <section class="w-full h-fit py-7 my-10">
+  <section class="w-full h-fit py-7 my-10 relative">
     <div
       class="block w-[90%]  mx-auto sm:w-[600px] md:w-[700px] lg:w-[900px] lg:flex lg:justify-between lg:items-center xl:w-[1220px] xl:items-start">
       <!--Image -->

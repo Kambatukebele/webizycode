@@ -22,7 +22,7 @@
               {{-- Bespoke software development for Small size Business --}}
               {{-- Tailored software solutions for small businesses. --}}
               {{-- Custom <br> Web <br> development --}}
-              E-Commerce web developement
+              E-Commerce web developement and SEO Agency
           </x-slot:title>
           <x-slot:description>
               We design exceptional digital products to streamline your business processes and save resources.
@@ -31,7 +31,7 @@
              {{ route('contact.index') }}
           </x-slot:CTA_Link>
           <x-slot:CTA>
-              Work with with us
+              Work with us
           </x-slot:CTA>
           <x-slot:image>
               {{ url('/assets/images/slider-girl-img-1.png') }}
