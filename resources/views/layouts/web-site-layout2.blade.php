@@ -23,7 +23,7 @@
         <x-navigation-small-devices />
         <!--ENd Hidden Navigation and logo for Small devices -->
         <!-- Header -->
-        <x-header-visible2 />
+        
         <!-- Hero section  -->
         {{ $slot }}
         <!-- Footer -->

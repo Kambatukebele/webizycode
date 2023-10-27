@@ -1,4 +1,6 @@
-<x-web-site-layout2>
+@section('title', 'Portfolio | A Glimpse into Our Outstanding Work')
+@section('description', 'Discover our exceptional project. Excellence in every detail. Witness our creative prowess in action')
+<x-web-site-layout>
   <x-header-section>
     <x-slot:titlePage>
       {{ $portfolio->company_name }}
@@ -61,4 +63,4 @@
 
   <br><br>
   <!--End Services box description -->
-</x-web-site-layout2>
+</x-web-site-layout>

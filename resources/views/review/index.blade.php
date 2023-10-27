@@ -1,4 +1,6 @@
-<x-web-site-layout2>
+@section('title', 'Reviews | Insightful Reviews for Informed Choices')
+@section('description', 'Discover insightful reviews on our page. Informed choices made easy. Explore recommendations and expert insights.')
+<x-web-site-layout>
   <x-header-section>
     <x-slot:titlePage>
       Review
@@ -89,4 +91,4 @@
   </section>
   <br>
   <!--End Services box description -->
-</x-web-site-layout2>
+</x-web-site-layout>

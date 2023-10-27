@@ -1,4 +1,6 @@
-<x-web-site-layout2>
+@section('title', 'React.js Development | Top React.js Development Services')
+@section('description', 'Master React.js with us. Unleash the power of React.js development. Elevate your web apps with our expert guidance.')
+<x-web-site-layout>
   <x-header-section>
     <x-slot:titlePage>
       Front-end with Reactjs
@@ -137,4 +139,4 @@
   </section>
   <br><br>
   <!--End Services box description -->
-</x-web-site-layout2>
+</x-web-site-layout>

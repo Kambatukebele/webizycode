@@ -1,4 +1,6 @@
-<x-web-site-layout2>
+@section('title', 'Contact | Get in Touch – Contact Us Today')
+@section('description', "Get in touch today. We're here to assist you. Your questions and inquiries are always welcome.")
+<x-web-site-layout>
   <x-header-section>
     <x-slot:titlePage>
       Nice to Meet You!
@@ -77,4 +79,4 @@
   </section>
   <br>
   <!--End Services box description -->
-</x-web-site-layout2>
+</x-web-site-layout>

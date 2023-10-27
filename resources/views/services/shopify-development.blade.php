@@ -1,4 +1,6 @@
-<x-web-site-layout2>
+@section('title', 'Shopify Development | Specialized Shopify Development Services')
+@section('description', 'Transform your e-commerce with Shopify development. Expert solutions for online retail success. Elevate your business.')
+<x-web-site-layout>
   <x-header-section>
     <x-slot:titlePage>
       Shopify
@@ -87,4 +89,4 @@
 
   <br><br>
   <!--End Services box description -->
-</x-web-site-layout2>
+</x-web-site-layout>

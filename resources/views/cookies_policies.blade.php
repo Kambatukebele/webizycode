@@ -1,4 +1,6 @@
-<x-web-site-layout2>
+@section('title', 'Cookies - WebizyCode | Understanding Our Cookie Policy')
+@section('description', 'Learn about our cookie policy. We ensure data privacy and a seamless online experience. Your privacy matters to us.')
+<x-web-site-layout>
   <x-header-section>
     <x-slot:titlePage>
       Cookies Policies
@@ -134,4 +136,4 @@
   </section>
   <br><br>
   <!--End Services box description -->
-</x-web-site-layout2>
+</x-web-site-layout>

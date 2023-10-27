@@ -1,4 +1,6 @@
-<x-web-site-layout2>
+@section('title', 'Portfolios | Showcasing Our Portfolio of Excellence')
+@section('description', 'Explore our portfolio of excellence. See our finest work and creative solutions. Witness our commitment to quality.')
+<x-web-site-layout>
   <x-header-section>
     <x-slot:titlePage>
       Porfolio
@@ -42,4 +44,4 @@
   </section>
   <br><br>
   <!--End Services box description -->
-</x-web-site-layout2>
+</x-web-site-layout>

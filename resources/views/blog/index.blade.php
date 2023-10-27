@@ -1,4 +1,6 @@
-<x-web-site-layout2>
+@section('title', 'Blog | Engaging Blog Content for Business Readers')
+@section('description', "Explore engaging blog content. Stay informed and entertained. Discover valuable insights on diverse topics.")
+<x-web-site-layout>
   <x-header-section>
     <x-slot:titlePage>
       Blog
@@ -311,4 +313,4 @@
 
   <br><br>
   <!--End Services box description -->
-</x-web-site-layout2>
+</x-web-site-layout>

@@ -1,4 +1,6 @@
-<x-web-site-layout2>
+@section('title', 'Blog - categories | Explore Our Diverse Blog Categories')
+@section('description', "Explore diverse blog categories. Find your interests. Engage with insightful content across various topics.")
+<x-web-site-layout>
   <x-header-section>
     <x-slot:titlePage>
       {{ Str::ucfirst($postCategory[0]->category) }}
@@ -46,4 +48,4 @@
 
   <br><br>
   <!--End Services box description -->
-</x-web-site-layout2>
+</x-web-site-layout>

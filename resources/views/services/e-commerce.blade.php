@@ -1,4 +1,6 @@
-<x-web-site-layout2>
+@section('title', 'E-commerce | Elevating E-Commerce Experiences')
+@section('description', 'Dive into e-commerce insights. Enhance your online business with our expert e-commerce guidance. Start thriving today!')
+<x-web-site-layout>
   <x-header-section>
     <x-slot:titlePage>
       E-commerce Development
@@ -301,4 +303,4 @@
       </div>
   </section>
   <!--End Services box description -->
-</x-web-site-layout2>
+</x-web-site-layout>

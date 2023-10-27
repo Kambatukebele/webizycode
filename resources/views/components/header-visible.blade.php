@@ -1,3 +1,13 @@
+@if (!Request::is('/'))
+<header class="w-full h-fit bg-hero-upper">
+    <div class="w-[90%] mx-auto sm:max-w-[600px] md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px]">
+      <!-- Navigation and logo -->
+      <x-navigation-site />
+      <!-- end Navigation and logo -->
+    </div>
+    {{-- Header section --}}
+  </header>
+@else
 <header class="w-full h-fit bg-hero-upper bg-cover bg-bottom bg-no-repeat sm:relative sm:h-[580px] lg:h-[780px]">
     <div class="w-[90%] mx-auto sm:max-w-[600px] md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px]">
         <!-- Navigation and logo -->
@@ -42,6 +52,7 @@
         </div>
     </div>
 </header>
+@endif
 @if(session('success'))
 <p class="text-green-500">{{ session('success') }}</p>
 @endif

@@ -1,4 +1,6 @@
-<x-web-site-layout2>
+@section('title', 'Services | Comprehensive Web Development and SEO Services')
+@section('description', 'Discover our complete web development and SEO services. Elevate your online presence with our comprehensive solutions.')
+<x-web-site-layout>
   <x-header-section>
     <x-slot:titlePage>
       Services
@@ -138,4 +140,4 @@
   </section>
   <br><br>
   <!--End Services box description -->
-</x-web-site-layout2>
+</x-web-site-layout>

@@ -1,3 +1,4 @@
+@section('title', 'Youtube Video - Create')
 <x-app-layout>
   <script src="https://cdn.tiny.cloud/1/vs2uzmszoglxmru2wiphv9o8lwo8r5xplo8mqk0q9a2uh6w3/tinymce/6/tinymce.min.js"
     referrerpolicy="origin"></script>

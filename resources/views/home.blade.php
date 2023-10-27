@@ -1,3 +1,5 @@
+@section('title', 'Home - WebizyCode | Web Development & SEO Agency')
+@section('description', 'Boost your online presence with our web development and SEO expertise. A top-rated agency for growth and success.')
 <x-web-site-layout>
   <!--Services section Title -->
   <section class="block w-full my-5 xl:mt-24">

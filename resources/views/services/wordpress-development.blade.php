@@ -1,4 +1,6 @@
-<x-web-site-layout2>
+@section('title', 'WordPress Developement | Expert WordPress Development Services')
+@section('description', 'Unleash the potential of WordPress. Explore expert WordPress development services. Elevate your online presence.')
+<x-web-site-layout>
   <x-header-section>
     <x-slot:titlePage>
       WordPress
@@ -135,4 +137,4 @@
   </section>
   <br><br>
   <!--End Services box description -->
-</x-web-site-layout2>
+</x-web-site-layout>

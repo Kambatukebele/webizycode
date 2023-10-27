@@ -1,4 +1,6 @@
-<x-web-site-layout2>
+@section('title', 'YouTube Video | Explore our latest video projects and SEO tips')
+@section('description', 'Explore our web development and SEO video content. Expert insights for online success. Tune in for growth strategies!')
+<x-web-site-layout>
   <x-header-section>
     <x-slot:titlePage>
       Our Videos
@@ -42,4 +44,4 @@
   @endisset
   <br><br>
   <!--End Services box description -->
-</x-web-site-layout2>
+</x-web-site-layout>

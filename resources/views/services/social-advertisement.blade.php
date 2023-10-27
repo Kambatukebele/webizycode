@@ -1,4 +1,6 @@
-<x-web-site-layout2>
+@section('title', 'SEO Services | Strategic SEO Solutions for Online Success')
+@section('description', 'Boost your online visibility with SEO. Expert solutions for search engine optimization. Elevate your digital presence.')
+<x-web-site-layout>
   <x-header-section>
     <x-slot:titlePage>
       Advertisement
@@ -154,4 +156,4 @@
   </section> --}}
   <br><br>
   <!--End Services box description -->
-</x-web-site-layout2>
+</x-web-site-layout>

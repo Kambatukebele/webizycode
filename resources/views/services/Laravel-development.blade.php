@@ -1,4 +1,6 @@
-<x-web-site-layout2>
+@section('title', 'Laravel Developement | Laravel Web Development Experts')
+@section('description', 'Unlock the potential of Laravel. Explore our top-notch Laravel services. Elevate your web projects with our expertise.')
+<x-web-site-layout>
   <x-header-section>
     <x-slot:titlePage>
       Laravel
@@ -151,4 +153,4 @@
   </section>
   <br><br>
   <!--End Services box description -->
-</x-web-site-layout2>
+</x-web-site-layout>

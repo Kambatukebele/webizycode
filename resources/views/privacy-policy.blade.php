@@ -1,4 +1,6 @@
-<x-web-site-layout2>
+@section('title', 'Privacy | Your Privacy Matters - Our Privacy Policy')
+@section('description', 'Discover our transparent privacy policy. We prioritize your data security and online trust. Your privacy matters to us.')
+<x-web-site-layout>
   <x-header-section>
     <x-slot:titlePage>
       Privacy Policy
@@ -219,4 +221,4 @@
   </section>
   <br><br>
   <!--End Services box description -->
-</x-web-site-layout2>
+</x-web-site-layout>
