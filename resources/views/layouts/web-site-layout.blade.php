@@ -14,18 +14,13 @@
         <!-- Header -->
         <x-header-visible>
           <x-slot:upper>
-              The
-              only value
-              proposition that really matters:
+             Email Marketing & Shopify Agency
           </x-slot:upper>
           <x-slot:title>
-              {{-- Bespoke software development for Small size Business --}}
-              {{-- Tailored software solutions for small businesses. --}}
-              {{-- Custom <br> Web <br> development --}}
-              E-Commerce web developement and SEO Agency
+              Elevate your Shopify brand for conversion
           </x-slot:title>
           <x-slot:description>
-              We design exceptional digital products to streamline your business processes and save resources.
+            We leverage personalized Shopify email strategies to enhance your online presence and drive digital success.
           </x-slot:description>
           <x-slot:CTA_Link>
              {{ route('contact.index') }}

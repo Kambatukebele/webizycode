@@ -29,16 +29,13 @@
       <!--Box -->
       <x-card-one>
         <x-slot:cardOneIcon>
-          <i class="fa-brands fa-wordpress text-4xl"></i>
+         <i class="fa-solid fa-envelope text-4xl"></i>
         </x-slot:cardOneIcon>
         <x-slot:cardOneTitle>
-          WordPress Development
+          Email Marketing
         </x-slot:cardOneTitle>
         <x-slot:cardOneDescription>
-          "Unlock the Power of Digital with our WordPress Wizards! 🚀 Elevate your online presence with custom WordPress
-          solutions
-          that blend innovation, creativity, and performance. We turn pixels into profits, one pixel at a time! 💻✨
-          #WordPressMagic #WebDevMasters"
+          Leveraging top-notch email marketing platforms like Klaviyo or Brevo, we enhance your Shopify experience with targeted and effective email campaigns. Our commitment extends to providing cost-effective solutions without compromising quality. Our transparent pricing aligns with your budget.
         </x-slot:cardOneDescription>
         <x-slot:cardOneLink>
           {{ route('services.wordpress') }}
@@ -46,16 +43,13 @@
       </x-card-one>
       <x-card-one>
         <x-slot:cardOneIcon>
-          <i class="fa-brands fa-laravel text-4xl"></i>
+          <i class="fa-solid fa-money-bill text-4xl"></i>
         </x-slot:cardOneIcon>
         <x-slot:cardOneTitle>
-          Laravel Development
+          CRO
         </x-slot:cardOneTitle>
         <x-slot:cardOneDescription>
-          "Crafting digital masterpieces with Laravel! 🛠️ Elevate your web presence with our expert Laravel development
-          team. We
-          turn your ideas into elegant, high-performance web solutions. Your success, our code! 💡💼 #LaravelMasters
-          #WebDevExcellence"
+         Elevate your Shopify store's conversion rate with our specialized themes. Meticulously designed by our team, we empower businesses to craft a unique and optimized online shopping experience, seamlessly blending aesthetics and functionality. Our goal is to not just attract customers but to create an engaging journey that fosters long-term relationships and boosts sales.
         </x-slot:cardOneDescription>
         <x-slot:cardOneLink>
           {{ route('services.laravel') }}
@@ -66,14 +60,10 @@
           <i class="fa-brands fa-shopify text-4xl"></i>
         </x-slot:cardOneIcon>
         <x-slot:cardOneTitle>
-          Shopify Development
+          Customise existing themes
         </x-slot:cardOneTitle>
         <x-slot:cardOneDescription>
-          "Shopify Superheroes at Your Service! 🛍️ Transform your e-commerce dreams into reality with our Shopify
-          development
-          expertise. From store setup to sales growth, we're your one-stop-shop for online success. Let's build your
-          e-commerce
-          empire together! 💼🚀 #ShopifySolutions #EcommercePros"
+          Already settled on a theme? Dive into a realm of possibilities with our customization and rebranding services, curated to fulfill your distinct requirements. From our perspective, it's more than just adapting – it's about transforming your chosen theme into a bespoke masterpiece, a reflection of your brand essence. Let's collaborate to craft a digital storefront that not only captures attention but resonates with your unique identity.
         </x-slot:cardOneDescription>
         <x-slot:cardOneLink>
           {{ route('services.shopify') }}
@@ -95,29 +85,15 @@
       <div class="block   mt-5 lg:w-[400px] xl:w-[600px]">
         <h2 class="mb-5 font-bold font-poppins text-black text-4xl text-center lg:text-left">Why Us? </h2>
         <p class="font-normall font-poppins text-gray-700 text-base">
-          With years of experience in the web development industry, our team has honed its skills to deliver
-          top-notch
-          solutions. Your satisfaction is our priority. We maintain open communication channels throughout the
-          project,
-          keeping you involved
-          at every stage and addressing your concerns promptly.
+          With extensive experience in the Shopify development realm, our team excels in delivering exceptional solutions. Your satisfaction is our utmost priority. Throughout the project, we prioritize transparent and open communication, ensuring your involvement at every stage while promptly addressing any concerns.
         </p>
         <br>
         <p class="font-normal font-poppins text-gray-700 text-base">
-          We don't believe in one-size-fits-all solutions. Each project is unique, and we tailor our services to
-          meet
-          your
-          specific needs. Whether it's a small business website or a complex e-commerce platform, we've got you
-          covered.
+         We reject the one-size-fits-all approach. Recognizing the uniqueness of each project, we customize our services to meet your specific needs, whether it's a small business website or a sophisticated e-commerce platform.
         </p>
         <br>
         <p class="font-normal font-poppins text-gray-700 text-base">
-          We offer cost-effective solutions without compromising on quality. Our pricing is transparent, and we work
-          within your
-          budget. Our commitment doesn't end at launch. We provide ongoing maintenance and support to keep your
-          website
-          or application
-          running smoothly and up to date.
+          Our commitment extends to providing cost-effective solutions without compromising quality. Our transparent pricing aligns with your budget. Beyond the launch, we offer ongoing maintenance and support, ensuring your Shopify website or application runs seamlessly and stays up-to-date. Choose us for tailored excellence in Shopify development.
         </p>
       </div>
     </div>
