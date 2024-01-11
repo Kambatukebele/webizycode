@@ -12,11 +12,11 @@
         class="" href="{{ route('home') }}">Home</a></li>
     <li id="services"
       class="lg:relative  lg:text-white  lg:text-xs uppercase lg:font-semibold leading-4 hover:text-black transition-all">
-      <a class="" href="{{ route('services') }}">Services</a>
+      <a class="" href="#">Services</a>
       <div id="services-card"
         class="hidden lg:absolute lg:hidden lg:bg-white lg:w-[200px] lg:mt-2 lg:z-10 lg:rounded-md lg:border">
         <a class="hidden lg:block lg:text-black lg:my-3  lg:px-3 lg:text-xs leading-4 hover:underline hover:text-purple-700"
-          href="{{ route('services.wordpress') }}">WordPress </a>
+          href="{{ route('services.shopify') }}">Shopify design </a>
         <a class="hidden lg:block lg:text-black lg:my-3  lg:px-3 lg:text-xs leading-4 hover:underline hover:text-purple-700"
           href="{{ route('services.shopify') }}">Shopify </a>
         <a class="hidden lg:block lg:text-black lg:my-3  lg:px-3 lg:text-xs leading-4 hover:underline hover:text-purple-700"

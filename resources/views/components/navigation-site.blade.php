@@ -17,17 +17,13 @@
             <div id="services-card"
                 class="hidden lg:absolute lg:hidden lg:bg-white lg:w-[200px] lg:mt-2 lg:z-10 lg:rounded-md">
                 <a class="hidden lg:block lg:text-black lg:my-3 leading-4  lg:px-3 lg:text-xs hover:underline hover:text-purple-700"
-                    href="{{ route('services.wordpress') }}">WordPress </a>
+                    href="{{ route('services.shopify') }}">Shopify design </a>
                 <a class="hidden lg:block lg:text-black lg:my-3 leading-4  lg:px-3 lg:text-xs hover:underline hover:text-purple-700"
-                    href="{{ route('services.shopify') }}">Shopify </a>
+                    href="{{ route('services.email-marketing') }}">Email Marketing</a>
                 <a class="hidden lg:block lg:text-black lg:my-3 leading-4  lg:px-3 lg:text-xs hover:underline hover:text-purple-700"
-                    href="{{ route('services.laravel') }}">Laravel </a>
-                <a class="hidden lg:block lg:text-black lg:my-3 leading-4  lg:px-3 lg:text-xs hover:underline hover:text-purple-700"
-                    href="{{ route('services.e-commerce') }}">E-commerce </a>
-                <a class="hidden lg:block lg:text-black lg:my-3 leading-4  lg:px-3 lg:text-xs hover:underline hover:text-purple-700"
-                    href="{{ route('services.reactjs') }}">Reactjs </a>
-                <a class="hidden lg:block lg:text-black lg:my-3 leading-4  lg:px-3 lg:text-xs hover:underline hover:text-purple-700"
-                    href="{{ route('services.social-advertisement') }}">Social & Advertisement</a>
+                    href="{{ route('services.store-speed-optimization') }}">Speed Optimization</a>
+                    <a class="hidden lg:block lg:text-black lg:my-3 leading-4  lg:px-3 lg:text-xs hover:underline hover:text-purple-700"
+                    href="{{ route('services.migration') }}">Shopify Migration</a>
             </div>
         </li>
         <li class="lg:text-white lg:text-xs uppercase lg:font-semibold leading-4  hover:text-black transition-all">

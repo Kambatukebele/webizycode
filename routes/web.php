@@ -3,14 +3,15 @@
 use Spatie\FlareClient\View;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ReviewController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\YoutubeController;
+use App\Http\Controllers\ServicesController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\ContactFormController;
-use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\HomeController;
 use App\Http\Controllers\SubscriptionsController;
 
 /*
@@ -59,33 +60,18 @@ Route::get('/cookies-policies', function (){
 })->name('cookies-policies');
 
 //Services Routes => To show all services
-Route::get('/services', function (){
-    return view('services.index');
-})->name('services');
-//WordPress
-Route::get('/services/wordpress-development', function (){
-    return view('services/wordpress-development');
-})->name('services.wordpress');
-//Shopify
-Route::get('/services/shopify-development', function (){
-    return view('services/shopify-development');
-})->name('services.shopify');
-//Laravel
-Route::get('/services/laravel-development', function (){
-    return view('services/Laravel-development');
-})->name('services.laravel');
-//Social Media
-Route::get('services/social-advertisment', function (){
-    return view('/services/social-advertisement');
-})->name('services.social-advertisement');
-//Reactjs
-Route::get('/services/reactjs-development', function (){
-    return view('services/reactjs-development');
-})->name('services.reactjs');
-//Social Media
-Route::get('/services/e-commerce', function (){
-    return view('services/e-commerce');
-})->name('services.e-commerce');
+Route::controller(ServicesController::class)->group(function (){
+    //All services
+    Route::get('/services', 'services')->name('services');
+    // Shopify web design
+    Route::get('/services/shopify-web-design', 'shopify_web_design')->name('services.shopify');
+    // Email Marketing
+    Route::get('/services/email-marketing', 'email_marketing')->name('services.email-marketing');
+    // Store speed optimization
+    Route::get('/services/store-speed-optimization', 'store_speed_optimization')->name('services.store-speed-optimization');
+    // Migration to shopify
+    Route::get('/services/migration-to-shopify', 'migration_to_shopify')->name('services.migration');
+});
 
 //Blog
 Route::get('/blog', [BlogController::class, 'index'])->name('blog');

@@ -12,12 +12,12 @@
         <h2 class="text-black  text-4xl text-center font-bold my-3">Our Services</h2>
       </div>
       <!--BTN-->
-      <div>
+      {{-- <div>
         <a class="block text-center text-sm font-semibold text-white bg-purple-700 w-[150px] mx-auto py-3 my-5 rounded hover:bg-black hover:text-white hover:font-medium uppercase"
-          href="{{ route('services') }}">
+          href="#">
           Learn More
         </a>
-      </div>
+      </div> --}}
     </div>
   </section>
   <!--End Services section Title -->
@@ -25,7 +25,7 @@
 
   <section class="w-full">
     <div
-      class="block w-[90%]  mx-auto sm:w-[600px] md:w-[700px] lg:w-[900px] xl:w-[1220px] lg:flex lg:justify-between lg:items-center">
+      class="block w-[90%]  mx-auto sm:w-[600px] md:w-[700px] lg:w-[900px] xl:w-[1220px] lg:grid lg:gap-4 lg:grid-cols-3 lg:grid-rows-1">
       <!--Box -->
       <x-card-one>
         <x-slot:cardOneIcon>
@@ -38,7 +38,7 @@
           Leveraging top-notch email marketing platforms like Klaviyo or Brevo, we enhance your Shopify experience with targeted and effective email campaigns. Our commitment extends to providing cost-effective solutions without compromising quality. Our transparent pricing aligns with your budget.
         </x-slot:cardOneDescription>
         <x-slot:cardOneLink>
-          {{ route('services.wordpress') }}
+          {{ route('services.email-marketing') }}
         </x-slot:cardOneLink>
       </x-card-one>
       <x-card-one>
@@ -46,13 +46,13 @@
           <i class="fa-solid fa-money-bill text-4xl"></i>
         </x-slot:cardOneIcon>
         <x-slot:cardOneTitle>
-          CRO
+          Store Optimization
         </x-slot:cardOneTitle>
         <x-slot:cardOneDescription>
-         Elevate your Shopify store's conversion rate with our specialized themes. Meticulously designed by our team, we empower businesses to craft a unique and optimized online shopping experience, seamlessly blending aesthetics and functionality. Our goal is to not just attract customers but to create an engaging journey that fosters long-term relationships and boosts sales.
+         Recognizing the crucial role of website speed in the success of ecommerce ventures, our team of specialists is committed to collaborating closely with you. Through careful analysis, we'll pinpoint and address areas on your website that contribute to slower loading times. Employing a variety of optimization techniques, our goal is to enhance your website's performance. 
         </x-slot:cardOneDescription>
         <x-slot:cardOneLink>
-          {{ route('services.laravel') }}
+          {{ route('services.store-speed-optimization') }}
         </x-slot:cardOneLink>
       </x-card-one>
       <x-card-one>
@@ -60,10 +60,10 @@
           <i class="fa-brands fa-shopify text-4xl"></i>
         </x-slot:cardOneIcon>
         <x-slot:cardOneTitle>
-          Customise existing themes
+          Shopify Web Design
         </x-slot:cardOneTitle>
         <x-slot:cardOneDescription>
-          Already settled on a theme? Dive into a realm of possibilities with our customization and rebranding services, curated to fulfill your distinct requirements. From our perspective, it's more than just adapting – it's about transforming your chosen theme into a bespoke masterpiece, a reflection of your brand essence. Let's collaborate to craft a digital storefront that not only captures attention but resonates with your unique identity.
+          Our Shopify specialists provide personalized solutions for your brand, encompassing the customization of pre-existing Shopify themes and the creation of distinctive custom designs. Our focus is on helping you achieve your unique online business objectives.
         </x-slot:cardOneDescription>
         <x-slot:cardOneLink>
           {{ route('services.shopify') }}
@@ -85,7 +85,7 @@
       <div class="block   mt-5 lg:w-[400px] xl:w-[600px]">
         <h2 class="mb-5 font-bold font-poppins text-black text-4xl text-center lg:text-left">Why Us? </h2>
         <p class="font-normall font-poppins text-gray-700 text-base">
-          With extensive experience in the Shopify development realm, our team excels in delivering exceptional solutions. Your satisfaction is our utmost priority. Throughout the project, we prioritize transparent and open communication, ensuring your involvement at every stage while promptly addressing any concerns.
+          We are Shopify Partner Agency with extensive experience in the Shopify development realm, our team excels in delivering exceptional solutions. Your satisfaction is our utmost priority. Throughout the project, we prioritize transparent and open communication, ensuring your involvement at every stage while promptly addressing any concerns.
         </p>
         <br>
         <p class="font-normal font-poppins text-gray-700 text-base">
@@ -101,7 +101,7 @@
 
   <!--End Why choose us -->
   <!-- How we Work -->
-  <section class="w-full h-fit bg-purple-800 my-12 py-10">
+  <section class="w-full h-fit bg-purple-800 mt-12 mb-0 py-10">
     <div class="w-[90%] mx-auto md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px]">
       <!--Upper -->
       <div class="mb-10">
@@ -295,7 +295,7 @@
   @endisset
   <!-- End Portfolio -->
   <!-- Technology stack -->
-  <section class="w-full h-fit  my-12 py-10 bg-white">
+  {{-- <section class="w-full h-fit  my-12 py-10 bg-white">
     <div class="w-[90%] mx-auto md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px]">
       <!--Upper -->
       <div class="mb-10">
@@ -367,7 +367,7 @@
         </x-stack-tech>
       </div>
     </div>
-  </section>
+  </section> --}}
   <!-- End Technology stack -->
   <!-- News Letters -->
   @if (session('status'))
