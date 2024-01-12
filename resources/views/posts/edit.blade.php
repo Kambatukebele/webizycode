@@ -58,13 +58,8 @@
                 @isset($posts->category)
                 <option value="{{$posts->category }}" selected>{{ Str::ucfirst($posts->category) }}</option>
                 @endisset
-                <option value="laravel">Laravel</option>
-                <option value="php">PHP</option>
-                <option value="reactjs">Reactjs</option>
-                <option value="javascript">JavaScript</option>
-                <option value="wordpress">WordPress</option>
+                <option value="email_marketing">Email Marketing</option>
                 <option value="shopify">Shopify</option>
-                <option value="socialmedia">Social Media</option>
               </select>
               <x-input-error class="mt-2" :messages="$errors->get('category')" />
             </div>

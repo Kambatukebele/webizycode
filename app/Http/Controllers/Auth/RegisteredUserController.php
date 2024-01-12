@@ -20,8 +20,8 @@ class RegisteredUserController extends Controller
      */
     public function create()
     {
-        // return view('auth.register');
-        return redirect()->route('login');
+         return view('auth.register');
+        //return redirect()->route('login');
     }
 
     /**

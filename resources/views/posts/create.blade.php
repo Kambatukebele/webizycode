@@ -40,13 +40,8 @@
               <x-input-label for="category" :value="__('Category')" />
               <select name="category" id="category"
                 class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm mt-1 block w-full">
-                <option value="laravel">Laravel</option>
-                <option value="php">PHP</option>
-                <option value="reactjs">Reactjs</option>
-                <option value="javascript">JavaScript</option>
-                <option value="wordpress">WordPress</option>
                 <option value="shopify">Shopify</option>
-                <option value="socialmedia">Social Media</option>
+                <option value="email_marketing">Email Marketing</option>                
               </select>
               <x-input-error class="mt-2" :messages="$errors->get('category')" />
             </div>
