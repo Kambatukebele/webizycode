@@ -269,41 +269,41 @@
   @endisset
 
   {{-- Social media --}}
-  @isset ($socialmedia[0]->status)
+  @isset ($emailMarketing[0]->status)
   <section class="w-full h-fit  mb-12 py-10">
     <div class="w-[90%] mx-auto md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px]">
       <!--Upper -->
       <div class="mb-10">
-        <h3 class="text-black font-semibold text-3xl text-center mb-5">Social Media </h3>
+        <h3 class="text-black font-semibold text-3xl text-center mb-5">Email Marketing</h3>
 
       </div>
       <!-- body section -->
       <div class="mb-10 lg:grid lg:gap-4 lg:grid-cols-2 lg:grid-rows-1 xl:grid-cols-3">
         {{-- Card --}}
-        @foreach ($socialmedia as $socialmediaBlog)
+        @foreach ($emailMarketing as $emailMarketingBlog)
         <x-card-three>
           <x-slot:cardThreeImage>
-            {{ url('/uploads/'. $socialmediaBlog->featured_image) }}
+            {{ url('/uploads/'. $emailMarketingBlog->featured_image) }}
           </x-slot:cardThreeImage>
           <x-slot:cardThreeTitle>
-            {{ $socialmediaBlog->title }}
+            {{ $emailMarketingBlog->title }}
           </x-slot:cardThreeTitle>
           <x-slot:cardThreeDescription>
-            {{ strip_tags(\Illuminate\Support\Str::words($socialmediaBlog->content, 15, '...'))  }}
+            {{ strip_tags(\Illuminate\Support\Str::words($emailMarketingBlog->content, 15, '...'))  }}
           </x-slot:cardThreeDescription>
           <x-slot:cardThreeLink>
-            {{ route('blog.single-blog', [$socialmediaBlog->id, $socialmediaBlog->title] ) }}
+            {{ route('blog.single-blog', [$emailMarketingBlog->id, $emailMarketingBlog->title] ) }}
           </x-slot:cardThreeLink>
           <x-slot:cardThreeDate>
-            {{ $socialmediaBlog->created_at->format('Y-m-d') }}
+            {{ $emailMarketingBlog->created_at->format('Y-m-d') }}
           </x-slot:cardThreeDate>
         </x-card-three>
         @endforeach
       </div>
-      @isset($socialmediaBlog->category)
+      @isset($emailMarketingBlog->category)
       <div class="flex justify-center items-center">
         <a class="block text-center bg-purple-700 w-48 text-white p-2 rounded-lg px-3"
-          href="{{ route('blog.category',  $socialmediaBlog->category) }}">All Social posts</a>
+          href="{{ route('blog.category',  $emailMarketingBlog->category) }}">All Email Marketing Posts</a>
       </div>
       @endisset
     </div>

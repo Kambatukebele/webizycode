@@ -11,41 +11,6 @@ class BlogController extends Controller
     //Show Alll blog posts
     public function index()
     {
-        //Retrieve only Laravel Posts
-        $laravel = Post::where('category', 'laravel')
-        ->where('status', 'active')
-        ->latest()
-        ->take(3)
-        ->get();
-        //Retrieve only Reactjs Posts
-        $reactjs = Post::where('category', 'reactjs')
-        ->where('status', 'active')
-        ->latest()
-        ->take(3)
-        ->get();
-
-        //Retrieve Only JavasScript Posts
-        $javascript = Post::where('category', 'javascript')
-        ->where('status', 'active')
-        ->latest()
-        ->take(3)
-        ->get();
-
-        //Retrieve Only PHP Posts
-        $php = Post::where('category', 'php')
-        ->where('status', 'active')
-        ->latest()
-        ->take(3)
-        ->get();
-
-
-        //Retrieve Only WordPress Posts
-        $wordpress = Post::where('category', 'wordpress')
-        ->where('status', 'active')
-        ->latest()
-        ->take(3)
-        ->get();
-
         //Retrieve Only shopify Posts
         $shopify = Post::where('category', 'shopify')
         ->where('status', 'active')
@@ -54,20 +19,15 @@ class BlogController extends Controller
         ->get();
 
          //Retrieve Only socialmedia Posts
-        $socialmedia = Post::where('category', 'socialmedia')
+        $emailMarketing = Post::where('category', 'email_marketing')
         ->where('status', 'active')
         ->latest()
         ->take(3)
         ->get();
         
         return view('blog.index', [
-            'laravel'       => $laravel, 
-            'reactjs'       => $reactjs,
-            'javascript'    => $javascript,
-            'php'           => $php,
-            'wordpress'     => $wordpress,
             'shopify'       => $shopify,
-            'socialmedia'   => $socialmedia
+            'emailMarketing'   => $emailMarketing
         ]);
     }
 

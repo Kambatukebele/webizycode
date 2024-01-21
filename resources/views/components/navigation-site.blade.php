@@ -43,7 +43,7 @@
     <!-- CTA -->
     <div class="block">
         <a class="block text-center text-xs font-semibold leading-4  w-[200px] mx-auto py-3 my-9 rounded uppercase bg-transparent border border-white text-white hover:bg-black hover:font-semibold transition-all"
-            href="https://calendly.com/kambacharles11/30min">Free Consultancy</a>
+            href="https://calendly.com/webizycode">Free Consultancy</a>
     </div>
 </nav>
 <!-- end Navigation and logo -->
