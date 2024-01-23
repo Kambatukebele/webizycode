@@ -1,5 +1,5 @@
 <!-- Navigation and logo -->
-<nav class="hidden lg:flex lg:justify-between lg:items-center lg:w-full">
+<nav class="hidden lg:flex lg:justify-between lg:items-center lg:w-full lg:relative">
     <!-- Logo -->
     <div class="hidden lg:block">
         <a href="{{ route('home') }}" class="">
@@ -43,7 +43,15 @@
     <!-- CTA -->
     <div class="block">
         <a class="block text-center text-xs font-semibold leading-4  w-[200px] mx-auto py-3 my-9 rounded uppercase bg-transparent border border-white text-white hover:bg-black hover:font-semibold transition-all"
-            href="https://calendly.com/webizycode">Free Consultancy</a>
+            href="https://calendly.com/webizycode">
+            Free Consultancy
+        </a>
+        <a href="#" class="lg:absolute lg:top-0 lg:-right-36">
+            <select class="lg:bg-transparent border-white rounded-md text-white" name="" id="">
+            <option value="en">En</option>
+            <option value="cz">CZ</option>
+        </select>
+        </a>
     </div>
 </nav>
 <!-- end Navigation and logo -->
