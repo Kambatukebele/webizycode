@@ -3,7 +3,8 @@
 <x-web-site-layout>
   <x-header-section>
     <x-slot:titlePage>
-      Services
+      {{-- Services --}}
+      @lang('home.services')
     </x-slot:titlePage>
   </x-header-section>
   <!--Services box description -->
@@ -17,10 +18,12 @@
           <i class="fa-solid fa-envelope text-4xl"></i>
         </x-slot:cardOneIcon>
         <x-slot:cardOneTitle>
-          Email Marketing
+          {{-- Email Marketing --}}
+          @lang('home.email Marketing')
         </x-slot:cardOneTitle>
         <x-slot:cardOneDescription>
-         Leveraging top-notch email marketing platforms like Klaviyo or Brevo, we enhance your Shopify experience with targeted and effective email campaigns. Our commitment extends to providing cost-effective solutions without compromising quality. Our transparent pricing aligns with your budget.
+         {{-- Leveraging top-notch email marketing platforms like Klaviyo or Brevo, we enhance your Shopify experience with targeted and effective email campaigns. Our commitment extends to providing cost-effective solutions without compromising quality. Our transparent pricing aligns with your budget. --}}
+         @lang('home.Leveraging top-notch email marketing platforms like Klaviyo or Brevo, we enhance your Shopify experience with targeted and effective email campaigns. Our commitment extends to providing cost-effective solutions without compromising quality. Our transparent pricing aligns with your budget.')
         </x-slot:cardOneDescription>
         <x-slot:cardOneLink>
           {{ route('services.email-marketing') }}
@@ -31,10 +34,12 @@
           <i class="fa-solid fa-money-bill text-4xl"></i>
         </x-slot:cardOneIcon>
         <x-slot:cardOneTitle>
-          Store Optimization
+          {{-- Store Optimization --}}
+          @lang('home.Store Optimization')
         </x-slot:cardOneTitle>
         <x-slot:cardOneDescription>
-          Recognizing the crucial role of website speed in the success of ecommerce ventures, our team of specialists is committed to collaborating closely with you. Through careful analysis, we'll pinpoint and address areas on your website that contribute to slower loading times. Employing a variety of optimization techniques, our goal is to enhance your website's performance. 
+          {{-- Recognizing the crucial role of website speed in the success of ecommerce ventures, our team of specialists is committed to collaborating closely with you. Through careful analysis, we'll pinpoint and address areas on your website that contribute to slower loading times. Employing a variety of optimization techniques, our goal is to enhance your website's performance.  --}}
+          @lang("home.Recognizing the crucial role of website speed in the success of ecommerce ventures, our team of specialists is committed to collaborating closely with you. Through careful analysis, we'll pinpoint and address areas on your website that contribute to slower loading times. Employing a variety of optimization techniques, our goal is to enhance your website's performance.")
         </x-slot:cardOneDescription>
         <x-slot:cardOneLink>
           {{ route('services.store-speed-optimization') }}
@@ -45,10 +50,12 @@
           <i class="fa-brands fa-shopify text-4xl"></i>
         </x-slot:cardOneIcon>
         <x-slot:cardOneTitle>
-          Shopify Web Design
+          {{-- Shopify Web Design --}}
+          @lang('home.Shopify Web Design')
         </x-slot:cardOneTitle>
         <x-slot:cardOneDescription>
-          Our Shopify specialists provide personalized solutions for your brand, encompassing the customization of pre-existing Shopify themes and the creation of distinctive custom designs. Our focus is on helping you achieve your unique online business objectives.
+          {{-- Our Shopify specialists provide personalized solutions for your brand, encompassing the customization of pre-existing Shopify themes and the creation of distinctive custom designs. Our focus is on helping you achieve your unique online business objectives. --}}
+          @lang('home.Our Shopify specialists provide personalized solutions for your brand, encompassing the customization of pre-existing Shopify themes and the creation of distinctive custom designs. Our focus is on helping you achieve your unique online business objectives.')
         </x-slot:cardOneDescription>
         <x-slot:cardOneLink>
           {{ route('services.shopify') }}
@@ -60,11 +67,12 @@
           <i class="fa-solid fa-cart-shopping text-4xl"></i>
         </x-slot:cardOneIcon>
         <x-slot:cardOneTitle>
-          Shopify Migration
-          {{-- Facebook Management --}}
+          {{-- Shopify Migration --}}
+          @lang('home.Shopify Migration')
         </x-slot:cardOneTitle>
         <x-slot:cardOneDescription>
-          Embarking on a seamless transition to Shopify? Look no further. Our Shopify migration services ensure a hassle-free move for your eCommerce store, handling data transfer with precision. Trust us to optimize your Shopify storefront, leaving you free to focus on growing your business without the headaches of migration complexities. Make the smart choice for a prosperous eCommerce future with our tailored Shopify migration solutions.
+          {{-- Embarking on a seamless transition to Shopify? Look no further. Our Shopify migration services ensure a hassle-free move for your eCommerce store, handling data transfer with precision. Trust us to optimize your Shopify storefront, leaving you free to focus on growing your business without the headaches of migration complexities. Make the smart choice for a prosperous eCommerce future with our tailored Shopify migration solutions. --}}
+          @lang('home.Embarking on a seamless transition to Shopify? Look no further. Our Shopify migration services ensure a hassle-free move for your eCommerce store, handling data transfer with precision. Trust us to optimize your Shopify storefront, leaving you free to focus on growing your business without the headaches of migration complexities. Make the smart choice for a prosperous eCommerce future with our tailored Shopify migration solutions.')
         </x-slot:cardOneDescription>
         <x-slot:cardOneLink>
           {{ route('services.migration') }}

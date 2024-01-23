@@ -7,9 +7,9 @@
       class="block w-[90%]  mx-auto sm:w-[600px] md:w-[700px] lg:w-[900px] xl:w-[1220px] lg:flex lg:justify-between lg:items-center">
       <!--Text-->
       <div class="flex justify-center items-center flex-col lg:items-start lg:justify-end">
-        <small class="text-black  text-sm font-normal">Our Workflow <span class="font-bold text-purple-800">__
+        <small class="text-black  text-sm font-normal">@lang('home.our workflow')<span class="font-bold text-purple-800">__
             ___</span></small>
-        <h2 class="text-black  text-4xl text-center font-bold my-3">Our Services</h2>
+        <h2 class="text-black  text-4xl text-center font-bold my-3">@lang('home.services')</h2>
       </div>
       <!--BTN-->
       {{-- <div>
@@ -32,10 +32,12 @@
          <i class="fa-solid fa-envelope text-4xl"></i>
         </x-slot:cardOneIcon>
         <x-slot:cardOneTitle>
-          Email Marketing
+          {{-- Email Marketing --}}
+          @lang('home.email Marketing')
         </x-slot:cardOneTitle>
         <x-slot:cardOneDescription>
-          Leveraging top-notch email marketing platforms like Klaviyo or Brevo, we enhance your Shopify experience with targeted and effective email campaigns. Our commitment extends to providing cost-effective solutions without compromising quality. Our transparent pricing aligns with your budget.
+          {{-- Leveraging top-notch email marketing platforms like Klaviyo or Brevo, we enhance your Shopify experience with targeted and effective email campaigns. Our commitment extends to providing cost-effective solutions without compromising quality. Our transparent pricing aligns with your budget. --}}
+          @lang('home.Leveraging top-notch email marketing platforms like Klaviyo or Brevo, we enhance your Shopify experience with targeted and effective email campaigns. Our commitment extends to providing cost-effective solutions without compromising quality. Our transparent pricing aligns with your budget.')
         </x-slot:cardOneDescription>
         <x-slot:cardOneLink>
           {{ route('services.email-marketing') }}
@@ -46,10 +48,12 @@
           <i class="fa-solid fa-money-bill text-4xl"></i>
         </x-slot:cardOneIcon>
         <x-slot:cardOneTitle>
-          Store Optimization
+          {{-- Store Optimization --}}
+          @lang('home.Store Optimization')
         </x-slot:cardOneTitle>
         <x-slot:cardOneDescription>
-         Recognizing the crucial role of website speed in the success of ecommerce ventures, our team of specialists is committed to collaborating closely with you. Through careful analysis, we'll pinpoint and address areas on your website that contribute to slower loading times. Employing a variety of optimization techniques, our goal is to enhance your website's performance. 
+         {{-- Recognizing the crucial role of website speed in the success of ecommerce ventures, our team of specialists is committed to collaborating closely with you. Through careful analysis, we'll pinpoint and address areas on your website that contribute to slower loading times. Employing a variety of optimization techniques, our goal is to enhance your website's performance.  --}}
+         @lang("home.Recognizing the crucial role of website speed in the success of ecommerce ventures, our team of specialists is committed to collaborating closely with you. Through careful analysis, we'll pinpoint and address areas on your website that contribute to slower loading times. Employing a variety of optimization techniques, our goal is to enhance your website's performance.")
         </x-slot:cardOneDescription>
         <x-slot:cardOneLink>
           {{ route('services.store-speed-optimization') }}
@@ -60,10 +64,12 @@
           <i class="fa-brands fa-shopify text-4xl"></i>
         </x-slot:cardOneIcon>
         <x-slot:cardOneTitle>
-          Shopify Web Design
+          {{-- Shopify Web Design --}}
+          @lang('home.Shopify Web Design')
         </x-slot:cardOneTitle>
         <x-slot:cardOneDescription>
-          Our Shopify specialists provide personalized solutions for your brand, encompassing the customization of pre-existing Shopify themes and the creation of distinctive custom designs. Our focus is on helping you achieve your unique online business objectives.
+          {{-- Our Shopify specialists provide personalized solutions for your brand, encompassing the customization of pre-existing Shopify themes and the creation of distinctive custom designs. Our focus is on helping you achieve your unique online business objectives. --}}
+          @lang('home.Our Shopify specialists provide personalized solutions for your brand, encompassing the customization of pre-existing Shopify themes and the creation of distinctive custom designs. Our focus is on helping you achieve your unique online business objectives.')
         </x-slot:cardOneDescription>
         <x-slot:cardOneLink>
           {{ route('services.shopify') }}
@@ -83,17 +89,20 @@
       </div>
       <!--Text -->
       <div class="block   mt-5 lg:w-[400px] xl:w-[600px]">
-        <h2 class="mb-5 font-bold font-poppins text-black text-4xl text-center lg:text-left">Why Us? </h2>
+        <h2 class="mb-5 font-bold font-poppins text-black text-4xl text-center lg:text-left">@lang('home.Why Us?') </h2>
         <p class="font-normall font-poppins text-gray-700 text-base">
-          We are Shopify Partner Agency with extensive experience in the Shopify development realm, our team excels in delivering exceptional solutions. Your satisfaction is our utmost priority. Throughout the project, we prioritize transparent and open communication, ensuring your involvement at every stage while promptly addressing any concerns.
+          {{-- We are Shopify Partner Agency with extensive experience in the Shopify development realm, our team excels in delivering exceptional solutions. Your satisfaction is our utmost priority. Throughout the project, we prioritize transparent and open communication, ensuring your involvement at every stage while promptly addressing any concerns. --}}
+          @lang('home.We are Shopify Partner Agency with extensive experience in the Shopify development realm, our team excels in delivering exceptional solutions. Your satisfaction is our utmost priority. Throughout the project, we prioritize transparent and open communication, ensuring your involvement at every stage while promptly addressing any concerns.')
         </p>
         <br>
         <p class="font-normal font-poppins text-gray-700 text-base">
-         We reject the one-size-fits-all approach. Recognizing the uniqueness of each project, we customize our services to meet your specific needs, whether it's a small business website or a sophisticated e-commerce platform.
+         {{-- We reject the one-size-fits-all approach. Recognizing the uniqueness of each project, we customize our services to meet your specific needs, whether it's a small business website or a sophisticated e-commerce platform. --}}
+         @lang("home.We reject the one-size-fits-all approach. Recognizing the uniqueness of each project, we customize our services to meet your specific needs, whether it's a small business website or a sophisticated e-commerce platform.")
         </p>
         <br>
         <p class="font-normal font-poppins text-gray-700 text-base">
-          Our commitment extends to providing cost-effective solutions without compromising quality. Our transparent pricing aligns with your budget. Beyond the launch, we offer ongoing maintenance and support, ensuring your Shopify website or application runs seamlessly and stays up-to-date. Choose us for tailored excellence in Shopify development.
+          {{-- Our commitment extends to providing cost-effective solutions without compromising quality. Our transparent pricing aligns with your budget. Beyond the launch, we offer ongoing maintenance and support, ensuring your Shopify website or application runs seamlessly and stays up-to-date. Choose us for tailored excellence in Shopify development. --}}
+          @lang("home.Our commitment extends to providing cost-effective solutions without compromising quality. Our transparent pricing aligns with your budget. Beyond the launch, we offer ongoing maintenance and support, ensuring your Shopify website or application runs seamlessly and stays up-to-date. Choose us for tailored excellence in Shopify development.")
         </p>
       </div>
     </div>
@@ -105,14 +114,15 @@
     <div class="w-[90%] mx-auto md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px]">
       <!--Upper -->
       <div class="mb-10">
-        <h3 class="font-bold text-white text-4xl text-center mb-5">How We Work</h3>
+        <h3 class="font-bold text-white text-4xl text-center mb-5">@lang('home.How We Work')</h3>
         <p class="text-sm font-normal text-center text-white">
-          We utilize Scrum as our operational framework, an agile methodology focused on delivering product value in
+          {{-- We utilize Scrum as our operational framework, an agile methodology focused on delivering product value in
           short
-          timeframes. It is grounded in three core principles: transparency, inspection, and adaptation.
+          timeframes. It is grounded in three core principles: transparency, inspection, and adaptation. --}}
+          @lang('home.We utilize Scrum as our operational framework, an agile methodology focused on delivering product value in short timeframes. It is grounded in three core principles: transparency, inspection, and adaptation.')
         </p>
         <p class="text-sm font-normal text-center text-white">
-          Our creative process is rooted in the Design Thinking methodology. We aim to gain a deep understanding of
+          {{-- Our creative process is rooted in the Design Thinking methodology. We aim to gain a deep understanding of
           your
           needs and
           offer solutions that address your users' genuine concerns. This approach is iterative and non-linear,
@@ -120,7 +130,8 @@
           us to
           generate a multitude of innovative ideas to tackle complex challenges and optimize your procedures and
           resources
-          effectively.
+          effectively. --}}
+          @lang("our home.Our creative process is rooted in the Design Thinking methodology. We aim to gain a deep understanding of your needs and offer solutions that address your users' genuine concerns. This approach is iterative and non-linear, allowing us to generate a multitude of innovative ideas to tackle complex challenges and optimize your procedures and resources effectively.")
         </p>
       </div>
       <!-- body section -->
@@ -133,12 +144,14 @@
             <i class="fa-solid fa-list-check block text-5xl text-purple-700"></i>
           </x-slot:cardTwoIcon>
           <x-slot:cardTwoTitle>
-            Discovery and Requirement Analysis
+            {{-- Discovery and Requirement Analysis --}}
+            @lang('home.Discovery and Requirement Analysis')
           </x-slot:cardTwoTitle>
           <x-slot:cardTwoDescription>
-            At the outset, we engage in detailed discussions with you to understand your business goals and
+            {{-- At the outset, we engage in detailed discussions with you to understand your business goals and
             requirements. We
-            identify your target audience, project objectives, and technological needs.
+            identify your target audience, project objectives, and technological needs. --}}
+            @lang('home.At the outset, we engage in detailed discussions with you to understand your business goals and requirements. We identify your target audience, project objectives, and technological needs.')
           </x-slot:cardTwoDescription>
         </x-card-two>
         {{-- 2 --}}
@@ -150,13 +163,15 @@
             <i class="fa-solid fa-magnifying-glass block text-5xl text-purple-700"></i>
           </x-slot:cardTwoIcon>
           <x-slot:cardTwoTitle>
-            Planning and Strategy
+            {{-- Planning and Strategy --}}
+            @lang('home.Planning and Strategy')
           </x-slot:cardTwoTitle>
           <x-slot:cardTwoDescription>
-            After gathering insights, we create a comprehensive project plan and strategy. This includes defining
+            {{-- After gathering insights, we create a comprehensive project plan and strategy. This includes defining
             project
             milestones, timelines, and a development roadmap. We also outline the technology stack and design concepts
-            to be used.
+            to be used. --}}
+            @lang('home.After gathering insights, we create a comprehensive project plan and strategy. This includes defining project milestones, timelines, and a development roadmap. We also outline the technology stack and design concepts to be used.')
           </x-slot:cardTwoDescription>
         </x-card-two>
         {{-- 3 --}}
@@ -168,12 +183,14 @@
             <i class="fa-solid fa-pen-nib block text-5xl text-purple-700"></i>
           </x-slot:cardTwoIcon>
           <x-slot:cardTwoTitle>
-            Design and Prototyping
+            {{-- Design and Prototyping --}}
+            @lang('home.Design and Prototyping')
           </x-slot:cardTwoTitle>
           <x-slot:cardTwoDescription>
-            Our skilled designers work on creating visually appealing and user-friendly designs. We provide prototypes
+            {{-- Our skilled designers work on creating visually appealing and user-friendly designs. We provide prototypes
             and
-            wireframes for your review, ensuring alignment with your brand and user experience goals.
+            wireframes for your review, ensuring alignment with your brand and user experience goals. --}}
+            @lang('home.Our skilled designers work on creating visually appealing and user-friendly designs. We provide prototypes and wireframes for your review, ensuring alignment with your brand and user experience goals.')
           </x-slot:cardTwoDescription>
         </x-card-two>
         {{-- 4 --}}
@@ -185,13 +202,15 @@
             <i class="fa-solid fa-code block text-5xl text-purple-700"></i>
           </x-slot:cardTwoIcon>
           <x-slot:cardTwoTitle>
-            Development and Testing
+            {{-- Development and Testing --}}
+            @lang('home.Development and Testing')
           </x-slot:cardTwoTitle>
           <x-slot:cardTwoDescription>
-            Our development team starts coding the website or web application based on the approved design and
+            {{-- Our development team starts coding the website or web application based on the approved design and
             requirements. We
             follow best practices and conduct rigorous testing at each development stage to ensure a bug-free and robust
-            product.
+            product. --}}
+            @lang('home.Our development team starts coding the website or web application based on the approved design and requirements. We follow best practices and conduct rigorous testing at each development stage to ensure a bug-free and robust product.')
           </x-slot:cardTwoDescription>
         </x-card-two>
         {{-- 5 --}}
@@ -203,12 +222,14 @@
             <i class="fa-solid fa-paper-plane block text-5xl text-purple-700"></i>
           </x-slot:cardTwoIcon>
           <x-slot:cardTwoTitle>
-            Deployment and Launch
+            {{-- Deployment and Launch --}}
+            @lang('home.Deployment and Launch')
           </x-slot:cardTwoTitle>
           <x-slot:cardTwoDescription>
-            Once the development and testing phases are complete, we deploy your website or application to a production
+            {{-- Once the development and testing phases are complete, we deploy your website or application to a production
             environment.
-            We manage all aspects of the deployment process to ensure a smooth and secure launch.
+            We manage all aspects of the deployment process to ensure a smooth and secure launch. --}}
+            @lang('home.Once the development and testing phases are complete, we deploy your website or application to a production environment. We manage all aspects of the deployment process to ensure a smooth and secure launch.')
           </x-slot:cardTwoDescription>
         </x-card-two>
         {{-- 6 --}}
@@ -220,13 +241,15 @@
             <i class="fa-solid fa-screwdriver-wrench block text-5xl text-purple-700"></i>
           </x-slot:cardTwoIcon>
           <x-slot:cardTwoTitle>
-            Maintenance and Support
+            {{-- Maintenance and Support --}}
+            @lang('home.Maintenance and Support')
           </x-slot:cardTwoTitle>
           <x-slot:cardTwoDescription>
-            Our commitment doesn't end at launch. We offer ongoing maintenance and support services to address any
+            {{-- Our commitment doesn't end at launch. We offer ongoing maintenance and support services to address any
             issues, perform
             updates, and keep your website or application running smoothly. We also provide analytics and optimization
-            recommendations to enhance your online presence.
+            recommendations to enhance your online presence. --}}
+            @lang("home.Our commitment doesn't end at launch. We offer ongoing maintenance and support services to address any issues, perform updates, and keep your website or application running smoothly. We also provide analytics and optimization recommendations to enhance your online presence.")
           </x-slot:cardTwoDescription>
         </x-card-two>
       </div>
@@ -379,9 +402,8 @@
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
         <div class="max-w-xl lg:max-w-lg">
-          <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Subscribe to our newsletter.</h2>
-          <p class="mt-4 text-lg leading-8 text-gray-300">"Subscribe to our newsletter and stay updated with our latest
-            posts and videos, empowering your business growth."</p>
+          <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">@lang('home.Subscribe to our newsletter.')</h2>
+          <p class="mt-4 text-lg leading-8 text-gray-300">"@lang('home.Subscribe to our newsletter and stay updated with our latest posts and videos, empowering your business growth.')"</p>
           <form class="mt-6 flex max-w-md gap-x-4" action="{{ route('subscribe.store') }}" method="POST">
             @csrf
 
@@ -393,7 +415,7 @@
               <x-input-error class="mt-2 text-white" :messages="$errors->get('email')" />
             </div>
             <button type="submit"
-              class="flex-none rounded-md bg-purple-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Subscribe</button>
+              class="flex-none rounded-md bg-purple-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">@lang('home.Subscribe')</button>
           </form>
         </div>
         <dl class="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
@@ -405,10 +427,8 @@
                   d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
               </svg>
             </div>
-            <dt class="mt-4 font-semibold text-white">Weekly articles</dt>
-            <dd class="mt-2 leading-7 text-gray-400">"You will receive valuable weekly posts to learn how to grow your
-              business, build your website on your own, and master
-              coding."</dd>
+            <dt class="mt-4 font-semibold text-white">@lang('home.Weekly articles')</dt>
+            <dd class="mt-2 leading-7 text-gray-400">"@lang('home.You will receive valuable weekly posts to learn how to grow your business, build your website on your own, and master coding.')"</dd>
           </div>
           <div class="flex flex-col items-start">
             <div class="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
@@ -418,10 +438,8 @@
                   d="M10.05 4.575a1.575 1.575 0 10-3.15 0v3m3.15-3v-1.5a1.575 1.575 0 013.15 0v1.5m-3.15 0l.075 5.925m3.075.75V4.575m0 0a1.575 1.575 0 013.15 0V15M6.9 7.575a1.575 1.575 0 10-3.15 0v8.175a6.75 6.75 0 006.75 6.75h2.018a5.25 5.25 0 003.712-1.538l1.732-1.732a5.25 5.25 0 001.538-3.712l.003-2.024a.668.668 0 01.198-.471 1.575 1.575 0 10-2.228-2.228 3.818 3.818 0 00-1.12 2.687M6.9 7.575V12m6.27 4.318A4.49 4.49 0 0116.35 15m.002 0h-.002" />
               </svg>
             </div>
-            <dt class="mt-4 font-semibold text-white">No spam</dt>
-            <dd class="mt-2 leading-7 text-gray-400">"Spam emails and messages can be an annoying and invasive part of
-              our digital lives. We understand the importance of
-              your inbox and promise to keep it free from unwanted and irrelevant content."</dd>
+            <dt class="mt-4 font-semibold text-white">@lang('home.No spam')</dt>
+            <dd class="mt-2 leading-7 text-gray-400">"@lang('home.Spam emails and messages can be an annoying and invasive part of our digital lives. We understand the importance of your inbox and promise to keep it free from unwanted and irrelevant content.')"</dd>
           </div>
         </dl>
       </div>

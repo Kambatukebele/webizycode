@@ -49,12 +49,44 @@ const showHideMenuOnSmallDevices = () => {
 showHideMenuOnSmallDevices();
 
 // Show And Hide Translation Button
-const changeLaguange = () => {
+const changeLanguage = () => {
+    let langText = document.getElementsByClassName("langText")[0];
+    let lang = document.getElementsByClassName("lang")[0];
     let english = document.getElementsByClassName("en")[0];
-    let czech = document.getElementsByClassName("cz")[0];
-    let french = document.getElementsByClassName("fr")[0];
+    let czech = document.getElementsByClassName("cs")[0];
 
-    window.onload = function () {};
+    // Retrieve the selected language from localStorage
+    let selectedLanguage = localStorage.getItem("selectedLanguage") || "EN";
+    langText.innerHTML = selectedLanguage;
+
+    lang.addEventListener("click", () => {
+        if (
+            english.classList.contains("hidden") &&
+            czech.classList.contains("hidden")
+        ) {
+            english.classList.remove("hidden");
+            czech.classList.remove("hidden");
+        } else {
+            english.classList.add("hidden");
+            czech.classList.add("hidden");
+        }
+
+        english.addEventListener("click", () => {
+            langText.innerHTML = "EN";
+            // Store the selected language in localStorage
+            localStorage.setItem("selectedLanguage", "EN");
+            english.classList.add("hidden");
+            czech.classList.add("hidden");
+        });
+        czech.addEventListener("click", () => {
+            langText.innerHTML = "CZ";
+            // Store the selected language in localStorage
+            localStorage.setItem("selectedLanguage", "CZ");
+            english.classList.add("hidden");
+            czech.classList.add("hidden");
+        });
+    });
 };
 
-changeLaguange();
+// Call the function to set the initial language on page load
+changeLanguage();
