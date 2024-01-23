@@ -46,12 +46,16 @@
             href="https://calendly.com/webizycode">
             Free Consultancy
         </a>
-        <a href="#" class="lg:absolute lg:top-0 lg:-right-36">
-            <select class="lg:bg-transparent border-white rounded-md text-white" name="" id="">
-            <option value="en">En</option>
-            <option value="cz">CZ</option>
-        </select>
-        </a>
+        <div>
+            <div class="dropdown">
+                <button class="">Choose Language</button>
+                <div class="dropdown-menu">
+                    <a href="dropdown-item" href="#">English</a>
+                    <a href="dropdown-item" href="#">Czech</a>
+                    <a href="dropdown-item" href="#">French</a>
+                </div>
+            </div>
+        </div>
     </div>
 </nav>
 <!-- end Navigation and logo -->
