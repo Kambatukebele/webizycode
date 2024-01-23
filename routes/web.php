@@ -12,6 +12,7 @@ use App\Http\Controllers\ServicesController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\ContactFormController;
+use App\Http\Controllers\LocalizationController;
 use App\Http\Controllers\SubscriptionsController;
 
 /*
@@ -24,6 +25,9 @@ use App\Http\Controllers\SubscriptionsController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
+//Localization Route
+Route::get("locale/{lang}", [LocalizationController::class, 'setLang']);
 
 // Home Route 
 Route::get('/', [HomeController::class, 'index'])->name('home');
