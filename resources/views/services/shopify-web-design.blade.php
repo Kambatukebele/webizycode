@@ -13,7 +13,7 @@
       class="block w-[90%]  mx-auto sm:w-[600px] md:w-[700px] lg:w-[900px] lg:flex lg:justify-between lg:items-center xl:w-[1220px] xl:items-start">
       <!--Image -->
       <div class="w-[250px] mx-auto lg:w-[500px] xl:w-[600px]">
-        <img class="w-full h-full object-cover object-center" src="{{ url('/assets/images/64351ff45a3851681203188.png') }}" alt="">
+        <img class="w-full h-full object-cover object-center" src="{{ url('/assets/images/shopify1.jpg') }}" alt="">
       </div>
       <!--Text -->
       <div class="block  mt-5 lg:w-[400px] xl:w-[600px]">
@@ -24,8 +24,7 @@
           Whether you're launching a new brand, seeking an ecommerce audit to expand your business, migrating to Shopify from another platform, or require a custom site with unique features, we are here to meet your needs. <br> <br>With our expertise in Shopify web design, we can deliver high-quality ecommerce stores that will help you achieve your desired results.<br><br>
             Our team of experts creates online experiences that not only look attractive but also engage customers with compelling and user-friendly design that incorporates expert UI and UX. From the journey of a visitor to becoming a buyer, we aim to provide a seamless and satisfying experience. Check out some of our work in our portfolio.
         </p>
-        <br>
-        
+        <br>        
       </div>
     </div>
   </section>

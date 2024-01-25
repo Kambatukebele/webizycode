@@ -2,6 +2,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="@yield('description')">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://webizycode.com/blog">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
     {{-- Favicon --}}
     <link rel="shortcut icon" type="image/ico" href="{{ url('/assets/images/favicon.ico') }}">
     {{-- End Favicon --}}
@@ -48,6 +51,18 @@
       keenSliderPrevious.addEventListener('click', () => keenSlider.prev())
       keenSliderNext.addEventListener('click', () => keenSlider.next())
     </script>
+    {{-- Schema Markup --}}
+    <script type="application/ld+json">
+      {
+        "@context": "https://webizycode.com/",
+        "@type": "Web Development Agency",
+        "name": "Webizy Code",
+        "url": "https://webizycode.com/",
+        "logo": "https://webizycode.com/originale-logo-webizy-1.png"
+      }
+    </script>
+
+    {{-- Schema Markup --}}
     <!--End Testimonial code : https://www.hyperui.dev/components/marketing/testimonials -->
     {{-- TItle --}}
     <title>@yield('title')</title>
