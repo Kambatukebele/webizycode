@@ -1,5 +1,5 @@
 @section('title', 'YouTube Video | Explore our latest video projects and SEO tips')
-@section('description', 'Explore our web development and SEO video content. Expert insights for online success. Tune in for growth strategies!')
+@section('description', 'Dive into a world of captivating content on our YouTube channel, WebizyCode. Discover a diverse array of videos, from insightful tutorials on Shopify web design and email marketing tips to exciting behind-the-scenes looks at our creative process. Subscribe now for a front-row seat to industry insights, expert advice, and the latest trends in e-commerce. Join our community and empower your online journey with engaging and informative content.')
 <x-web-site-layout>
   <x-header-section>
     <x-slot:titlePage>

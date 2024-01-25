@@ -1,5 +1,5 @@
 @section('title', 'Shopify Store Speed Optimization | Expert Shopify Development Services')
-@section('description', 'Unleash the potential of Shopify. Explore expert Shopify development services. Elevate your online presence.')
+@section('description', 'Supercharge your online performance with our cutting-edge speed optimization services at WebizyCode. We specialize in enhancing website speed, ensuring swift page load times for an exceptional user experience. From code optimization to image compression, trust us to streamline your site and boost its efficiency. Explore our speed optimization solutions and propel your online presence to new heights.')
 <x-web-site-layout>
   <x-header-section>
     <x-slot:titlePage>

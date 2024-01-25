@@ -1,5 +1,5 @@
 @section('title', 'Blog - Single | Your Source for In-Depth Insights')
-@section('description', "Dive into a compelling blog. In-depth insights await. Discover valuable information and engaging content.")
+@section('description', "Uncover the secrets of successful Shopify web design in our latest blog post at WebizyCode. From effective UI/UX principles to the latest design trends, this post dives deep into the art of creating visually stunning and high-converting online stores. Learn practical tips, gain insights from industry experts, and elevate your e-commerce game. Explore our blog now for an immersive journey into the world of impactful web design.")
 <x-web-site-layout>
   <x-header-section>
     <x-slot:titlePage>

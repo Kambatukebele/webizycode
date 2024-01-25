@@ -1,5 +1,5 @@
 @section('title', 'Email Marketing | Expert Shopify Development Services')
-@section('description', 'Unleash the potential of Shopify. Explore expert Shopify development services. Elevate your online presence.')
+@section('description', "Ignite your brand's growth with our results-driven email marketing services at WebizyCode. Leverage the power of targeted campaigns, compelling content, and advanced analytics to connect with your audience. From captivating newsletters to automated drip campaigns, trust us to optimize your email strategy for engagement and conversions. Elevate your business with our expert email marketing solutions.")
 <x-web-site-layout>
   <x-header-section>
     <x-slot:titlePage>

@@ -1,5 +1,5 @@
 @section('title', 'Portfolios | Showcasing Our Portfolio of Excellence')
-@section('description', 'Explore our portfolio of excellence. See our finest work and creative solutions. Witness our commitment to quality.')
+@section('description', "Explore the diverse success stories and creative solutions in our portfolio at WebizyCode. From captivating Shopify web designs to impactful email marketing campaigns and seamless store migrations, witness the transformation of online businesses. Dive into our portfolio to discover how our expertise has elevated brands, and envision the possibilities for your own digital journey.")
 <x-web-site-layout>
   <x-header-section>
     <x-slot:titlePage>

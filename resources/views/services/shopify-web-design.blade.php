@@ -1,5 +1,5 @@
 @section('title', 'Shopify Theme Developement | Expert Shopify Development Services')
-@section('description', 'Unleash the potential of Shopify. Explore expert Shopify development services. Elevate your online presence.')
+@section('description', 'Revolutionize your online presence with expert Shopify web design services from WebizyCode. Our team crafts visually stunning and user-centric Shopify storefronts tailored to your brand. Elevate your e-commerce experience with seamless navigation, engaging visuals, and a design that converts. Explore how our Shopify web design expertise can transform your digital storefront today.')
 <x-web-site-layout>
   <x-header-section>
     <x-slot:titlePage>

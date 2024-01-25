@@ -1,5 +1,5 @@
 @section('title', 'Blog | Engaging Blog Content for Business Readers')
-@section('description', "Explore engaging blog content. Stay informed and entertained. Discover valuable insights on diverse topics.")
+@section('description', "Explore a treasure trove of knowledge and insights in our blog at WebizyCode. Immerse yourself in a wide range of articles covering everything from Shopify web design and email marketing strategies to e-commerce trends and expert advice. Stay informed, inspired, and ahead of the curve as our blog becomes your go-to resource for valuable information in the digital realm. Join our community of readers and empower your online journey with our thought-provoking and informative content.")
 <x-web-site-layout>
   <x-header-section>
     <x-slot:titlePage>

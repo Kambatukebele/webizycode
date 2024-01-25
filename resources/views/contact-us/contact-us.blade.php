@@ -1,5 +1,5 @@
 @section('title', 'Contact | Get in Touch – Contact Us Today')
-@section('description', "Get in touch today. We're here to assist you. Your questions and inquiries are always welcome.")
+@section('description', "Connect with WebizyCode through our Contact Us page. Whether you have inquiries about our Shopify web design, email marketing services, store optimization, or migration solutions, our dedicated team is ready to assist you. Reach out to us for personalized consultations and discover how we can tailor our expertise to meet your unique business needs. Contact us today and take the first step towards transforming your online presence.")
 <x-web-site-layout>
   <x-header-section>
     <x-slot:titlePage>

@@ -1,5 +1,5 @@
 @section('title', 'Migration to Shopify | Expert Shopify Development Services')
-@section('description', 'Unleash the potential of Shopify. Explore expert Shopify development services. Elevate your online presence.')
+@section('description', 'Seamlessly transition your online business to Shopify with WebizyCode. Our expert migration services ensure a smooth and hassle-free move, preserving your data integrity and enhancing functionality. Trust us to handle the complexities of store migration, allowing you to focus on growing your business. Explore our Shopify migration solutions and make your move to a more robust e-commerce platform effortlessly.')
 <x-web-site-layout>
   <x-header-section>
     <x-slot:titlePage>

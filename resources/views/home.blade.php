@@ -1,5 +1,5 @@
 @section('title', 'Home - WebizyCode | Email Markeking and Shopify Development Agency')
-@section('description', 'Boost your online presence with our web development and SEO expertise. A top-rated agency for growth and success.')
+@section('description', "Elevate your online business with WebizyCode. Specializing in Shopify excellence and strategic marketing, we create visually stunning stores and dynamic campaigns that drive sales. Collaborate with us for a holistic approach, client-centric philosophy, and measurable results. Let's transform your e-commerce venture into a thriving digital powerhouse.")
 <x-web-site-layout>
   <!--Services section Title -->
   <section class="block w-full my-5 xl:mt-24">

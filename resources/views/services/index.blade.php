@@ -1,5 +1,5 @@
 @section('title', 'Services | Comprehensive Web Development and SEO Services')
-@section('description', 'Discover our complete web development and SEO services. Elevate your online presence with our comprehensive solutions.')
+@section('description', 'Discover expert Shopify web design, powerful email marketing, and seamless store optimization services at WebizyCode. Elevate your online presence with visually captivating Shopify storefronts, targeted email campaigns, and strategic store optimization. Trust us for smooth store migrations, ensuring a seamless transition for your e-commerce venture. Explore how our comprehensive services can transform your online business today.')
 <x-web-site-layout>
   <x-header-section>
     <x-slot:titlePage>
