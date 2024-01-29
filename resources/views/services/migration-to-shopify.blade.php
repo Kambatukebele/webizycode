@@ -10,14 +10,14 @@
   <br><br>
   <section class="w-full h-fit py-7 my-10 relative">
     <div
-      class="block w-[90%]  mx-auto sm:w-[600px] md:w-[700px] lg:w-[900px] lg:flex lg:justify-between lg:items-center xl:w-[1220px] xl:items-start">
+      class="block w-[90%]  mx-auto sm:w-[600px] md:w-[700px]  lg:w-[900px] lg:flex lg:justify-between lg:items-start xl:w-[1220px]">
       <!--Image -->
-      <div class="w-[250px] mx-auto lg:w-[500px] xl:w-[600px]">
-        <img class="w-full h-full object-cover object-center" src="{{ url('/assets/images/64351ff45a3851681203188.png') }}" alt="">
+      <div class="w-full rounded-xl shadow-lg mx-auto lg:w-[450px] xl:w-[600px]">
+        <img class="w-full rounded-xl h-full object-cover object-center" src="{{ url('/assets/images/shopifymigration.jpeg') }}" alt="shopify-migration-photo">
       </div>
       <!--Text -->
-      <div class="block  mt-5 lg:w-[400px] xl:w-[600px]">
-        <h2 class="mb-5 font-semibold  text-black text-4xl text-center lg:text-left">Shopify Migration</h2>
+      <div class="block mt-5 lg:mt-0 lg:w-[400px] xl:w-[550px]">
+        <h2 class="mb-5 font-semibold uppercase  text-black text-4xl text-center lg:text-left">Shopify Migration</h2>
         <p class="font-normal  text-gray-700 text-base">
           We understand that as business evolve and grow, sometimes the need arises to migrate to a more suitable e-commerce platform. <br> <br> That's why we offer a comprehensive migration service from other platforms to Shopify. <br> <br> Our team of experts will handle the entire process, ensuring that your online store is seamlessly transferred to the Shopify platform without any disruption to your business.<br> <br> We will take care of everything, from data migration to theme customization, ensuring that your store is up and running on Shopify in no time. <br> <br>Our migration service is designed to make the transition process as smooth as possible.
         </p>

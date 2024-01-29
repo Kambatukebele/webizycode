@@ -46,14 +46,14 @@
             <div>
               <x-input-label for="Project Description" :value="__('Project Description')" />
               <textarea
-                class="border-gray-300 w-full h-[300px] mt-1 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm"
+                class="border-gray-300  w-full h-[300px] mt-1 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm" style="white-space: pre;"
                 name="company_project_description">{{ old('company_project_description') }}</textarea>
               <x-input-error class="mt-2" :messages="$errors->get('company_project_description')" />
             </div>
             <div>
               <x-input-label for="Project task" :value="__('Project task')" />
               <textarea
-                class="border-gray-300 mt-1 w-full h-[300px] focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm"
+                class="border-gray-300 mt-1 w-full h-[300px] focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm" style="white-space: pre;"
                 name="company_project_task">{{ old('company_project_task') }}</textarea>
               <x-input-error class="mt-2" :messages="$errors->get('company_project_task')" />
             </div>

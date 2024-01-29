@@ -16,7 +16,7 @@
         <img class="w-full rounded-xl h-full object-cover object-center" src="{{ url('/assets/images/shopify1.jpg') }}" alt="">
       </div>
       <!--Text -->
-      <div class="block lg:w-[400px] xl:w-[550px]">
+      <div class="block mt-5 lg:mt-0 lg:w-[400px] xl:w-[550px]">
         <h2 class="mb-5 font-semibold  text-black text-4xl text-center lg:text-left">Shopify Web Design</h2>
         <p class="font-normal  text-gray-700 text-base">
           Our team of Shopify website designers can assist you with all aspects of creating a successful online store.
@@ -39,7 +39,7 @@
         </p>        
       </div>
       <!--Image -->
-      <div class="w-full rounded-xl shadow-lg mx-auto lg:w-[450px] xl:w-[600px]">
+      <div class="w-full mt-5 lg:mt-0 rounded-xl shadow-lg mx-auto lg:w-[450px] xl:w-[600px]">
         <img class="w-full rounded-xl h-full object-cover object-center" src="{{ url('/assets/images/shopify1.webp') }}" alt="">
       </div>
     </div>
@@ -52,7 +52,7 @@
         <img class="w-full rounded-xl h-full object-cover object-center" src="{{ url('/assets/images/shopify2.webp') }}" alt="">
       </div>
       <!--Text -->
-      <div class="block lg:w-[400px] xl:w-[550px]">
+      <div class="block mt-5 lg:mt-0 lg:w-[400px] xl:w-[550px]">
         <h2 class="mb-5 font-semibold  text-black text-4xl text-center lg:text-left">Shopify Store Redesign</h2>
         <p class="font-normal  text-gray-700 text-base">
           If you already have a Shopify store and looking to give it a face lift? A Shopify store redesign is the process of updating the design and layout of an existing Shopify website to improve its overall look, feel, and functionality. This process can be done to refresh the website's appearance, to improve the user experience, or to increase sales and conversions.
@@ -68,14 +68,14 @@
     <div
       class="block w-[90%]  mx-auto sm:w-[600px] md:w-[700px]  lg:w-[900px] lg:flex lg:justify-between lg:items-start xl:w-[1220px]">
       <!--Text -->
-      <div class="block lg:w-[400px] xl:w-[550px]">
+      <div class="block mt-5 lg:mt-0 lg:w-[400px] xl:w-[550px]">
         <h2 class="mb-5 font-semibold  text-black text-4xl text-center lg:text-left">Shopify Theme Customization</h2>
         <p class="font-normal  text-gray-700 text-base">
           Our Shopify design team can assist you in selecting the perfect theme for your brand, ensuring it aligns with your vision. We will collaborate with you to customize the chosen theme to effectively convey your brand message and create a lasting impression on your online customers. We understand the importance of a Shopify store design that accurately represents your brand's story and we strive to achieve that for you.<br><br> With a wide variety of themes to choose from, finding the right one for your website can be overwhelming. Our team of Shopify website designers can guide you through the selection process and work with you to tailor the chosen theme to truly reflect your vision. We will ensure that the final design represents your brand and effectively conveys your message to your target audience.
         </p>        
       </div>
       <!--Image -->
-      <div class="w-full rounded-xl shadow-lg mx-auto lg:w-[450px] xl:w-[600px]">
+      <div class="w-full mt-5 lg:mt-0 rounded-xl shadow-lg mx-auto lg:w-[450px] xl:w-[600px]">
         <img class="w-full rounded-xl h-full object-cover object-center" src="{{ url('/assets/images/shopify3.webp') }}" alt="">
       </div>
     </div>

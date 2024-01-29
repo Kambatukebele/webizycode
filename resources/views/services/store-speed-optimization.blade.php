@@ -10,13 +10,13 @@
   <br><br>
   <section class="w-full h-fit py-7 my-10 relative">
     <div
-      class="block w-[90%]  mx-auto sm:w-[600px] md:w-[700px] lg:w-[900px] lg:flex lg:justify-between lg:items-center xl:w-[1220px] xl:items-start">
+      class="block w-[90%]  mx-auto sm:w-[600px] md:w-[700px]  lg:w-[900px] lg:flex lg:justify-between lg:items-start xl:w-[1220px]">
       <!--Image -->
-      <div class="w-[250px] mx-auto lg:w-[500px] xl:w-[600px]">
-        <img class="w-full h-full object-cover object-center" src="{{ url('/assets/images/64351ff45a3851681203188.png') }}" alt="">
+      <div class="w-full rounded-xl shadow-lg mx-auto lg:w-[450px] xl:w-[600px]">
+        <img class="w-full rounded-xl h-full object-cover object-center" src="{{ url('/assets/images/optimization2.png') }}" alt="shopify-store-optimization-photo">
       </div>
       <!--Text -->
-      <div class="block  mt-5 lg:w-[400px] xl:w-[600px]">
+      <div class="block mt-5 lg:mt-0 lg:w-[400px] xl:w-[550px]">
         <h2 class="mb-5 font-semibold  text-black text-4xl text-center lg:text-left">Shopify Store Speed Optimization</h2>
         <p class="font-normal  text-gray-700 text-base">
           At Webizycode, we understand the importance of website speed for ecommerce businesses. <br><br>Our team of experts will work closely with you to analyze and identify areas of your website that are slowing down the loading time. <br><br> We will then implement a range of optimization techniques to improve the performance of your website. <br><br>Our Shopify page speed optimization service will not only improve the user experience for your customers but also help to increase your website's visibility on search engines, resulting in more traffic and higher conversion rates.
@@ -29,9 +29,9 @@
   </section>
   <section class="w-full h-fit py-7 my-10 relative">
     <div
-      class="block w-[90%]  mx-auto sm:w-[600px] md:w-[700px] lg:w-[900px] lg:flex lg:justify-between lg:items-center xl:w-[1220px] xl:items-start">
+      class="block w-[90%]  mx-auto sm:w-[600px] md:w-[700px]  lg:w-[900px] lg:flex lg:justify-between lg:items-start xl:w-[1220px]">
       <!--Text -->
-      <div class="block  mt-5 lg:w-[400px] xl:w-[600px]">
+      <div class="block  lg:w-[400px] xl:w-[550px]">
         <h2 class="mb-5 font-semibold  text-black text-4xl text-center lg:text-left">Online shoppers don’t like to wait!</h2>
         <p class="font-normal  text-gray-700 text-base">
           Website conversion rates drop by an average of 4.42% with each additional second of load time (between 0-5 seconds). The longer your Shopify store load time, the higher is the bounce rate.
@@ -42,20 +42,20 @@
         </p>        
       </div>
       <!--Image -->
-      <div class="w-[250px] mx-auto lg:w-[500px] xl:w-[600px]">
-        <img class="w-full h-full object-cover object-center" src="{{ url('/assets/images/64351ff45a3851681203188.png') }}" alt="">
+      <div class="w-full mt-5 lg:mt-0 rounded-xl shadow-lg mx-auto lg:w-[450px] xl:w-[600px]">
+        <img class="w-full rounded-xl h-full object-cover object-center" src="{{ url('/assets/images/optimization3.webp') }}" alt="">
       </div>
     </div>
   </section>
   <section class="w-full h-fit py-7 my-10 relative">
     <div
-      class="block w-[90%]  mx-auto sm:w-[600px] md:w-[700px] lg:w-[900px] lg:flex lg:justify-between lg:items-center xl:w-[1220px] xl:items-start">
+      class="block w-[90%]  mx-auto sm:w-[600px] md:w-[700px]  lg:w-[900px] lg:flex lg:justify-between lg:items-start xl:w-[1220px]">
       <!--Image -->
-      <div class="w-[250px] mx-auto lg:w-[500px] xl:w-[600px]">
-        <img class="w-full h-full object-cover object-center" src="{{ url('/assets/images/64351ff45a3851681203188.png') }}" alt="">
+      <div class="w-full rounded-xl shadow-lg mx-auto lg:w-[450px] xl:w-[600px]">
+        <img class="w-full rounded-xl h-full object-cover object-center" src="{{ url('/assets/images/optimization4.webp') }}" alt="image">
       </div>
       <!--Text -->
-      <div class="block  mt-5 lg:w-[400px] xl:w-[600px]">
+      <div class="block mt-5 lg:mt-0 lg:w-[400px] xl:w-[550px]">
         <h2 class="mb-5 font-semibold  text-black text-4xl text-center lg:text-left">Shopify store speed test and site audit</h2>
         <p class="font-normal  text-gray-700 text-base">
           We deep dive into your Shopify dashboard analytics to conduct a thorough audit of your site performance. We run a Shopify store speed test to benchmark your site against industry best practices.
@@ -79,9 +79,9 @@
   </section>
   <section class="w-full h-fit py-7 my-10 relative">
     <div
-      class="block w-[90%]  mx-auto sm:w-[600px] md:w-[700px] lg:w-[900px] lg:flex lg:justify-between lg:items-center xl:w-[1220px] xl:items-start">
+      class="block w-[90%]  mx-auto sm:w-[600px] md:w-[700px]  lg:w-[900px] lg:flex lg:justify-between lg:items-start xl:w-[1220px]">
       <!--Text -->
-      <div class="block  mt-5 lg:w-[400px] xl:w-[600px]">
+      <div class="block lg:w-[400px] xl:w-[550px]">
         <h2 class="mb-5 font-semibold  text-black text-4xl text-center lg:text-left">Shopify site optimization services</h2>
         <p class="font-normal  text-gray-700 text-base">
           Based on the Shopify store speed test and app audit, we recommend a set of tasks to optimize your site. These include:
@@ -113,20 +113,20 @@
         </p>        
       </div>
       <!--Image -->
-      <div class="w-[250px] mx-auto lg:w-[500px] xl:w-[600px]">
-        <img class="w-full h-full object-cover object-center" src="{{ url('/assets/images/64351ff45a3851681203188.png') }}" alt="">
+      <div class="w-full mt-5 lg:mt-0 rounded-xl shadow-lg mx-auto lg:w-[450px] xl:w-[600px]">
+        <img class="w-full rounded-xl h-full object-cover object-center" src="{{ url('/assets/images/optimization5.webp') }}" alt="">
       </div>
     </div>
   </section>
   <section class="w-full h-fit py-7 my-10 relative">
     <div
-      class="block w-[90%]  mx-auto sm:w-[600px] md:w-[700px] lg:w-[900px] lg:flex lg:justify-between lg:items-center xl:w-[1220px] xl:items-start">
+      class="block w-[90%]  mx-auto sm:w-[600px] md:w-[700px]  lg:w-[900px] lg:flex lg:justify-between lg:items-start xl:w-[1220px]">
       <!--Image -->
-      <div class="w-[250px] mx-auto lg:w-[500px] xl:w-[600px]">
-        <img class="w-full h-full object-cover object-center" src="{{ url('/assets/images/64351ff45a3851681203188.png') }}" alt="">
+      <div class="w-full rounded-xl shadow-lg mx-auto lg:w-[450px] xl:w-[600px]">
+        <img class="w-full rounded-xl h-full object-cover object-center" src="{{ url('/assets/images/optimization1.webp') }}" alt="">
       </div>
       <!--Text -->
-      <div class="block  mt-5 lg:w-[400px] xl:w-[600px]">
+      <div class="block mt-5 lg:mt-0 lg:w-[400px] xl:w-[550px]">
         <h2 class="mb-5 font-semibold  text-black text-4xl text-center lg:text-left">Detailed Shopify site performance reporting</h2>
         <p class="font-normal  text-gray-700 text-base">
          Once we complete your Shopify site speed optimization, we monitor your online store for performance analysis.

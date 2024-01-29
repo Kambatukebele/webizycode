@@ -10,13 +10,13 @@
   <br><br>
   <section class="w-full h-fit py-7 my-10 relative">
     <div
-      class="block w-[90%]  mx-auto sm:w-[600px] md:w-[700px] lg:w-[900px] lg:flex lg:justify-between lg:items-center xl:w-[1220px] xl:items-start">
+      class="block w-[90%]  mx-auto sm:w-[600px] md:w-[700px]  lg:w-[900px] lg:flex lg:justify-between lg:items-start xl:w-[1220px]">
       <!--Image -->
-      <div class="w-[250px] mx-auto lg:w-[500px] xl:w-[600px]">
-        <img class="w-full h-full object-cover object-center" src="{{ url('/assets/images/64351ff45a3851681203188.png') }}" alt="">
+      <div class="w-full rounded-xl shadow-lg mx-auto lg:w-[450px] xl:w-[600px]">
+        <img class="w-full rounded-xl h-full object-cover object-center" src="{{ url('/assets/images/emailMarketing.webp') }}" alt="email-marketing-photo">
       </div>
       <!--Text -->
-      <div class="block  mt-5 lg:w-[400px] xl:w-[600px]">
+      <div class="block mt-5 lg:mt-0 lg:w-[400px] xl:w-[550px]">
         <h2 class="mb-5 font-semibold  text-black text-4xl text-center lg:text-left">Email Marketing</h2>
         <p class="font-normal  text-gray-700 text-base">
           We at Webizycode, offer professional email marketing services to help businesses increase their online visibility and reach their target audience effectively. <br><br> Personalized and targeted email messages can lead to higher engagement. <br><br>By analyzing customer behavior, automated emails can be sent with relevant content to the right audience at the right time, resulting in increased sales. With the ability to include a call to action, email marketing is a cost-effective way to drive conversions. <br><br>This measurable marketing strategy allows for the monitoring and improvement of email campaigns and automations for better results.
