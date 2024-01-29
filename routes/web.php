@@ -26,9 +26,6 @@ use App\Http\Controllers\SubscriptionsController;
 |
 */
 
-//Localization Route
-Route::get("locale/{lang}", [LocalizationController::class, 'setLang']);
-
 // Home Route 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
@@ -122,5 +119,9 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+
+//Localization Route
+Route::get("locale/{lang}", [LocalizationController::class, 'setLang']);
 
 require __DIR__.'/auth.php';

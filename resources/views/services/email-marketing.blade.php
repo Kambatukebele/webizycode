@@ -19,7 +19,10 @@
       <div class="block mt-5 lg:mt-0 lg:w-[400px] xl:w-[550px]">
         <h2 class="mb-5 font-semibold  text-black text-4xl text-center lg:text-left">Email Marketing</h2>
         <p class="font-normal  text-gray-700 text-base">
-          We at Webizycode, offer professional email marketing services to help businesses increase their online visibility and reach their target audience effectively. <br><br> Personalized and targeted email messages can lead to higher engagement. <br><br>By analyzing customer behavior, automated emails can be sent with relevant content to the right audience at the right time, resulting in increased sales. With the ability to include a call to action, email marketing is a cost-effective way to drive conversions. <br><br>This measurable marketing strategy allows for the monitoring and improvement of email campaigns and automations for better results.
+          @lang("email_marketing.We at Webizycode, offer professional email marketing services to help businesses increase their online visibility and reach their target audience effectively.") <br><br>
+          @lang("email_marketing.Personalized and targeted email messages can lead to higher engagement.")
+          <br><br>@lang("email_marketing.By analyzing customer behavior, automated emails can be sent with relevant content to the right audience at the right time, resulting in increased sales. With the ability to include a call to action, email marketing is a cost-effective way to drive conversions.") <br><br>
+          @lang("email_marketing.This measurable marketing strategy allows for the monitoring and improvement of email campaigns and automations for better results.")
         </p>
         <br>        
       </div>
@@ -30,7 +33,7 @@
     <div class="w-[90%] mx-auto md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px]">
       <!--Upper -->
       <div class="mb-10">
-        <h3 class="font-bold text-white text-4xl text-center mb-5">How we do it</h3>
+        <h3 class="font-bold text-white text-4xl text-center mb-5">@lang("email_marketing.How we do it")</h3>
         {{-- <p class="text-sm font-normal text-center text-white">
           We utilize Scrum as our operational framework, an agile methodology focused on delivering product value in
           short
@@ -58,10 +61,10 @@
             <i class="fa-solid fa-list-check block text-5xl text-purple-700"></i>
           </x-slot:cardTwoIcon>
           <x-slot:cardTwoTitle>
-            Strategy Development
+            @lang("email_marketing.Strategy Development")
           </x-slot:cardTwoTitle>
           <x-slot:cardTwoDescription>
-            Strategy development: We work with you to understand your business goals and target audience, and then create a custom email marketing strategy that aligns with your overall marketing plan.
+            @lang("email_marketing.Strategy development: We work with you to understand your business goals and target audience, and then create a custom email marketing strategy that aligns with your overall marketing plan.")
           </x-slot:cardTwoDescription>
         </x-card-two>
         {{-- 2 --}}
@@ -73,10 +76,10 @@
             <i class="fa-solid fa-magnifying-glass block text-5xl text-purple-700"></i>
           </x-slot:cardTwoIcon>
           <x-slot:cardTwoTitle>
-            List Management
+            @lang("email_marketing.List Management")
           </x-slot:cardTwoTitle>
           <x-slot:cardTwoDescription>
-            We manage your email list, making sure it is clean, up-to-date and ready for your campaigns.
+           @lang("email_marketing.We manage your email list, making sure it is clean, up-to-date and ready for your campaigns.")
           </x-slot:cardTwoDescription>
         </x-card-two>
         {{-- 3 --}}
@@ -88,10 +91,10 @@
             <i class="fa-solid fa-pen-nib block text-5xl text-purple-700"></i>
           </x-slot:cardTwoIcon>
           <x-slot:cardTwoTitle>
-            Content Creation
+            @lang("email_marketing.Content Creation")
           </x-slot:cardTwoTitle>
           <x-slot:cardTwoDescription>
-            Our team of creative writers and designers create compelling and engaging email content that resonates with your audience.
+            @lang("email_marketing.Our team of creative writers and designers create compelling and engaging email content that resonates with your audience.")
           </x-slot:cardTwoDescription>
         </x-card-two>
         {{-- 4 --}}
@@ -103,10 +106,10 @@
             <i class="fa-solid fa-code block text-5xl text-purple-700"></i>
           </x-slot:cardTwoIcon>
           <x-slot:cardTwoTitle>
-            Automation Setup
+            @lang("email_marketing.Automation Setup")
           </x-slot:cardTwoTitle>
           <x-slot:cardTwoDescription>
-           We use the latest automation tools to streamline the email sending process and ensure timely delivery of messages.
+           @lang("email_marketing.We use the latest automation tools to streamline the email sending process and ensure timely delivery of messages.")
           </x-slot:cardTwoDescription>
         </x-card-two>
         {{-- 5 --}}
@@ -118,10 +121,10 @@
             <i class="fa-solid fa-paper-plane block text-5xl text-purple-700"></i>
           </x-slot:cardTwoIcon>
           <x-slot:cardTwoTitle>
-            Campaign Execution
+            @lang("email_marketing.Campaign Execution")
           </x-slot:cardTwoTitle>
           <x-slot:cardTwoDescription>
-            Our team launches and manages the campaigns, monitoring and adjusting as needed for optimal performance
+            @lang("email_marketing.Our team launches and manages the campaigns, monitoring and adjusting as needed for optimal performance")
           </x-slot:cardTwoDescription>
         </x-card-two>
         {{-- 6 --}}
@@ -133,10 +136,10 @@
             <i class="fa-solid fa-screwdriver-wrench block text-5xl text-purple-700"></i>
           </x-slot:cardTwoIcon>
           <x-slot:cardTwoTitle>
-            Analytics and Reporting
+            @lang("email_marketing.Analytics and Reporting")
           </x-slot:cardTwoTitle>
           <x-slot:cardTwoDescription>
-            We track and analyze the results of the campaigns, and provide you with detailed reports and insights to help you make informed decisions.
+           @lang("email_marketing.We track and analyze the results of the campaigns, and provide you with detailed reports and insights to help you make informed decisions.")
           </x-slot:cardTwoDescription>
         </x-card-two>
       </div>

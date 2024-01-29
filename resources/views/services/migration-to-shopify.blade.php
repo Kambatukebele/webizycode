@@ -3,7 +3,7 @@
 <x-web-site-layout>
   <x-header-section>
     <x-slot:titlePage>
-      Shopify Migration
+     @lang("shopify_migration.SHOPIFY MIGRATION")
     </x-slot:titlePage>
   </x-header-section>
   <!--Services box description -->
@@ -17,9 +17,9 @@
       </div>
       <!--Text -->
       <div class="block mt-5 lg:mt-0 lg:w-[400px] xl:w-[550px]">
-        <h2 class="mb-5 font-semibold uppercase  text-black text-4xl text-center lg:text-left">Shopify Migration</h2>
+        <h2 class="mb-5 font-semibold uppercase  text-black text-4xl text-center lg:text-left">@lang("shopify_migration.SHOPIFY MIGRATION")</h2>
         <p class="font-normal  text-gray-700 text-base">
-          We understand that as business evolve and grow, sometimes the need arises to migrate to a more suitable e-commerce platform. <br> <br> That's why we offer a comprehensive migration service from other platforms to Shopify. <br> <br> Our team of experts will handle the entire process, ensuring that your online store is seamlessly transferred to the Shopify platform without any disruption to your business.<br> <br> We will take care of everything, from data migration to theme customization, ensuring that your store is up and running on Shopify in no time. <br> <br>Our migration service is designed to make the transition process as smooth as possible.
+          @lang("shopify_migration.We understand that as business evolve and grow, sometimes the need arises to migrate to a more suitable e-commerce platform.") <br> <br> @lang("shopify_migration.That's why we offer a comprehensive migration service from other platforms to Shopify.")<br> <br> @lang("shopify_migration.Our team of experts will handle the entire process, ensuring that your online store is seamlessly transferred to the Shopify platform without any disruption to your business.")<br> <br> @lang("shopify_migration.We will take care of everything, from data migration to theme customization, ensuring that your store is up and running on Shopify in no time.")<br> <br>@lang("shopify_migration.Our migration service is designed to make the transition process as smooth as possible.")
         </p>
         <br>        
       </div>
@@ -30,7 +30,7 @@
     <div class="w-[90%] mx-auto md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px]">
       <!--Upper -->
       <div class="mb-10">
-        <h3 class="font-bold text-white text-4xl text-center mb-5">How we do it</h3>
+        <h3 class="font-bold text-white text-4xl text-center mb-5">@lang("shopify_migration.How we do it")</h3>
       </div>
       <!-- body section -->
       <div class="mb-10 lg:grid lg:gap-4 lg:grid-cols-2 lg:grid-rows-2 xl:grid-cols-3">
@@ -42,10 +42,10 @@
             <i class="fa-solid fa-list-check block text-5xl text-purple-700"></i>
           </x-slot:cardTwoIcon>
           <x-slot:cardTwoTitle>
-            Data Migration
+            @lang("shopify_migration.Data Migration")
           </x-slot:cardTwoTitle>
           <x-slot:cardTwoDescription>
-            We will transfer all your existing product, customer and order data to the Shopify platform.
+            @lang("shopify_migration.We will transfer all your existing product, customer and order data to the Shopify platform.")
           </x-slot:cardTwoDescription>
         </x-card-two>
         {{-- 2 --}}
@@ -57,10 +57,10 @@
             <i class="fa-solid fa-magnifying-glass block text-5xl text-purple-700"></i>
           </x-slot:cardTwoIcon>
           <x-slot:cardTwoTitle>
-           Theme Customization
+           @lang("shopify_migration.Theme Customization")
           </x-slot:cardTwoTitle>
           <x-slot:cardTwoDescription>
-            We will customize the design of your store to match the look and feel of your current website or as per your vision.
+           @lang("shopify_migration.We will customize the design of your store to match the look and feel of your current website or as per your vision.")
           </x-slot:cardTwoDescription>
         </x-card-two>
         {{-- 3 --}}
@@ -72,10 +72,10 @@
             <i class="fa-solid fa-pen-nib block text-5xl text-purple-700"></i>
           </x-slot:cardTwoIcon>
           <x-slot:cardTwoTitle>
-            App and Plugin Integration
+           @lang("shopify_migration.App and Plugin Integration")
           </x-slot:cardTwoTitle>
           <x-slot:cardTwoDescription>
-            e will ensure that all necessary apps and plugins are installed and configured on your Shopify store as per your requirement.
+            @lang("shopify_migration.We will ensure that all necessary apps and plugins are installed and configured on your Shopify store as per your requirement.")
           </x-slot:cardTwoDescription>
         </x-card-two>
         {{-- 4 --}}
@@ -87,10 +87,10 @@
             <i class="fa-solid fa-code block text-5xl text-purple-700"></i>
           </x-slot:cardTwoIcon>
           <x-slot:cardTwoTitle>
-            SEO and Analytics
+            @lang("shopify_migration.SEO and Analytics")
           </x-slot:cardTwoTitle>
           <x-slot:cardTwoDescription>
-            We will set up and configure SEO and analytics tools to ensure that your store is optimized for search engines and you have insights on how to improve the store performance.
+            @lang("shopify_migration.We will set up and configure SEO and analytics tools to ensure that your store is optimized for search engines and you have insights on how to improve the store performance.")
           </x-slot:cardTwoDescription>
         </x-card-two>
         {{-- 5 --}}
@@ -102,10 +102,10 @@
             <i class="fa-solid fa-paper-plane block text-5xl text-purple-700"></i>
           </x-slot:cardTwoIcon>
           <x-slot:cardTwoTitle>
-            Testing and quality assurance
+            @lang("shopify_migration.Testing and quality assurance")
           </x-slot:cardTwoTitle>
           <x-slot:cardTwoDescription>
-            We will test your store to ensure that everything is working correctly and troubleshoot any issues that may arise. We'll take care of redirects and 404 errors.
+            @lang("shopify_migration.We will test your store to ensure that everything is working correctly and troubleshoot any issues that may arise. We'll take care of redirects and 404 errors.")
           </x-slot:cardTwoDescription>
         </x-card-two>
         {{-- 6 --}}
@@ -117,11 +117,10 @@
             <i class="fa-solid fa-screwdriver-wrench block text-5xl text-purple-700"></i>
           </x-slot:cardTwoIcon>
           <x-slot:cardTwoTitle>
-            Post-launch Support
+           @lang("shopify_migration.Post-launch Support")
           </x-slot:cardTwoTitle>
           <x-slot:cardTwoDescription>
-            We will provide ongoing support to ensure that your store runs smoothly after the migration is complete.
-            We will provide training on how to manage and maintain your store once we have completed the migration.
+            @lang("shopify_migration.We will provide ongoing support to ensure that your store runs smoothly after the migration is complete. We will provide training on how to manage and maintain your store once we have completed the migration.")
           </x-slot:cardTwoDescription>
         </x-card-two>
       </div>

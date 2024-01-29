@@ -22,35 +22,35 @@
               </div>
             </div>
             <div>
-              <div class="font-semibold text-black text-xl">Company Name: </div>
+              <div class="font-semibold text-black text-xl">@lang('portfolio.Company Name:') </div>
               <div id="Company Name" class="my-1 mb-5 block w-full text-base font-normal">
                 {{ $portfolio->company_name}}
               </div>
             </div>
             <div>
-              <div class="font-semibold text-black text-xl">Project Title:</div>
+              <div class="font-semibold text-black text-xl">@lang('portfolio.Project Title:')</div>
               <div class="my-1 mb-5 block w-full text-base font-normal">{{ $portfolio->company_project_title }}</div>
             </div>
             <div>
-              <div class="font-semibold text-black text-xl">Project Description:</div>
+              <div class="font-semibold text-black text-xl">@lang('portfolio.Project Description:')</div>
               <div class="my-1 mb-5 block w-full text-base font-normal">{{ $portfolio->company_project_description }}
               </div>
             </div>
             <div>
-              <div class="font-semibold text-black text-xl">Project Task:</div>
+              <div class="font-semibold text-black text-xl">@lang('portfolio.Project Task:')</div>
               <div class="my-1 mb-5 block w-full text-base font-normal">{{ $portfolio->company_project_task }}</div>
             </div>
             <div>
-              <div class="font-semibold text-black text-xl">Company Location:</div>
+              <div class="font-semibold text-black text-xl">@lang('portfolio.Company Location:')</div>
               <div class="my-1 mb-5 block w-full text-base font-normal"> {{ $portfolio->company_location}}</div>
             </div>
             <div>
-              <div class="font-semibold text-black text-xl">Company Live link:</div>
+              <div class="font-semibold text-black text-xl">@lang('portfolio.Company Live link:')</div>
               <div class="my-1 mb-5 block w-full text-base font-normal"><a href="{{ $portfolio->company_link }}"
                   class="underline text-purple-400">{{ $portfolio->company_name }}</a> </div>
             </div>
             <div>
-              <div class="font-semibold text-black text-xl">Published Date:</div>
+              <div class="font-semibold text-black text-xl">@lang('portfolio.Published Date:')</div>
               <div class="my-1 mb-5 block w-full text-base font-normal">{{ $portfolio->company_date_launched }}</div>
             </div>
       </div>

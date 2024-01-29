@@ -16,11 +16,9 @@
   <section class="w-full relative">
     <div class="block w-[90%] mx-auto sm:w-[600px] lg:w-[700px]">
       <div class="flex justify-center items-center flex-col my-5">
-        <h3 class="font-semibold text-2xl">Excited! Let's Talk</h3>
-        <p class="text-base text-gray-700 my-3 text-center">Your journey to this point demonstrates your interest in our
-          work, and we're equally eager to learn more about you!</p>
-        <p class="text-base text-gray-700 mb-3 text-center">We're eager to delve deeper into your project, discover its
-          unique qualities, and nurture it as if it were our very own.</p>
+        <h3 class="font-semibold text-2xl">@lang("contact.Excited! Let's Talk")</h3>
+        <p class="text-base text-gray-700 my-3 text-center">@lang("contact.Your journey to this point demonstrates your interest in our work, and we're equally eager to learn more about you!")</p>
+        <p class="text-base text-gray-700 mb-3 text-center">@lang("contact.We're eager to delve deeper into your project, discover its unique qualities, and nurture it as if it were our very own.")
       </div>
       <form method="post" action="{{ route('contact.store') }}"
         class="mt-6 space-y-6 sm:bg-white sm:w-[500px] sm:p-10 sm:rounded-lg sm:shadow-lg  sm:mx-auto lg:w-[600px]">
@@ -54,14 +52,15 @@
           <input class="border-gray-300 mr-3 focus:border-indigo-500 focus:ring-indigo-500 rounded shadow-sm"
             type="checkbox" name="privacy" id="privacy">
           <a href="{{ route('privacy-policy') }}" class="block font-medium text-sm text-gray-700 underline">
-            I have read and accept the Privacy Policy
+            @lang("contact.I have read and accept the Privacy Policy")
           </a>
         </div>
         <x-input-error class="mt-2" :messages="$errors->get('privacy')" />
         <div class="flex items-center gap-4">
           <button
-            class="inline-flex items-center px-4 py-2 bg-purple-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-black  transition ease-in-out duration-150">Send
-            Message</button>
+            class="inline-flex items-center px-4 py-2 bg-purple-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-black  transition ease-in-out duration-150">
+            @lang("contact.SEND MESSAGE")
+          </button>
         </div>
       </form>
     </div>

@@ -3,7 +3,8 @@
 <x-web-site-layout>
   <x-header-section>
     <x-slot:titlePage>
-      Store Speed Optimization
+      {{-- Store Speed Optimization --}}
+      @lang('shopify_speed_optimization.Shopify Store Speed Optimization')
     </x-slot:titlePage>
   </x-header-section>
   <!--Services box description -->
@@ -17,11 +18,13 @@
       </div>
       <!--Text -->
       <div class="block mt-5 lg:mt-0 lg:w-[400px] xl:w-[550px]">
-        <h2 class="mb-5 font-semibold  text-black text-4xl text-center lg:text-left">Shopify Store Speed Optimization</h2>
+        <h2 class="mb-5 font-semibold  text-black text-4xl text-center lg:text-left"> 
+          @lang('shopify_speed_optimization.Shopify Store Speed Optimization')
+        </h2>
         <p class="font-normal  text-gray-700 text-base">
-          At Webizycode, we understand the importance of website speed for ecommerce businesses. <br><br>Our team of experts will work closely with you to analyze and identify areas of your website that are slowing down the loading time. <br><br> We will then implement a range of optimization techniques to improve the performance of your website. <br><br>Our Shopify page speed optimization service will not only improve the user experience for your customers but also help to increase your website's visibility on search engines, resulting in more traffic and higher conversion rates.
+           @lang('shopify_speed_optimization.At Webizycode, we understand the importance of website speed for ecommerce businesses.') <br><br> @lang('shopify_speed_optimization.Our team of experts will work closely with you to analyze and identify areas of your website that are slowing down the loading time.')<br><br>  @lang('shopify_speed_optimization.We will then implement a range of optimization techniques to improve the performance of your website.') <br><br> @lang("shopify_speed_optimization.Our Shopify page speed optimization service will not only improve the user experience for your customers but also help to increase your website's visibility on search engines, resulting in more traffic and higher conversion rates.")
             <br><br>
-            Don't let slow page speed hold back your ecommerce business. Contact Webizycode today
+             @lang("shopify_speed_optimization.Don't let slow page speed hold back your ecommerce business. Contact Webizycode today")
         </p>
         <br>        
       </div>
@@ -32,13 +35,15 @@
       class="block w-[90%]  mx-auto sm:w-[600px] md:w-[700px]  lg:w-[900px] lg:flex lg:justify-between lg:items-start xl:w-[1220px]">
       <!--Text -->
       <div class="block  lg:w-[400px] xl:w-[550px]">
-        <h2 class="mb-5 font-semibold  text-black text-4xl text-center lg:text-left">Online shoppers don’t like to wait!</h2>
+        <h2 class="mb-5 font-semibold  text-black text-4xl text-center lg:text-left">
+           @lang("shopify_speed_optimization.Online shoppers don’t like to wait!")
+        </h2>
         <p class="font-normal  text-gray-700 text-base">
-          Website conversion rates drop by an average of 4.42% with each additional second of load time (between 0-5 seconds). The longer your Shopify store load time, the higher is the bounce rate.
+           @lang("shopify_speed_optimization.Website conversion rates drop by an average of 4.42% with each additional second of load time (between 0-5 seconds). The longer your Shopify store load time, the higher is the bounce rate.")
             <br><br>
-            - 45% shoppers say they are less likely to make a purchase if the site loads slower
+            *  @lang("shopify_speed_optimization.- 45% shoppers say they are less likely to make a purchase if the site loads slower")
                 <br><br>
-            - 37% of online shoppers don’t return to a slow Shopify website
+            * @lang("shopify_speed_optimization.- 37% of online shoppers don’t return to a slow Shopify website")
         </p>        
       </div>
       <!--Image -->
@@ -56,21 +61,21 @@
       </div>
       <!--Text -->
       <div class="block mt-5 lg:mt-0 lg:w-[400px] xl:w-[550px]">
-        <h2 class="mb-5 font-semibold  text-black text-4xl text-center lg:text-left">Shopify store speed test and site audit</h2>
+        <h2 class="mb-5 font-semibold  text-black text-4xl text-center lg:text-left">@lang("shopify_speed_optimization.Shopify store speed test and site audit")t</h2>
         <p class="font-normal  text-gray-700 text-base">
-          We deep dive into your Shopify dashboard analytics to conduct a thorough audit of your site performance. We run a Shopify store speed test to benchmark your site against industry best practices.
+          @lang("shopify_speed_optimization.We deep dive into your Shopify dashboard analytics to conduct a thorough audit of your site performance. We run a Shopify store speed test to benchmark your site against industry best practices.")
           <br><br>
-            - Detailed analytics report
+            * @lang("shopify_speed_optimization.Detailed analytics report")
             <br>
-            - Site audit report
+            * @lang("shopify_speed_optimization.Site audit report")
             <br>
-            - Store speed score
+            * @lang("shopify_speed_optimization.Store speed score")
             <br>
-            - Actionable insights for optimization
+            * @lang("shopify_speed_optimization.Actionable insights for optimization")
             <br>
-            - Store speed optimization suggestions
+            * @lang("shopify_speed_optimization.Store speed optimization suggestions")
             <br>
-            - Recommended plan of action
+            * @lang("shopify_speed_optimization.Recommended plan of action")
         </p>
         <br>
         
@@ -82,33 +87,35 @@
       class="block w-[90%]  mx-auto sm:w-[600px] md:w-[700px]  lg:w-[900px] lg:flex lg:justify-between lg:items-start xl:w-[1220px]">
       <!--Text -->
       <div class="block lg:w-[400px] xl:w-[550px]">
-        <h2 class="mb-5 font-semibold  text-black text-4xl text-center lg:text-left">Shopify site optimization services</h2>
+        <h2 class="mb-5 font-semibold  text-black text-4xl text-center lg:text-left">
+          @lang("shopify_speed_optimization.Shopify site optimization services")
+        </h2>
         <p class="font-normal  text-gray-700 text-base">
-          Based on the Shopify store speed test and app audit, we recommend a set of tasks to optimize your site. These include:
+          @lang("shopify_speed_optimization.Based on the Shopify store speed test and app audit, we recommend a set of tasks to optimize your site. These include:")
           <br><br>
-            - Lazy loading and preloading
+            * @lang("shopify_speed_optimization.Lazy loading and preloading")
             <br>
-            - Minify CSS/ JS
+            * @lang("shopify_speed_optimization.Minify CSS/ JS")
             <br>
-            - Image optimization
+            * @lang("shopify_speed_optimization.Image optimization")
             <br>
-            - Deferred video loading
+            * @lang("shopify_speed_optimization.Deferred video loading")
             <br>
-            - App optimization
+            * @lang("shopify_speed_optimization.App optimization")
             <br>
-            - Google PSI audit and optimization
+            * @lang("shopify_speed_optimization.Google PSI audit and optimization")
             <br>
-            - Error analysis and fix
+            * @lang("shopify_speed_optimization.Error analysis and fix")
             <br>
-            - Source code management
+            * @lang("shopify_speed_optimization.Source code management")
             <br>
-            - Developer analysis
+            * @lang("shopify_speed_optimization.Developer analysis")
             <br>
-            - Google Analytics 4 (GA4) upgrade
+            * @lang("shopify_speed_optimization.Google Analytics 4 (GA4) upgrade")
             <br>
-            - Shopify app customization
+            * @lang("shopify_speed_optimization.Shopify app customization")
             <br>
-            - Mobile site optimization
+            * @lang("shopify_speed_optimization.Mobile site optimization")
             <br>
         </p>        
       </div>
@@ -127,11 +134,11 @@
       </div>
       <!--Text -->
       <div class="block mt-5 lg:mt-0 lg:w-[400px] xl:w-[550px]">
-        <h2 class="mb-5 font-semibold  text-black text-4xl text-center lg:text-left">Detailed Shopify site performance reporting</h2>
+        <h2 class="mb-5 font-semibold  text-black text-4xl text-center lg:text-left">@lang("shopify_speed_optimization.Detailed Shopify site performance reporting")</h2>
         <p class="font-normal  text-gray-700 text-base">
-         Once we complete your Shopify site speed optimization, we monitor your online store for performance analysis.
+         @lang("shopify_speed_optimization.Once we complete your Shopify site speed optimization, we monitor your online store for performance analysis.")
             <br><br>
-        Our team of Shopify experts create in-depth reporting to help you analyze site performance and identify opportunities to improve customer experience.
+       @lang("shopify_speed_optimization.Our team of Shopify experts create in-depth reporting to help you analyze site performance and identify opportunities to improve customer experience.")
           
         </p>
         <br>        
@@ -143,10 +150,10 @@
     <div class="w-[90%] mx-auto md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1220px]">
       <!--Upper -->
       <div class="mb-10">
-        <h3 class="font-bold text-white text-4xl text-center mb-5">Benefits</h3>
-        <p class="text-sm font-normal text-center text-white">
-          Conducting a thorough Shopify store audit and optimizing the site based on the experts insights can yield listed results.
-        </p>
+        <h3 class="font-bold text-white text-4xl text-center mb-5">@lang("shopify_speed_optimization.Benefits")</h3>
+        {{-- <p class="text-sm font-normal text-center text-white">
+          @lang("shopify_speed_optimization.Conduc")
+        </p> --}}
       </div>
       <!-- body section -->
       <div class="mb-10 lg:grid lg:gap-4 lg:grid-cols-2 lg:grid-rows-2 xl:grid-cols-3">
@@ -158,7 +165,7 @@
             <i class="fa-solid fa-list-check block text-5xl text-purple-700"></i>
           </x-slot:cardTwoIcon>
           <x-slot:cardTwoTitle>
-            Improved UI/UX for customer experience
+            @lang("shopify_speed_optimization.Improved UI/UX for customer experience")
           </x-slot:cardTwoTitle>
           <x-slot:cardTwoDescription>
             
@@ -173,7 +180,7 @@
             <i class="fa-solid fa-magnifying-glass block text-5xl text-purple-700"></i>
           </x-slot:cardTwoIcon>
           <x-slot:cardTwoTitle>
-            Improvement in SEO and search ranking
+            @lang("shopify_speed_optimization.Improvement in SEO and search ranking")
           </x-slot:cardTwoTitle>
           <x-slot:cardTwoDescription>
             
@@ -188,7 +195,7 @@
             <i class="fa-solid fa-pen-nib block text-5xl text-purple-700"></i>
           </x-slot:cardTwoIcon>
           <x-slot:cardTwoTitle>
-            Reduce bounce and exit rate
+            @lang("shopify_speed_optimization.Reduce bounce and exit rate")
           </x-slot:cardTwoTitle>
           <x-slot:cardTwoDescription>
             
@@ -203,7 +210,7 @@
             <i class="fa-solid fa-code block text-5xl text-purple-700"></i>
           </x-slot:cardTwoIcon>
           <x-slot:cardTwoTitle>
-           Higher on-site conversion rate
+           @lang("shopify_speed_optimization.Higher on-site conversion rate")
           </x-slot:cardTwoTitle>
           <x-slot:cardTwoDescription>
             
@@ -218,7 +225,7 @@
             <i class="fa-solid fa-paper-plane block text-5xl text-purple-700"></i>
           </x-slot:cardTwoIcon>
           <x-slot:cardTwoTitle>
-            Increased customer engagement and retention
+            @lang("shopify_speed_optimization.Increased customer engagement and retention")
           </x-slot:cardTwoTitle>
           <x-slot:cardTwoDescription>
            

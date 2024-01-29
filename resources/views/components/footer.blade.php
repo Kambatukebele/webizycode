@@ -12,8 +12,9 @@
         </div>
         <div class="my-2">
           <p class="text-base font-Nunito text-gray-500 px-2 text-center">
-            We design exceptional digital products to streamline your business processes and save
-            resources.
+            {{-- We design exceptional digital products to streamline your business processes and save
+            resources. --}}
+            @lang('footer.We design exceptional digital products to streamline your business processes and save resources.')
           </p>
         </div>
         <!--Icons -->
@@ -28,18 +29,30 @@
       <!-- Info & Notices -->
       <div class="min-w-[290px] my-5 lg:w-[200px] lg:my-0">
         <div>
-          <h4 class="text-white font-ReadexPro text-2xl font-semibold text-center">Info & Notices</h4>
+          <h4 class="text-white font-ReadexPro text-2xl font-semibold text-center">
+            {{-- Info & Notices --}}
+            @lang('footer.Info & Notices')
+          </h4>
         </div>
         <div class="">
           {{-- <p class="text-base font-normal font-Nunito text-gray-500 text-center my-2">Legal Notice</p> --}}
           <p class=" block text-base font-normal font-Nunito text-gray-500 text-center my-2">
-            <a href="{{ route('privacy-policy') }}" class="block">Privacy Policy</a>
+            <a href="{{ route('privacy-policy') }}" class="block">
+              {{-- Privacy Policy --}}
+              @lang('footer.Privacy Policies')
+            </a>
           </p>
           <p class="text-base font-normal font-Nunito text-gray-500 text-center my-2">
-            <a href="{{ route('cookies-policies') }}" class="block">Cookies Policies</a>
+            <a href="{{ route('cookies-policies') }}" class="block">
+              {{-- Cookies Policies --}}
+              @lang('footer.Cookie Policies')
+            </a>
           </p>
           <p class="text-base font-normal font-Nunito text-gray-500 text-center my-2">
-            <a href="{{ route('services') }}" class="block">Services</a>
+            <a href="{{ route('services') }}" class="block">
+              {{-- Services --}}
+              @lang('footer.Services')
+            </a>
           </p>
           <p class="text-base font-normal font-Nunito text-gray-500 text-center my-2">
             <a href="{{ route('blog') }}" class="block">Blog</a>
@@ -52,7 +65,10 @@
       <!--Contact -->
       <div class="min-w-[290px] lg:w-[200px]">
         <div>
-          <h4 class="text-white font-ReadexPro text-2xl font-semibold text-center">Contact</h4>
+          <h4 class="text-white font-ReadexPro text-2xl font-semibold text-center">
+            {{-- Contact --}}
+            @lang('footer.Contact')
+          </h4>
         </div>
         <!--Address -->
         <div class="flex justify-start items-center flex-col my-2 lg:flex-row">
