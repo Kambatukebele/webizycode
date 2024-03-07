@@ -15,7 +15,6 @@
       <!--Upper -->
       <div class="mb-10">
         <h3 class="text-black font-semibold text-3xl text-center mb-5">Shopify </h3>
-
       </div>
       <!-- body section -->
       <div class="mb-10 lg:grid lg:gap-4 lg:grid-cols-2 lg:grid-rows-1 xl:grid-cols-3">
