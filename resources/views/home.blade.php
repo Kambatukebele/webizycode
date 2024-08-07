@@ -7,8 +7,8 @@
       class="block w-[90%]  mx-auto sm:w-[600px] md:w-[700px] lg:w-[900px] xl:w-[1220px] lg:flex lg:justify-between lg:items-center">
       <!--Text-->
       <div class="flex justify-center items-center flex-col lg:items-start lg:justify-end">
-        <small class="text-black  text-sm font-normal">@lang('home.our workflow')<span class="font-bold text-purple-800">__
-            ___</span></small>
+        <!-- <small class="text-black  text-sm font-normal">@lang('home.our workflow')<span class="font-bold text-purple-800">__
+            ___</span></small> -->
         <h2 class="text-black  text-4xl text-center font-bold my-3">@lang('home.services')</h2>
       </div>
       <!--BTN-->
@@ -411,7 +411,7 @@
               <input id="email-address" placeholder="Enter your Email here" name="email" type="email"
                 autocomplete="email" required
                 class="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
-                placeholder="Enter your email">
+                placeholder="@lang('home.Enter your Email Here')">
               <x-input-error class="mt-2 text-white" :messages="$errors->get('email')" />
             </div>
             <button type="submit"

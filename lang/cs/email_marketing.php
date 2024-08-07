@@ -11,15 +11,15 @@
 
         "This measurable marketing strategy allows for the monitoring and improvement of email campaigns and automations for better results." => "Tato měřitelná marketingová strategie umožňuje sledování a zlepšování e-mailových kampaní a automatizací pro lepší výsledky.",
 
-        "How we do it?" => "Jak postupujeme?",
+        "How we do it" => "Jak postupujeme?",
 
         "Strategy Development" => "Rozvoj strategie",
 
-        "Strategy development: We work with you to understand your business goals and target audience, and then create a custom email marketing strategy that aligns with your overall marketing plan." => "Rozvoj strategie: Spolupracujeme s vámi, abychom porozuměli vašim obchodním cílům a cílovým zákazníkům, a poté vytvořili vlastní e-mailovou marketingovou strategii, která bude v souladu s vaším celkovým marketingovým plánem.",
+        "Strategy development: We work with you to understand your business goals and target audience, and then create a custom email marketing strategy that aligns with your overall marketing plan." => "Domluvíme se s vámi, abychom správně porozuměli vašim obchodním cílům a cílovým zákazníkům, poté vytvoříme vlastní e-mailovou marketingovou strategii, která bude v souladu s vaším celkovým marketingovým plánem.",
 
         "List Management" => "Správa seznamu",
 
-        "We manage your email list, making sure it is clean, up-to-date and ready for your campaigns." => "Spravujeme váš e-mailový seznam a zajišťujeme, aby byl přehledný, aktuální a připravený pro vaše kampaně.",
+        "We manage your email list, making sure it is clean, up-to-date and ready for your campaigns." => "Vytvoříme/upravíme váš e-mailový seznam a zajistíme, aby byl přehledný, aktuální a připravený pro vaše kampaně.",
 
         "Content Creation" => "Tvorba obsahu",
 

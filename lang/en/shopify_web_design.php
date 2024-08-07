@@ -38,7 +38,7 @@ Whether you're launching a new brand, seeking an ecommerce audit to expand your 
 
 "With a wide variety of themes to choose from, finding the right one for your website can be overwhelming. Our team of Shopify website designers can guide you through the selection process and work with you to tailor the chosen theme to truly reflect your vision. We will ensure that the final design represents your brand and effectively conveys your message to your target audience." => "With a wide variety of themes to choose from, finding the right one for your website can be overwhelming. Our team of Shopify website designers can guide you through the selection process and work with you to tailor the chosen theme to truly reflect your vision. We will ensure that the final design represents your brand and effectively conveys your message to your target audience.",
 
-"How we do it" => "How we do it",
+"How we do it" => "How we do it?",
 
 "Research and Planning" => "Research and Planning",
 

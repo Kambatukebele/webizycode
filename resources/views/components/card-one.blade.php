@@ -24,7 +24,8 @@
     <div class="block">
         <a class="block text-center text-sm font-semibold text-white bg-purple-700 w-[150px] mx-auto py-3 my-5 rounded hover:bg-black hover:text-white hover:font-medium uppercase"
             href="{{ $cardOneLink }}">
-            Learn More
+            <!-- Learn More -->
+            @lang('home.More')
         </a>
     </div>
 </div>

@@ -58,7 +58,7 @@
 </nav>
 <!-- end Navigation and logo -->
   {{-- Changing language --}}
-    <div class="lang fixed left-2 rounded-md py-1 top-20 z-10 bg-white w-11 h-fit flex justify-center items-center flex-col">
+    <div class="lang fixed left-2 rounded-md py-1 top-20 z-10 bg-white w-11 h-fit flex justify-center items-center flex-col cursor-pointer">
         <p class="langText"></p>
         <a href="locale/en" class="en hidden w-8 h-fit  bg-transparent">
             <img class="block w-full h-full object-cover object-center" src="{{ '/assets/images/united-states.png' }}" alt="">

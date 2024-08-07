@@ -7,6 +7,7 @@
         'youtube' => "Youtube",
         'portfolio' => 'Portfolio',
         'contact us' => 'Kontakt',
+        'More' => "Více",
         'free consultancy' => 'Poptávka',
         'email marketing & shopify agency' => 'Email Marketing & Shopify Agency',
         'elevate your shopify brand for conversion' => 'Pozvedněte svůj Shopify obchod',
@@ -69,7 +70,8 @@
 "Subscribe to our newsletter." => "Přihlaste se k odběru našeho newsletteru.
 ",
 "Subscribe to our newsletter and stay updated with our latest posts and videos, empowering your business growth." => "Přihlaste se k odběru našeho newsletteru a zůstaňte informováni o našich nejnovějších příspěvcích a videích, které podpoří růst vašeho podnikání.",
-"Subscribe" => "Subscribe",
+"Subscribe" => "Odebírat",
+"Enter your Email Here" => "Váš Email zde",
 "Weekly articles" => "Týdenní články",
 "You will receive valuable weekly posts to learn how to grow your business, build your website on your own, and master coding." => "Budete dostávat užitečné týdenní příspěvky, abyste se naučili, jak rozvíjet své podnikání, budovat své webové stránky sami a ovládat kódování.",
 "No spam" => "Žádný spam

@@ -15,7 +15,7 @@
 
         "Strategy Development" => "Strategy Development",
 
-        "Strategy development: We work with you to understand your business goals and target audience, and then create a custom email marketing strategy that aligns with your overall marketing plan." => "Strategy development: We work with you to understand your business goals and target audience, and then create a custom email marketing strategy that aligns with your overall marketing plan.",
+        "Strategy development: We work with you to understand your business goals and target audience, and then create a custom email marketing strategy that aligns with your overall marketing plan." => "We work with you to understand your business goals and target audience, and then create a custom email marketing strategy that aligns with your overall marketing plan.",
 
         "List Management" => "List Management",
 

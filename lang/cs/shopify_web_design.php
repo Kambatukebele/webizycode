@@ -42,7 +42,7 @@ Ať už uvádíte novou značku, hledáte audit elektronického obchodu pro roz�
 
 "With a wide variety of themes to choose from, finding the right one for your website can be overwhelming. Our team of Shopify website designers can guide you through the selection process and work with you to tailor the chosen theme to truly reflect your vision. We will ensure that the final design represents your brand and effectively conveys your message to your target audience." => "Díky široké škále šablon, ze kterých si můžete vybrat, může být nalezení toho správného pro váš web ohromující. Náš tým designérů vás může provést procesem výběru a spolupracovat s vámi na přizpůsobení zvolené šablony tak, aby skutečně odráželo vaši vizi. Zajistíme, aby konečný design reprezentoval vaši značku a efektivně předal vaše sdělení vaší cílové skupině.",
 
-"How we do it?" => "Jaký je postup?",
+"How we do it" => "Jaký je postup?",
 
 "Research and Planning" => "Domluva a plánování",
 

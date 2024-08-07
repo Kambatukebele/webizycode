@@ -15,7 +15,7 @@
 
 
 
-        "How we do it?" => "Jaký je postup?",
+        "How we do it" => "Jaký je postup?",
 
         "Data Migration" => "Migrace dat",
 
