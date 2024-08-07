@@ -1,7 +1,7 @@
 <?php
 
     return [
-        "NICE TO MEET YOU!" => "NICE TO MEET YOU!",
+        "Contact" => "Contact",
 
         "Excited! Let's Talk" => "Excited! Let's Talk",
         "Your journey to this point demonstrates your interest in our work, and we're equally eager to learn more about you!" => "Your journey to this point demonstrates your interest in our work, and we're equally eager to learn more about you!",

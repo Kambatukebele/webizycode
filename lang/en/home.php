@@ -3,6 +3,10 @@
     return [
         'home' => 'Home',
         'services' => 'Services',
+        'Shopify design' => 'Shopify design',
+        'Email Marketing' => 'Email Marketing',
+        'Speed optimization' => 'Speed optimization',
+        'Shopify migration' => 'Shopify Migration',
         'blog' => 'Blog',
         'youtube' => "Youtube",
         'portfolio' => 'Portfolio',

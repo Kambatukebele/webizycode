@@ -23,9 +23,9 @@
                 <a class="hidden lg:block lg:text-black lg:my-3 leading-4  lg:px-3 lg:text-xs hover:underline hover:text-purple-700"
                     href="{{ route('services.email-marketing') }}">Email Marketing</a>
                 <a class="hidden lg:block lg:text-black lg:my-3 leading-4  lg:px-3 lg:text-xs hover:underline hover:text-purple-700"
-                    href="{{ route('services.store-speed-optimization') }}">Speed Optimization</a>
+                    href="{{ route('services.store-speed-optimization') }}">@lang('home.Speed optimization')</a>
                     <a class="hidden lg:block lg:text-black lg:my-3 leading-4  lg:px-3 lg:text-xs hover:underline hover:text-purple-700"
-                    href="{{ route('services.migration') }}">Shopify Migration</a>
+                    href="{{ route('services.migration') }}">@lang('home.Shopify migration')</a>
             </div>
         </li>
         <li class="lg:text-white lg:text-xs uppercase lg:font-semibold leading-4  hover:text-black transition-all">

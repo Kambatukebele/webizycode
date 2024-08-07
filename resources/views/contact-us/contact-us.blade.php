@@ -3,7 +3,7 @@
 <x-web-site-layout>
   <x-header-section>
     <x-slot:titlePage>
-      Nice to Meet You!
+      @lang('contact.Contact')
     </x-slot:titlePage>
   </x-header-section>
   <!--Services box description -->
@@ -24,25 +24,25 @@
         class="mt-6 space-y-6 sm:bg-white sm:w-[500px] sm:p-10 sm:rounded-lg sm:shadow-lg  sm:mx-auto lg:w-[600px]">
         @csrf
         <div>
-          <x-input-label for="name" :value="__('Name')" />
-          <input type="text" name="name" placeholder="example: John Doe" value="{{ old('name') }}"
+        <label class="text-sm font-semibod" for="name">@lang('contact.Name')</label>
+          <input type="text" name="name" placeholder="John Doe" value="{{ old('name') }}"
             class="mt-1 block w-full" required autofocus autocomplete="name">
           <x-input-error class="mt-2" :messages="$errors->get('name')" />
         </div>
         <div>
-          <x-input-label for="email" :value="__('Email')" />
-          <input type="email" name="email" placeholder="example: johndoe@youremail.com" value="{{ old('email') }}"
+        <label class="text-sm font-semibod" for="name">@lang('contact.Email')</label>
+          <input type="email" name="email" placeholder="johndoe@youremail.com" value="{{ old('email') }}"
             class="mt-1 block w-full" required autofocus autocomplete="email">
           <x-input-error class="mt-2" :messages="$errors->get('email')" />
         </div>
         <div>
-          <x-input-label for="company" :value="__('Company')" />
-          <input type="text" name="company" placeholder="example: Company LLC" value="{{ old('company') }}"
+        <label class="text-sm font-semibod" for="name">@lang('contact.Company')</label>
+          <input type="text" name="company" placeholder="Labrador" value="{{ old('company') }}"
             class="mt-1 block w-full" required autofocus autocomplete="email">
           <x-input-error class="mt-2" :messages="$errors->get('company')" />
         </div>
         <div>
-          <x-input-label for="name" :value="__('Message')" />
+        <label class="text-sm font-semibod" for="name">@lang('contact.Message')</label>
           <textarea
             class="border-gray-300 mt-1 block focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm w-full"
             name="content" id="content" rows="10">{{ old('content') }}</textarea>

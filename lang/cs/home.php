@@ -3,6 +3,10 @@
     return [
         'home' => 'Domů',
         'services' => 'Služby',
+        'Shopify design' => 'Shopify design',
+        'Email Marketing' => 'Email Marketing',
+        'Speed optimization' => 'Optimalizace rychlosti',
+        'Shopify migration' => 'Shopify Migrace',
         'blog' => 'Blog',
         'youtube' => "Youtube",
         'portfolio' => 'Portfolio',

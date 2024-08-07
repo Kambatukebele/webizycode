@@ -3,7 +3,7 @@
 <x-web-site-layout>
   <x-header-section>
     <x-slot:titlePage>
-      Our Videos
+      @lang('youtube.Our Videos')
     </x-slot:titlePage>
   </x-header-section>
   <!--Services box description -->
