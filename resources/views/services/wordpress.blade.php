@@ -5,6 +5,11 @@
     approach, client-centric philosophy, and measurable results. Let's transform your e-commerce venture into a thriving
     digital powerhouse.")
     <x-web-site-layout>
+        <x-header-section>
+            <x-slot:titlePage>
+                WordPress – Tech & Marketing Solutions
+            </x-slot:titlePage>
+        </x-header-section>
         <!-- Slider images -->
         <section class="w-full flex justify-center items-center overflow-x-scroll no-scrollbar">
             <div class="flex space-x-5 animate-[imgSlider_300s_linear_infinite]">
@@ -79,25 +84,24 @@
                 <div class="mb-12">
                     <h2
                         class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-outfit text-gray-900 w-[280px] md:w-[390px] leading-none tracking-tight">
-                        Our Core Services
+                        WordPress Core Services
                     </h2>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
                     <!-- Service Card -->
                     <a href="#" class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
                         <div>
-                            <i class="fas fa-store block text-5xl text-blue-800"></i>
+                            <i class="fas fa-laptop-code block text-5xl text-blue-800"></i>
                         </div>
-                        <h4 class="mt-6 mb-4 text-3xl font-semibold font-outfit text-gray-900 leading-snug">
-                            Shopify Store Setup & Customization
+                        <h4 class="mt-6 mb-4 text-3xl font-semibold font-outfit text-accentOne leading-snug">
+                            Custom WordPress Website Development
                         </h4>
                         <p class="text-lg font-poppins text-gray-700 leading-relaxed">
-                            Setting up a Shopify store requires expertise in design, functionality, and user experience. Our
-                            team ensures a seamless setup, including theme installation, homepage configuration, product
-                            categorization, and branding alignment. We customize your Shopify theme to match your brand’s
-                            identity, optimizing layout, typography, and color schemes to create a visually appealing and
-                            high-converting storefront. Additionally, we integrate essential Shopify apps to enhance
-                            functionality, such as inventory management, email marketing, and customer retention tools.
+                            Our expert developers build high-performance WordPress websites tailored to your business needs.
+                            We create fully responsive, SEO-friendly, and scalable websites using the latest technologies,
+                            ensuring optimal user experience across all devices. Whether you need a corporate website,
+                            personal blog, or an advanced web application, we develop custom themes and functionalities that
+                            align with your brand identity and business objectives.
                         </p>
                     </a>
                     <!-- Service Card -->
@@ -105,16 +109,15 @@
                         <div>
                             <i class="fas fa-paint-brush block text-5xl text-blue-800"></i>
                         </div>
-                        <h4 class="mt-6 mb-4 text-3xl font-semibold font-outfit text-gray-900 leading-snug">
-                            Custom Shopify Theme Development
+                        <h4 class="mt-6 mb-4 text-3xl font-semibold font-outfit text-accentOne leading-snug">
+                            WordPress Theme Design & Customization
                         </h4>
                         <p class="text-lg font-poppins text-gray-700 leading-relaxed">
-                            For businesses that require a unique and tailored look, we offer custom Shopify theme
-                            development from scratch. Our developers use Liquid, HTML, CSS, and JavaScript to craft
-                            pixel-perfect, responsive, and mobile-friendly themes. We ensure your store’s design is
-                            optimized for performance, accessibility, and user engagement, delivering a seamless shopping
-                            experience across all devices. Whether you need an elegant minimalist design or a highly
-                            interactive interface, we build themes that reflect your brand’s vision.
+                            Stand out with a unique and visually appealing WordPress theme designed specifically for your
+                            brand. Our designers craft pixel-perfect, high-converting themes with modern aesthetics and
+                            seamless functionality. We customize existing themes or develop completely new designs, ensuring
+                            fast load times, intuitive navigation, and an engaging user experience. All themes are optimized
+                            for mobile responsiveness, accessibility, and SEO best practices.
                         </p>
                     </a>
                     <!-- Service Card -->
@@ -122,16 +125,15 @@
                         <div>
                             <i class="fas fa-plug text-5xl text-blue-800"></i>
                         </div>
-                        <h4 class="mt-6 mb-4 text-3xl font-semibold font-outfit text-gray-900 leading-snug">
-                            Shopify App Development & Integration
+                        <h4 class="mt-6 mb-4 text-3xl font-semibold font-outfit text-accentOne leading-snug">
+                            WordPress Plugin Development & Integration
                         </h4>
                         <p class="text-lg font-poppins text-gray-700 leading-relaxed">
-                            Extend the capabilities of your Shopify store with custom apps and integrations. Our team
-                            develops private and public Shopify apps tailored to your business needs, incorporating features
-                            such as custom product options, automated invoicing, subscription management, and AI-driven
-                            recommendations. We also integrate third-party applications, including payment gateways,
-                            shipping solutions, CRM tools, and ERP systems, ensuring your store operates efficiently and
-                            scales seamlessly as your business grows.
+                            Enhance your website’s capabilities with custom WordPress plugin development. We build secure,
+                            lightweight, and scalable plugins to add new functionalities, from advanced contact forms to
+                            AI-powered automation. Our team also integrates third-party plugins for payment gateways, CRM
+                            systems, booking platforms, and more, ensuring smooth compatibility and efficient performance.
+                            We focus on coding best practices to maintain site speed and security.
                         </p>
                     </a>
                     <!-- Service Card -->
@@ -139,16 +141,15 @@
                         <div>
                             <i class="fas fa-chart-line text-5xl text-blue-800"></i>
                         </div>
-                        <h4 class="mt-6 mb-4 text-3xl font-semibold font-outfit text-gray-900 leading-snug">
-                            Shopify SEO & Performance Optimization
+                        <h4 class="mt-6 mb-4 text-3xl font-semibold font-outfit text-accentOne leading-snug">
+                            WordPress SEO & Performance Optimization
                         </h4>
                         <p class="text-lg font-poppins text-gray-700 leading-relaxed">
-                            Boost your store’s visibility and search engine ranking with our Shopify SEO and performance
-                            optimization services. We conduct in-depth keyword research, optimize product pages, enhance
-                            meta tags, and improve site structure to maximize organic traffic. Additionally, we optimize
-                            website speed by implementing lazy loading, minimizing code bloat, and leveraging Shopify’s CDN
-                            for faster load times. Our strategies help reduce bounce rates, increase conversion rates, and
-                            improve overall store performance.
+                            Maximize your website’s visibility with expert WordPress SEO and performance optimization. Our
+                            services include keyword research, on-page SEO, structured data implementation, and
+                            link-building strategies to improve search engine rankings. Additionally, we enhance site speed
+                            through image optimization, caching solutions, code minification, and content delivery networks
+                            (CDNs) to ensure a lightning-fast user experience and lower bounce rates.
                         </p>
                     </a>
                     <!-- Service Card -->
@@ -156,16 +157,15 @@
                         <div>
                             <i class="fas fa-exchange-alt text-5xl text-blue-800"></i>
                         </div>
-                        <h4 class="mt-6 mb-4 text-3xl font-semibold font-outfit text-gray-900 leading-snug">
-                            Shopify Migration & Replatforming
+                        <h4 class="mt-6 mb-4 text-3xl font-semibold font-outfit text-accentOne leading-snug">
+                            WordPress Migration
                         </h4>
                         <p class="text-lg font-poppins text-gray-700 leading-relaxed">
-                            Seamlessly transition from another eCommerce platform to Shopify without losing essential data.
-                            Our migration service ensures a smooth transfer of products, customer information, order
-                            history, and SEO rankings from platforms such as WooCommerce, Magento, or BigCommerce. We
-                            maintain data integrity, resolve compatibility issues, and ensure minimal downtime during the
-                            migration process. Post-migration, we optimize your new Shopify store for enhanced performance
-                            and user experience.
+                            Migrate your website to WordPress without data loss or downtime. We handle seamless transfers
+                            from platforms like Wix, Joomla, Drupal, and Shopify, ensuring all content, media, SEO settings,
+                            and database integrity remain intact. Our team resolves compatibility issues, restructures URLs
+                            for SEO preservation, and optimizes your new WordPress site for peak performance. Whether it’s a
+                            small blog or a complex enterprise website, we ensure a hassle-free migration.
                         </p>
                     </a>
                     <!-- Service Card -->
@@ -173,16 +173,15 @@
                         <div>
                             <i class="fas fa-tools text-5xl text-blue-800"></i>
                         </div>
-                        <h4 class="mt-6 mb-4 text-3xl font-semibold font-outfit text-gray-900 leading-snug">
-                            Ongoing Shopify Maintenance & Support
+                        <h4 class="mt-6 mb-4 text-3xl font-semibold font-outfit text-accentOne leading-snug">
+                            WordPress Maintenance & Security Support
                         </h4>
                         <p class="text-lg font-poppins text-gray-700 leading-relaxed">
-                            Keep your Shopify store running smoothly with our dedicated maintenance and support services. We
-                            offer regular security updates, bug fixes, and feature enhancements to ensure optimal
-                            performance. Our team provides 24/7 monitoring, troubleshooting, and technical support,
-                            addressing issues such as broken links, payment gateway failures, or inventory discrepancies.
-                            With proactive maintenance, we help you prevent downtime and ensure a seamless shopping
-                            experience for your customers.
+                            Ensure your website stays secure, up-to-date, and running smoothly with our WordPress
+                            maintenance services. We offer regular updates, malware scans, security patches, and bug fixes
+                            to prevent vulnerabilities. Our team provides 24/7 monitoring, backups, and technical support,
+                            ensuring quick resolution of any issues. Whether you need minor updates or ongoing security
+                            audits, we keep your website optimized and protected from cyber threats.
                         </p>
                     </a>
                 </div>
@@ -224,10 +223,9 @@
                                 class="w-full object-cover md:h-[450px]" />
                         </a>
                         {{--   <div class="text-left mb-10">
-                            <span class="inline-block text-lg border border-gray-900 px-6 py-2 rounded-full font-poppins">Web
-                                Development agency</span>
+                            <span class="inline-block text-lg border border-gray-900 px-6 py-2 rounded-full font-poppinsgraytext-gray-700                       Development agency</span>
                             <span
-                                class="inline-block text-lg border border-gray-900 px-6 py-2 rounded-full font-poppins ml-2">Laravel/
+                                class="inline-block text-lg border border-gray-900 px-6 py-2 rounded-full font-poppins ml-2"graytext-gray-700
                                 Tailwind CSS</span>
                         </div>
                         <div class="hidden sm:flex justify-end mb-5">
@@ -238,7 +236,7 @@
                             </div>
                         </div>
                         <div>
-                            <h4 class="text-3xl font-semibold font-outfit text-gray-700">Ezagrow Agency</h4>
+                            <h4 class="text-3xl font-semibold font-outfit text-accentOne">Ezagrow Agency</h4>
                         </div> --}}
                     </li>
                     <li class="flex flex-col">
@@ -248,10 +246,9 @@
                         </a>
                         {{-- <div class="text-left mb-10">
                             <span
-                                class="inline-block text-lg border border-gray-900 px-6 py-2 rounded-full font-poppins">Shopify
-                                Freelancer</span>
+                                class="inline-block text-lg border border-gray-900 px-6 py-2 rounded-full font-poppins">Sgraytext-gray-700                           Freelancer</span>
                             <span
-                                class="inline-block text-lg border border-gray-900 px-6 py-2 rounded-full font-poppins ml-2">Reactjs/
+                                class="inline-block text-lg border border-gray-900 px-6 py-2 rounded-full font-poppins ml-2"graytext-gray-700
                                 Tailwind CSS</span>
                         </div>
                         <div class="hidden sm:flex justify-end mb-5">
@@ -262,7 +259,7 @@
                             </div>
                         </div>
                         <div>
-                            <h4 class="text-3xl font-semibold font-outfit text-gray-700">Kamba</h4>
+                            <h4 class="text-3xl font-semibold font-outfit text-accentOne">Kamba</h4>
                         </div> --}}
                     </li>
                     <li class="flex flex-col">
@@ -272,10 +269,9 @@
                         </a>
                         {{-- <div class="text-left mb-10">
                             <span
-                                class="inline-block text-lg border border-gray-900 px-6 py-2 rounded-full font-poppins">Wordpress
-                                Elementor</span>
-                            <span
-                                class="inline-block text-lg border border-gray-900 px-6 py-2 rounded-full font-poppins ml-2">CSS</span>
+                                class="inline-block text-lg border border-gray-900 px-6 py-2 rounded-full font-poppins">Wograytext-gray-700                             Elementor</span>
+                            <spn
+                                class="inline-block text-lg border border-gray-900 px-6 py-2 rounded-full font-poppins ml-2"graytext-gray-700n>
                         </div>
                         <div class="hidden sm:flex justify-end mb-5">
                             <div
@@ -285,7 +281,7 @@
                             </div>
                         </div>
                         <div>
-                            <h4 class="text-3xl font-semibold font-outfit text-gray-700">Kayor Group</h4>
+                            <h4 class="text-3xl font-semibold font-outfit text-accentOne">Kayor Group</h4>
                         </div> --}}
                     </li>
                     <li class="flex flex-col">
@@ -294,11 +290,10 @@
                                 class="w-full object-cover md:h-[450px]" />
                         </a>
                         {{-- <div class="text-left mb-10">
+                            <spa
+                                class="inline-block text-lg border border-gray-900 px-6 py-2 rounded-full font-poppins">Reacgraytext-gray-700>
                             <span
-                                class="inline-block text-lg border border-gray-900 px-6 py-2 rounded-full font-poppins">Reactjs</span>
-                            <span
-                                class="inline-block text-lg border border-gray-900 px-6 py-2 rounded-full font-poppins ml-2">
-                                Tailwind CSS</span>
+                                class="inline-block text-lg border border-gray-900 px-6 py-2 rounded-full font-poppins graytext-gray-700                         Tailwind CSS</span>
                         </div>
                         <div class="hidden sm:flex justify-end mb-5">
                             <div
@@ -308,7 +303,7 @@
                             </div>
                         </div>
                         <div>
-                            <h4 class="text-3xl font-semibold font-outfit text-gray-700">Benza Group</h4>
+                            <h4 class="text-3xl font-semibold font-outfit text-accentOne">Benza Group</h4>
                         </div> --}}
                     </li>
                     <li class="flex flex-col">
@@ -318,10 +313,9 @@
                         </a>
                         {{-- <div class="text-left mb-10">
                             <span
-                                class="inline-block text-lg border border-gray-900 px-6 py-2 rounded-full font-poppins">HTML,
-                                CSS</span>
+                                class="inline-block text-lg border border-gray-900 px-6 py-2 rounded-full font-poppins"graytext-gray-700                         CSS</span>
                             <span
-                                class="inline-block text-lg border border-gray-900 px-6 py-2 rounded-full font-poppins ml-2">Javascript,
+                                class="inline-block text-lg border border-gray-900 px-6 py-2 rounded-full font-poppins ml-2"graytext-gray-700pt,
                                 Liquid</span>
                         </div>
                         <div class="hidden sm:flex justify-end mb-5">
@@ -332,7 +326,7 @@
                             </div>
                         </div>
                         <div>
-                            <h4 class="text-3xl font-semibold font-outfit text-gray-700">Vaneli</h4>
+                            <h4 class="text-3xl font-semibold font-outfit text-accentOne">Vaneli</h4>
                         </div> --}}
                     </li>
                 </ul>
@@ -394,7 +388,7 @@
                         <div>
                             <i class="fa-solid fa-list-check block text-5xl text-blue-800"></i>
                         </div>
-                        <h4 class="mt-6 mb-4 text-3xl font-semibold font-outfit text-gray-900 leading-snug">
+                        <h4 class="mt-6 mb-4 text-3xl font-semibold font-outfit text-accentOne leading-snug">
                             Discovery and Requirement Analysis
                         </h4>
                         <p class="text-lg font-poppins text-gray-700 leading-relaxed">
@@ -407,7 +401,7 @@
                         <div>
                             <i class="fa-solid fa-magnifying-glass block text-5xl text-blue-800"></i>
                         </div>
-                        <h4 class="mt-6 mb-4 text-3xl font-semibold font-outfit text-gray-900 leading-snug">
+                        <h4 class="mt-6 mb-4 text-3xl font-semibold font-outfit text-accentOne leading-snug">
                             Planning and Strategy
                         </h4>
                         <p class="text-lg font-poppins text-gray-700 leading-relaxed">
@@ -421,7 +415,7 @@
                         <div>
                             <i class="fa-solid fa-pen-nib block text-5xl text-blue-700"></i>
                         </div>
-                        <h4 class="mt-6 mb-4 text-3xl font-semibold font-outfit text-gray-900 leading-snug">
+                        <h4 class="mt-6 mb-4 text-3xl font-semibold font-outfit text-accentOne leading-snug">
                             Design and Prototyping
                         </h4>
                         <p class="text-lg font-poppins text-gray-700 leading-relaxed">
@@ -435,7 +429,7 @@
                         <div>
                             <i class="fa-solid fa-code block text-5xl text-blue-800"></i>
                         </div>
-                        <h4 class="mt-6 mb-4 text-3xl font-semibold font-outfit text-gray-900 leading-snug">
+                        <h4 class="mt-6 mb-4 text-3xl font-semibold font-outfit text-accentOne leading-snug">
                             Development and Testing
 
                         </h4>
@@ -450,7 +444,7 @@
                         <div>
                             <i class="fa-solid fa-paper-plane block text-5xl text-blue-800"></i>
                         </div>
-                        <h4 class="mt-6 mb-4 text-3xl font-semibold font-outfit text-gray-900 leading-snug">
+                        <h4 class="mt-6 mb-4 text-3xl font-semibold font-outfit text-accentOne leading-snug">
                             Deployment and Launch
 
                         </h4>
@@ -465,7 +459,7 @@
                         <div>
                             <i class="fa-solid fa-screwdriver-wrench block text-5xl text-blue-800"></i>
                         </div>
-                        <h4 class="mt-6 mb-4 text-3xl font-semibold font-outfit text-gray-900 leading-snug">
+                        <h4 class="mt-6 mb-4 text-3xl font-semibold font-outfit text-accentOne leading-snug">
                             Maintenance and Support
                         </h4>
                         <p class="text-lg font-poppins text-gray-700 leading-relaxed">
@@ -478,7 +472,6 @@
             </div>
         </section>
         <!-- End How we Work -->
-
         <!-- Blog-->
         <section class="w-full py-12">
             <div class="container mx-auto">
@@ -531,69 +524,4 @@
             </div>
         </section>
         <!-- ENd Blog -->
-
-        <!--  Portfolio -->
-        @isset($reviews[0]->status)
-            <section class="bg-gray-50">
-                <div class="mx-auto max-w-[1340px] px-4 py-12 sm:px-6 lg:me-0 lg:py-16 lg:pe-0 lg:ps-8 xl:py-24">
-                    <div class="max-w-7xl items-end justify-between sm:flex sm:pe-6 lg:pe-8">
-                        <h3 class="max-w-xl text-xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                            Read trusted reviews from our customers
-                        </h3>
-
-                        <div class="mt-8 flex gap-4 lg:mt-0">
-                            <button aria-label="Previous slide" id="keen-slider-previous"
-                                class="rounded-full border border-purple-600 p-3 text-purple-600 transition hover:bg-purple-600 hover:text-white">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="h-5 w-5 rtl:rotate-180">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-                                </svg>
-                            </button>
-
-                            <button aria-label="Next slide" id="keen-slider-next"
-                                class="rounded-full border border-purple-600 p-3 text-purple-600 transition hover:bg-purple-600 hover:text-white">
-                                <svg class="h-5 w-5 rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="-mx-6 mt-8 lg:col-span-2 lg:mx-0">
-                        <div id="keen-slider" class="keen-slider">
-                            @foreach ($reviews as $review)
-                                <div class="keen-slider__slide">
-                                    <blockquote
-                                        class="flex h-full flex-col justify-between rounded-xl bg-white p-6 shadow-sm sm:p-8 lg:p-12">
-                                        <div>
-                                            <div class="mt-4">
-                                                <p class="text-2xl font-bold text-purple-600 sm:text-2xl">
-                                                    {{ Str::upper($review->client_company_name) }}
-                                                </p>
-
-                                                <p class="mt-4 leading-relaxed text-gray-700">
-                                                    {{ $review->client_review }}
-                                                </p>
-                                            </div>
-                                            @if ($review->client_company_link)
-                                                <a href="{{ $review->client_company_link }}"
-                                                    class="block items-center px-4 py-2 bg-purple-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase w-full sm:w-[300px] lg:w-[150px] xl:w-[200px] tracking-widest hover:bg-black  transition ease-in-out duration-150 my-5 text-center">Live
-                                                    Site</a>
-                                            @endif
-                                        </div>
-
-                                        <footer class="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
-                                            &mdash;<span class="mx-1">{{ Str::upper($review->client_title) }}</span>
-                                            {{ Str::ucfirst($review->client_fullname) }}
-                                        </footer>
-                                    </blockquote>
-                                </div>
-                            @endforeach
-                        </div>
-                    </div>
-                </div>
-            </section>
-        @endisset
-        <!-- End Portfolio -->
-
     </x-web-site-layout>

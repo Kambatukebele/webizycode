@@ -9,12 +9,17 @@ export default {
         "./resources/views/**/*.blade.php",
     ],
     theme: {
+        container: {
+            center: true,
+        },
         extend: {
             fontFamily: {
-                sans: ["Figtree", ...defaultTheme.fontFamily.sans],
-                montserrat: ["Montserrat", "sans-serif"],
+                outfit: ["Outfit", "serif"],
+                poppins: ["Poppins", "serif"],
+                inter: ["Inter", "serif"],
             },
             backgroundImage: {
+                hero: "url('/public/assets/images/background.png')",
                 "hero-upper": "url('/public/assets/images/bg-image.png')",
                 "hero-middle": "url('/public/assets/images/ft-bg-2.png')",
                 "hero-how-we-work":

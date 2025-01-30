@@ -5,7 +5,7 @@
     <x-head />
     <!-- Head -->
 
-    <body class="bg-gray-50 font-montserrat">
+    <body class="bg-gray-50 font-inter">
         {{-- //in your blade template --}}
         @include('cookie-consent::index')
         <!--Hidden Navigation and logo for Small devices -->
@@ -18,12 +18,10 @@
              @lang('home.email Marketing')
           </x-slot:upper>
           <x-slot:title>
-              {{-- Elevate your Shopify brand for conversion --}}
-              @lang('home.elevate your shopify brand for conversion')
+            Shopify – Tech & Marketing Solutions
           </x-slot:title>
           <x-slot:description>
-            {{-- We leverage personalized Shopify email strategies to enhance your online presence and drive digital success. --}}
-            @lang('home.we leverage personalized Shopify email strategies to enhance your online presence and drive digital success.')
+            Focus on growing your business while we handle all your Shopify tech and marketing needs.
           </x-slot:description>
           <x-slot:CTA_Link>
              {{ route('contact.index') }}
@@ -36,7 +34,7 @@
               {{ url('/assets/images/slider-girl-img-1.png') }}
           </x-slot:image>
         </x-header-visible>
-        
+
         <!-- Hero section  -->
         {{ $slot }}
         <!-- Footer -->
