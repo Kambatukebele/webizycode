@@ -4,52 +4,37 @@ namespace App\Http\Controllers;
 
 use App\Models\Post;
 use Illuminate\Http\Request;
+use Illuminate\Pagination\LengthAwarePaginator;
+use Illuminate\Support\Facades\Http;
 
 class BlogController extends Controller
 {
 
     //Show Alll blog posts
-    public function index()
+    public function index(Request $request)
     {
-        //Retrieve Only shopify Posts
-        $shopify = Post::where('category', 'shopify')
-        ->where('status', 'active')
-        ->latest()
-        ->take(3)
-        ->get();
+         $response = Http::get('https://blog.kambatukebele.com/wp-json/wp/v2/posts?_embed&order=desc&orderby=date');
+         $posts = $response->json();
 
-         //Retrieve Only socialmedia Posts
-        $emailMarketing = Post::where('category', 'email_marketing')
-        ->where('status', 'active')
-        ->latest()
-        ->take(3)
-        ->get();
-        
-        return view('blog.index', [
-            'shopify'       => $shopify,
-            'emailMarketing'   => $emailMarketing
-        ]);
+         // Laravel pagination setup
+         $perPage = 1; // Number of posts per page
+         $currentPage = $request->query('page', 1);
+         $items = array_slice($posts, ($currentPage - 1) * $perPage, $perPage);
+
+         $paginatedPosts = new LengthAwarePaginator($items, count($posts), $perPage, $currentPage, [
+             'path' => $request->url(),
+             'query' => $request->query(),
+         ]);
+
+         return view('blog.index', compact('paginatedPosts'));
     }
 
-    public function singleblog($id, $title)
+    public function show($id)
     {
-        $allPosts = Post::where('status', 'active')
-        ->where('id', '!=', $id)
-        ->inRandomOrder()->take(6)->get();
-        $blog = Post::find($id);
-        return view('blog.single-blog', [
-            'blog' => $blog,
-             'allPosts' => $allPosts,
-        ]); 
+        https://blog.kambatukebele.com/wp-json/wp/v2/posts?_embed&order=desc&orderby=date
+        $response = Http::get("https://blog.kambatukebele.com/wp-json/wp/v2/posts/{$id}?_embed");
+        $post = $response->json();
+
+        return view('blog.show', compact('post'));
     }
-
-    public function category($category)
-    {
-        $postCategory = Post::where('category', $category)
-        ->where('status', 'active')
-        ->latest()->paginate(10);
-        return view('blog.category', ['postCategory' => $postCategory]); 
-    }
-
-
 }

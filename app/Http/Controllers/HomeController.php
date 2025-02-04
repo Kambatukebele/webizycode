@@ -4,18 +4,16 @@ namespace App\Http\Controllers;
 
 use App\Models\Review;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
 
 class HomeController extends Controller
 {
     public function index ()
     {
-        $reviews = Review::where("status", "active")
-        ->latest()
-        ->take(10)
-        ->get();
-
+        $response = Http::get('https://blog.kambatukebele.com/wp-json/wp/v2/posts?_embed&per_page=3&order=desc&orderby=date');
+         $posts = $response->json();
         return view('home', [
-            'reviews' => $reviews,
-        ]); 
+            'posts' => $posts,
+        ]);
     }
 }

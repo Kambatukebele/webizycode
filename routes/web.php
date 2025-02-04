@@ -68,8 +68,7 @@ Route::controller(ServicesController::class)->group(function (){
 
 //Blog
 Route::get('/blog', [BlogController::class, 'index'])->name('blog');
-Route::get('/blog/{category}', [BlogController::class, 'category'])->name('blog.category');
-Route::get('/blog/single-blog/{id}/{title}', [BlogController::class, 'singleblog'])->name('blog.single-blog');
+Route::get('blog/{id}', [BlogController::class, 'show'])->name('blog.show');
 
 // Route::get('/dashboard', function () {
 //     return view('dashboard');

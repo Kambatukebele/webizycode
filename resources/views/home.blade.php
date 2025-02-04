@@ -77,10 +77,8 @@
         <section class="w-full py-12">
             <div class="container mx-auto px-4">
                 <div class="mb-12">
-                    <h2
-                        class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-outfit text-gray-900 w-[280px] md:w-[390px] leading-none tracking-tight">
-                        Our Core Services
-                    </h2>
+                    <x-title-section alignment="text-left" title="Our Core Services" />
+
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
                     <!-- Service Card -->
@@ -212,10 +210,7 @@
         <section class="bg-gray-200 w-full py-12">
             <div class="container mx-auto px-4">
                 <div class="text-center mb-12">
-                    <h2
-                        class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold font-outfit text-gray-900 w-[280px] sm:w-[430px] md:w-[630px] lg:w-[830px] mx-auto leading-none">
-                        Some of our creative projects
-                    </h2>
+                    <x-title-section alignment="text-left" title="Some of our creative projects" />
                 </div>
                 <ul class="grid grid-cols-1 md:grid-cols-2 gap-10" id="projects">
                     <li class="flex flex-col">
@@ -383,10 +378,7 @@
         <section class="w-full py-12">
             <div class="container mx-auto px-4">
                 <div class="mb-12">
-                    <h2
-                        class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-outfit text-gray-900 w-[280px] md:w-[390px] leading-none tracking-tight">
-                        How we work
-                    </h2>
+                    <x-title-section alignment="text-left" title="How We Work" />
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
                     <!-- Service Card -->
@@ -483,117 +475,16 @@
         <section class="w-full py-12">
             <div class="container mx-auto">
                 <div class="mb-12">
-                    <h2 class="font-outfit text-4xl md:text-5xl lg:text-6xl font-bold text-left text-gray-900 max-w-lg">
-                        Our
-                        Articles</h2>
+                    <x-title-section alignment="text-left" title="Our
+                        Articles" />
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-                    <div
-                        class="rounded-lg border border-gray-300 shadow-md hover:shadow-xl cursor-pointer overflow-hidden">
-                        <img src="{{ asset('assets/images/demo-image-0037-400x225.webp') }}" alt="blog image"
-                            class="w-full h-auto object-cover" />
-                        <div class="p-6">
-                            <h6 class="text-base font-light font-poppins">Date</h6>
-                            <h3 class="text-3xl font-extrabold my-4 font-outfit">How Tech Shapes the Future of Work in 2024
-                            </h3>
-                            <p class="text-lg text-gray-700 font-poppins">In today’s ever-evolving world, storytelling has
-                                become a
-                                powerful tool for connection. Revision provides a unique platform for individuals to…</p>
-                        </div>
-                    </div>
-                    <div
-                        class="rounded-lg border border-gray-300 shadow-md hover:shadow-xl cursor-pointer overflow-hidden">
-                        <img src="{{ asset('assets/images/demo-image-0037-400x225.webp') }}" alt="blog image"
-                            class="w-full h-auto object-cover" />
-                        <div class="p-6">
-                            <h6 class="text-base font-light font-poppins">Date</h6>
-                            <h3 class="text-3xl font-extrabold my-4 font-outfit">How Tech Shapes the Future of Work in 2024
-                            </h3>
-                            <p class="text-lg text-gray-700 font-poppins">In today’s ever-evolving world, storytelling has
-                                become a
-                                powerful tool for connection. Revision provides a unique platform for individuals to…</p>
-                        </div>
-                    </div>
-                    <div
-                        class="rounded-lg border border-gray-300 shadow-md hover:shadow-xl cursor-pointer overflow-hidden">
-                        <img src="{{ asset('assets/images/demo-image-0037-400x225.webp') }}" alt="blog image"
-                            class="w-full h-auto object-cover" />
-                        <div class="p-6">
-                            <h6 class="text-base font-light font-poppins">Date</h6>
-                            <h3 class="text-3xl font-extrabold my-4 font-outfit">How Tech Shapes the Future of Work in 2024
-                            </h3>
-                            <p class="text-lg text-gray-700 font-poppins">In today’s ever-evolving world, storytelling has
-                                become a
-                                powerful tool for connection. Revision provides a unique platform for individuals to…</p>
-                        </div>
-                    </div>
+                    @foreach ($posts as $post)
+                        <x-card-blog :image="$post['_embedded']['wp:featuredmedia'][0]['source_url']" :date="$post['date']" :title="$post['title']['rendered']" :description="$post['excerpt']['rendered']"
+                            :link="'/blog/' . $post['id']" />
+                    @endforeach
                 </div>
             </div>
         </section>
         <!-- ENd Blog -->
-
-        <!--  Portfolio -->
-        @isset($reviews[0]->status)
-            <section class="bg-gray-50">
-                <div class="mx-auto max-w-[1340px] px-4 py-12 sm:px-6 lg:me-0 lg:py-16 lg:pe-0 lg:ps-8 xl:py-24">
-                    <div class="max-w-7xl items-end justify-between sm:flex sm:pe-6 lg:pe-8">
-                        <h3 class="max-w-xl text-xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                            Read trusted reviews from our customers
-                        </h3>
-
-                        <div class="mt-8 flex gap-4 lg:mt-0">
-                            <button aria-label="Previous slide" id="keen-slider-previous"
-                                class="rounded-full border border-purple-600 p-3 text-purple-600 transition hover:bg-purple-600 hover:text-white">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="h-5 w-5 rtl:rotate-180">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-                                </svg>
-                            </button>
-
-                            <button aria-label="Next slide" id="keen-slider-next"
-                                class="rounded-full border border-purple-600 p-3 text-purple-600 transition hover:bg-purple-600 hover:text-white">
-                                <svg class="h-5 w-5 rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="-mx-6 mt-8 lg:col-span-2 lg:mx-0">
-                        <div id="keen-slider" class="keen-slider">
-                            @foreach ($reviews as $review)
-                                <div class="keen-slider__slide">
-                                    <blockquote
-                                        class="flex h-full flex-col justify-between rounded-xl bg-white p-6 shadow-sm sm:p-8 lg:p-12">
-                                        <div>
-                                            <div class="mt-4">
-                                                <p class="text-2xl font-bold text-purple-600 sm:text-2xl">
-                                                    {{ Str::upper($review->client_company_name) }}
-                                                </p>
-
-                                                <p class="mt-4 leading-relaxed text-gray-700">
-                                                    {{ $review->client_review }}
-                                                </p>
-                                            </div>
-                                            @if ($review->client_company_link)
-                                                <a href="{{ $review->client_company_link }}"
-                                                    class="block items-center px-4 py-2 bg-purple-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase w-full sm:w-[300px] lg:w-[150px] xl:w-[200px] tracking-widest hover:bg-black  transition ease-in-out duration-150 my-5 text-center">Live
-                                                    Site</a>
-                                            @endif
-                                        </div>
-
-                                        <footer class="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
-                                            &mdash;<span class="mx-1">{{ Str::upper($review->client_title) }}</span>
-                                            {{ Str::ucfirst($review->client_fullname) }}
-                                        </footer>
-                                    </blockquote>
-                                </div>
-                            @endforeach
-                        </div>
-                    </div>
-                </div>
-            </section>
-        @endisset
-        <!-- End Portfolio -->
-
     </x-web-site-layout>
