@@ -11,17 +11,18 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('reviews', function (Blueprint $table) {
-            $table->id();
-            $table->string('client_title');
-            $table->string('client_fullname');
-            $table->string('client_company_name');
-            $table->char('client_company_link', 255);
-            $table->text('client_review'); 
-            $table->boolean('privacy');
-            $table->string('status')->default('draft');
-            $table->timestamps();
-        });
+        Schema::dropIfExists('reviews');
+        // Schema::create('reviews', function (Blueprint $table) {
+        //     $table->id();
+        //     $table->string('client_title');
+        //     $table->string('client_fullname');
+        //     $table->string('client_company_name');
+        //     $table->char('client_company_link', 255);
+        //     $table->text('client_review');
+        //     $table->boolean('privacy');
+        //     $table->string('status')->default('draft');
+        //     $table->timestamps();
+        // });
     }
 
     /**

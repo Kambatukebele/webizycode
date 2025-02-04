@@ -43,10 +43,10 @@ class YoutubeController extends Controller
 
         $youtube->title = $request->title;
         $youtube->youtube_link = $request->youtube_link;
-       
+
         $youtube->save();
 
-        return redirect(route('youtube.index'))->with('status', "Youtube post saved successfully!"); 
+        return redirect(route('youtube.index'))->with('status', "Youtube post saved successfully!");
     }
 
     /**
@@ -57,16 +57,9 @@ class YoutubeController extends Controller
         $youtubes = Youtube::where('status', 'active')
         ->latest()
         ->paginate(10);
-        $url = ""; 
-        foreach ($youtubes as  $youtube) {
-            $url = $youtube->youtube_link;
-        }
-        // Extract the video ID from the URL
-        $videoId = VideoHelper::getVideoId($url);
 
         return view('youtube.show', [
             'youtubes' => $youtubes,
-            'videoId' => $videoId
         ]);
     }
 
@@ -77,7 +70,7 @@ class YoutubeController extends Controller
     {
         $youtube = Youtube::find($id);
 
-        return view("youtube.edit", ['youtube' => $youtube]); 
+        return view("youtube.edit", ['youtube' => $youtube]);
     }
 
     /**
@@ -98,10 +91,10 @@ class YoutubeController extends Controller
         $youtube->title = $request->title;
         $youtube->youtube_link = $request->youtube_link;
         $youtube->status = $request->status;
-       
+
         $youtube->save();
 
-        return redirect(route('youtube.index'))->with('status', "Youtube post saved successfully!"); 
+        return redirect(route('youtube.index'))->with('status', "Youtube post saved successfully!");
 
 
     }

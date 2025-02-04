@@ -13,15 +13,20 @@ return new class extends Migration
     {
         Schema::create('portfolios', function (Blueprint $table) {
             $table->id();
-            $table->binary('company_image');
             $table->string('company_name');
-            $table->string('company_project_title');
-            $table->longText('company_project_description');
-            $table->longText('company_project_task');
-            $table->string('company_location');
-            $table->char('company_link', 255);
-            $table->date('company_date_launched');
-            $table->string('status')->default('draft'); 
+            $table->longText('company_description');
+            $table->binary('featured_image');
+            $table->binary('framed_image');
+            $table->binary('image_before');
+            $table->binary('image_after');
+            $table->longText('challenges');
+            $table->string('issues');
+            $table->string('services_provided');
+            $table->longText('solution');
+            $table->string('technology');
+            $table->char('link', 255);
+            $table->longText('owner_testimonial');
+            $table->string('status')->default('draft');
             $table->timestamps();
         });
     }

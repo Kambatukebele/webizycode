@@ -17,7 +17,7 @@ class BlogController extends Controller
          $posts = $response->json();
 
          // Laravel pagination setup
-         $perPage = 1; // Number of posts per page
+         $perPage = 10; // Number of posts per page
          $currentPage = $request->query('page', 1);
          $items = array_slice($posts, ($currentPage - 1) * $perPage, $perPage);
 
@@ -31,7 +31,7 @@ class BlogController extends Controller
 
     public function show($id)
     {
-        https://blog.kambatukebele.com/wp-json/wp/v2/posts?_embed&order=desc&orderby=date
+        // https://blog.kambatukebele.com/wp-json/wp/v2/posts?_embed&order=desc&orderby=date
         $response = Http::get("https://blog.kambatukebele.com/wp-json/wp/v2/posts/{$id}?_embed");
         $post = $response->json();
 

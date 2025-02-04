@@ -14,34 +14,25 @@
                 </div>
             </div>
             <div class="lg:grid lg:grid-cols-3">
-                <div class="bg-white shadow-sm sm:rounded-lg my-3 mx-1 ">
+                <div class="bg-white shadow-sm sm:rounded-lg my-3 mx-1">
                     <div class="p-6 text-gray-900">
-                        Posts Count: {{ $posts }}
+                        {{-- Youtubes Count: {{ $youtubes }} --}}
                     </div>
                 </div>
                 <div class="bg-white shadow-sm sm:rounded-lg my-3 mx-1">
                     <div class="p-6 text-gray-900">
-                        Youtubes Count: {{ $youtubes }}
+                        {{-- Portfolios Count:{{ $portfolios }} --}}
+                    </div>
+                </div>
+
+                <div class="bg-white shadow-sm sm:rounded-lg my-3 mx-1">
+                    <div class="p-6 text-gray-900">
+                        {{-- Contacts Count: {{ $contacts }} --}}
                     </div>
                 </div>
                 <div class="bg-white shadow-sm sm:rounded-lg my-3 mx-1">
                     <div class="p-6 text-gray-900">
-                        Portfolios Count:{{ $portfolios }}
-                    </div>
-                </div>
-                <div class="bg-white shadow-sm sm:rounded-lg my-3 mx-1">
-                    <div class="p-6 text-gray-900">
-                        Reviews Count: {{ $reviews }}
-                    </div>
-                </div>
-                <div class="bg-white shadow-sm sm:rounded-lg my-3 mx-1">
-                    <div class="p-6 text-gray-900">
-                        Contacts Count: {{ $contacts }}
-                    </div>
-                </div>
-                <div class="bg-white shadow-sm sm:rounded-lg my-3 mx-1">
-                    <div class="p-6 text-gray-900">
-                        Subscribers Count: {{ $subscribers }}
+                        {{-- Subscribers Count: {{ $subscribers }} --}}
                     </div>
                 </div>
             </div>
