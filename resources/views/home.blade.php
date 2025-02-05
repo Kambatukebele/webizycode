@@ -78,15 +78,14 @@
             <div class="container mx-auto px-4">
                 <div class="mb-12">
                     <x-title-section alignment="text-left" title="Our Core Services" />
-
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
                     <!-- Service Card -->
-                    <a href="#" class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
+                    <div class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
                         <div>
                             <i class="fas fa-store block text-5xl text-blue-800"></i>
                         </div>
-                        <h4 class="mt-6 mb-4 text-3xl font-semibold font-outfit text-gray-900 leading-snug">
+                        <h4 class="mt-6 mb-4 text-3xl font-semibold font-outfit text-gray-950 leading-snug">
                             Shopify Store Setup & Customization
                         </h4>
                         <p class="text-lg font-poppins text-gray-700 leading-relaxed">
@@ -97,13 +96,13 @@
                             high-converting storefront. Additionally, we integrate essential Shopify apps to enhance
                             functionality, such as inventory management, email marketing, and customer retention tools.
                         </p>
-                    </a>
+                    </div>
                     <!-- Service Card -->
-                    <a href="#" class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
+                    <div class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
                         <div>
                             <i class="fas fa-paint-brush block text-5xl text-blue-800"></i>
                         </div>
-                        <h4 class="mt-6 mb-4 text-3xl font-semibold font-outfit text-gray-900 leading-snug">
+                        <h4 class="mt-6 mb-4 text-3xl font-semibold font-outfit text-gray-950 leading-snug">
                             Custom Shopify Theme Development
                         </h4>
                         <p class="text-lg font-poppins text-gray-700 leading-relaxed">
@@ -114,13 +113,13 @@
                             experience across all devices. Whether you need an elegant minimalist design or a highly
                             interactive interface, we build themes that reflect your brand’s vision.
                         </p>
-                    </a>
+                    </div>
                     <!-- Service Card -->
-                    <a href="#" class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
+                    <div class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
                         <div>
                             <i class="fas fa-plug text-5xl text-blue-800"></i>
                         </div>
-                        <h4 class="mt-6 mb-4 text-3xl font-semibold font-outfit text-gray-900 leading-snug">
+                        <h4 class="mt-6 mb-4 text-3xl font-semibold font-outfit text-gray-950 leading-snug">
                             Shopify App Development & Integration
                         </h4>
                         <p class="text-lg font-poppins text-gray-700 leading-relaxed">
@@ -131,13 +130,13 @@
                             shipping solutions, CRM tools, and ERP systems, ensuring your store operates efficiently and
                             scales seamlessly as your business grows.
                         </p>
-                    </a>
+                    </div>
                     <!-- Service Card -->
-                    <a href="#" class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
+                    <div class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
                         <div>
                             <i class="fas fa-chart-line text-5xl text-blue-800"></i>
                         </div>
-                        <h4 class="mt-6 mb-4 text-3xl font-semibold font-outfit text-gray-900 leading-snug">
+                        <h4 class="mt-6 mb-4 text-3xl font-semibold font-outfit text-gray-950 leading-snug">
                             Shopify SEO & Performance Optimization
                         </h4>
                         <p class="text-lg font-poppins text-gray-700 leading-relaxed">
@@ -148,13 +147,13 @@
                             for faster load times. Our strategies help reduce bounce rates, increase conversion rates, and
                             improve overall store performance.
                         </p>
-                    </a>
+                    </div>
                     <!-- Service Card -->
-                    <a href="#" class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
+                    <div class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
                         <div>
                             <i class="fas fa-exchange-alt text-5xl text-blue-800"></i>
                         </div>
-                        <h4 class="mt-6 mb-4 text-3xl font-semibold font-outfit text-gray-900 leading-snug">
+                        <h4 class="mt-6 mb-4 text-3xl font-semibold font-outfit text-gray-950 leading-snug">
                             Shopify Migration & Replatforming
                         </h4>
                         <p class="text-lg font-poppins text-gray-700 leading-relaxed">
@@ -165,13 +164,13 @@
                             migration process. Post-migration, we optimize your new Shopify store for enhanced performance
                             and user experience.
                         </p>
-                    </a>
+                    </div>
                     <!-- Service Card -->
-                    <a href="#" class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
+                    <div class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
                         <div>
                             <i class="fas fa-tools text-5xl text-blue-800"></i>
                         </div>
-                        <h4 class="mt-6 mb-4 text-3xl font-semibold font-outfit text-gray-900 leading-snug">
+                        <h4 class="mt-6 mb-4 text-3xl font-semibold font-outfit text-gray-950 leading-snug">
                             Ongoing Shopify Maintenance & Support
                         </h4>
                         <p class="text-lg font-poppins text-gray-700 leading-relaxed">
@@ -182,14 +181,14 @@
                             With proactive maintenance, we help you prevent downtime and ensure a seamless shopping
                             experience for your customers.
                         </p>
-                    </a>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- End Our Services -->
         <!-- Description -->
         <!-- Description Section -->
-        <section class="bg-black text-white py-12 px-5">
+        <section class="bg-gray-950 text-white py-12 px-5">
             <div class="container mx-auto">
                 <div class="block text-center">
                     <span class="text-3xl md:text-4xl lg:text-5xl xl:text-[3.125rem] font-semibold font-outfit my-4">
@@ -210,7 +209,7 @@
         <section class="bg-gray-200 w-full py-12">
             <div class="container mx-auto px-4">
                 <div class="text-center mb-12">
-                    <x-title-section alignment="text-left" title="Some of our creative projects" />
+                    <x-title-section alignment="text-left" title="Shopify creative projects" />
                 </div>
                 <ul class="grid grid-cols-1 md:grid-cols-2 gap-10" id="projects">
                     @foreach ($portfolios as $portfolio)
@@ -223,7 +222,7 @@
         </section>
         <!-- End Projects Section -->
         <!-- Text Slider Section -->
-        <section class="overflow-hidden bg-black text-white py-10 w-full">
+        <section class="overflow-hidden bg-gray-950 text-white py-10 w-full">
             <div class="flex justify-start items-center relative w-full">
                 <div class="flex animate-[slideInfinite_20s_linear_infinite]">
                     <div class="flex-shrink-0 mr-5">
@@ -270,24 +269,24 @@
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
                     <!-- Service Card -->
-                    <a href="#" class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
+                    <div class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
                         <div>
                             <i class="fa-solid fa-list-check block text-5xl text-blue-800"></i>
                         </div>
-                        <h4 class="mt-6 mb-4 text-3xl font-semibold font-outfit text-gray-900 leading-snug">
+                        <h4 class="mt-6 mb-4 text-3xl font-semibold font-outfit text-gray-950 leading-snug">
                             Discovery and Requirement Analysis
                         </h4>
                         <p class="text-lg font-poppins text-gray-700 leading-relaxed">
                             we engage in detailed discussions with you to understand your business goals and requirements.
                             We identify your target audience, project objectives, and technological needs.
                         </p>
-                    </a>
+                    </div>
                     <!-- Service Card -->
-                    <a href="#" class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
+                    <div class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
                         <div>
                             <i class="fa-solid fa-magnifying-glass block text-5xl text-blue-800"></i>
                         </div>
-                        <h4 class="mt-6 mb-4 text-3xl font-semibold font-outfit text-gray-900 leading-snug">
+                        <h4 class="mt-6 mb-4 text-3xl font-semibold font-outfit text-gray-950 leading-snug">
                             Planning and Strategy
                         </h4>
                         <p class="text-lg font-poppins text-gray-700 leading-relaxed">
@@ -295,13 +294,13 @@
                             defining project milestones, timelines, and a development roadmap. We also outline the
                             technology stack and design concepts to be used.
                         </p>
-                    </a>
+                    </div>
                     <!-- Service Card -->
-                    <a href="#" class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
+                    <div class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
                         <div>
                             <i class="fa-solid fa-pen-nib block text-5xl text-blue-700"></i>
                         </div>
-                        <h4 class="mt-6 mb-4 text-3xl font-semibold font-outfit text-gray-900 leading-snug">
+                        <h4 class="mt-6 mb-4 text-3xl font-semibold font-outfit text-gray-950 leading-snug">
                             Design and Prototyping
                         </h4>
                         <p class="text-lg font-poppins text-gray-700 leading-relaxed">
@@ -309,9 +308,9 @@
                             prototypes and wireframes for your review, ensuring alignment with your brand and user
                             experience goals.
                         </p>
-                    </a>
+                    </div>
                     <!-- Service Card -->
-                    <a href="#" class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
+                    <div class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
                         <div>
                             <i class="fa-solid fa-code block text-5xl text-blue-800"></i>
                         </div>
@@ -324,9 +323,9 @@
                             and requirements. We follow best practices and conduct rigorous testing at each development
                             stage to ensure a bug-free and robust product.
                         </p>
-                    </a>
+                    </div>
                     <!-- Service Card -->
-                    <a href="#" class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
+                    <div class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
                         <div>
                             <i class="fa-solid fa-paper-plane block text-5xl text-blue-800"></i>
                         </div>
@@ -339,9 +338,9 @@
                             production environment. We manage all aspects of the deployment process to ensure a smooth and
                             secure launch.
                         </p>
-                    </a>
+                    </div>
                     <!-- Service Card -->
-                    <a href="#" class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
+                    <div class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
                         <div>
                             <i class="fa-solid fa-screwdriver-wrench block text-5xl text-blue-800"></i>
                         </div>
@@ -353,12 +352,26 @@
                             address any issues, perform updates, and keep your website or application running smoothly. We
                             also provide analytics and optimization recommendations to enhance your online presence.
                         </p>
-                    </a>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- End How we Work -->
+        <!-- Shopify partner section -->
+        <section class="w-full py-12 bg-gray-950">
+            <div class="container">
+                <div class="flex flex-col gap-20  items-center">
+                    <div class="w-full">
+                        <x-title-section alignment="text-center text-white" title="We are Shopify Partner" />
+                    </div>
+                    <div class="w-1/2">
+                        <img src="{{ asset('assets/svg/shopify_monotone_white.svg') }}" alt="">
+                    </div>
 
+                </div>
+            </div>
+        </section>
+        <!-- End Shopify partner section -->
         <!-- Blog-->
         <section class="w-full py-12">
             <div class="container mx-auto">

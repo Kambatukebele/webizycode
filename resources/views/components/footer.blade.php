@@ -52,7 +52,7 @@
                         <a href="{{ route('blog') }}" class="block">Blog</a>
                     </p>
                     <p class="text-xl font-normal font-poppins text-white text-center my-2">
-                        <a href="{{ route('youtube.index') }}" class="block">Youtube</a>
+                        <a href="{{ route('youtube.show') }}" class="block">Youtube</a>
                     </p>
                 </div>
             </div>
@@ -65,28 +65,9 @@
                     </h4>
                 </div>
                 <!--Address -->
-                <div class="flex justify-start items-center flex-col my-2 lg:flex-row">
-                    <!--icon -->
-                    <div class="">
-                        <i class="fa-solid fa-address-book text-2xl text-blue-800"></i>
-                    </div>
-                    <div class="">
-                        <p class="text-xl font-normal font-poppins text-white text-center my-2 px-2">V. P.
-                            Čkalova 449/10,
-                            Bubeneč (Praha 6), 160 00 Praha</p>
-                    </div>
-                </div>
+
                 <!--pHONE -->
-                <div class="flex justify-start items-center flex-col my-2 lg:flex-row">
-                    <!--icon -->
-                    <div class="flex justify-start items-center">
-                        <i class="fa-solid fa-phone text-2xl text-blue-800"></i>
-                    </div>
-                    <div>
-                        <p class="text-xl font-normal font-poppins text-white text-center my-2 px-2">+420
-                            607 284 825</p>
-                    </div>
-                </div>
+
                 <!--Email -->
                 <div class="flex justify-start items-center flex-col my-2 lg:flex-row">
                     <!--icon -->

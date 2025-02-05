@@ -18,12 +18,7 @@
             </script>
         @endif
         <section class="w-full relative">
-            <div class="block w-[90%] mx-auto sm:w-[600px] lg:w-[700px]">
-                <div class="flex justify-center items-center flex-col my-5">
-                    <h3 class="font-semibold text-2xl">@lang("contact.Excited! Let's Talk")</h3>
-                    <p class="text-base text-gray-700 my-3 text-center">@lang("contact.Your journey to this point demonstrates your interest in our work, and we're equally eager to learn more about you!")</p>
-                    <p class="text-base text-gray-700 mb-3 text-center">@lang("contact.We're eager to delve deeper into your project, discover its unique qualities, and nurture it as if it were our very own.")
-                </div>
+            <div class="container">
                 <form method="post" action="{{ route('contact.store') }}"
                     class="mt-6 space-y-6 sm:bg-white sm:w-[500px] sm:p-10 sm:rounded-lg sm:shadow-lg  sm:mx-auto lg:w-[600px]">
                     @csrf

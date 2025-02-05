@@ -9,12 +9,12 @@
     </div>
     <!-- Navigation Menu-->
     <ul class="lg:flex lg:justify-between lg:items-center lg:w-[550px]">
-        <li class="lg:text-gray-900 lg:text-xs uppercase lg:font-semibold leading-4  hover:text-black transition-all">
+        <li class="lg:text-gray-950 lg:text-xs uppercase lg:font-semibold leading-4  hover:text-black transition-all">
             {{-- <a class="" href="{{ route('home') }}">Home</a> --}}
             <a class="" href="{{ route('home') }}">@lang('home.home')</a>
         </li>
         <li id="services"
-            class="lg:relative  lg:text-gray-900 lg:text-xs uppercase lg:font-semibold leading-4  hover:text-black transition-all">
+            class="lg:relative  lg:text-gray-950 lg:text-xs uppercase lg:font-semibold leading-4  hover:text-black transition-all">
             <span class="">Services</span>
             <div id="services-card"
                 class="hidden lg:absolute lg:hidden lg:bg-blue-900 lg:w-[200px] lg:mt-2 lg:z-10 lg:rounded-md">
@@ -28,23 +28,23 @@
                 </a>
             </div>
         </li>
-        <li class="lg:text-gray-900 lg:text-xs uppercase lg:font-semibold leading-4  hover:text-black transition-all">
+        <li class="lg:text-gray-950 lg:text-xs uppercase lg:font-semibold leading-4  hover:text-black transition-all">
             {{-- <a class="" href="{{ route('blog') }}">Blog</a> --}}
             <a class="" href="{{ route('blog') }}">@lang('home.blog')</a>
         </li>
-        <li class="lg:text-gray-900 lg:text-xs uppercase lg:font-semibold leading-4  hover:text-black transition-all">
+        <li class="lg:text-gray-950 lg:text-xs uppercase lg:font-semibold leading-4  hover:text-black transition-all">
             {{-- <a class="" href="{{ route('youtube.show') }}">Youtube</a> --}}
             <a class="" href="{{ route('youtube.show') }}">@lang('home.youtube')</a>
         </li>
-        {{-- <li class="lg:text-gray-900 lg:text-xs uppercase lg:font-semibold leading-4  hover:text-black transition-all">
+        {{-- <li class="lg:text-gray-950 lg:text-xs uppercase lg:font-semibold leading-4  hover:text-black transition-all">
 
             <a class="" href="{{ route('portfolio.show') }}">@lang('home.portfolio')</a>
         </li> --}}
-        <li class="lg:text-gray-900 lg:text-xs uppercase lg:font-semibold leading-4  hover:text-black transition-all">
+        <li class="lg:text-gray-950 lg:text-xs uppercase lg:font-semibold leading-4  hover:text-black transition-all">
             {{-- <a class="" href="{{ route('contact.index') }}">Contact Us</a> --}}
             <a class="" href="{{ route('contact.index') }}">@lang('home.contact us')</a>
         </li>
-        {{-- <li class="lg:text-gray-900 lg:text-base lg:font-normal  hover:text-black transition-all"><a class="" href="/">Home</a></li> --}}
+        {{-- <li class="lg:text-gray-950 lg:text-base lg:font-normal  hover:text-black transition-all"><a class="" href="/">Home</a></li> --}}
     </ul>
     <!-- CTA -->
     <div class="block">

@@ -5,11 +5,17 @@
     stunning and high-converting online stores. Learn practical tips, gain insights from industry experts, and elevate your
     e-commerce game. Explore our blog now for an immersive journey into the world of impactful web design.')
     <x-web-site-layout>
-        <x-header-section>
+        {{-- <x-header-section>
             <x-slot:titlePage>
-                {{ $post['title']['rendered'] }}
+
             </x-slot:titlePage>
-        </x-header-section>
+        </x-header-section> --}}
+        <div class="mb-12 container">
+            <x-title-section alignment="text-center px-4 my-5 lg:max-w-[900px] lg:mx-auto"
+                title="{{ $post['title']['rendered'] }}" />
+
+        </div>
+
         <section class="w-full h-fit mb-10">
             <div class="container mt-5">
                 <div class="rounded-2xl px-4 mb-10">

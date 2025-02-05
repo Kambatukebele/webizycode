@@ -89,7 +89,7 @@
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
                     <!-- Service Card -->
-                    <a href="#" class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
+                    <div class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
                         <div>
                             <i class="fas fa-laptop-code block text-5xl text-blue-800"></i>
                         </div>
@@ -103,9 +103,9 @@
                             personal blog, or an advanced web application, we develop custom themes and functionalities that
                             align with your brand identity and business objectives.
                         </p>
-                    </a>
+                    </div>
                     <!-- Service Card -->
-                    <a href="#" class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
+                    <div class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
                         <div>
                             <i class="fas fa-paint-brush block text-5xl text-blue-800"></i>
                         </div>
@@ -119,9 +119,9 @@
                             fast load times, intuitive navigation, and an engaging user experience. All themes are optimized
                             for mobile responsiveness, accessibility, and SEO best practices.
                         </p>
-                    </a>
+                    </div>
                     <!-- Service Card -->
-                    <a href="#" class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
+                    <div class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
                         <div>
                             <i class="fas fa-plug text-5xl text-blue-800"></i>
                         </div>
@@ -135,9 +135,9 @@
                             systems, booking platforms, and more, ensuring smooth compatibility and efficient performance.
                             We focus on coding best practices to maintain site speed and security.
                         </p>
-                    </a>
+                    </div>
                     <!-- Service Card -->
-                    <a href="#" class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
+                    <div class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
                         <div>
                             <i class="fas fa-chart-line text-5xl text-blue-800"></i>
                         </div>
@@ -151,9 +151,9 @@
                             through image optimization, caching solutions, code minification, and content delivery networks
                             (CDNs) to ensure a lightning-fast user experience and lower bounce rates.
                         </p>
-                    </a>
+                    </div>
                     <!-- Service Card -->
-                    <a href="#" class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
+                    <div class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
                         <div>
                             <i class="fas fa-exchange-alt text-5xl text-blue-800"></i>
                         </div>
@@ -167,9 +167,9 @@
                             for SEO preservation, and optimizes your new WordPress site for peak performance. Whether it’s a
                             small blog or a complex enterprise website, we ensure a hassle-free migration.
                         </p>
-                    </a>
+                    </div>
                     <!-- Service Card -->
-                    <a href="#" class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
+                    <div class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
                         <div>
                             <i class="fas fa-tools text-5xl text-blue-800"></i>
                         </div>
@@ -183,14 +183,14 @@
                             ensuring quick resolution of any issues. Whether you need minor updates or ongoing security
                             audits, we keep your website optimized and protected from cyber threats.
                         </p>
-                    </a>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- End Our Services -->
         <!-- Description -->
         <!-- Description Section -->
-        <section class="bg-black text-white py-12 px-5">
+        <section class="bg-gray-950 text-white py-12 px-5">
             <div class="container mx-auto">
                 <div class="block text-center">
                     <span class="text-3xl md:text-4xl lg:text-5xl xl:text-[3.125rem] font-semibold font-outfit my-4">
@@ -224,18 +224,19 @@
         </section>
         <!-- End Projects Section -->
         <!-- Text Slider Section -->
-        <section class="overflow-hidden bg-black text-white py-10 w-full">
+        <section class="overflow-hidden bg-gray-950 text-white py-10 w-full">
             <div class="flex justify-start items-center relative w-full">
                 <div class="flex animate-[slideInfinite_20s_linear_infinite]">
                     <div class="flex-shrink-0 mr-5">
-                        <h2 class="text-4xl sm:text-5xl md:text-6xl font-semibold font-outfit">Shopify Store Setup</h2>
+                        <h2 class="text-4xl sm:text-5xl md:text-6xl font-semibold font-outfit">Woocommerce Store Setup</h2>
                     </div>
                     <div class="flex-shrink-0 mr-5">
                         <img src="{{ asset('assets/svg/stars-minimalistic-svgrepo-com.svg') }}" alt="stars"
                             class="block mx-2" />
                     </div>
                     <div class="flex-shrink-0 mr-5">
-                        <h2 class="text-4xl sm:text-5xl md:text-6xl font-semibold font-outfit">Shopify Theme Customization
+                        <h2 class="text-4xl sm:text-5xl md:text-6xl font-semibold font-outfit">WordPress Theme
+                            Customization
                         </h2>
                     </div>
                     <div class="flex-shrink-0 mr-5">
@@ -243,12 +244,21 @@
                             class="block mx-2" />
                     </div>
                     <div class="flex-shrink-0 mr-5">
-                        <h2 class="text-4xl sm:text-5xl md:text-6xl font-semibold font-outfit">Shopify App Development</h2>
+                        <h2 class="text-4xl sm:text-5xl md:text-6xl font-semibold font-outfit">WordPress Elementor</h2>
                     </div>
                     <div class="flex-shrink-0 mr-5">
                         <img src="{{ asset('assets/svg/stars-minimalistic-svgrepo-com.svg') }}" alt="stars"
                             class="block mx-2" />
                     </div>
+                    <div class="flex-shrink-0 mr-5">
+                        <h2 class="text-4xl sm:text-5xl md:text-6xl font-semibold font-outfit">WordPress Plugin Development
+                        </h2>
+                    </div>
+                    <div class="flex-shrink-0 mr-5">
+                        <img src="{{ asset('assets/svg/stars-minimalistic-svgrepo-com.svg') }}" alt="stars"
+                            class="block mx-2" />
+                    </div>
+
                     <div class="flex-shrink-0 mr-5">
                         <h2 class="text-4xl sm:text-5xl md:text-6xl font-semibold font-outfit">Email Marketing</h2>
                     </div>
@@ -274,7 +284,7 @@
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
                     <!-- Service Card -->
-                    <a href="#" class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
+                    <div class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
                         <div>
                             <i class="fa-solid fa-list-check block text-5xl text-blue-800"></i>
                         </div>
@@ -285,9 +295,9 @@
                             we engage in detailed discussions with you to understand your business goals and requirements.
                             We identify your target audience, project objectives, and technological needs.
                         </p>
-                    </a>
+                    </div>
                     <!-- Service Card -->
-                    <a href="#" class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
+                    <div class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
                         <div>
                             <i class="fa-solid fa-magnifying-glass block text-5xl text-blue-800"></i>
                         </div>
@@ -299,9 +309,9 @@
                             defining project milestones, timelines, and a development roadmap. We also outline the
                             technology stack and design concepts to be used.
                         </p>
-                    </a>
+                    </div>
                     <!-- Service Card -->
-                    <a href="#" class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
+                    <div class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
                         <div>
                             <i class="fa-solid fa-pen-nib block text-5xl text-blue-700"></i>
                         </div>
@@ -313,9 +323,9 @@
                             prototypes and wireframes for your review, ensuring alignment with your brand and user
                             experience goals.
                         </p>
-                    </a>
+                    </div>
                     <!-- Service Card -->
-                    <a href="#" class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
+                    <div class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
                         <div>
                             <i class="fa-solid fa-code block text-5xl text-blue-800"></i>
                         </div>
@@ -328,9 +338,9 @@
                             and requirements. We follow best practices and conduct rigorous testing at each development
                             stage to ensure a bug-free and robust product.
                         </p>
-                    </a>
+                    </div>
                     <!-- Service Card -->
-                    <a href="#" class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
+                    <div class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
                         <div>
                             <i class="fa-solid fa-paper-plane block text-5xl text-blue-800"></i>
                         </div>
@@ -343,9 +353,9 @@
                             production environment. We manage all aspects of the deployment process to ensure a smooth and
                             secure launch.
                         </p>
-                    </a>
+                    </div>
                     <!-- Service Card -->
-                    <a href="#" class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
+                    <div class="p-6 border border-accentTwo rounded-lg block text-decoration-none">
                         <div>
                             <i class="fa-solid fa-screwdriver-wrench block text-5xl text-blue-800"></i>
                         </div>
@@ -357,13 +367,13 @@
                             address any issues, perform updates, and keep your website or application running smoothly. We
                             also provide analytics and optimization recommendations to enhance your online presence.
                         </p>
-                    </a>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- End How we Work -->
         <!-- Blog-->
-        <section class="w-full py-12">
+        {{-- <section class="w-full py-12">
             <div class="container mx-auto">
                 <div class="mb-12">
                     <h2 class="font-outfit text-4xl md:text-5xl lg:text-6xl font-bold text-left text-gray-900 max-w-lg">
@@ -412,6 +422,6 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
         <!-- ENd Blog -->
     </x-web-site-layout>

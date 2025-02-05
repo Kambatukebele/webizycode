@@ -17,7 +17,7 @@
             <!-- Hero section  -->
             <div class="block animate-SlideInLeft py-4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                 <h1
-                    class="font-outfit text-gray-900 mb-5 w-[290px] font-extrabold text-center text-4xl sm:text-center sm:mx-auto sm:w-[490px] sm:text-5xl md:text-6xl md:w-[590px] lg:text-7xl lg:w-[900px] lg:px-28 xl:text-8xl xl:px-10 xl:w-[990px]">
+                    class="font-outfit text-gray-950 mb-5 w-[290px] font-extrabold text-center text-4xl sm:text-center sm:mx-auto sm:w-[490px] sm:text-5xl md:text-6xl md:w-[590px] lg:text-7xl lg:w-[900px] lg:px-28 xl:text-8xl xl:px-10 xl:w-[990px]">
                     {{ $title }}
                 </h1>
                 <p
