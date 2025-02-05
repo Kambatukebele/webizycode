@@ -39,32 +39,11 @@
                             <x-input-error class="mt-2" :messages="$errors->get('company_description')" />
                         </div>
                         <div>
-                            <x-input-label for="featured_image" :value="__('Featured Image')" />
+                            <x-input-label for="featured_image" :value="__('Featured Image (Show case image for computer)')" />
                             <x-text-input id="featured_image" name="featured_image" type="file"
                                 value="{{ old('featured_image') }}" class="mt-1 block w-full" required autofocus
                                 autocomplete="featured_image" />
                             <x-input-error class="mt-2" :messages="$errors->get('featured_image')" />
-                        </div>
-                        <div>
-                            <x-input-label for="framed_image" :value="__('Framed Image (Show case image with mobile and computer)')" />
-                            <x-text-input id="framed_image" name="framed_image" type="file"
-                                value="{{ old('framed_image') }}" class="mt-1 block w-full" required autofocus
-                                autocomplete="framed_image" />
-                            <x-input-error class="mt-2" :messages="$errors->get('framed_image')" />
-                        </div>
-                        <div>
-                            <x-input-label for="image_before" :value="__('Image Before (Image before I redisign)')" />
-                            <x-text-input id="image_before" name="image_before" type="file"
-                                value="{{ old('image_before') }}" class="mt-1 block w-full" required autofocus
-                                autocomplete="image_before" />
-                            <x-input-error class="mt-2" :messages="$errors->get('image_before')" />
-                        </div>
-                        <div>
-                            <x-input-label for="image_after" :value="__('Image After (Image after I finish to build)')" />
-                            <x-text-input id="image_after" name="image_after" type="file"
-                                value="{{ old('image_after') }}" class="mt-1 block w-full" required autofocus
-                                autocomplete="image_after" />
-                            <x-input-error class="mt-2" :messages="$errors->get('image_after')" />
                         </div>
                         <div>
                             <x-input-label for="Challenges" :value="__('Challenges (Write about the challenge the company is facing)')" />

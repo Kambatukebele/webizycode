@@ -36,10 +36,10 @@
             {{-- <a class="" href="{{ route('youtube.show') }}">Youtube</a> --}}
             <a class="" href="{{ route('youtube.show') }}">@lang('home.youtube')</a>
         </li>
-        <li class="lg:text-gray-900 lg:text-xs uppercase lg:font-semibold leading-4  hover:text-black transition-all">
-            {{-- <a class="" href="{{ route('portfolio.show') }}">Portfolio</a> --}}
+        {{-- <li class="lg:text-gray-900 lg:text-xs uppercase lg:font-semibold leading-4  hover:text-black transition-all">
+
             <a class="" href="{{ route('portfolio.show') }}">@lang('home.portfolio')</a>
-        </li>
+        </li> --}}
         <li class="lg:text-gray-900 lg:text-xs uppercase lg:font-semibold leading-4  hover:text-black transition-all">
             {{-- <a class="" href="{{ route('contact.index') }}">Contact Us</a> --}}
             <a class="" href="{{ route('contact.index') }}">@lang('home.contact us')</a>

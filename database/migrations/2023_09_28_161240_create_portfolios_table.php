@@ -16,9 +16,6 @@ return new class extends Migration
             $table->string('company_name');
             $table->longText('company_description');
             $table->binary('featured_image');
-            $table->binary('framed_image');
-            $table->binary('image_before');
-            $table->binary('image_after');
             $table->longText('challenges');
             $table->string('issues');
             $table->string('services_provided');

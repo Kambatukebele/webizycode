@@ -211,124 +211,14 @@
         <section class="bg-gray-200 w-full py-12">
             <div class="container mx-auto px-4">
                 <div class="text-center mb-12">
-                    <h2
-                        class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold font-outfit text-gray-900 w-[280px] sm:w-[430px] md:w-[630px] lg:w-[830px] mx-auto leading-none">
-                        Some of our creative projects
-                    </h2>
+                    <x-title-section alignment="text-left" title="Some of our WordPress projects" />
                 </div>
                 <ul class="grid grid-cols-1 md:grid-cols-2 gap-10" id="projects">
-                    <li class="flex flex-col">
-                        <a href="#" target="_blank" class="block mb-10 h-full">
-                            <img src="{{ asset('assets/images/ezagrow.png') }}" alt="image-agency"
-                                class="w-full object-cover md:h-[450px]" />
-                        </a>
-                        {{--   <div class="text-left mb-10">
-                            <span class="inline-block text-lg border border-gray-900 px-6 py-2 rounded-full font-poppinsgraytext-gray-700                       Development agency</span>
-                            <span
-                                class="inline-block text-lg border border-gray-900 px-6 py-2 rounded-full font-poppins ml-2"graytext-gray-700
-                                Tailwind CSS</span>
-                        </div>
-                        <div class="hidden sm:flex justify-end mb-5">
-                            <div
-                                class="w-12 h-12 bg-blue-800 flex justify-center items-center border border-blue-800 rounded-full cursor-pointer animate-pulse">
-                                <img src="{{ asset('assets/svg/icon-black-solid-sharp-arrow-right.svg') }}"
-                                    alt="" class="w-6 h-6" />
-                            </div>
-                        </div>
-                        <div>
-                            <h4 class="text-3xl font-semibold font-outfit text-accentOne">Ezagrow Agency</h4>
-                        </div> --}}
-                    </li>
-                    <li class="flex flex-col">
-                        <a href="#" target="_blank" class="block mb-10 h-full">
-                            <img src="{{ asset('assets/images/kamba.png') }}" alt="image-agency"
-                                class="w-full object-cover md:h-[450px]" />
-                        </a>
-                        {{-- <div class="text-left mb-10">
-                            <span
-                                class="inline-block text-lg border border-gray-900 px-6 py-2 rounded-full font-poppins">Sgraytext-gray-700                           Freelancer</span>
-                            <span
-                                class="inline-block text-lg border border-gray-900 px-6 py-2 rounded-full font-poppins ml-2"graytext-gray-700
-                                Tailwind CSS</span>
-                        </div>
-                        <div class="hidden sm:flex justify-end mb-5">
-                            <div
-                                class="w-12 h-12 bg-blue-800 flex justify-center items-center border border-blue-800 rounded-full cursor-pointer animate-pulse">
-                                <img src="{{ asset('assets/svg/icon-black-solid-sharp-arrow-right.svg') }}"
-                                    alt="" class="w-6 h-6" />
-                            </div>
-                        </div>
-                        <div>
-                            <h4 class="text-3xl font-semibold font-outfit text-accentOne">Kamba</h4>
-                        </div> --}}
-                    </li>
-                    <li class="flex flex-col">
-                        <a href="#" target="_blank" class="block mb-10 h-full">
-                            <img src="{{ asset('assets/images/kayor.png') }}" alt="image-agency"
-                                class="w-full object-cover md:h-[450px]" />
-                        </a>
-                        {{-- <div class="text-left mb-10">
-                            <span
-                                class="inline-block text-lg border border-gray-900 px-6 py-2 rounded-full font-poppins">Wograytext-gray-700                             Elementor</span>
-                            <spn
-                                class="inline-block text-lg border border-gray-900 px-6 py-2 rounded-full font-poppins ml-2"graytext-gray-700n>
-                        </div>
-                        <div class="hidden sm:flex justify-end mb-5">
-                            <div
-                                class="w-12 h-12 bg-blue-800 flex justify-center items-center border border-blue-800 rounded-full cursor-pointer animate-pulse">
-                                <img src="{{ asset('assets/svg/icon-black-solid-sharp-arrow-right.svg') }}"
-                                    alt="" class="w-6 h-6" />
-                            </div>
-                        </div>
-                        <div>
-                            <h4 class="text-3xl font-semibold font-outfit text-accentOne">Kayor Group</h4>
-                        </div> --}}
-                    </li>
-                    <li class="flex flex-col">
-                        <a href="#" target="_blank" class="block mb-10 h-full">
-                            <img src="{{ asset('assets/images/benza.png') }}" alt="image-agency"
-                                class="w-full object-cover md:h-[450px]" />
-                        </a>
-                        {{-- <div class="text-left mb-10">
-                            <spa
-                                class="inline-block text-lg border border-gray-900 px-6 py-2 rounded-full font-poppins">Reacgraytext-gray-700>
-                            <span
-                                class="inline-block text-lg border border-gray-900 px-6 py-2 rounded-full font-poppins graytext-gray-700                         Tailwind CSS</span>
-                        </div>
-                        <div class="hidden sm:flex justify-end mb-5">
-                            <div
-                                class="w-12 h-12 bg-blue-800 flex justify-center items-center border border-blue-800 rounded-full cursor-pointer animate-pulse">
-                                <img src="{{ asset('assets/svg/icon-black-solid-sharp-arrow-right.svg') }}"
-                                    alt="" class="w-6 h-6" />
-                            </div>
-                        </div>
-                        <div>
-                            <h4 class="text-3xl font-semibold font-outfit text-accentOne">Benza Group</h4>
-                        </div> --}}
-                    </li>
-                    <li class="flex flex-col">
-                        <a href="#" target="_blank" class="block mb-10 h-full">
-                            <img src="{{ asset('assets/images/vaneli.png') }}" alt="image-agency"
-                                class="w-full object-cover md:h-[450px]" />
-                        </a>
-                        {{-- <div class="text-left mb-10">
-                            <span
-                                class="inline-block text-lg border border-gray-900 px-6 py-2 rounded-full font-poppins"graytext-gray-700                         CSS</span>
-                            <span
-                                class="inline-block text-lg border border-gray-900 px-6 py-2 rounded-full font-poppins ml-2"graytext-gray-700pt,
-                                Liquid</span>
-                        </div>
-                        <div class="hidden sm:flex justify-end mb-5">
-                            <div
-                                class="w-12 h-12 bg-blue-800 flex justify-center items-center border border-blue-800 rounded-full cursor-pointer animate-pulse">
-                                <img src="{{ asset('assets/svg/icon-black-solid-sharp-arrow-right.svg') }}"
-                                    alt="" class="w-6 h-6" />
-                            </div>
-                        </div>
-                        <div>
-                            <h4 class="text-3xl font-semibold font-outfit text-accentOne">Vaneli</h4>
-                        </div> --}}
-                    </li>
+                    @foreach ($portfolios as $portfolio)
+                        @if ($portfolio->technology === 'wordpress')
+                            <x-project-card link="#" :image="$portfolio->featured_image" />
+                        @endif
+                    @endforeach
                 </ul>
             </div>
         </section>
